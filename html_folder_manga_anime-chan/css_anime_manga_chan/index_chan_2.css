@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  align-items: center;   /* выравнивание по вертикали */
+  justify-content: space-between; /* заголовок слева, ссылки справа */
+  padding: 10px 20px;
+}
+
+.list_leht_1 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.list_leht_1 a {
+  text-decoration: none;
+  color: black;   /* или любой цвет */
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.list_leht_1 a:hover {
+  color: red; /* эффект при наведении */
+}
