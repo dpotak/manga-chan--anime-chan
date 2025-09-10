@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/index_chan.css";
-import "../styles/index_chan_2.css";
-import "../styles/forms_website.css";
+import "../pages/styles/index_chan.css";
+import "../pages/styles/index_chan_2.css";
+import "../pages/styles/forms_website.css";
 
 const HomePage = () => {
   return (
