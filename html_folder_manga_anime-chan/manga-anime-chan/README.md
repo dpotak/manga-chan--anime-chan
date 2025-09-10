@@ -2,6 +2,9 @@
 
 ## How to start progects
 
+### clone projects:
+``
+
 ### `npm start`
 
 Runs the app in the development mode.\
