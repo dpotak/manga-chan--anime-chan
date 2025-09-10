@@ -62,7 +62,9 @@ const HomePage = () => {
         <div className="h1_glavnaja_rekomedancie">
           <h1>Рекомендации:</h1>
         </div>
-        <div className="Anime-Manga_glav"></div>
+        <div className="Anime-Manga_glav">
+          
+        </div>
       </div>
     </div>
   );

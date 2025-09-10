@@ -31,7 +31,7 @@ import HomePage from "./pages/HomePage";
 // import MangaPage from "./pages/MangaPage";
 // import AnimePage from "./pages/AnimePage";
 import ForumPage from "./pages/ForumPage";
-// import RegistrationPage from "./pages/RegistrationPage";
+import QuestionsPage from "./pages/QuestionsPage";
 
 function App() {
   return (
@@ -40,6 +40,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/forum" element={<ForumPage />} />
+          <Route path="/QuestionsPage" element={<QuestionsPage />} />
         </Routes>
       </main>
     </>
