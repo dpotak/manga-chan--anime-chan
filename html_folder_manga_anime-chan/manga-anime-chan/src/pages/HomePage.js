@@ -19,9 +19,9 @@ const HomePage = () => {
             </div>
           </div>
           <a href="/">Главная</a>
-          <a href="/obsuzhdenie">Обсуждение</a>
+          <a href="/forum">Обсуждение</a>
           <a href="/novosti">Новости</a>
-          <a href="/faq">Вопросы и ответы</a>
+          <a href="/QuestionsPage">Вопросы и ответы</a>
           <a href="/register">Регистрация/Войти</a>
 
           <form id="searchForm">
@@ -63,7 +63,7 @@ const HomePage = () => {
           <h1>Рекомендации:</h1>
         </div>
         <div className="Anime-Manga_glav">
-          
+
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import React from "react";
 
 const QuestionsPage = () => (
   <div>
-    <h2>Форум / Обсуждение</h2>
+    <h2>Вопросы и ответы</h2>
   </div>
 );
 export default QuestionsPage;
