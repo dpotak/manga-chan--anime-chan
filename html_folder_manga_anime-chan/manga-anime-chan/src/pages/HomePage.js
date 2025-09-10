@@ -20,9 +20,9 @@ const HomePage = () => {
           </div>
           <a href="/">Главная</a>
           <a href="/forum">Обсуждение</a>
-          <a href="/novosti">Новости</a>
+          <a href="/NewsPage">Новости</a>
           <a href="/QuestionsPage">Вопросы и ответы</a>
-          <a href="/register">Регистрация/Войти</a>
+          <a href="/registerPage">Регистрация/Войти</a>
 
           <form id="searchForm">
             <input type="text" placeholder="Искать здесь..." />
