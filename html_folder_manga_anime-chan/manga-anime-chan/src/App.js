@@ -28,8 +28,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-// import MangaPage from "./pages/MangaPage";
-// import AnimePage from "./pages/AnimePage";
+import NewsPage from "./pages/NewsPage";
+import registerPage from "./pages/registerPage";
 import ForumPage from "./pages/ForumPage";
 import QuestionsPage from "./pages/QuestionsPage";
 
@@ -41,6 +41,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/forum" element={<ForumPage />} />
           <Route path="/QuestionsPage" element={<QuestionsPage />} />
+          <Route path="/NewsPage" element={<NewsPage />} />
+          <Route path="/registerPage" element={<registerPage />} />
         </Routes>
       </main>
     </>
