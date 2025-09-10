@@ -2,6 +2,8 @@ import React from "react";
 import "../pages/styles/index_chan.css";
 import "../pages/styles/index_chan_2.css";
 import "../pages/styles/forms_website.css";
+import britainFlag from '../pages/foto/britain_flags.png';
+import russianFlag from '../pages/foto/russian_flag.jpg';
 
 const HomePage = () => {
   return (
@@ -29,10 +31,10 @@ const HomePage = () => {
 
           <div className="language">
             <button>
-              <img src="/foto/britain_flags.png" width="20" height="20" alt="EN" />
+              <img src={britainFlag} width="20" height="20" alt="EN" />
             </button>
             <button className="rus">
-              <img src="/foto/russian_flag.jpg" width="20" height="20" alt="RU" />
+              <img src={russianFlag} width="20" height="20" alt="RU" />
             </button>
           </div>
         </nav>
