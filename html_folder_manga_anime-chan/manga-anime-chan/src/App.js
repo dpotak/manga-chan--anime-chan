@@ -28,6 +28,7 @@
 // src/App.js
 import React from "react";
 import HomePage from "./pages/HomePage";
+// import Obsujdenie from "/pages/Obsujdenie";
 
 function App() {
   return (
