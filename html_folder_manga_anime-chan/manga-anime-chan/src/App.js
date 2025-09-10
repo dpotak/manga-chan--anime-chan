@@ -24,17 +24,25 @@
 
 // export default App;
 
-
 // src/App.js
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-// import Obsujdenie from "/pages/Obsujdenie";
+// import MangaPage from "./pages/MangaPage";
+// import AnimePage from "./pages/AnimePage";
+import ForumPage from "./pages/ForumPage";
+// import RegistrationPage from "./pages/RegistrationPage";
 
 function App() {
   return (
-    <div>
-      <HomePage />
-    </div>
+    <>
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/forum" element={<ForumPage />} />
+        </Routes>
+      </main>
+    </>
   );
 }
 
