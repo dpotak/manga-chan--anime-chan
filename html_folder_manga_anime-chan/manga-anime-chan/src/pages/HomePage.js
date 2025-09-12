@@ -15,7 +15,7 @@ const HomePage = () => {
           <div className="dropdown">
             <button className="dropbtn">Каталог</button>
             <div className="dropdown-content">
-              <a href="/manga-chan">Манга</a>
+              <a href="/Manga_chan">Манга</a>
               <a href="/Anime_chan">Аниме</a>
             </div>
           </div>

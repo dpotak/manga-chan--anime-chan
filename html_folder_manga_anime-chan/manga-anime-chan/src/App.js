@@ -33,6 +33,7 @@ import RegisterPage from "./pages/RegisterPage";
 import ForumPage from "./pages/ForumPage";
 import QuestionsPage from "./pages/QuestionsPage";
 import Anime_chan from "./pages/Anime_chan";
+import Manga_chan from "./pages/Manga_chan";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
           <Route path="/NewsPage" element={<NewsPage />} />
           <Route path="/RegisterPage" element={<RegisterPage />} />
           <Route path="/Anime_chan" element={<Anime_chan />} />
+          <Route path="/Manga_chan" element={<Manga_chan />} />
         </Routes>
       </main>
     </>
