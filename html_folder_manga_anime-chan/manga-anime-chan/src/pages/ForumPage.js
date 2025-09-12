@@ -7,7 +7,7 @@ import russianFlag from '../pages/foto/russian_flag.jpg';
 const ForumPage = () => (
   <div>
     <div class="header">
-  <h1>Manga-chan--Anime-chan: Обсуждение</h1>
+  <h1>Manga-chan--Anime-chan: Обсуждение</h1> 
 
   <nav class="nav-bar">
     <div class="dropdown">
