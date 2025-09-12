@@ -7,4 +7,5 @@ const registerPage = () => (
     <h2>Регистрация</h2>
   </div>
 );
+
 export default registerPage;

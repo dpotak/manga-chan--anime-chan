@@ -10,6 +10,7 @@ const HomePage = () => {
     <div>
       <div className="header">
         <h1>Manga-chan--Anime-chan</h1>
+
         <nav className="nav-bar">
           <div className="dropdown">
             <button className="dropbtn">Каталог</button>
@@ -18,6 +19,7 @@ const HomePage = () => {
               <a href="/anime-chan">Аниме</a>
             </div>
           </div>
+
           <a href="/">Главная</a>
           <a href="/forum">Обсуждение</a>
           <a href="/NewsPage">Новости</a>
@@ -62,8 +64,9 @@ const HomePage = () => {
         <div className="h1_glavnaja_rekomedancie">
           <h1>Рекомендации:</h1>
         </div>
-        <div className="Anime-Manga_glav">
 
+        <div className="Anime-Manga_glav">
+          
         </div>
       </div>
     </div>
