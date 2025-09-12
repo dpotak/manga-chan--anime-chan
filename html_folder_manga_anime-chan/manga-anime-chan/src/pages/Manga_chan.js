@@ -4,7 +4,7 @@ import React from "react";
 
 const Manga_chan = () => (
   <div>
-    <h1>Manga-chan--Anime-chan: Новости</h1>
+    <h1>Manga-chan</h1>
   </div>
 );
 export default Manga_chan;
