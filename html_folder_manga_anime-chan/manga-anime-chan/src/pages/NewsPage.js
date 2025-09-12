@@ -12,8 +12,8 @@ const NewsPage = () => (
     <div class="dropdown">
       <button class="dropbtn">Каталог</button>
       <div class="dropdown-content">
-        <a href="manga-chan.html">Манга</a>
-        <a href="Anime-chan.html">Аниме</a>
+        <a href="/Manga_chan">Манга</a>
+        <a href="/Anime_chan">Аниме</a>
       </div>
     </div>
 
