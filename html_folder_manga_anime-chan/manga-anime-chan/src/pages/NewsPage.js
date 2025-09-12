@@ -11,7 +11,7 @@ const NewsPage = () => (
       <button class="dropbtn">Каталог</button>
       <div class="dropdown-content">
         <a href="manga-chan.html">Манга</a>
-        <a href="anime-chan.html">Аниме</a>
+        <a href="Anime-chan.html">Аниме</a>
       </div>
     </div>
 
@@ -19,7 +19,7 @@ const NewsPage = () => (
     <a href="/forum">Обсуждение</a>
     <a href="/NewsPage">Новости</a>
     <a href="/QuestionsPage">Вопросы и ответы</a>
-    <a href="/registerPage">Регистрация/Войти</a>
+    <a href="/RegisterPage">Регистрация/Войти</a>
 
 
    <form id="searchForm">

@@ -2,10 +2,9 @@ import React from "react";
 // import britainFlag from '../pages/foto/britain_flags.png';
 // import russianFlag from '../pages/foto/russian_flag.jpg';
 
-const RegisterPage = () => (
+const anime_chan = () => (
   <div>
-    <h2>Регистрация</h2>
+    <h1>Manga-chan--Anime-chan: Новости</h1>
   </div>
 );
-
-export default RegisterPage;
+export default anime_chan;

@@ -29,9 +29,10 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import NewsPage from "./pages/NewsPage";
-import registerPage from "./pages/registerPage";
+import RegisterPage from "./pages/RegisterPage";
 import ForumPage from "./pages/ForumPage";
 import QuestionsPage from "./pages/QuestionsPage";
+import Anime_chan from "./pages/Anime_chan";
 
 function App() {
   return (
@@ -42,7 +43,8 @@ function App() {
           <Route path="/forum" element={<ForumPage />} />
           <Route path="/QuestionsPage" element={<QuestionsPage />} />
           <Route path="/NewsPage" element={<NewsPage />} />
-          <Route path="/registerPage" element={<registerPage />} />
+          <Route path="/RegisterPage" element={<RegisterPage />} />
+          <Route path="/Anime_chan" element={<Anime_chan />} />
         </Routes>
       </main>
     </>

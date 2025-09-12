@@ -16,7 +16,7 @@ const HomePage = () => {
             <button className="dropbtn">Каталог</button>
             <div className="dropdown-content">
               <a href="/manga-chan">Манга</a>
-              <a href="/anime-chan">Аниме</a>
+              <a href="/Anime_chan">Аниме</a>
             </div>
           </div>
 
@@ -24,7 +24,7 @@ const HomePage = () => {
           <a href="/forum">Обсуждение</a>
           <a href="/NewsPage">Новости</a>
           <a href="/QuestionsPage">Вопросы и ответы</a>
-          <a href="/registerPage">Регистрация/Войти</a>
+          <a href="/RegisterPage">Регистрация/Войти</a>
 
           <form id="searchForm">
             <input type="text" placeholder="Искать здесь..." />
