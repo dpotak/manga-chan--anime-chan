@@ -9,12 +9,10 @@ import { HomePages_Transition } from "../hooks/HomePages_Transition";
 const HomePage = () => {
     HomePages_Transition(); 
 
-  return ( 
+  return (     
     <div>
       <div className="header">
         <h1>Manga-chan--Anime-chan</h1>
-        <h2></h2>
-
         <nav className="nav-bar">
           <div className="dropdown">
             <button className="dropbtn">Каталог</button>
