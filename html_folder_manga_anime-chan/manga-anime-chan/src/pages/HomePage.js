@@ -10,7 +10,7 @@ import { HomePages_Transition } from "../hooks/HomePages_Transition";
 const HomePage = () => {
     HomePages_Transition();
 
-  return (
+  return ( 
     <div>
       <div className="header">
         <h1>Manga-chan--Anime-chan</h1>
