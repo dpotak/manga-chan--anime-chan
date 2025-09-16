@@ -2,7 +2,8 @@ import React from "react";
 import britainFlag from '../pages/foto/britain_flags.png';
 import russianFlag from '../pages/foto/russian_flag.jpg';
 import '../pages/anime_chan_folder/anime_chan_1.css';
-import '../pages/anime_chan_folder/anime_chan_2.css';
+import '../pages/anime_chan_folder/anime_chan_2.css'; 
+import { Anime_Pages_Transition } from "../hooks/Anime_Pages_Transition";
 
 const anime_chan = () => (
   <div>

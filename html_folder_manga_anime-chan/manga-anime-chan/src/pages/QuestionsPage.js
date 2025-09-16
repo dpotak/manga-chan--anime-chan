@@ -2,7 +2,8 @@ import React from "react";
 import britainFlag from '../pages/foto/britain_flags.png';
 import russianFlag from '../pages/foto/russian_flag.jpg';
 import '../pages/otvetinavoprosi_folder_css/otvetinavoprosi.css';
-import '../pages/otvetinavoprosi_folder_css/otvetinavoprosi_2.css';
+import '../pages/otvetinavoprosi_folder_css/otvetinavoprosi_2.css'; 
+import { QuestionsPages_Transition } from "../hooks/QuestionsPages_Transition";
 
 const QuestionsPage = () => (
   <div class="header">

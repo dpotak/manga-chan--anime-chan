@@ -2,7 +2,8 @@ import React from "react";
 import britainFlag from '../pages/foto/britain_flags.png';
 import russianFlag from '../pages/foto/russian_flag.jpg';
 import '../pages/manga_chan_folder/manga_chan_1.css';
-import '../pages/manga_chan_folder/manga_chan_2.css';
+import '../pages/manga_chan_folder/manga_chan_2.css'; 
+import { Manga_Pages_Transition } from "../hooks/Manga_Pages_Transition";
 
 const Manga_chan = () => (
   <div>
