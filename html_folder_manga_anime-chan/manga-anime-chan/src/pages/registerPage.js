@@ -1,6 +1,6 @@
 import React from "react";
-// import britainFlag from '../pages/foto/britain_flags.png';
-// import russianFlag from '../pages/foto/russian_flag.jpg';
+import britainFlag from '../pages/foto/britain_flags.png';
+import russianFlag from '../pages/foto/russian_flag.jpg';
 import "../pages/register_folder_css/register.css"; // подключение CSS
 
 const RegisterPage = () => {
@@ -8,6 +8,17 @@ const RegisterPage = () => {
     <div className="register-page">
 
       <h1 className="h1_glav">Manga-chan--Anime-chan</h1>
+
+      <nav className="nav-bar">
+        <div className="language">
+          <button>
+              <img src={britainFlag} width="20" height="20" alt="EN" />
+            </button>
+            <button className="rus">
+              <img src={russianFlag} width="20" height="20" alt="RU" />
+            </button>
+          </div>
+        </nav>
 
       <div className="kvadrat_register">
         <div className="forms_enter">

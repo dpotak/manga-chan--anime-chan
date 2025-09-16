@@ -1,9 +1,9 @@
 body {
-    background-color: rgb(79, 78, 78)
+    background-color: white
 }
 
 .h1_glav {
-    color: white; 
+    color: rgb(45, 45, 45); 
 }
 
 .forms_enter_1 , .forms_enter_2 , .forms_enter_3 , .forms_enter_4 , .forms_enter_5 {

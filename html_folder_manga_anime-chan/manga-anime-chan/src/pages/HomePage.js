@@ -4,8 +4,12 @@ import "../pages/styles/index_chan_2.css";
 import "../pages/styles/forms_website.css";
 import britainFlag from '../pages/foto/britain_flags.png';
 import russianFlag from '../pages/foto/russian_flag.jpg';
+import { HomePages_Transition } from "../hooks/HomePages_Transition";
+
 
 const HomePage = () => {
+    HomePages_Transition();
+
   return (
     <div>
       <div className="header">
