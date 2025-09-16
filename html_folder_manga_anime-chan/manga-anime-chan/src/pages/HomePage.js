@@ -1,19 +1,19 @@
-import React from "react";
-import "../pages/styles/index_chan.css";
-import "../pages/styles/index_chan_2.css";
-import "../pages/styles/forms_website.css";
-import britainFlag from '../pages/foto/britain_flags.png';
-import russianFlag from '../pages/foto/russian_flag.jpg';
+import React from "react"; 
+import "./styles/index_chan.css";
+import "./styles/index_chan_2.css";
+import "./styles/forms_website.css";
+import britainFlag from './foto/britain_flags.png';
+import russianFlag from './foto/russian_flag.jpg';
 import { HomePages_Transition } from "../hooks/HomePages_Transition";
 
-
 const HomePage = () => {
-    HomePages_Transition();
+    HomePages_Transition(); 
 
   return ( 
     <div>
       <div className="header">
         <h1>Manga-chan--Anime-chan</h1>
+        <h2></h2>
 
         <nav className="nav-bar">
           <div className="dropdown">
