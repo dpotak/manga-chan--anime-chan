@@ -7,7 +7,7 @@ import { Anime_Pages_Transition } from "../hooks/Anime_Pages_Transition";
 
 const anime_chan = () => (
   <div>
-    <h1>Anime-chan</h1>
+    <h1>Anime-chan</h1> 
   
   <nav class="nav-bar">
     <div class="dropdown">
