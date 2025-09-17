@@ -13,6 +13,7 @@ const HomePage = () => {
     <div>
       <div className="header">
         <h1>Manga-chan--Anime-chan</h1>
+        
         <nav className="nav-bar">
           <div className="dropdown">
             <button className="dropbtn">Каталог</button>
