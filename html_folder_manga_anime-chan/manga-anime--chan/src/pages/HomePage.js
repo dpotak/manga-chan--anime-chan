@@ -50,14 +50,14 @@ const HomePage = () => {
         <h1 className="h1_glavnaja">Смотри аниме и читай мангу!</h1>
 
         <div className="Opisanie_1">
-          <h2 className="h2_op_1">О Аниме:</h2>
+          <Typography variant="h5" color="initial" className="h2_op_1" >О Аниме:</Typography>
           <p>Lorem, ipsum dolor.</p>
           <p>Lorem ipsum dolor sit.</p>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
         </div>
 
         <div className="Opisanie_2">
-          <h2 className="h2_op_2">О Мангах:</h2>
+          <Typography variant="h5" color="initial" className="h2_op_2">О Мангах:</Typography>
           <p>Lorem, ipsum dolor.</p>
           <p>Lorem ipsum dolor sit.</p>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -66,7 +66,7 @@ const HomePage = () => {
 
       <div className="Rekomenduemoe">
         <div className="h1_glavnaja_rekomedancie">
-          <h1>Рекомендации:</h1>
+          <Typography variant="h5" color="initial">Рекомендации:</Typography>
         </div>
 
         <div className="Anime-Manga_glav">

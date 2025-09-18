@@ -7,7 +7,7 @@ import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,
 import { Anime_Pages_Transition } from "../hooks/Anime_Pages_Transition";
 
 const anime_chan = () => (
-  <div>
+  <div> 
     <h1>Anime-chan</h1> 
   
   <nav class="nav-bar">
