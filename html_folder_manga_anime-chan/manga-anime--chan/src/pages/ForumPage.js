@@ -28,6 +28,7 @@ const ForumPage = () => {
           <a href="/NewsPage">Новости</a>
           <a href="/QuestionsPage">Вопросы и ответы</a>
           <a href="/RegisterPage">Регистрация/Войти</a>
+          
           <form id="searchForm">
             <input type="text" placeholder="Искать здесь..." />
             <button type="submit"></button>
