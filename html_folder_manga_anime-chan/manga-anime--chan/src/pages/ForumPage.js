@@ -3,6 +3,7 @@ import "./styles_css_forum/obsujdenie.css";
 import "./styles_css_forum/obsijdenie_2.css";
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg'; 
+import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { ForumPages_Transition } from "../hooks/ForumPages_Transition";
 
 const ForumPage = () => {
