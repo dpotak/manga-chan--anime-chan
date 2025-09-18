@@ -3,6 +3,7 @@ import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
 import './nov_folder_css/nowesti.css';
 import './nov_folder_css/nowesti_2.css';
+import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { NewsPages_Transition } from "../hooks/NewsPages_Transition";
 
 const NewsPage = () => {

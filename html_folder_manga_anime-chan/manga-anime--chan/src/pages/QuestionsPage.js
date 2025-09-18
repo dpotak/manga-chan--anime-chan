@@ -3,6 +3,7 @@ import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
 import './otvetinavoprosi_folder_css/otvetinavoprosi.css';
 import './otvetinavoprosi_folder_css/otvetinavoprosi_2.css'; 
+import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { QuestionsPages_Transition } from "../hooks/QuestionsPages_Transition";
 
 const QuestionsPage = () => (

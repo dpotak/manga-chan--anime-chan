@@ -4,6 +4,7 @@ import "./styles/index_chan_2.css";
 import "./styles/forms_website.css";
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
+import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { HomePages_Transition } from "../hooks/HomePages_Transition";
 
 const HomePage = () => {
@@ -50,9 +51,9 @@ const HomePage = () => {
 
         <div className="Opisanie_1">
           <h2 className="h2_op_1">О Аниме:</h2>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem, ipsum dolor.</p>
+          <p>Lorem ipsum dolor sit.</p>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
         </div>
 
         <div className="Opisanie_2">

@@ -1,6 +1,7 @@
 import React from "react";
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
+import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import "./register_folder_css/register.css"; // подключение CSS
 
 const RegisterPage = () => {
