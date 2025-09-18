@@ -70,7 +70,14 @@ const HomePage = () => {
         </div>
 
         <div className="Anime-Manga_glav">
-          
+          <img className="" width={"20px"} height={"20px"}></img>
+          <img className="" width={"20px"} height={"20px"}></img>
+          <img className="" width={"20px"} height={"20px"}></img>
+          <img className="" width={"20px"} height={"20px"}></img>
+          <img className="" width={"20px"} height={"20px"}></img>
+          <img className="" width={"20px"} height={"20px"}></img>
+          <img className="" width={"20px"} height={"20px"}></img>
+          <img className="" width={"20px"} height={"20px"}></img>
         </div>
       </div>
     </div>
