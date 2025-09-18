@@ -71,14 +71,14 @@ const HomePage = () => {
         </div>
 
         <div className="Anime-Manga_glav">
-          <img src={ramka_anime_manga} className="" width={"20px"} height={"20px"}></img>
-          <img src={ramka_anime_manga} className="" width={"20px"} height={"20px"}></img>
-          <img src={ramka_anime_manga} className="" width={"20px"} height={"20px"}></img>
-          <img src={ramka_anime_manga} className="" width={"20px"} height={"20px"}></img>
-          <img src={ramka_anime_manga} className="" width={"20px"} height={"20px"}></img>
-          <img src={ramka_anime_manga} className="" width={"20px"} height={"20px"}></img>
-          <img src={ramka_anime_manga} className="" width={"20px"} height={"20px"}></img>
-          <img src={ramka_anime_manga} className="" width={"20px"} height={"20px"}></img>
+          <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
+          <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
+          <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
+          <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
+          <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
+          <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
+          <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
+          <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
         </div>
       </div>
     </div>
