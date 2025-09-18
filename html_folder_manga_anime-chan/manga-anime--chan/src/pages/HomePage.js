@@ -4,6 +4,7 @@ import "./styles/index_chan_2.css";
 import "./styles/forms_website.css";
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
+import ramka_anime_manga from './foto/ramka_anime_manga.jpg';
 import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { HomePages_Transition } from "../hooks/HomePages_Transition";
 
@@ -70,14 +71,14 @@ const HomePage = () => {
         </div>
 
         <div className="Anime-Manga_glav">
-          <img className="" width={"20px"} height={"20px"}></img>
-          <img className="" width={"20px"} height={"20px"}></img>
-          <img className="" width={"20px"} height={"20px"}></img>
-          <img className="" width={"20px"} height={"20px"}></img>
-          <img className="" width={"20px"} height={"20px"}></img>
-          <img className="" width={"20px"} height={"20px"}></img>
-          <img className="" width={"20px"} height={"20px"}></img>
-          <img className="" width={"20px"} height={"20px"}></img>
+          <img src={ramka_anime_manga} className="" width={"20px"} height={"20px"}></img>
+          <img src={ramka_anime_manga} className="" width={"20px"} height={"20px"}></img>
+          <img src={ramka_anime_manga} className="" width={"20px"} height={"20px"}></img>
+          <img src={ramka_anime_manga} className="" width={"20px"} height={"20px"}></img>
+          <img src={ramka_anime_manga} className="" width={"20px"} height={"20px"}></img>
+          <img src={ramka_anime_manga} className="" width={"20px"} height={"20px"}></img>
+          <img src={ramka_anime_manga} className="" width={"20px"} height={"20px"}></img>
+          <img src={ramka_anime_manga} className="" width={"20px"} height={"20px"}></img>
         </div>
       </div>
     </div>
