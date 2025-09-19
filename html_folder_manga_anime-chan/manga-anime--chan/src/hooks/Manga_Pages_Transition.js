@@ -8,7 +8,7 @@ export const Manga_Pages_Transition = () => {
     // Плавное появление страницы при загрузке
     document.body.style.opacity = 0;
     document.body.style.transition = "opacity 0.5s ease";
-
+ 
     window.addEventListener("load", () => {
       document.body.style.opacity = 1;
     });

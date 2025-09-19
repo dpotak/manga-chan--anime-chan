@@ -41,7 +41,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/forum" element={<ForumPage />} />
+          <Route path="/ForumPage" element={<ForumPage />} />
           <Route path="/QuestionsPage" element={<QuestionsPage />} />
           <Route path="/NewsPage" element={<NewsPage />} />
           <Route path="/RegisterPage" element={<RegisterPage />} />
