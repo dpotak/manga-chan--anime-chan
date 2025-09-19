@@ -63,7 +63,7 @@ const HomePage = () => {
           <p>Lorem ipsum dolor sit.</p>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
         </div>
-
+        
         <div className="Opisanie_2">
           <Typography variant="h5" color="initial" className="h2_op_2">О Мангах:</Typography>
           <p>Lorem, ipsum dolor.</p>
