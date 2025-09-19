@@ -11,11 +11,14 @@ import { useHomePagesTransition } from "../hooks/HomePages_Transition";
 import { Link } from "react-router-dom";
 
 
-// Массив всех картинок
-const animeImages = [
-  
-  // сюда можно добавить другие картинки
-];
+// импорт картинок
+// import anime1 from '';
+// import anime2 from '';
+// import anime3 from '';
+// import anime4 from '';
+// import anime5 from '';
+
+const animeImages = [];
 
 // Функция для перемешивания массива
 const shuffleArray = (array) => {
@@ -27,9 +30,12 @@ const shuffleArray = (array) => {
   return shuffled;
 };
 
-
 const HomePage = () => {
-    useHomePagesTransition(); 
+  useHomePagesTransition();
+
+  // перемешиваем картинки каждый раз при рендере
+  const shuffledImages = shuffleArray(animeImages);
+
 
   return (     
     <div>
