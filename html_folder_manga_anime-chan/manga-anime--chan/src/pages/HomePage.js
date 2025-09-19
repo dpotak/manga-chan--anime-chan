@@ -50,6 +50,11 @@ const HomePage = () => {
       <div className="Glav_stanica">
         <h1 className="h1_glavnaja">Смотри аниме и читай мангу!</h1>
 
+        <div className="">
+          <Typography variant="h3" color="initial" className="h2_op_1" >Вступление: </Typography>
+          <p></p>
+        </div>
+
         <div className="Opisanie_1">
           <Typography variant="h5" color="initial" className="h2_op_1" >О Аниме:</Typography>
           <p>Lorem, ipsum dolor.</p>
