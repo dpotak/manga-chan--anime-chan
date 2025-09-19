@@ -9,7 +9,7 @@ import { QuestionsPages_Transition } from "../hooks/QuestionsPages_Transition";
 const QuestionsPage = () => (
   <div class="header">
   <h1>Manga-chan--Anime-chan: Ответы на вопросы</h1>
-
+ 
   <nav class="nav-bar">
     <div class="dropdown">
       <button class="dropbtn">Каталог</button>

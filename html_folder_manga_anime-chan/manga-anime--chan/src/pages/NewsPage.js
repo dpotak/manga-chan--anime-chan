@@ -5,6 +5,8 @@ import './nov_folder_css/nowesti.css';
 import './nov_folder_css/nowesti_2.css';
 import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { NewsPages_Transition } from "../hooks/NewsPages_Transition";
+import { Link } from "react-router-dom";
+
 
 const NewsPage = () => {
   NewsPages_Transition(); // <-- хук вызываем внутри компонента
@@ -16,16 +18,16 @@ const NewsPage = () => {
         <div className="dropdown">
           <button className="dropbtn">Каталог</button>
         <div className="dropdown-content">
-          <a href="/Manga_chan">Манга</a>
-          <a href="/Anime_chan">Аниме</a>
+          <Link to="/Manga_chan">Манга</Link>
+          <Link to="/Anime_chan">Аниме</Link>
         </div>
     </div>
     
-    <a href="/">Главная</a>
-    <a href="/forum">Обсуждение</a>
-    <a href="/NewsPage">Новости</a>
-    <a href="/QuestionsPage">Вопросы и ответы</a>
-    <a href="/RegisterPage">Регистрация/Войти</a>
+    <Link to="/">Главная</Link>
+    <Link to="/ForumPage">Обсуждение</Link>
+    <Link to="/NewsPage">Новости</Link>
+    <Link to="/QuestionsPage">Вопросы и ответы</Link>
+    <Link to="/RegisterPage">Регистрация/Войти</Link>
 
     <form id="searchForm">
       <input type="text" placeholder="Искать здесь..." />

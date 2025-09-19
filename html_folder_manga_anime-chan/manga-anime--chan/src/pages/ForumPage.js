@@ -4,10 +4,11 @@ import "./styles_css_forum/obsijdenie_2.css";
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg'; 
 import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
-import { ForumPages_Transition } from "../hooks/ForumPages_Transition";
+import { ForumPages_Transition, useForumPages_Transition } from "../hooks/ForumPages_Transition";
+import { Link } from "react-router-dom";
 
 const ForumPage = () => {
-  ForumPages_Transition(); // активируем плавные переходы
+  useForumPages_Transition(); // активируем плавные переходы
 
   return (
     <div>
@@ -18,16 +19,16 @@ const ForumPage = () => {
           <div className="dropdown">
             <button className="dropbtn">Каталог</button>
             <div className="dropdown-content">
-              <a href="/Manga_chan">Манга</a>
-              <a href="/Anime_chan">Аниме</a>
+              <Link to="/Manga_chan">Манга</Link>
+              <Link to="/Anime_chan">Аниме</Link>
             </div>
           </div>
 
-          <a href="/">Главная</a>
-          <a href="/forum">Обсуждение</a>
-          <a href="/NewsPage">Новости</a>
-          <a href="/QuestionsPage">Вопросы и ответы</a>
-          <a href="/RegisterPage">Регистрация/Войти</a>
+          <Link to="/">Главная</Link>
+          <Link to="/ForumPage">Обсуждение</Link>
+          <Link to="/NewsPage">Новости</Link>
+          <Link to="/QuestionsPage">Вопросы и ответы</Link>
+          <Link to="/RegisterPage">Регистрация/Войти</Link>
           
           <form id="searchForm">
             <input type="text" placeholder="Искать здесь..." />
