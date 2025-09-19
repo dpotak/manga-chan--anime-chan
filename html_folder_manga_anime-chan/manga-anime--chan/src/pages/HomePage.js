@@ -14,15 +14,7 @@ import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,
 import { useHomePagesTransition } from "../hooks/HomePages_Transition";
 import { Link } from "react-router-dom";
 
-
-// импорт картинок
-const animeImages = [
-  { title: "Chanisaw", poster: Chanisaw },
-  { title: "kusuriyanohi_2season", poster: kusuriyanohi_2season },
-  { title: "kusuriyanohitorigoto_1season", poster: kusuriyanohitorigoto_1season },
-];
-
-// Функция для перемешивания массива
+// Функция перемешивания массива
 const shuffleArray = (array) => {
   const shuffled = [...array];
   for (let i = shuffled.length - 1; i > 0; i--) {
@@ -32,12 +24,16 @@ const shuffleArray = (array) => {
   return shuffled;
 };
 
+// Массив всех плакатов перемешанный один раз
+const shuffledImages = shuffleArray([
+  { title: "Chanisaw", poster: Chanisaw },
+  { title: "Kusuriyanohi 2nd Season", poster: kusuriyanohi_2season },
+  { title: "Kusuriyanohitorigoto 1st Season", poster: kusuriyanohitorigoto_1season },
+]);
+
+
 const HomePage = () => {
   useHomePagesTransition();
-
-  // перемешиваем картинки каждый раз при рендере
-  const shuffledImages = shuffleArray(animeImages);
-
 
   return (     
     <div>
