@@ -10,6 +10,24 @@ import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,
 import { useHomePagesTransition } from "../hooks/HomePages_Transition";
 import { Link } from "react-router-dom";
 
+
+// Массив всех картинок
+const animeImages = [
+  
+  // сюда можно добавить другие картинки
+];
+
+// Функция для перемешивания массива
+const shuffleArray = (array) => {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+};
+
+
 const HomePage = () => {
     useHomePagesTransition(); 
 
