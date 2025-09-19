@@ -50,9 +50,10 @@ const HomePage = () => {
       <div className="Glav_stanica">
         <h1 className="h1_glavnaja">Смотри аниме и читай мангу!</h1>
 
-        <div className="">
-          <Typography variant="h3" color="initial" className="h2_op_1" >Вступление: </Typography>
-          <p></p>
+        <div className="project-description">
+          <p> 
+            <strong >Manga-Anime-Chan</strong> - это проект в котором прекрасно сочетаются чтение манги и просмотр аниме. Он позволяет пользователям удобно просматривать контент, обсуждать любимые произведения и следить за новостями индустрии.
+          </p>
         </div>
 
         <div className="Opisanie_1">
