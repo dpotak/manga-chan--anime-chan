@@ -2,6 +2,7 @@ import React from "react";
 import "./styles/index_chan.css";
 import "./styles/index_chan_2.css";
 import "./styles/forms_website.css";
+import "./styles/Scroll_ramka_anime.css"
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
 import ramka_anime_manga from './foto/ramka_anime_manga.jpg';
