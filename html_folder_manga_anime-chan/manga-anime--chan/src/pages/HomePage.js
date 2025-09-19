@@ -6,19 +6,21 @@ import "./styles/Scroll_ramka_anime.css"
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
 import ramka_anime_manga from './foto/ramka_anime_manga.jpg';
+import Chanisaw from './ramka_anime_folder/Chanisaw.jpg';
+import kusuriyanohi_2season from './ramka_anime_folder/kusuriyanohi_2season.jpg';
+import kusuriyanohitorigoto_1season from './ramka_anime_folder/kusuriyanohitorigoto_1season.jpg';
+
 import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { useHomePagesTransition } from "../hooks/HomePages_Transition";
 import { Link } from "react-router-dom";
 
 
 // импорт картинок
-// import anime1 from '';
-// import anime2 from '';
-// import anime3 from '';
-// import anime4 from '';
-// import anime5 from '';
-
-const animeImages = [];
+const animeImages = [
+  { title: "Chanisaw", poster: Chanisaw },
+  { title: "kusuriyanohi_2season", poster: kusuriyanohi_2season },
+  { title: "kusuriyanohitorigoto_1season", poster: kusuriyanohitorigoto_1season },
+];
 
 // Функция для перемешивания массива
 const shuffleArray = (array) => {
@@ -103,9 +105,45 @@ const HomePage = () => {
         </div>
 
         <div className="Anime-Manga_glav">
-          <Button variant="text" color="default">
-            <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
-          </Button>
+          {shuffledImages.map((anime, index) => (
+    <Button
+      key={index}
+      variant="text"
+      color="default"
+      style={{ 
+        position: "relative", 
+        width: "95px", 
+        height: "125px", 
+        padding: 0,
+        margin: "5px"
+      }}
+    >
+      {/* Плакат */}
+      <img 
+        src={Chanisaw} 
+        alt={anime.title} 
+        style={{ 
+          width: "95px", 
+          height: "125px",  
+        }} 
+      />
+
+      {/* Рамка */}
+      <img 
+        src={ramka_anime_manga} 
+        alt="рамка" 
+        style={{ 
+          width: "95px", 
+          height: "125px", 
+          position: "absolute", 
+          top: 0, 
+          left: 0, 
+          zIndex: 2, 
+          pointerEvents: "none" // чтобы рамка не мешала клику
+        }} 
+      />
+    </Button>
+  ))}
           <Button variant="text" color="default">
             <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
           </Button>
