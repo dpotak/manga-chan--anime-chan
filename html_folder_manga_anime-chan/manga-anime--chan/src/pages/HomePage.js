@@ -9,28 +9,9 @@ import ramka_anime_manga from './foto/ramka_anime_manga.jpg';
 import Chanisaw from './ramka_anime_folder/Chanisaw.jpg';
 import kusuriyanohi_2season from './ramka_anime_folder/kusuriyanohi_2season.jpg';
 import kusuriyanohitorigoto_1season from './ramka_anime_folder/kusuriyanohitorigoto_1season.jpg';
-
 import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { useHomePagesTransition } from "../hooks/HomePages_Transition";
 import { Link } from "react-router-dom";
-
-// Функция перемешивания массива
-const shuffleArray = (array) => {
-  const shuffled = [...array];
-  for (let i = shuffled.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-  }
-  return shuffled;
-};
-
-// Массив всех плакатов перемешанный один раз
-const shuffledImages = shuffleArray([
-  { title: "Chanisaw", poster: Chanisaw },
-  { title: "Kusuriyanohi 2nd Season", poster: kusuriyanohi_2season },
-  { title: "Kusuriyanohitorigoto 1st Season", poster: kusuriyanohitorigoto_1season },
-]);
-
 
 const HomePage = () => {
   useHomePagesTransition();
@@ -99,71 +80,26 @@ const HomePage = () => {
         <div className="h1_glavnaja_rekomedancie">
           <Typography variant="h5" color="initial">Рекомендации:</Typography>
         </div>
-
-        <div className="Anime-Manga_glav">
-          {shuffledImages.map((anime, index) => (
-    <Button
-      key={index}
-      variant="text"
-      color="default"
-      style={{ 
-        position: "relative", 
-        width: "95px", 
-        height: "125px", 
-        padding: 0,
-        margin: "5px"
-      }}
-    >
-      {/* Плакат */}
-      <img 
-        src={Chanisaw} 
-        alt={anime.title} 
-        style={{ 
-          width: "95px", 
-          height: "125px",  
-        }} 
-      />
-
-      {/* Рамка */}
-      <img 
-        src={ramka_anime_manga} 
-        alt="рамка" 
-        style={{ 
-          width: "95px", 
-          height: "125px", 
-          position: "absolute", 
-          top: 0, 
-          left: 0, 
-          zIndex: 2, 
-          pointerEvents: "none" // чтобы рамка не мешала клику
-        }} 
-      />
-    </Button>
-  ))}
-          <Button variant="text" color="default">
-            <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
-          </Button>
-          <Button variant="text" color="default">
-            <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
-          </Button>
-          <Button variant="text" color="default">
-            <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
-          </Button>
-          <Button variant="text" color="default">
-            <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
-          </Button>
-          <Button variant="text" color="default">
-            <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
-          </Button>
-          <Button variant="text" color="default">
-            <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
-          </Button>
-          <Button variant="text" color="default">
-            <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
-          </Button>
+          <div className="cards-row">
+            <Button variant="text" color="default" className="btn_anime">
+             <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
+             <img src={Chanisaw} className="glav_anime_manga_2" width={"85px"} height={"115px"}></img>
+           </Button>
+          </div>
+          <div className="cards-row">
+            <Button variant="text" color="default" className="btn_anime">
+             <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
+             <img src={kusuriyanohitorigoto_1season} className="glav_anime_manga_2" width={"85px"} height={"115px"}></img>
+           </Button>
+          </div>
+          <div className="cards-row">
+            <Button variant="text" color="default" className="btn_anime">
+             <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
+             <img src={kusuriyanohi_2season} className="glav_anime_manga_2" width={"85px"} height={"115px"}></img>
+           </Button>
+          </div>
         </div>
       </div>
-    </div>
   );
 };
 

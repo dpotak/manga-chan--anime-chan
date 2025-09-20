@@ -29,11 +29,42 @@ body {
 }
 
 .Rekomenduemoe {
-  margin-top: 45px;
+  margin-top: 35px;
   margin-left: 45px;
 }
 
+/* ряд карточек: flex и gap */
+.cards-row {
+  display: inline;    /* сохраняет ширину */
+  margin-left: 10px;
+}
 
+/* сама кнопка/карточка — позиционированный контейнер */
+.btn_anime {
+  width: 95px;              /* фиксированный размер карточки */
+  height: 125px;
+}
+
+/* фон (рамка) — растягиваем под кнопку */
 .glav_anime_manga_1 {
-  margin-left: 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none; /* чтобы картинка не перехватывала клики */
+}
+
+/* поверх картинка — чуть смещена, центрирована */
+.glav_anime_manga_2 {
+  position: absolute;
+  top: 6px;        /* подстрой под визуал */
+  left: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  object-fit: cover;
+  z-index: 2;
+  pointer-events: none;
 }
