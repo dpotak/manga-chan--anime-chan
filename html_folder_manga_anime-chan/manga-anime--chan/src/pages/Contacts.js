@@ -44,6 +44,15 @@ const Contacts = () => {
                 </nav>
               </div>
 
+              <div className="Contacts_info">
+                <h1>В социальных сетях:</h1>
+                <h2></h2>
+                <h2></h2>
+
+                <h1>По электронной почте:</h1>
+                <h2></h2>
+              </div>
+
     </div>    
 };
 
