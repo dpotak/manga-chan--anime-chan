@@ -35,7 +35,7 @@ const HomePage = () => {
           <Link to="/ForumPage">Обсуждение</Link>
           <Link to="/NewsPage">Новости</Link>
           <Link to="/QuestionsPage">Вопросы и ответы</Link>
-          <a href="/Contacts">Контакты</a>  
+          <Link to="/Contacts">Контакты</Link>  
           <Link to="/RegisterPage">Регистрация/Войти</Link>
 
           <form id="searchForm">
