@@ -8,6 +8,7 @@ import russianFlag from './foto/russian_flag.jpg';
 import ramka_anime_manga from './foto/ramka_anime_manga.jpg';
 import Chanisaw from './ramka_anime_folder/Chanisaw.jpg';
 import kusuriyanohi_2season from './ramka_anime_folder/kusuriyanohi_2season.jpg';
+import inuyasha from './ramka_anime_folder/inuyasha.jpg';
 import kusuriyanohitorigoto_1season from './ramka_anime_folder/kusuriyanohitorigoto_1season.jpg';
 import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { useHomePagesTransition } from "../hooks/HomePages_Transition";
@@ -101,7 +102,7 @@ const HomePage = () => {
           <div className="cards-row">
             <Button variant="text" color="default" className="btn_anime">
              <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
-             <img src={kusuriyanohi_2season} className="glav_anime_manga_2" width={"85px"} height={"115px"}></img>
+             <img src={inuyasha} className="glav_anime_manga_2" width={"85px"} height={"115px"}></img>
            </Button>
           </div>
           <div className="cards-row">
