@@ -98,6 +98,18 @@ const HomePage = () => {
              <img src={kusuriyanohi_2season} className="glav_anime_manga_2" width={"85px"} height={"115px"}></img>
            </Button>
           </div>
+          <div className="cards-row">
+            <Button variant="text" color="default" className="btn_anime">
+             <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
+             <img src={kusuriyanohi_2season} className="glav_anime_manga_2" width={"85px"} height={"115px"}></img>
+           </Button>
+          </div>
+          <div className="cards-row">
+            <Button variant="text" color="default" className="btn_anime">
+             <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
+             <img src={kusuriyanohi_2season} className="glav_anime_manga_2" width={"85px"} height={"115px"}></img>
+           </Button>
+          </div>
         </div>
       </div>
   );
