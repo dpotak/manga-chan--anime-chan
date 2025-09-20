@@ -10,7 +10,7 @@ const Contacts = () => {
   return <div>
 
     <div className="header">
-        <h1>Manga-chan--Anime-chan</h1>
+        <h1>Manga-chan--Anime-chan: Контакты</h1>
 
         <nav className="nav-bar">
             <div className="dropdown">

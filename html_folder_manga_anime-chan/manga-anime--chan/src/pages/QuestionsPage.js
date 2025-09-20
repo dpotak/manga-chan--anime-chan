@@ -24,6 +24,7 @@ const QuestionsPage = () => (
     <Link to="/ForumPage">Обсуждение</Link>
     <Link to="/NewsPage">Новости</Link>
     <Link to="/QuestionsPage">Вопросы и ответы</Link>
+    <Link to="/Contacts">Контакты</Link>
     <Link to="/RegisterPage">Регистрация/Войти</Link>
     
     <form id="searchForm">
