@@ -44,6 +44,22 @@ const Anime_chan = () => {
           </button>
         </div>
       </nav>
+
+      <div className="Janri_1_Anime">
+        <Link></Link>
+        <Link></Link>
+        <Link></Link>
+        <Link></Link>
+        <Link></Link>
+        <Link></Link>
+        <Link></Link>
+        <Link></Link>
+        <Link></Link>
+        <Link></Link>
+        <Link></Link>
+        <Link></Link>
+        <Link></Link>
+      </div>
     </div>
   );
 };

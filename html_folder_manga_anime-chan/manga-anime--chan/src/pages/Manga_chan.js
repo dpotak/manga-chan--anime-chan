@@ -39,9 +39,21 @@ const Manga_chan = () => (
         </button>
     </div>
   </nav>
-  <div class="">
-
-  </div>
+  <div className="Janri_1_Anime">
+          <Link></Link>
+          <Link></Link>
+          <Link></Link>
+          <Link></Link>
+          <Link></Link>
+          <Link></Link>
+          <Link></Link>
+          <Link></Link>
+          <Link></Link>
+          <Link></Link>
+          <Link></Link>
+          <Link></Link>
+          <Link></Link>
+        </div>
 
 </div>
 );
