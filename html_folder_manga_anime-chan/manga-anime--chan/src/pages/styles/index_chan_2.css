@@ -35,14 +35,17 @@ body {
 
 /* ряд карточек: flex и gap */
 .cards-row {
-  display: inline;    /* сохраняет ширину */
-  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 /* сама кнопка/карточка — позиционированный контейнер */
 .btn_anime {
-  width: 95px;              /* фиксированный размер карточки */
+  width: 95px;
   height: 125px;
+  position: relative;
+  padding: 0;
 }
 
 /* фон (рамка) — растягиваем под кнопку */
@@ -54,13 +57,13 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  pointer-events: none; /* чтобы картинка не перехватывала клики */
+  pointer-events: none;
 }
 
-/* поверх картинка — чуть смещена, центрирована */
+/* поверх картинка — плакат аниме */
 .glav_anime_manga_2 {
   position: absolute;
-  top: 6px;        /* подстрой под визуал */
+  top: 6px;
   left: 6px;
   width: calc(100% - 12px);
   height: calc(100% - 12px);

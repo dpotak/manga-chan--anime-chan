@@ -10,18 +10,38 @@ import Chanisaw from './ramka_anime_folder/Chanisaw.jpg';
 import kusuriyanohi_2season from './ramka_anime_folder/kusuriyanohi_2season.jpg';
 import inuyasha from './ramka_anime_folder/inuyasha.jpg';
 import kusuriyanohitorigoto_1season from './ramka_anime_folder/kusuriyanohitorigoto_1season.jpg';
-import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 import { useHomePagesTransition } from "../hooks/HomePages_Transition";
 import { Link } from "react-router-dom";
 
+// массив всех рекомендаций
+const animeImages = [
+  { title: "Chanisaw", poster: Chanisaw },
+  { title: "Kusuriyanohi 2", poster: kusuriyanohi_2season },
+  { title: "Kusuriyanohitorigoto 1", poster: kusuriyanohitorigoto_1season },
+  { title: "Inuyasha", poster: inuyasha },
+];
+
+// функция перемешивания массива
+const shuffleArray = (array) => {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+};
+
 const HomePage = () => {
   useHomePagesTransition();
+
+  // перемешиваем картинки перед рендером
+  const shuffledImages = shuffleArray(animeImages);
 
   return (     
     <div>
       <div className="header">
         <h1>Manga-chan--Anime-chan</h1>
-        
         <nav className="nav-bar">
           <div className="dropdown">
             <button className="dropbtn">Каталог</button>
@@ -35,7 +55,7 @@ const HomePage = () => {
           <Link to="/ForumPage">Обсуждение</Link>
           <Link to="/NewsPage">Новости</Link>
           <Link to="/QuestionsPage">Вопросы и ответы</Link>
-          <Link to="/Contacts">Контакты</Link>  
+          <Link to="/Contacts">Контакты</Link>
           <Link to="/RegisterPage">Регистрация/Войти</Link>
 
           <form id="searchForm">
@@ -56,15 +76,14 @@ const HomePage = () => {
 
       <div className="Glav_stanica">
         <h1 className="h1_glavnaja">Смотри аниме и читай мангу!</h1>
-
         <div className="project-description">
           <p> 
-            <strong >Manga-Anime-Chan</strong> - это проект в котором прекрасно сочетаются чтение манги и просмотр аниме. Он позволяет пользователям удобно просматривать контент, обсуждать любимые произведения и следить за новостями индустрии.
+            <strong>Manga-Anime-Chan</strong> - это проект в котором прекрасно сочетаются чтение манги и просмотр аниме. Он позволяет пользователям удобно просматривать контент, обсуждать любимые произведения и следить за новостями индустрии.
           </p>
         </div>
 
         <div className="Opisanie_1">
-          <Typography variant="h5" color="initial" className="h2_op_1" >О Аниме:</Typography>
+          <Typography variant="h5" color="initial" className="h2_op_1">О Аниме:</Typography>
           <p>Старые остаются , новинки приходят!</p>
           <p>Lorem ipsum dolor sit.</p>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -82,38 +101,24 @@ const HomePage = () => {
         <div className="h1_glavnaja_rekomedancie">
           <Typography variant="h5" color="initial">Рекомендации:</Typography>
         </div>
-          <div className="cards-row">
-            <Button variant="text" color="default" className="btn_anime">
-             <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
-             <img src={Chanisaw} className="glav_anime_manga_2" width={"85px"} height={"115px"}></img>
-           </Button>
-          </div>
-          <div className="cards-row">
-            <Button variant="text" color="default" className="btn_anime">
-             <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
-             <img src={kusuriyanohitorigoto_1season} className="glav_anime_manga_2" width={"85px"} height={"115px"}></img>
-           </Button>
-          </div>
-          <div className="cards-row">
-            <Button variant="text" color="default" className="btn_anime">
-             <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
-             <img src={kusuriyanohi_2season} className="glav_anime_manga_2" width={"85px"} height={"115px"}></img>
-           </Button>
-          </div>
-          <div className="cards-row">
-            <Button variant="text" color="default" className="btn_anime">
-             <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
-             <img src={inuyasha} className="glav_anime_manga_2" width={"85px"} height={"115px"}></img>
-           </Button>
-          </div>
-          <div className="cards-row">
-            <Button variant="text" color="default" className="btn_anime">
-             <img src={ramka_anime_manga} className="glav_anime_manga_1" width={"95px"} height={"125px"}></img>
-             <img src={kusuriyanohi_2season} className="glav_anime_manga_2" width={"85px"} height={"115px"}></img>
-           </Button>
-          </div>
+
+        <div className="cards-row">
+          {shuffledImages.map((anime, index) => (
+            <Button
+              key={index}
+              variant="text"
+              color="default"
+              className="btn_anime"
+            >
+              {/* рамка */}
+              <img src={ramka_anime_manga} className="glav_anime_manga_1" alt="рамка"/>
+              {/* плакат аниме */}
+              <img src={anime.poster} className="glav_anime_manga_2" alt={anime.title}/>
+            </Button>
+          ))}
         </div>
       </div>
+    </div>
   );
 };
 
