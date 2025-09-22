@@ -54,8 +54,12 @@ const Contacts = () => {
 
               <div className="cont_1">
                 <h1 className="">В социальных сетях:</h1>
-                <h2></h2>
-                <h2></h2>
+                <div className="">
+                  <h2></h2>
+                </div>
+                <div className="">
+                  <h2></h2>
+                </div>
 
                 <h1 className="">По электронной почте:</h1>
                <a href=""><h2></h2></a>
