@@ -16,11 +16,13 @@ import { Link } from "react-router-dom";
 
 // массив всех рекомендаций
 const animeImages = [
+  // Anime
   { title: "Chanisaw", poster: Chanisaw },
   { title: "Kusuriyanohi 2", poster: kusuriyanohi_2season },
   { title: "Kusuriyanohitorigoto 1", poster: kusuriyanohitorigoto_1season },
   { title: "Inuyasha", poster: inuyasha },
-  // { title: "Chanisaw", poster: Chanisaw },
+
+  // Manga
   // { title: "Chanisaw", poster: Chanisaw },
   // { title: "Chanisaw", poster: Chanisaw }
 ];
@@ -127,7 +129,7 @@ const HomePage = () => {
         </div>
 
         <div className="cards-row">
-
+          
         </div>
       </div>
     </div>

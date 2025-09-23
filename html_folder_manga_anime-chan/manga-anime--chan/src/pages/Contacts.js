@@ -62,7 +62,7 @@ const Contacts = () => {
                 </div>
 
                 <h1 className="">По электронной почте:</h1>
-               <a href=""><h2></h2></a>
+               <a href=""><h2>animechan.project@gmail.com</h2></a>
             </div>
     </div>    
 };
