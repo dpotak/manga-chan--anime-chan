@@ -33,6 +33,11 @@ body {
   margin-left: 45px;
 }
 
+.Rekomenduemoe_2 {
+  margin-top: 25px;
+  margin-left: 45px;
+}
+
 /* ряд карточек: flex и gap */
 .cards-row {
   display: flex;
@@ -73,3 +78,4 @@ body {
   pointer-events: none;
   border-radius: 8px;
 }
+

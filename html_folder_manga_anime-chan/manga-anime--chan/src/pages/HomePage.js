@@ -20,6 +20,9 @@ const animeImages = [
   { title: "Kusuriyanohi 2", poster: kusuriyanohi_2season },
   { title: "Kusuriyanohitorigoto 1", poster: kusuriyanohitorigoto_1season },
   { title: "Inuyasha", poster: inuyasha },
+  // { title: "Chanisaw", poster: Chanisaw },
+  // { title: "Chanisaw", poster: Chanisaw },
+  // { title: "Chanisaw", poster: Chanisaw }
 ];
 
 // функция перемешивания массива
@@ -99,7 +102,7 @@ const HomePage = () => {
 
       <div className="Rekomenduemoe">
         <div className="h1_glavnaja_rekomedancie">
-          <Typography variant="h5" color="initial">Рекомендации:</Typography>
+          <Typography variant="h5" color="initial">Рекомендации по Аниме:</Typography>
         </div>
 
         <div className="cards-row">
@@ -116,6 +119,15 @@ const HomePage = () => {
               <img src={anime.poster} className="glav_anime_manga_2" alt={anime.title}/>
             </Button>
           ))}
+        </div>
+      </div>
+      <div className="Rekomenduemoe_2">
+        <div className="h1_glavnaja_rekomedancie">
+          <Typography variant="h5" color="initial">Рекомендации по Манги:</Typography>
+        </div>
+
+        <div className="cards-row">
+
         </div>
       </div>
     </div>
