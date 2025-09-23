@@ -24,8 +24,8 @@ body {
   margin-left: 50px;
 }
 
-.p_1_op_1 , .p_2_op_1 , .p_3_op_1 , .p_1_op_2 , .p_2_op_2 , .p_3_op_2 {
-  margin-left: 15px;
+.h2_op_1 , .h2_op_2 {
+  font-size: 14px;
 }
 
 .Rekomenduemoe {
@@ -58,6 +58,7 @@ body {
   object-fit: cover;
   z-index: 1;
   pointer-events: none;
+  border-radius: 8px;
 }
 
 /* поверх картинка — плакат аниме */
@@ -70,4 +71,5 @@ body {
   object-fit: cover;
   z-index: 2;
   pointer-events: none;
+  border-radius: 8px;
 }
