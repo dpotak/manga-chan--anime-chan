@@ -5,6 +5,7 @@ import "./contacts_folder_css/contacts_1.css";
 // import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 // import { useHomePagesTransition } from "../hooks/HomePages_Transition";
 import { Link } from "react-router-dom";
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 
 
 const Contacts = () => {
@@ -62,9 +63,10 @@ const Contacts = () => {
                 <div className="">
                   <h2></h2>
                 </div>
-
-                <h1 className="h1_cont_2">По электронной почте:</h1>
-               <a href=""><h2>animechan.project@gmail.com</h2></a>
+                <div className="">
+                  <h1 className="h1_cont_2">По электронной почте:</h1>
+                  <a href=""><h2>animechan.project@gmail.com</h2></a>
+                </div>
             </div>
     </div>    
 };
