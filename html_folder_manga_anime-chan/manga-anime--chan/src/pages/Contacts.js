@@ -53,15 +53,17 @@ const Contacts = () => {
               </div>
 
               <div className="cont_1">
-                <h1 className="">В социальных сетях:</h1>
-                <div className="">
-                  <h2></h2>
+                <h1 className="h1_cont">В социальных сетях:</h1>
+                <div className="p_info_socialnoi">
+                  <p></p>
+                  <p></p>
+                  <p></p>
                 </div>
                 <div className="">
                   <h2></h2>
                 </div>
 
-                <h1 className="">По электронной почте:</h1>
+                <h1 className="h1_cont_2">По электронной почте:</h1>
                <a href=""><h2>animechan.project@gmail.com</h2></a>
             </div>
     </div>    
