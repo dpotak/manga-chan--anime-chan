@@ -24,9 +24,14 @@ body {
 
 .Questions_oma_1 {
   margin-top: 25px;
+  margin-left: 25px;
 }
 
 .Questions {
   border-radius: 1rem;
+  font-style: italic;
+  font-size: 18px;
+  width: 140px;
+  height: 25px;
   margin-top: 25px;
 }
