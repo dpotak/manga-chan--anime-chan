@@ -134,7 +134,7 @@ const QuestionsPage = () => (
   </section>
 
   <div className="Questions_oma_1">
-    <h4 className="">Если вы хотите задать лично нам свои вопросы , то пишите нам лично: </h4>
+    <h4 className="Contacts_Questions_oma_1">Если вы хотите задать лично нам свои вопросы , то пишите нам лично: </h4>
     <Link to="/Contacts" title="Посетите наши контакты">Наши контанкты</Link>
   </div>
 
