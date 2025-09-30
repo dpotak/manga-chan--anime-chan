@@ -66,9 +66,10 @@ const QuestionsPage = () => (
           Lorem jiuwehfy bfwebf efveyf Lorem ygfyegfs
         </p>
       </div>
+
       <div className="Questions">
         <div className="Questions_title">
-          <h4>What is CSS?</h4>
+          <h4>What is HTML?</h4>
           <div className="Questions_togle">
             <i className="fa-solid fa-plus open"></i>
             <i className="fa-solid fa-minus close"></i>
@@ -81,9 +82,10 @@ const QuestionsPage = () => (
           Lorem jiuwehfy bfwebf efveyf Lorem ygfyegfs
         </p>
       </div>
+
       <div className="Questions">
         <div className="Questions_title">
-          <h4>What is JavaScript?</h4>
+          <h4>What is HTML?</h4>
           <div className="Questions_togle">
             <i className="fa-solid fa-plus open"></i>
             <i className="fa-solid fa-minus close"></i>
@@ -96,9 +98,10 @@ const QuestionsPage = () => (
           Lorem jiuwehfy bfwebf efveyf Lorem ygfyegfs
         </p>
       </div>
+
       <div className="Questions">
         <div className="Questions_title">
-          <h4>What is Vue.js?</h4>
+          <h4>What is HTML?</h4>
           <div className="Questions_togle">
             <i className="fa-solid fa-plus open"></i>
             <i className="fa-solid fa-minus close"></i>
@@ -111,9 +114,10 @@ const QuestionsPage = () => (
           Lorem jiuwehfy bfwebf efveyf Lorem ygfyegfs
         </p>
       </div>
+
       <div className="Questions">
         <div className="Questions_title">
-          <h4>What is REACT?</h4>
+          <h4>What is HTML?</h4>
           <div className="Questions_togle">
             <i className="fa-solid fa-plus open"></i>
             <i className="fa-solid fa-minus close"></i>
@@ -126,9 +130,13 @@ const QuestionsPage = () => (
           Lorem jiuwehfy bfwebf efveyf Lorem ygfyegfs
         </p>
       </div>
-      
     </div>
   </section>
+  
+  
+  <div className="Questions_oma_1">
+    <a href=""><button>Наши контанкты</button></a>
+  </div>
 
   </div>
 );
