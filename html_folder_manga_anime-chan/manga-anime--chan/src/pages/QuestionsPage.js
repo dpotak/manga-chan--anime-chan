@@ -119,8 +119,8 @@ const QuestionsPage = () => (
         <div className="Questions_title">
           <h4>What is HTML?</h4>
           <div className="Questions_togle">
-            <i className="fa-solid fa-plus open"></i>
-            <i className="fa-solid fa-minus close"></i>
+            <i class="fa-solid fa4-plus open">-</i> 
+            <i class="fa-solid fa-minus close">+</i>
           </div>
         </div>
       </div>
@@ -132,11 +132,10 @@ const QuestionsPage = () => (
       </div>
     </div>
   </section>
-  
-  
+
   <div className="Questions_oma_1">
-    <h4 className=""></h4>
-    <a href="" title="Посетите наши контакты"><button>Наши контанкты</button></a>
+    <h4 className="">Если вы хотите задать лично нам свои вопросы , то пишите нам лично: </h4>
+    <Link to="/Contacts" title="Посетите наши контакты">Наши контанкты</Link>
   </div>
 
   </div>
