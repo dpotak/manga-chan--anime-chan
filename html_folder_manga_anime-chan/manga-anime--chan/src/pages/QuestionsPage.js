@@ -5,6 +5,7 @@ import './otvetinavoprosi_folder_css/otvetinavoprosi.css';
 import './otvetinavoprosi_folder_css/otvetinavoprosi_2.css'; 
 import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { QuestionsPages_Transition } from "../hooks/QuestionsPages_Transition";
+// import {} from "";
 import { Link } from "react-router-dom";
 
 const QuestionsPage = () => (
@@ -46,9 +47,89 @@ const QuestionsPage = () => (
   <div className="Questions_1">
     <h1>Часто задаваемые вопросы: </h1>
   </div>
-  <div className="">
 
-  </div>
+  <section className="FAQ">
+    <div className="Questions_one">
+
+      <div className="Questions">
+        <div className="Questions_title">
+          <h4>What is HTML?</h4>
+          <div className="Questions_togle">
+            <i className="fa-solid fa-plus open"></i>
+            <i className="fa-solid fa-minus close"></i>
+          </div>
+        </div>
+      </div>
+      
+      <div className="Questions_content">
+        <p className="text">
+          Lorem jiuwehfy bfwebf efveyf Lorem ygfyegfs
+        </p>
+      </div>
+      <div className="Questions">
+        <div className="Questions_title">
+          <h4>What is CSS?</h4>
+          <div className="Questions_togle">
+            <i className="fa-solid fa-plus open"></i>
+            <i className="fa-solid fa-minus close"></i>
+          </div>
+        </div>
+      </div>
+
+      <div className="Questions_content">
+        <p className="text">
+          Lorem jiuwehfy bfwebf efveyf Lorem ygfyegfs
+        </p>
+      </div>
+      <div className="Questions">
+        <div className="Questions_title">
+          <h4>What is JavaScript?</h4>
+          <div className="Questions_togle">
+            <i className="fa-solid fa-plus open"></i>
+            <i className="fa-solid fa-minus close"></i>
+          </div>
+        </div>
+      </div>
+
+      <div className="Questions_content">
+        <p className="text">
+          Lorem jiuwehfy bfwebf efveyf Lorem ygfyegfs
+        </p>
+      </div>
+      <div className="Questions">
+        <div className="Questions_title">
+          <h4>What is Vue.js?</h4>
+          <div className="Questions_togle">
+            <i className="fa-solid fa-plus open"></i>
+            <i className="fa-solid fa-minus close"></i>
+          </div>
+        </div>
+      </div>
+
+      <div className="Questions_content">
+        <p className="text">
+          Lorem jiuwehfy bfwebf efveyf Lorem ygfyegfs
+        </p>
+      </div>
+      <div className="Questions">
+        <div className="Questions_title">
+          <h4>What is REACT?</h4>
+          <div className="Questions_togle">
+            <i className="fa-solid fa-plus open"></i>
+            <i className="fa-solid fa-minus close"></i>
+          </div>
+        </div>
+      </div>
+
+      <div className="Questions_content">
+        <p className="text">
+          Lorem jiuwehfy bfwebf efveyf Lorem ygfyegfs
+        </p>
+      </div>
+      
+    </div>
+  </section>
+
   </div>
 );
 export default QuestionsPage;
