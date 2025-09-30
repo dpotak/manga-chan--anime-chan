@@ -8,13 +8,14 @@ import { QuestionsPages_Transition } from "../hooks/QuestionsPages_Transition";
 import { Link } from "react-router-dom";
 
 const QuestionsPage = () => (
-  <div class="header">
-  <h1>Manga-chan--Anime-chan: Ответы на вопросы</h1>
- 
-  <nav class="nav-bar">
-    <div class="dropdown">
-      <button class="dropbtn">Каталог</button>
-      <div class="dropdown-content">
+  <div>
+    <div class="header">
+      <h1>Manga-chan--Anime-chan: Ответы на вопросы</h1>
+      
+      <nav class="nav-bar">
+        <div class="dropdown">
+          <button class="dropbtn">Каталог</button>
+        <div class="dropdown-content">
         <Link to="/Manga_chan">Манга</Link>
         <Link to="/Anime_chan">Аниме</Link>
       </div>
@@ -41,6 +42,13 @@ const QuestionsPage = () => (
       </button>
     </div>
   </nav>
-</div>
+  </div>
+  <div className="Questions_1">
+    <h1>Часто задаваемые вопросы: </h1>
+  </div>
+  <div className="">
+
+  </div>
+  </div>
 );
 export default QuestionsPage;
