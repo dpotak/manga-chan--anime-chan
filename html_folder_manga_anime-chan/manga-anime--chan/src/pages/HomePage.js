@@ -12,6 +12,7 @@ import inuyasha from './ramka_anime_folder/inuyasha.jpg';
 import kusuriyanohitorigoto_1season from './ramka_anime_folder/kusuriyanohitorigoto_1season.jpg';
 import { Button, Typography } from '@mui/material';
 import { useHomePagesTransition } from "../hooks/HomePages_Transition";
+import { HomePageTranslator } from "../hooks/HomePage_translator"; // перевод страницы Главная/Home Page
 import { Link } from "react-router-dom";
 
 // массив всех рекомендаций

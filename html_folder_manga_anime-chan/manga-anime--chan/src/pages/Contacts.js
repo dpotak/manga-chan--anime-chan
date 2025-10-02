@@ -54,16 +54,22 @@ const Contacts = () => {
       <div className="Contacts_info">
         <p>
           <strong>Если вам понравился наш проект</strong> -
-          <p className="p_2">И вы хотите предложить свою идею для его дальнейший реализации, то напишите нам:</p>
+          <p className="p_2">Или вы хотите предложить свою идею для его дальнейший реализации, то напишите нам:</p>
         </p>
       </div>
 
       <div className="cont_1">
         <h1 className="h1_cont">В социальных сетях:</h1>
         <div className="p_info_socialnoi">
-          <p></p>
-          <p></p>
-          <p></p>
+          <div className="Instagram-name">
+            <h2 className="">Мы в Инстаграме!</h2>
+          </div>
+          <div className="Boosty-name">
+            <h2 className="">Мы на Бусти!</h2>
+          </div>
+          <div className="">
+            <h2 className="">Мы в </h2>
+          </div>
         </div>
 
         <div className="">
@@ -79,4 +85,3 @@ const Contacts = () => {
 };
 
 export default Contacts;
- 
