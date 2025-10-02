@@ -28,8 +28,13 @@
   margin-top: 65px;
 }
 
+.p_info_socialnoi {
+  display: flex;
+}
+
 .h1_cont_2 {
   margin-top: 35px;
+  margin-left: 60px
 }
 
 .p_info_socialnoi {
@@ -37,5 +42,6 @@
 }
 
 .Boosty-name , .Telegram-name , .Instagram-name {
-  margin-top: 25px;
+ margin-left: 10px;
+ margin-top: 25px;
 }

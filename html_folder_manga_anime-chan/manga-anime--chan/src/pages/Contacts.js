@@ -64,26 +64,29 @@ const Contacts = () => {
 
           <div className="Instagram-name"> 
             <h2 className="Insta_name">Мы в Инстаграме!</h2>
+
           </div>
 
           <div className="Boosty-name">
             <h2 className="Boosty_name_2">Мы на Бусти!</h2>
+
           </div>
 
           <div className="Telegram-name">
             <h2 className="Telega_name">Мы в Telegram!</h2>
+
           </div>
 
         </div>
 
-        <div className="">
-          <h1 className="h1_cont_2">По электронной почте:</h1>
+      </div>
+      <div className="h1_cont_2">
+          <h1 className="h1_cont_">По электронной почте:</h1>
           <button onClick={copyToClipboard}>
              <ContentCopyIcon /> Скопировать
              <a href="mailto:animechan.project@gmail.com"><h2>animechan.project@gmail.com</h2></a>
           </button>
         </div>
-      </div>
     </div>
   );
 };
