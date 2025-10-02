@@ -61,15 +61,19 @@ const Contacts = () => {
       <div className="cont_1">
         <h1 className="h1_cont">В социальных сетях:</h1>
         <div className="p_info_socialnoi">
-          <div className="Instagram-name">
-            <h2 className="">Мы в Инстаграме!</h2>
+
+          <div className="Instagram-name"> 
+            <h2 className="Insta_name">Мы в Инстаграме!</h2>
           </div>
+
           <div className="Boosty-name">
-            <h2 className="">Мы на Бусти!</h2>
+            <h2 className="Boosty_name_2">Мы на Бусти!</h2>
           </div>
-          <div className="">
-            <h2 className="">Мы в </h2>
+
+          <div className="Telegram-name">
+            <h2 className="Telega_name">Мы в Telegram!</h2>
           </div>
+
         </div>
 
         <div className="">
