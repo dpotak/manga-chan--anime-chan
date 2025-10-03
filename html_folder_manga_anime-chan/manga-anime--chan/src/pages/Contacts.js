@@ -69,9 +69,12 @@ const Contacts = () => {
 
       <div className="cont_1">
         <img src={Contacts_gmail_socialmedia_questions} alt="bg" className="bg-img" />
-        <h1 className="h1_cont">В социальных сетях:</h1>
-        <div className="p_info_socialnoi">
 
+         <div className="h1_contOne">
+          <h1>В социальных сетях:</h1>
+        </div>
+        
+        <div className="p_info_socialnoi">
           <div className="Instagram-name"> 
             <h2 className="Insta_name">Мы в Инстаграме!</h2>
             <a href="" className="Insta_link">
