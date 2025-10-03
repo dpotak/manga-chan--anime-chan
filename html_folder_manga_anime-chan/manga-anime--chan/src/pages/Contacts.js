@@ -4,6 +4,9 @@ import russianFlag from './foto/russian_flag.jpg';
 import "./contacts_folder_css/contacts_1.css";
 import { Link } from "react-router-dom";
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import Instagram_foto from './contacts_folders_foto/instagram.png';
+import Telegram_foto from './contacts_folders_foto/telega.png';
+import Boosty_foto from './contacts_folders_foto/download.png';
 
 const Contacts = () => {
 
@@ -64,17 +67,23 @@ const Contacts = () => {
 
           <div className="Instagram-name"> 
             <h2 className="Insta_name">Мы в Инстаграме!</h2>
-
+            <a href="">
+              <img src={Instagram_foto} width="20px" height="20px"></img>
+              </a>
           </div>
 
           <div className="Boosty-name">
             <h2 className="Boosty_name_2">Мы на Бусти!</h2>
-
+             <a href="">
+              <img src={Boosty_foto} width="20px" height="20px"></img>
+              </a>
           </div>
 
           <div className="Telegram-name">
             <h2 className="Telega_name">Мы в Telegram!</h2>
-
+             <a href="">
+              <img src={Telegram_foto} width="20px" height="20px"></img>
+              </a>
           </div>
 
         </div>
