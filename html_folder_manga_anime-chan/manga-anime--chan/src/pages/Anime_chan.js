@@ -1,6 +1,7 @@
 import React from "react";
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
+import estonianflag from './foto/estonian.png';
 import './anime_chan_folder/anime_chan_1.css';
 import './anime_chan_folder/anime_chan_2.css';
 import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
@@ -44,6 +45,9 @@ const Anime_chan = () => {
                  <button className="rus">
                    <img src={russianFlag} width="20" height="20" alt="RU" />
                  </button>
+                 <button>
+                  <img src={estonianflag} width="20" height="20" alt="EST"></img>
+                </button>
                </div>
              </nav>
            </div>

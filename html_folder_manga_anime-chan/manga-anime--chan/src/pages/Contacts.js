@@ -1,12 +1,14 @@
 import React from "react"; 
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
+import estonianflag from './foto/estonian.png';
 import "./contacts_folder_css/contacts_1.css";
 import { Link } from "react-router-dom";
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import Instagram_foto from './contacts_folders_foto/instagram.png';
 import Telegram_foto from './contacts_folders_foto/telega.png';
 import Boosty_foto from './contacts_folders_foto/download.png';
+import Contacts_gmail_socialmedia_questions from './for_sites_watchAnime/contacts_gmail_socialmedia_quations.png';
 
 const Contacts = () => {
 
@@ -44,11 +46,14 @@ const Contacts = () => {
           </form>
         
           <div className="language">
-            <button>
+            <button className="ENG">
               <img src={britainFlag} width="20" height="20" alt="EN" />
             </button>
             <button className="rus">
               <img src={russianFlag} width="20" height="20" alt="RU" />
+            </button>
+            <button className="EST">
+              <img src={estonianflag} width="20" height="20" alt="EST"></img>
             </button>
           </div>
         </nav>
@@ -58,31 +63,32 @@ const Contacts = () => {
         <p>
           <strong>Если вам понравился наш проект</strong> -
           <p className="p_2">Или вы хотите предложить свою идею для его дальнейший реализации, то напишите нам:</p>
-          <p className="з_2">Или вы хотите задать нам свой личный вопрос(ы):</p>
+          <p className="p_2">Или вы хотите задать нам свой личный вопрос(ы):</p>
         </p>
       </div>
 
       <div className="cont_1">
+        <img src={Contacts_gmail_socialmedia_questions} alt="bg" className="bg-img" />
         <h1 className="h1_cont">В социальных сетях:</h1>
         <div className="p_info_socialnoi">
 
           <div className="Instagram-name"> 
             <h2 className="Insta_name">Мы в Инстаграме!</h2>
-            <a href="Insta_link" className="">
+            <a href="" className="Insta_link">
               <img src={Instagram_foto} width="20px" height="20px"></img>
               </a>
           </div>
 
           <div className="Boosty-name">
             <h2 className="Boosty_name_2">Мы на Бусти!</h2>
-             <a href="Boosty_link" className="">
+             <a href="" className="Boosty_link">
               <img src={Boosty_foto} width="20px" height="20px"></img>
               </a>
           </div>
 
           <div className="Telegram-name">
             <h2 className="Telega_name">Мы в Telegram!</h2>
-             <a href="telega_link" className="">
+             <a href="" className="telega_link">
               <img src={Telegram_foto} width="20px" height="20px"></img>
               </a>
           </div>

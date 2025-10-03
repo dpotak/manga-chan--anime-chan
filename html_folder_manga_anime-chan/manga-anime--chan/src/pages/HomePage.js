@@ -5,6 +5,7 @@ import "./styles/forms_website.css";
 import "./styles/Scroll_ramka_anime.css"
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
+import estonianflag from './foto/estonian.png';
 import ramka_anime_manga from './foto/ramka_anime_manga.jpg';
 import Chanisaw from './ramka_anime_folder/Chanisaw.jpg';
 import kusuriyanohi_2season from './ramka_anime_folder/kusuriyanohi_2season.jpg';
@@ -75,6 +76,9 @@ const HomePage = () => {
             </button>
             <button className="rus">
               <img src={russianFlag} width="20" height="20" alt="RU" />
+            </button>
+             <button>
+              <img src={estonianflag} width="20" height="20" alt="EST"></img>
             </button>
           </div>
         </nav>

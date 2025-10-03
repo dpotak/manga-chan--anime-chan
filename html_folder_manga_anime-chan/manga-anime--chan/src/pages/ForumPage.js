@@ -3,6 +3,7 @@ import "./styles_css_forum/obsujdenie.css";
 import "./styles_css_forum/obsijdenie_2.css";
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg'; 
+import estonianflag from './foto/estonian.png';
 import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { ForumPages_Transition, useForumPages_Transition } from "../hooks/ForumPages_Transition";
 import { Link } from "react-router-dom";
@@ -42,6 +43,9 @@ const ForumPage = () => {
             </button>
             <button className="rus">
               <img src={russianFlag} width="20" height="20" alt="RU" />
+            </button>
+            <button>
+              <img src={estonianflag} width="20" height="20" alt="EST"></img>
             </button>
           </div>
         </nav>
