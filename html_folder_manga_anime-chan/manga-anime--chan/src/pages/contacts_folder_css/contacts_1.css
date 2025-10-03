@@ -39,9 +39,11 @@
 
 .p_info_socialnoi {
   margin-top: 10px;
+  margin-left: 10px;
 }
 
 .Boosty-name , .Telegram-name , .Instagram-name {
  margin-left: 10px;
  margin-top: 25px;
+ display: flex;
 }

@@ -67,21 +67,21 @@ const Contacts = () => {
 
           <div className="Instagram-name"> 
             <h2 className="Insta_name">Мы в Инстаграме!</h2>
-            <a href="">
+            <a href="Insta_link" className="">
               <img src={Instagram_foto} width="20px" height="20px"></img>
               </a>
           </div>
 
           <div className="Boosty-name">
             <h2 className="Boosty_name_2">Мы на Бусти!</h2>
-             <a href="">
+             <a href="Boosty_link" className="">
               <img src={Boosty_foto} width="20px" height="20px"></img>
               </a>
           </div>
 
           <div className="Telegram-name">
             <h2 className="Telega_name">Мы в Telegram!</h2>
-             <a href="">
+             <a href="telega_link" className="">
               <img src={Telegram_foto} width="20px" height="20px"></img>
               </a>
           </div>
