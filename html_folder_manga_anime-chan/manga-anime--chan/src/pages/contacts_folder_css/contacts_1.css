@@ -47,7 +47,7 @@
 }
 
 .h1_cont_2 {
-  margin-top: 320px;
+  margin-top: 270px;
   margin-left: 50px
 }
 
@@ -56,9 +56,9 @@
   margin-left: 10px;
 }
 
-.Boosty-name , .Telegram-name , .Instagram-name {
+.Boosty-name , .Instagram-name , .Telegram-name {
  margin-left: 10px;
- margin-top: 25px;
+ margin-top: 85px;
  display: flex;
 }
 
