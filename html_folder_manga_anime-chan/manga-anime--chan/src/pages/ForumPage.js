@@ -6,6 +6,7 @@ import russianFlag from './foto/russian_flag.jpg';
 import estonianflag from './foto/estonian.png';
 import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { ForumPages_Transition, useForumPages_Transition } from "../hooks/ForumPages_Transition";
+import { ForumPagesTranslator } from "../hooks/ForumPages_Translator";
 import { Link } from "react-router-dom";
 
 const ForumPage = () => {

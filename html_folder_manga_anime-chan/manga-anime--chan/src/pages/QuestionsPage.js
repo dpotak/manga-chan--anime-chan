@@ -5,6 +5,7 @@ import russianFlag from "./foto/russian_flag.jpg";
 import estonianflag from './foto/estonian.png';
 import "./otvetinavoprosi_folder_css/otvetinavoprosi.css";
 import "./otvetinavoprosi_folder_css/otvetinavoprosi_2.css";
+import { QuestionsPageTranslator } from "../hooks/QuestionsPages_Translator";
 
 const faqData = [
   {

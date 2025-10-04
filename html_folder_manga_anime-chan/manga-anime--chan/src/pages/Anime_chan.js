@@ -6,6 +6,7 @@ import './anime_chan_folder/anime_chan_1.css';
 import './anime_chan_folder/anime_chan_2.css';
 import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { Anime_Pages_Transition } from "../hooks/Anime_Pages_Transition";
+import { AnimePageTranslator } from "../hooks/AnimePages_Translator";
 import { Link } from "react-router-dom";
 
 const Anime_chan = () => {

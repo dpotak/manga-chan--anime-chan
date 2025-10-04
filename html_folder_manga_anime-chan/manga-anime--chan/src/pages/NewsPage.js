@@ -6,8 +6,8 @@ import './nov_folder_css/nowesti.css';
 import './nov_folder_css/nowesti_2.css';
 import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { NewsPages_Transition } from "../hooks/NewsPages_Transition";
+import { NewsPageTranslator } from "../hooks/NewsPage_Translator";
 import { Link } from "react-router-dom";
-
 
 const NewsPage = () => {
   NewsPages_Transition(); // <-- хук вызываем внутри компонента
