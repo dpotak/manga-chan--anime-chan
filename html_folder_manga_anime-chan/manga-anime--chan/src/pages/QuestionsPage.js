@@ -90,13 +90,13 @@ const QuestionsPage = () => {
           </form>
 
           <div className="language">
-            <button>
+            <button className="ENG">
               <img src={britainFlag} width="20" height="20" alt="EN" />
             </button>
             <button className="rus">
               <img src={russianFlag} width="20" height="20" alt="RU" />
             </button>
-            <button>
+            <button className="EST">
               <img src={estonianflag} width="20" height="20" alt="EST"></img>
             </button>
           </div>

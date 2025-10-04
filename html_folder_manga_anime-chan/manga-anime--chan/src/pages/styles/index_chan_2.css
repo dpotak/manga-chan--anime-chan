@@ -79,3 +79,7 @@ body {
   border-radius: 8px;
 }
 
+/* Language */
+.ENG , .rus , .EST {
+  margin-left: 4px;
+}

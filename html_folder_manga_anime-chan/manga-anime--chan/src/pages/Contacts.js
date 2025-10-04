@@ -97,8 +97,8 @@ const Contacts = () => {
           </div>
 
         </div>
-
       </div>
+      
       <div className="h1_cont_2">
           <h1 className="h1_cont_">По электронной почте:</h1>
           <button onClick={copyToClipboard}>
