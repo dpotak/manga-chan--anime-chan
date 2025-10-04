@@ -1,0 +1,12 @@
+.body {
+    color: rgb(152, 22, 22);
+}
+
+.error_content {
+    display: flex;
+}
+
+.Text_content_h1 {
+    font-size: 55px;
+    color: rgb(155, 25, 25);
+}
