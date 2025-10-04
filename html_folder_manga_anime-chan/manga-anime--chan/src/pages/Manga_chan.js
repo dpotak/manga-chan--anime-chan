@@ -6,6 +6,7 @@ import './manga_chan_folder/manga_chan_1.css';
 import './manga_chan_folder/manga_chan_2.css';
 import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { Manga_Pages_Transition } from "../hooks/Manga_Pages_Transition";
+import { MangaPage_Translator } from "../hooks/MangaPage_Translator";
 import { Link } from "react-router-dom";
 
 const Manga_chan = () => (
