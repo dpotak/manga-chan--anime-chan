@@ -12,3 +12,10 @@ body {
 .ENG , .rus , .EST {
   margin-left: 4px;
 }
+
+/* Форум/Обсуждение */
+.Forum_text {
+  margin-top: 25px;
+  margin-left: 35px;
+}
+

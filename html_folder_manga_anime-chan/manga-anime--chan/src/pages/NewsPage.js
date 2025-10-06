@@ -13,7 +13,8 @@ const NewsPage = () => {
   NewsPages_Transition(); // <-- хук вызываем внутри компонента
 
   return (
-  <div className="header">
+    <div>
+       <div className="header">
       <h1>Manga-chan--Anime-chan: Новости</h1>
     <nav className="nav-bar">
         <div className="dropdown">
@@ -49,6 +50,13 @@ const NewsPage = () => {
     </div>
    </nav>
   </div>
+
+  <div className="News_text_h1">
+    <h1 className="news_h1">Новости: </h1>
+  </div>
+
+    </div>
+    
   );
 };
 

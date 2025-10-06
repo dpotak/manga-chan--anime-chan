@@ -51,7 +51,24 @@ const ForumPage = () => {
           </div>
         </nav>
       </div>
+
+      <div className="Forum_text">
+        <h1 className="text_h1_forum">Обсуждение/Форум: </h1>
+      </div>
+
+      <div className="forum_obs_1">
+        <div className="forum_border_kvadrat">
+          <button className=""><img src="" alt=""></img></button>
+          <button className=""><img src="" alt=""></img></button>
+
+          <div className="">
+            
+          </div>
+        </div>
+      </div>
+
     </div>
+
   );
 };
 
