@@ -52,7 +52,11 @@ const Anime_chan = () => {
                </div>
              </nav>
            </div>
+           
+           <div className="">
 
+           </div>
+           
       <div className="Janri_1_Anime">
         <Link></Link>
         <Link></Link>
