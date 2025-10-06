@@ -54,7 +54,7 @@ const Anime_chan = () => {
            </div>
            
            <div className="">
-
+ 
            </div>
            
       <div className="Janri_1_Anime">
@@ -63,7 +63,7 @@ const Anime_chan = () => {
         <Link></Link>
         <Link></Link>
         <Link></Link>
-        <Link></Link>
+        <Link></Link> 
         <Link></Link>
         <Link></Link>
         <Link></Link>
