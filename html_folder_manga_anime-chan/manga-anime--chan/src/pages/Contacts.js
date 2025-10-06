@@ -60,6 +60,10 @@ const Contacts = () => {
         </nav>
       </div>
 
+      <div className="h1_Contacts_text_h1">
+        <h1 className="h1_Cont_text">Контакты: </h1>
+      </div>
+
       <div className="Contacts_info">
         <p>
           <strong>Если вам понравился наш проект</strong> -
