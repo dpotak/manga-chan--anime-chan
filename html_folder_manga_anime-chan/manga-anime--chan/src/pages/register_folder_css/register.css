@@ -1,12 +1,84 @@
+/* register.css */
 body {
-    background-color: white
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #f5f6fa;
 }
 
-.h1_glav {
-    color: rgb(45, 45, 45); 
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 32px;
 }
 
-.forms_enter_1 , .forms_enter_2 , .forms_enter_3 , .forms_enter_4 , .forms_enter_5 {
-    margin-top: 45px;
+.language button {
+    background: none;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
+.page-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 36px;
+    color: #333;
+}
+
+.forms-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+    min-width: 320px;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #111112;
+}
+
+.card input {
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border 0.2s;
+}
+
+.card input:focus {
+    border-color: #161617;
+    outline: none;
+}
+
+.btn-primary {
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #b4b4b4, #161616);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
