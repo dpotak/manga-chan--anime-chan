@@ -1,9 +1,4 @@
 /* register.css */
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: #aa3422;
-}
 
 .nav-bar {
     display: flex;
