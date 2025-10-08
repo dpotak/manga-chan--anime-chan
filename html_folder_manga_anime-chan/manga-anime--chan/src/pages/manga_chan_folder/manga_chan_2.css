@@ -12,3 +12,16 @@ body {
 .ENG , .rus , .EST {
   margin-left: 4px;
 }
+
+/* Стили формы поиска */
+.form_search {
+  margin-left: 25px;
+  margin-top: 45px;
+}
+
+.input_search {
+  width: 165px;
+  height: 36px;
+  background: black;
+}
+

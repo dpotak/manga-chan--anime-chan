@@ -46,7 +46,7 @@ body {
 
 /*  Личные вопросы по ссылки */
 .Questions_oma_1 {
-  margin-top: 380px;
+  margin-top: 50px;
   margin-left: 35px;
 }
 
@@ -58,3 +58,10 @@ body {
 .ENG , .rus , .EST {
   margin-left: 4px;
 }
+
+.Questions_Projects_1 , .Questions_Projects_2 , .Questions_Projects_3 , .Questions_Projects_4 , .Questions_Projects_5 {
+  margin-left: 45px;
+  margin-top: 45px;
+}
+
+

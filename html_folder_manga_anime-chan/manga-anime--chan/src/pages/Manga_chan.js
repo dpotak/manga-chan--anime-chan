@@ -49,22 +49,18 @@ const Manga_chan = () => (
             </nav>
           </div>
 
-  <div className="Janri_1_Anime">
-          <Link></Link>
-          <Link></Link>
-          <Link></Link>
-          <Link></Link>
-          <Link></Link>
-          <Link></Link>
-          <Link></Link>
-          <Link></Link>
-          <Link></Link>
-          <Link></Link>
-          <Link></Link>
-          <Link></Link>
-          <Link></Link>
-        </div>
+         <div className="form_search">
+           <form id="searchForm">
+            <input className="input_search" type="text" placeholder="Искать здесь..." />
+            <button type="submit"></button>
 
+          <div className="Manga_Janri">
+            <form id="form_search">
+              <input className="manga_content_janr" type="" placeholder=""></input>
+            </form>
+            </div>
+          </form>
+        </div>
 </div>
 );
 export default Manga_chan; 

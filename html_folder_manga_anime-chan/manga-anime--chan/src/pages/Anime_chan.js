@@ -52,26 +52,19 @@ const Anime_chan = () => {
                </div>
              </nav>
            </div>
-           
-           <div className="">
- 
-           </div>
-           
-      <div className="Janri_1_Anime">
-        <Link></Link>
-        <Link></Link>
-        <Link></Link>
-        <Link></Link>
-        <Link></Link>
-        <Link></Link> 
-        <Link></Link>
-        <Link></Link>
-        <Link></Link>
-        <Link></Link>
-        <Link></Link>
-        <Link></Link>
-        <Link></Link>
-      </div>
+
+            <div className="form_search">
+           <form id="searchForm">
+            <input className="input_search" type="text" placeholder="Искать здесь..." />
+            <button type="submit"></button>
+
+            <div className="Anime_Janri">
+              <form id="form_search">
+              <input className="anime_content_janr" type="" placeholder=""></input>
+            </form>
+            </div>
+          </form>
+         </div>
     </div>
   );
 };
