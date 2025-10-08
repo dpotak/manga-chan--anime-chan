@@ -43,7 +43,6 @@ const RegisterPage = () => {
             <button className="GitHub"><img src={ GiThub } width={"30px"} height={"25px"}></img></button>
             <button className="Google"><img src={ Google } width={"30px"} height={"25px"}></img></button>
           </div>
-
         </div>
 
         {/* Sign In Form */}
