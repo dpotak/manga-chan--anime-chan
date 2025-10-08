@@ -77,3 +77,12 @@
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
+
+.Google {
+    margin-left: 5px;
+}
+
+.Google , .GitHub {
+    margin-top: 6px;
+    border-radius: 5px;
+}
