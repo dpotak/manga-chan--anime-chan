@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background: #f5f6fa;
+    background: #aa3422;
 }
 
 .nav-bar {
@@ -70,7 +70,7 @@ body {
     padding: 14px;
     border: none;
     border-radius: 12px;
-    background: linear-gradient(90deg, #b4b4b4, #161616);
+    background: linear-gradient(90deg, #de0f0f, #161616);
     color: white;
     font-weight: 600;
     font-size: 16px;
