@@ -37,11 +37,11 @@ const RegisterPage = () => {
           <input type="date" placeholder="Дата рождения" />
           <button className="btn-primary">Регистрация</button>
 
-          <div className="">
-            <button className=""></button>
-            <button className=""></button>
+          <div className="Reg_Google_GitHub">
+            <button className="GitHub"><img src="" width={""} height={""}></img></button>
+            <button className="Google"><img src="" width={""} height={""}></img></button>
           </div>
-          
+
         </div>
 
         {/* Sign In Form */}
@@ -50,6 +50,10 @@ const RegisterPage = () => {
           <input type="text" placeholder="Username или Email" />
           <input type="password" placeholder="Пароль" />
           <button className="btn-primary">Войти</button>
+
+          <div className="LinK_Home">
+            <button className="Link_Home_Btn"><a href=""></a></button>
+          </div>
         </div>
 
       </div>

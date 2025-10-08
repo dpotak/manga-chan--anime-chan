@@ -35,6 +35,7 @@ import QuestionsPage from "./pages/QuestionsPage";
 import Anime_chan from "./pages/Anime_chan";
 import Manga_chan from "./pages/Manga_chan";
 import Contacts from "./pages/Contacts";
+import Register from "./pages/RegisterPage";
 
 function App() {
   return (
