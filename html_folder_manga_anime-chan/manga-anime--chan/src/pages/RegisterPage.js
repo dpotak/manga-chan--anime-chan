@@ -36,6 +36,12 @@ const RegisterPage = () => {
           <input type="text" placeholder="Телефон" />
           <input type="date" placeholder="Дата рождения" />
           <button className="btn-primary">Регистрация</button>
+
+          <div className="">
+            <button className=""></button>
+            <button className=""></button>
+          </div>
+          
         </div>
 
         {/* Sign In Form */}
@@ -44,10 +50,6 @@ const RegisterPage = () => {
           <input type="text" placeholder="Username или Email" />
           <input type="password" placeholder="Пароль" />
           <button className="btn-primary">Войти</button>
-        </div>
-
-        <div className="">
-
         </div>
 
       </div>
