@@ -6,6 +6,7 @@ import estonianflag from './foto/estonian.png';
 import "./register_folder_css/register.css";
 import Google from "./register_foto/google.png";
 import GiThub from "./register_foto/gitHub.png";
+import { Link } from "react-router-dom";
 
 const RegisterPage = () => {
   return (
@@ -53,7 +54,7 @@ const RegisterPage = () => {
           <button className="btn-primary">Войти</button>
 
           <div className="LinK_Home">
-            <button className="Link_Home_Btn"><a href=""></a></button>
+            <Link to="/">Вернуться на главную</Link>
           </div>
         </div>
 
