@@ -62,10 +62,12 @@
 }
 
 /* Language */
-.ENG , .rus , .EST {
-  margin-left: 4px;
+.language button {
+    background: none;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
 }
-
 /* */
 .h1_Contacts_text_h1 {
   margin-top: 25px;

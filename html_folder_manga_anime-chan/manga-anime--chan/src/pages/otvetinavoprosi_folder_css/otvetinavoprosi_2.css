@@ -55,8 +55,11 @@ body {
 }
 
 /* Language */
-.ENG , .rus , .EST {
-  margin-left: 4px;
+.language button {
+    background: none;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 .Questions_Projects_1 , .Questions_Projects_2 , .Questions_Projects_3 , .Questions_Projects_4 , .Questions_Projects_5 {

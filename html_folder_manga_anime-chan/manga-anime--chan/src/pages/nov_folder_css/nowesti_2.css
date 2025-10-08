@@ -9,8 +9,11 @@ body {
 }
 
 /* Language */
-.ENG , .rus , .EST {
-  margin-left: 4px;
+.language button {
+    background: none;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 .News_text_h1 {
