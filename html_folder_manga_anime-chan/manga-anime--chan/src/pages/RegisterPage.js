@@ -38,8 +38,8 @@ const RegisterPage = () => {
           <button className="btn-primary">Регистрация</button>
 
           <div className="Reg_Google_GitHub">
-            <button className="GitHub"><img src="" width={""} height={""}></img></button>
-            <button className="Google"><img src="" width={""} height={""}></img></button>
+            <button className="GitHub"><img src="" width={"20px"} height={"20px"}></img></button>
+            <button className="Google"><img src="" width={"20px"} height={"20px"}></img></button>
           </div>
 
         </div>
