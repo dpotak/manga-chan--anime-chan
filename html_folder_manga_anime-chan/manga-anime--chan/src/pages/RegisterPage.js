@@ -38,6 +38,20 @@ const RegisterPage = () => {
           <input type="email" placeholder="Email" />
           <input type="text" placeholder="Телефон" />
           <input type="date" placeholder="Дата рождения" />
+          
+          {/* Для определение пола человека */}
+          <div className="Pol_register">
+            <div className="Male_reg">
+              <p className="Male_p">Мужской</p>
+              <input type="checkbox"></input>
+            </div> 
+            <div className="Female_reg">
+              <p className="Female_p">Женский</p>
+              <input type="checkbox"></input>  
+            </div>
+
+          </div>
+
           <button className="btn-primary">Регистрация</button>
 
           <div className="Reg_Google_GitHub">

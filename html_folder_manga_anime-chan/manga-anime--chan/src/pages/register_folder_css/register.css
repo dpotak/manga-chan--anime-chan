@@ -90,3 +90,8 @@
 .LinK_Home {
     margin-top: 8px;
 }
+
+.Pol_register , .Female_reg , .Male_reg , .Female_p , .Male_p {
+    display: flex;
+    margin-left: 10px;
+}
