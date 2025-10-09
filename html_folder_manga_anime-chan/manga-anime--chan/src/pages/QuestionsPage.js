@@ -5,6 +5,8 @@ import russianFlag from "./foto/russian_flag.jpg";
 import estonianflag from './foto/estonian.png';
 import "./otvetinavoprosi_folder_css/otvetinavoprosi.css";
 import "./otvetinavoprosi_folder_css/otvetinavoprosi_2.css";
+import { UseQuestionsPages_Transition } from "../hooks/QuestionsPages_Transition";
+import { UseQuestionsPages_Translator } from "../hooks/QuestionsPages_Translator";
 
 const faqData = [
   { question: "Что такое “Manga-chan / Anime-chan?", 
@@ -59,6 +61,9 @@ const FAQItem = ({ question, answer, isOpen, onToggle }) => (
 );
 
 const QuestionsPage = () => {
+
+  UseQuestionsPages_Transition();
+  
   // отдельное состояние для каждой секции FAQ
   const [openIndexFaq, setOpenIndexFaq] = useState(null);
   const [openIndexFunc, setOpenIndexFunc] = useState(null);
@@ -68,6 +73,7 @@ const QuestionsPage = () => {
 
   const handleToggle = (index, setOpen) => {
     setOpen(prev => (prev === index ? null : index));
+
   };
 
   return (

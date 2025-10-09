@@ -9,9 +9,12 @@ import Instagram_foto from './contacts_folders_foto/instagram.png';
 import Telegram_foto from './contacts_folders_foto/telega.png';
 import Boosty_foto from './contacts_folders_foto/download.png';
 import Contacts_gmail_socialmedia_questions from './for_sites_watchAnime/contacts_gmail_socialmedia_quations.png';
-import { ContactsPageTranslator } from "../hooks/ContactsPages_translator";
+import { UseContactsPageTranslator } from "../hooks/ContactsPages_translator";
+import { UseContact_Pages_Transition } from "../hooks/Contact_Pages_Transition";
 
 const Contacts = () => {
+
+  UseContact_Pages_Transition();
 
   // Функция для копирования email в буфер обмена
   const copyToClipboard = () => {

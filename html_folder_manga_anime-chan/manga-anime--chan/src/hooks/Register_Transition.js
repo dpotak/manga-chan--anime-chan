@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const UseContact_Pages_Transition = () => {
+export const useTransitionRegister = () => {
   const navigate = useNavigate();
 
   useEffect(() => {

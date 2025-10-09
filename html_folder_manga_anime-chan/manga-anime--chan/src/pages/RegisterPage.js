@@ -7,8 +7,13 @@ import "./register_folder_css/register.css";
 import Google from "./register_foto/google.png";
 import GiThub from "./register_foto/gitHub.png";
 import { Link } from "react-router-dom";
+import { useTranslatorRegister } from "../hooks/Register_Translator";
+import { useTransitionRegister } from "../hooks/Register_Transition";
+
 
 const RegisterPage = () => {
+  useTransitionRegister();
+
   return (
     <div className="register-page">
 
