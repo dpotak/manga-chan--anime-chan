@@ -1,11 +1,32 @@
 export const translations = {
   ru: {
-
+    catalog: "Каталог",
+    home: "Главная",
+    forum: "Обсуждение",
+    news: "Новости",
+    faq: "Вопросы и ответы",
+    contacts: "Контакты",
+    login: "Регистрация/Войти",
+    searchPlaceholder: "Искать здесь...",
   },
   en: {
-
+    catalog: "Catalog",
+    home: "Home",
+    forum: "Forum",
+    news: "News",
+    faq: "FAQ",
+    contacts: "Contacts",
+    login: "Login / Register",
+    searchPlaceholder: "Search here...",
   },
   ee: {
-
+    catalog: "Kataloog",
+    home: "Avaleht",
+    forum: "Foorum",
+    news: "Uudised",
+    faq: "KKK",
+    contacts: "Kontaktid",
+    login: "Registreeru / Logi sisse",
+    searchPlaceholder: "Otsi siit...",
   },
 };
