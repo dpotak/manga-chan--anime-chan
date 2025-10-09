@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const Manga_chan = () => {
+export const Manga_Pages_Transition = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
