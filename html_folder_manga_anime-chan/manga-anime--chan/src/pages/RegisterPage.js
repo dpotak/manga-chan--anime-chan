@@ -13,21 +13,22 @@ import { useTransitionRegister } from "../hooks/Register_Transition";
 
 const RegisterPage = () => {
   useTransitionRegister();
+  const { t, changeLanguage } = useTranslatorRegister();
 
   return (
     <div className="register-page">
 
       <nav className="nav-bar">
         <div className="language">
-          <button className="ENG">
-              <img src={britainFlag} width="24" height="24" alt="EN" />
-          </button>
-          <button className="rus">
-              <img src={russianFlag} width="24" height="24" alt="RU" />
-          </button>
-          <button className="EST">
-              <img src={estonianflag} width="24" height="24" alt="EST" />
-          </button>
+         <button onClick={() => changeLanguage("en")}>
+          <img src={britainFlag} width="20" height="20" alt="EN" />
+         </button>
+         <button onClick={() => changeLanguage("ru")}>
+          <img src={russianFlag} width="20" height="20" alt="RU" />
+         </button>
+         <button onClick={() => changeLanguage("ee")}>
+          <img src={estonianflag} width="20" height="20" alt="EST" />
+         </button>
         </div>
       </nav>
 
@@ -37,27 +38,27 @@ const RegisterPage = () => {
 
         {/* Registration Form */}
         <div className="card form-card">
-          <h2>Зарегистрироваться</h2>
-          <input type="text" placeholder="Имя" />
-          <input type="text" placeholder="Фамилия" />
-          <input type="email" placeholder="Email" />
-          <input type="text" placeholder="Телефон" />
-          <input type="date" placeholder="Дата рождения" />
+          <h2> {t.Register} </h2>
+          <input type="text" placeholder={t.Name} />
+          <input type="text" placeholder={t.Name_2} />
+          <input type="email" placeholder={t.email} />
+          <input type="text" placeholder={t.telefon} />
+          <input type="date" placeholder={t.date_birth} />
           
           {/* Для определение пола человека */}
           <div className="Pol_register">
             <div className="Male_reg">
-              <p className="Male_p">Мужской</p>
+              <p className="Male_p"> {t.Male_p} </p>
               <input type="checkbox"></input>
             </div> 
             <div className="Female_reg">
-              <p className="Female_p">Женский</p>
+              <p className="Female_p"> {t.Female_p} </p>
               <input type="checkbox"></input>  
             </div>
 
           </div>
 
-          <button className="btn-primary">Регистрация</button>
+          <button className="btn-primary"> {t.primary_register} </button>
 
           <div className="Reg_Google_GitHub">
             <button className="GitHub"><img src={ GiThub } width={"30px"} height={"25px"}></img></button>
@@ -67,13 +68,13 @@ const RegisterPage = () => {
 
         {/* Sign In Form */}
         <div className="card form-card">
-          <h2>Добро пожаловать обратно!</h2>
+          <h2> {t.enter_reg} </h2>
           <input type="text" placeholder="Username или Email" />
           <input type="password" placeholder="Пароль" />
-          <button className="btn-primary">Войти</button>
+          <button className="btn-primary"> {t.primary_btn_enter} </button>
 
           <div className="LinK_Home">
-            <Link to="/">Вернуться на главную</Link>
+            <Link to="/"> {t.LinK_Home} </Link>
           </div>
         </div>
 
