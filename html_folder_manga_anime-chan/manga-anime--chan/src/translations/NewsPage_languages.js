@@ -10,6 +10,9 @@ export const translations = {
     searchPlaceholder: "Искать здесь...",
     news_h1: "Новости: ",
     news_h1_2: "Новости ",
+    catalog: "Каталог",
+    Manga_catalog: "Манга",
+    Anime_catalog: "Аниме",
   },
   en: {
     catalog: "Catalog",

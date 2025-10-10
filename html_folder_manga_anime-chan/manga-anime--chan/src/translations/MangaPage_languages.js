@@ -8,6 +8,9 @@ export const translations = {
     contacts: "Контакты",
     login: "Регистрация/Войти",
     searchPlaceholder: "Искать здесь...",
+    catalog: "Каталог",
+    Manga_catalog: "Манга",
+    Anime_catalog: "Аниме",
   },
   en: {
     catalog: "Catalog",
