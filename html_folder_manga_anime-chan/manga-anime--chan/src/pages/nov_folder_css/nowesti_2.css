@@ -21,3 +21,16 @@ body {
   margin-left: 35px;
 }
 
+.News_Content {
+  justify-content: center;
+  margin-top: 125px;
+  display: flex;
+
+}
+
+.card-header , .card-body , .card-footer {
+  width: 250px;
+  height: 350px;
+  border: 1px solid black;
+  margin-left: 10px;
+}
