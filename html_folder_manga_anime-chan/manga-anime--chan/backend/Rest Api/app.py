@@ -1,15 +1,17 @@
-from flask import Flask, jsonify
-import sqlite3
-from flask_cors import CORS 
+from flask import Flask
+from flask_cors import CORS
+from config import Config
+from routes.news_routes import news_bp
 
 app = Flask(__name__)
+app.config.from_object(Config)
+CORS(app)
 
-# Простейший роут
-@app.route('/api/hello', methods=['GET'])
+app.register_blueprint(news_bp)
+
+@app.route('/api/hello')
 def hello():
-    return jsonify({'message': 'Hello, API is working!'})
+    return {'message': 'Hello, API is working!'}
 
 if __name__ == '__main__':
-    # host='0.0.0.0' чтобы был доступ извне VM/Docker
-    app.run(host='0.0.0.0', port=5000, debug=True)
-
+    app.run(host='0.0.0.0', port=5000)
