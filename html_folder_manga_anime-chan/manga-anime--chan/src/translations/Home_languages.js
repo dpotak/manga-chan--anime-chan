@@ -1,6 +1,8 @@
 export const translations = {
   ru: {
     catalog: "Каталог",
+    Manga_catalog: "Манга",
+    Anime_catalog: "Аниме",
     home: "Главная",
     forum: "Обсуждение",
     news: "Новости",
@@ -28,6 +30,8 @@ export const translations = {
 
   en: {
     catalog: "Catalog",
+    Manga_catalog: "Manga",
+    Anime_catalog: "Anime",
     home: "Home",
     forum: "Forum",
     news: "News",
@@ -55,6 +59,8 @@ export const translations = {
 
   ee: {
     catalog: "Kataloog",
+    Manga_catalog: "Manga",
+    Anime_catalog: "Anime",
     home: "Avaleht",
     forum: "Foorum",
     news: "Uudised",

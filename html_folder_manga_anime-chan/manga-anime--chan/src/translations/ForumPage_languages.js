@@ -8,7 +8,13 @@ export const translations = {
     contacts: "Контакты",
     login: "Регистрация/Войти",
     searchPlaceholder: "Искать здесь...",
+    dropbtn: "Каталог",
+    Manga_catalog: "Манга",
+    Anime_catalog: "Аниме",
+    text_h1_forum: "Обсуждение/Форум: ",
+    h1_name: "Обсуждение",
   },
+
   en: {
     catalog: "Catalog",
     home: "Home",
@@ -18,7 +24,13 @@ export const translations = {
     contacts: "Contacts",
     login: "Login / Register",
     searchPlaceholder: "Search here...",
+    dropbtn: "Catalogue",
+    Manga_catalog: "Manga",
+    Anime_catalog: "Anime",
+    text_h1_forum: "Discussion/Forum: ",
+    h1_name: "Discussion",
   },
+
   ee: {
     catalog: "Kataloog",
     home: "Avaleht",
@@ -28,5 +40,10 @@ export const translations = {
     contacts: "Kontaktid",
     login: "Registreeru / Logi sisse",
     searchPlaceholder: "Otsi siit...",
+    dropbtn: "Kataloog",
+    Manga_catalog: "Manga",
+    Anime_catalog: "Anime",
+    text_h1_forum: "Arutelu/Foorum: ",
+    h1_name: "Arutelu",
   },
 };

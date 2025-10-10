@@ -8,6 +8,8 @@ export const translations = {
     contacts: "Контакты",
     login: "Регистрация/Войти",
     searchPlaceholder: "Искать здесь...",
+    news_h1: "Новости: ",
+    news_h1_2: "Новости ",
   },
   en: {
     catalog: "Catalog",
@@ -18,6 +20,8 @@ export const translations = {
     contacts: "Contacts",
     login: "Login / Register",
     searchPlaceholder: "Search here...",
+    news_h1: "News: ",
+    news_h1_2: "News",
   },
   ee: {
     catalog: "Kataloog",
@@ -28,5 +32,7 @@ export const translations = {
     contacts: "Kontaktid",
     login: "Registreeru / Logi sisse",
     searchPlaceholder: "Otsi siit...",
+    news_h1: "Uudised: ",
+    news_h1_2: "Uudised",
   },
 };

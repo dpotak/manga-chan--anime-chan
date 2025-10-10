@@ -6,53 +6,54 @@ import './nov_folder_css/nowesti.css';
 import './nov_folder_css/nowesti_2.css';
 import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { NewsPages_Transition } from "../hooks/NewsPages_Transition";
-import { NewsPageTranslator } from "../hooks/NewsPage_Translator";
+import { useNewsPagesPageTranslator } from "../hooks/NewsPage_Translator";
 import { Link } from "react-router-dom";
 
 const NewsPage = () => {
   NewsPages_Transition(); // <-- хук вызываем внутри компонента
+  const { t, changeLanguage } = useNewsPagesPageTranslator();
 
   return (
     <div>
        <div className="header">
-      <h1>Manga-chan--Anime-chan: Новости</h1>
+      <h1>Manga-chan--Anime-chan: {t.news_h1_2} </h1>
     <nav className="nav-bar">
         <div className="dropdown">
-          <button className="dropbtn">Каталог</button>
-        <div className="dropdown-content">
-          <Link to="/Manga_chan">Манга</Link>
-          <Link to="/Anime_chan">Аниме</Link>
+          <button className="dropbtn">{t.catalog}</button>
+          <div className="dropdown-content">
+            <Link to="/Manga_chan"> {t.Manga_catalog} </Link>
+            <Link to="/Anime_chan"> {t.Anime_catalog} </Link>
+          </div>
         </div>
-    </div>
-    
-    <Link to="/">Главная</Link>
-    <Link to="/ForumPage">Обсуждение</Link>
-    <Link to="/NewsPage">Новости</Link>
-    <Link to="/QuestionsPage">Вопросы и ответы</Link>
-    <Link to="/Contacts">Контакты</Link>
-    <Link to="/RegisterPage">Регистрация/Войти</Link>
+          
+        <Link to="/">{t.home}</Link>
+        <Link to="/ForumPage">{t.forum}</Link>
+        <Link to="/NewsPage">{t.news}</Link>
+        <Link to="/QuestionsPage">{t.faq}</Link>
+        <Link to="/Contacts">{t.contacts}</Link>
+        <Link to="/RegisterPage">{t.login}</Link>
 
     <form id="searchForm">
-      <input type="text" placeholder="Искать здесь..." />
+      <input type="text" placeholder={t.searchPlaceholder} />
       <button type="submit"></button>
     </form>
 
     <div className="language">
-      <button className="ENG">
+      <button onClick={() => changeLanguage("en")}>
         <img src={britainFlag} width="20" height="20" alt="EN" />
       </button>
-      <button className="rus">
+      <button onClick={() => changeLanguage("ru")}>
         <img src={russianFlag} width="20" height="20" alt="RU" />
       </button>
-      <button className="EST">
-        <img src={estonianflag} width="20" height="20" alt="EST"></img>
+      <button onClick={() => changeLanguage("ee")}>
+        <img src={estonianflag} width="20" height="20" alt="EST" />
       </button>
     </div>
    </nav>
   </div>
 
   <div className="News_text_h1">
-    <h1 className="news_h1">Новости: </h1>
+    <h1 className="news_h1"> {t.news_h1} </h1>
   </div>
 
     </div>

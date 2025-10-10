@@ -38,8 +38,8 @@ const HomePage = () => {
           <div className="dropdown">
             <button className="dropbtn">{t.catalog}</button>
             <div className="dropdown-content">
-              <Link to="/Manga_chan">Манга</Link>
-              <Link to="/Anime_chan">Аниме</Link>
+              <Link to="/Manga_chan"> {t.Manga_catalog} </Link>
+              <Link to="/Anime_chan"> {t.Anime_catalog} </Link>
             </div>
           </div>
 
@@ -72,10 +72,10 @@ const HomePage = () => {
       <div className="Glav_stanica">
         <h1 className="h1_glavnaja">{t.headline}</h1>
         <div className="project-description">
-        <p>
+          <p>
             <strong>Manga-Anime-Chan</strong> — {t.description}
-            </p>
-            </div>
+          </p>
+        </div>
 
         <div className="Opisanie_1">
             <Typography variant="h5" color="initial" className="h2_op_1">

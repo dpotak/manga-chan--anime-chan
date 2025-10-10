@@ -15,6 +15,7 @@ import { UseContact_Pages_Transition } from "../hooks/Contact_Pages_Transition";
 const Contacts = () => {
 
   UseContact_Pages_Transition();
+  const { t, changeLanguage } = UseContactsPageTranslator();
 
   // Функция для копирования email в буфер обмена
   const copyToClipboard = () => {
@@ -26,52 +27,52 @@ const Contacts = () => {
   return (
     <div>
       <div className="header">
-        <h1>Manga-chan--Anime-chan: Контакты</h1>
+        <h1>Manga-chan--Anime-chan: {t.H1_cont_text_2} </h1>
 
         <nav className="nav-bar">
           <div className="dropdown">
-            <button className="dropbtn">Каталог</button>
+            <button className="dropbtn"> {t.dropbtn} </button>
             <div className="dropdown-content">
-              <Link to="/Manga_chan">Манга</Link>
-              <Link to="/Anime_chan">Аниме</Link>
+              <Link to="/Manga_chan"> {t.Manga_catalog} </Link>
+              <Link to="/Anime_chan"> {t.Anime_catalog} </Link>
             </div>
           </div>
         
-          <Link to="/">Главная</Link>
-          <Link to="/ForumPage">Обсуждение</Link>
-          <Link to="/NewsPage">Новости</Link>
-          <Link to="/QuestionsPage">Вопросы и ответы</Link>
-          <Link to="/Contacts">Контакты</Link>  
-          <Link to="/RegisterPage">Регистрация/Войти</Link>
+           <Link to="/">{t.home}</Link>
+           <Link to="/ForumPage">{t.forum}</Link>
+           <Link to="/NewsPage">{t.news}</Link>
+           <Link to="/QuestionsPage">{t.faq}</Link>
+           <Link to="/Contacts">{t.contacts}</Link>
+           <Link to="/RegisterPage">{t.login}</Link>
         
           <form id="searchForm">
-             <input type="text" placeholder="Искать здесь..." />
-             <button type="submit"></button>
+            <input type="text" placeholder={t.searchPlaceholder} />
+            <button type="submit"></button>
           </form>
         
           <div className="language">
-            <button className="ENG">
+            <button onClick={() => changeLanguage("en")}>
               <img src={britainFlag} width="20" height="20" alt="EN" />
             </button>
-            <button className="rus">
+            <button onClick={() => changeLanguage("ru")}>
               <img src={russianFlag} width="20" height="20" alt="RU" />
             </button>
-            <button className="EST">
-              <img src={estonianflag} width="20" height="20" alt="EST"></img>
+            <button onClick={() => changeLanguage("ee")}>
+              <img src={estonianflag} width="20" height="20" alt="EST" />
             </button>
           </div>
         </nav>
       </div>
 
       <div className="h1_Contacts_text_h1">
-        <h1 className="h1_Cont_text">Контакты: </h1>
+        <h1 className="h1_Cont_text"> {t.H1_cont_text} </h1>
       </div>
 
       <div className="Contacts_info">
         <p>
-          <strong>Если вам понравился наш проект</strong> -
-          <p className="p_2">Или вы хотите предложить свою идею для его дальнейший реализации, то напишите нам:</p>
-          <p className="p_2">Или вы хотите задать нам свой личный вопрос(ы):</p>
+          <strong> {t.strong_cont} </strong> -
+          <p className="p_2"> {t.p_2_1} </p>
+          <p className="p_2"> {t.p_2_2} </p>
         </p>
       </div>
 
@@ -79,26 +80,26 @@ const Contacts = () => {
         <img src={Contacts_gmail_socialmedia_questions} alt="bg" className="bg-img" />
 
          <div className="h1_contOne">
-          <h1>В социальных сетях:</h1>
+          <h1> {t.h1_contOne} </h1>
         </div>
         
         <div className="p_info_socialnoi">
           <div className="Instagram-name"> 
-            <h2 className="Insta_name">Мы в Инстаграме!</h2>
+            <h2 className="Insta_name"> {t.Instagram_name} </h2>
             <a href="" className="Insta_link">
               <img src={Instagram_foto} width="20px" height="20px"></img>
               </a>
           </div>
 
           <div className="Boosty-name">
-            <h2 className="Boosty_name_2">Мы на Бусти!</h2>
+            <h2 className="Boosty_name_2"> {t.Boosty_name} </h2>
              <a href="" className="Boosty_link">
               <img src={Boosty_foto} width="20px" height="20px"></img>
               </a>
           </div>
 
           <div className="Telegram-name">
-            <h2 className="Telega_name">Мы в Telegram!</h2>
+            <h2 className="Telega_name"> {t.Telegram_name} </h2>
              <a href="" className="telega_link">
               <img src={Telegram_foto} width="20px" height="20px"></img>
               </a>
@@ -108,9 +109,9 @@ const Contacts = () => {
       </div>
       
       <div className="h1_cont_2">
-          <h1 className="h1_cont_">По электронной почте:</h1>
+          <h1 className="h1_cont_"> {t.h1_cont_gmail} </h1>
           <button onClick={copyToClipboard}>
-             <ContentCopyIcon /> Скопировать
+             <ContentCopyIcon /> {t.h1_cont_gmail_copy}
              <a href="mailto:animechan.project@gmail.com"><h2>animechan.project@gmail.com</h2></a>
           </button>
         </div>
