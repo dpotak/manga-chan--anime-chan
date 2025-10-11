@@ -57,17 +57,20 @@ const NewsPage = () => {
   </div>
 
   <div className="News_Content">
+
     <div class="card-header">
       <h1>Первая карточка</h1>
     </div>
+
     <div class="card-body">
       <h1>Вторая карточка</h1>
     </div>
+
     <div class="card-footer">
       <h1>Третья карточка</h1>
     </div>
-  </div>
 
+  </div>
     </div>
     
   );
