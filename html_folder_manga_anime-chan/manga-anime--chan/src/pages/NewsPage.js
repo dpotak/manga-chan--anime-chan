@@ -64,7 +64,7 @@ const NewsPage = () => {
       <img className="img_header" src="" width="" height="" ></img>
       <div className="">
         <strong></strong>
-        <p></p>
+        <p className=""></p>
       </div>
     </div>
 
@@ -73,7 +73,7 @@ const NewsPage = () => {
       <img className="img_body" src="" width="" height="" ></img>
       <div className="">
         <strong></strong>
-        <p></p>
+        <p className=""></p>
       </div>
     </div>
 
@@ -82,7 +82,7 @@ const NewsPage = () => {
       <img className="img_footer_h1" src="" width="" height="" ></img>
       <div className="">
         <strong></strong>
-        <p></p>
+        <p className=""></p>
       </div>
     </div>
 
@@ -91,7 +91,7 @@ const NewsPage = () => {
       <img className="img_hooter" src="" width="" height="" ></img>
       <div className="">
         <strong></strong>
-        <p></p>
+        <p className=""></p>
       </div>
     </div>
 
