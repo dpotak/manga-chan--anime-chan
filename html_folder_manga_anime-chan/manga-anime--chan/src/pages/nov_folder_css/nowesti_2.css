@@ -34,6 +34,7 @@ body {
   border: 1px solid black;
   margin-left: 12px;
   border-radius: 8px;
+  background-color: #e4e4e4;
 }
 
 @keyframes glow {
@@ -64,5 +65,6 @@ body {
 
 .card-header_h1 , .card-body_h1 , .card-footer_h1 , .card-hooter_h1 {
   font-size: 23px;
+  margin-left: 8px;
 }
 
