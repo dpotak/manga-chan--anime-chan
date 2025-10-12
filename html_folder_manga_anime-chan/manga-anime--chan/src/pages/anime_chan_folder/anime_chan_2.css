@@ -28,3 +28,10 @@ body {
   background: black;
 }
 
+@import url('https://fonts.cdnfonts.com/css/akisa');
+
+.Glavnaja_1 {
+  font-family: 'Akisa';
+  font-size: 125px;
+}
+

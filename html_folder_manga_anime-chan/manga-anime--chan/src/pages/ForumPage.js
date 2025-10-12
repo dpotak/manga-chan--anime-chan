@@ -16,7 +16,7 @@ const ForumPage = () => {
   return (
     <div>
       <div className="header">
-        <h1>Manga-chan--Anime-chan: {t.h1_name} </h1> 
+        <h1 className="Glavnaja_1">Manga-chan--Anime-chan: {t.h1_name} </h1> 
 
         <nav className="nav-bar">
           <div className="dropdown">

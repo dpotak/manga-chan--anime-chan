@@ -16,7 +16,7 @@ const Anime_chan = () => {
   return (
     <div> 
      <div className="header">
-             <h1>Anime-chan</h1>
+             <h1 className="Glavnaja_1" >Anime-chan</h1>
              
              <nav className="nav-bar">
                <div className="dropdown">
