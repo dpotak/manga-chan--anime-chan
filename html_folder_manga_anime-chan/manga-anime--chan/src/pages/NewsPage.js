@@ -65,6 +65,7 @@ const NewsPage = () => {
       <div className="">
         <strong></strong>
         <p className=""></p>
+        <button className=""></button>
       </div>
     </div>
 
@@ -74,6 +75,7 @@ const NewsPage = () => {
       <div className="">
         <strong></strong>
         <p className=""></p>
+        <button className=""></button>
       </div>
     </div>
 
@@ -83,6 +85,7 @@ const NewsPage = () => {
       <div className="">
         <strong></strong>
         <p className=""></p>
+        <button className=""></button>
       </div>
     </div>
 
@@ -92,6 +95,7 @@ const NewsPage = () => {
       <div className="">
         <strong></strong>
         <p className=""></p>
+        <button className=""></button>
       </div>
     </div>
 
