@@ -10,6 +10,7 @@ import { useNewsPagesPageTranslator } from "../hooks/NewsPage_Translator";
 import demonslayer from "./news_folder_foto/demonslayer.png";
 import { Link } from "react-router-dom";
 
+
 const NewsPage = () => {
   NewsPages_Transition(); // <-- хук вызываем внутри компонента
   const { t, changeLanguage } = useNewsPagesPageTranslator();
@@ -17,7 +18,7 @@ const NewsPage = () => {
   return (
     <div>
        <div className="header">
-      <h1>Manga-chan--Anime-chan: {t.news_h1_2} </h1>
+      <h1 className="Glavnaja_1">Manga-chan--Anime-chan: {t.news_h1_2} </h1>
     <nav className="nav-bar">
         <div className="dropdown">
           <button className="dropbtn">{t.catalog}</button>

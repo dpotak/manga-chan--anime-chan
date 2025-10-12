@@ -33,7 +33,7 @@ const HomePage = () => {
   return (
     <div>
       <div className="header">
-        <h1>Manga-chan--Anime-chan</h1>
+        <h1 className="Glavnaja_1">Manga-chan--Anime-chan</h1>
         <nav className="nav-bar">
           <div className="dropdown">
             <button className="dropbtn">{t.catalog}</button>
