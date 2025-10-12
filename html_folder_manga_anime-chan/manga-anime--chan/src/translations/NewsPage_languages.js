@@ -13,6 +13,7 @@ export const translations = {
     catalog: "Каталог",
     Manga_catalog: "Манга",
     Anime_catalog: "Аниме",
+    news_language_translate: "!Новости аниме и манги!",
   },
   en: {
     catalog: "Catalog",
@@ -25,6 +26,7 @@ export const translations = {
     searchPlaceholder: "Search here...",
     news_h1: "News: ",
     news_h1_2: "News",
+    news_language_translate: "!Anime and manga news!",
   },
   ee: {
     catalog: "Kataloog",
@@ -37,5 +39,6 @@ export const translations = {
     searchPlaceholder: "Otsi siit...",
     news_h1: "Uudised: ",
     news_h1_2: "Uudised",
+    news_language_translate: "!Anime ja manga uudised!",
   },
 };
