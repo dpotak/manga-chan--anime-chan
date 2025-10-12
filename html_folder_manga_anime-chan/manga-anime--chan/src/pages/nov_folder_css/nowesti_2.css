@@ -54,7 +54,7 @@ body {
   height: 40px;
   font-size: 25px;
   border-radius: 8px;
-  margin-top: 215px;
+  margin-top: 25px;
   margin-left: 85px;
   background: linear-gradient(90deg, #de0f0f, #161616);
   color: white;
@@ -68,3 +68,7 @@ body {
   margin-left: 8px;
 }
 
+.img_footer_h1 {
+  margin-left: 60px;
+  margin-top: 10px;
+}

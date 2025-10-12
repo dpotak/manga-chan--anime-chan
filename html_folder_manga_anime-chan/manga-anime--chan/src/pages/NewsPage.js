@@ -7,6 +7,7 @@ import './nov_folder_css/nowesti_2.css';
 import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { NewsPages_Transition } from "../hooks/NewsPages_Transition";
 import { useNewsPagesPageTranslator } from "../hooks/NewsPage_Translator";
+import demonslayer from "./news_folder_foto/demonslayer.png";
 import { Link } from "react-router-dom";
 
 const NewsPage = () => {
@@ -61,7 +62,7 @@ const NewsPage = () => {
 
     <div class="card-header">
       <h1 className="card-header_h1"> {t.news_language_translate} </h1>
-      <img className="img_header" src="" width="" height="" ></img>
+      <img className="img_footer_h1" src={ demonslayer } width="" height="" ></img>
       <div className="">
         <strong></strong>
         <p className="p_news_1"></p>
@@ -71,7 +72,7 @@ const NewsPage = () => {
 
     <div class="card-body">
       <h1 className="card-body_h1"> {t.news_language_translate} </h1>
-      <img className="img_body" src="" width="" height="" ></img>
+      <img className="img_footer_h1" src={ demonslayer } width="" height="" ></img>
       <div className="">
         <strong></strong>
         <p className="p_news_1"></p>
@@ -81,7 +82,7 @@ const NewsPage = () => {
 
     <div class="card-footer">
       <h1 className="card-footer_h1"> {t.news_language_translate} </h1>
-      <img className="img_footer_h1" src="" width="" height="" ></img>
+      <img className="img_footer_h1" src={ demonslayer } width="" height="" ></img>
       <div className="">
         <strong></strong>
         <p className="p_news_1"></p>
@@ -91,7 +92,7 @@ const NewsPage = () => {
 
     <div class="card-hooter">
       <h1 className="card-hooter_h1"> {t.news_language_translate} </h1>
-      <img className="img_hooter" src="" width="" height="" ></img>
+      <img className="img_footer_h1" src={ demonslayer } width="" height="" ></img>
       <div className="">
         <strong></strong>
         <p className="p_news_1"></p>
