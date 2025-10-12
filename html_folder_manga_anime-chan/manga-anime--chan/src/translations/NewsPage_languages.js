@@ -14,6 +14,7 @@ export const translations = {
     Manga_catalog: "Манга",
     Anime_catalog: "Аниме",
     news_language_translate: "!Новости аниме и манги!",
+    btn_news_1: "Читать",
   },
   en: {
     catalog: "Catalog",
@@ -27,6 +28,7 @@ export const translations = {
     news_h1: "News: ",
     news_h1_2: "News",
     news_language_translate: "!Anime and manga news!",
+    btn_news_1: "Read",
   },
   ee: {
     catalog: "Kataloog",
@@ -40,5 +42,6 @@ export const translations = {
     news_h1: "Uudised: ",
     news_h1_2: "Uudised",
     news_language_translate: "!Anime ja manga uudised!",
+    btn_news_1: "Loe",
   },
 };

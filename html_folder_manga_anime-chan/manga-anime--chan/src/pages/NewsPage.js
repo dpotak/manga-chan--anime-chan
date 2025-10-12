@@ -66,7 +66,7 @@ const NewsPage = () => {
       <div className="">
         <strong></strong>
         <p className="p_news_1"></p>
-        <button className="btn_news_1">Читать</button>
+        <button className="btn_news_1">{t.btn_news_1}</button>
       </div>
     </div>
 
@@ -76,7 +76,7 @@ const NewsPage = () => {
       <div className="">
         <strong></strong>
         <p className="p_news_1"></p>
-        <button className="btn_news_1">Читать</button>
+        <button className="btn_news_1"> {t.btn_news_1} </button>
       </div>
     </div>
 
@@ -86,7 +86,7 @@ const NewsPage = () => {
       <div className="">
         <strong></strong>
         <p className="p_news_1"></p>
-        <button className="btn_news_1">Читать</button>
+        <button className="btn_news_1">{t.btn_news_1}</button>
       </div>
     </div>
 
@@ -96,7 +96,7 @@ const NewsPage = () => {
       <div className="">
         <strong></strong>
         <p className="p_news_1"></p>
-        <button className="btn_news_1">Читать</button>
+        <button className="btn_news_1">{t.btn_news_1}</button>
       </div>
     </div>
 
