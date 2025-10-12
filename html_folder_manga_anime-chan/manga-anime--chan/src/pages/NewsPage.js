@@ -64,8 +64,8 @@ const NewsPage = () => {
       <img className="img_header" src="" width="" height="" ></img>
       <div className="">
         <strong></strong>
-        <p className=""></p>
-        <button className=""></button>
+        <p className="p_news_1"></p>
+        <button className="btn_news_1">Читать</button>
       </div>
     </div>
 
@@ -74,8 +74,8 @@ const NewsPage = () => {
       <img className="img_body" src="" width="" height="" ></img>
       <div className="">
         <strong></strong>
-        <p className=""></p>
-        <button className=""></button>
+        <p className="p_news_1"></p>
+        <button className="btn_news_1">Читать</button>
       </div>
     </div>
 
@@ -84,8 +84,8 @@ const NewsPage = () => {
       <img className="img_footer_h1" src="" width="" height="" ></img>
       <div className="">
         <strong></strong>
-        <p className=""></p>
-        <button className=""></button>
+        <p className="p_news_1"></p>
+        <button className="btn_news_1">Читать</button>
       </div>
     </div>
 
@@ -94,8 +94,8 @@ const NewsPage = () => {
       <img className="img_hooter" src="" width="" height="" ></img>
       <div className="">
         <strong></strong>
-        <p className=""></p>
-        <button className=""></button>
+        <p className="p_news_1"></p>
+        <button className="btn_news_1">Читать</button>
       </div>
     </div>
 
