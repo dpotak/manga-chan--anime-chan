@@ -9,6 +9,28 @@ body {
   font-family: Arial, sans-serif;
 }
 
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #ffffff;
+  }
+  50% {
+    text-shadow: 0 0 20px #ffffff, 0 0 40px #e4e4e4;
+  }
+  100% {
+    text-shadow: 0 0 5px #ffffff;
+  }
+}
+
+.nav-bar a {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.nav-bar a:hover {
+  color: #00b7ff;
+  animation: glow 1s infinite alternate;
+}
+
 /* Шапка */
 .header {
   background: #000;
