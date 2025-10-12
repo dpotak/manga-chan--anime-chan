@@ -28,9 +28,11 @@ body {
 
 }
 
-.card-header , .card-body , .card-footer {
-  width: 250px;
+.card-header , .card-body , .card-footer , .card-hooter {
+  width: 300px;
   height: 350px;
   border: 1px solid black;
-  margin-left: 10px;
+  margin-left: 12px;
+  border-radius: 8px;
 }
+

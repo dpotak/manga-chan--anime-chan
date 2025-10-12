@@ -56,18 +56,43 @@ const NewsPage = () => {
     <h1 className="news_h1"> {t.news_h1} </h1>
   </div>
 
+  {/* Карточки для новостей */}
   <div className="News_Content">
 
     <div class="card-header">
-      <h1>Первая карточка</h1>
+      <h1 className="card-header_h1">Первая карточка</h1>
+      <img className="img_header" src="" width="" height="" ></img>
+      <div className="">
+        <strong></strong>
+        <p></p>
+      </div>
     </div>
 
     <div class="card-body">
-      <h1>Вторая карточка</h1>
+      <h1 className="card-body_h1">Вторая карточка</h1>
+      <img className="img_body" src="" width="" height="" ></img>
+      <div className="">
+        <strong></strong>
+        <p></p>
+      </div>
     </div>
 
     <div class="card-footer">
-      <h1>Третья карточка</h1>
+      <h1 className="card-footer_h1">Третья карточка</h1>
+      <img className="img_footer_h1" src="" width="" height="" ></img>
+      <div className="">
+        <strong></strong>
+        <p></p>
+      </div>
+    </div>
+
+    <div class="card-hooter">
+      <h1 className="card-hooter_h1">Четвертая карточка</h1>
+      <img className="img_hooter" src="" width="" height="" ></img>
+      <div className="">
+        <strong></strong>
+        <p></p>
+      </div>
     </div>
 
   </div>
