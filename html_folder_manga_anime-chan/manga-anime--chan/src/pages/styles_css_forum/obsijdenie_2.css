@@ -29,3 +29,20 @@ body {
   font-size: 125px;
 }
 
+.forum_border_kvadrat {
+  margin-top: 35px;
+  margin-left: 50px;
+}
+
+.btn_1_kvad , .btn_2_kvad {
+  margin-left: 10px;
+  border-radius: 8px;
+  width: 150px;
+  height: 70px;
+  background: linear-gradient(90deg, #de0f0f, #161616);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  animation: glow 1s infinite alternate;
+}
+

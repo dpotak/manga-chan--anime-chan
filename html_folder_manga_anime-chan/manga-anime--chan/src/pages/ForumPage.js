@@ -59,11 +59,12 @@ const ForumPage = () => {
 
       <div className="forum_obs_1">
         <div className="forum_border_kvadrat">
-          <button className=""><img src="" alt=""></img></button>
-          <button className=""><img src="" alt=""></img></button>
-
-          <div className="">
-            
+          <button className="btn_1_kvad"><img src="" width="50px" height="30px"></img>Обсуждение аниме</button>
+          <button className="btn_2_kvad"><img src="" width="50px" height="30px"></img>Обсуждение манги</button>
+          <button className="btn_1_kvad"><img src="" width="50px" height="30px"></img>Новости индустрии</button>
+          <button className="btn_2_kvad"><img src="" width="50px" height="30px"></img>Фан-арт и творчество</button>
+          <div className="text_kvadrat_1">
+            <button className=""></button>
           </div>
         </div>
       </div>
