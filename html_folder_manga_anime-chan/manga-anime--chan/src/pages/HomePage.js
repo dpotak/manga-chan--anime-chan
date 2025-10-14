@@ -103,17 +103,37 @@ const HomePage = () => {
         <Typography variant="h5">{t.recommendationsAnime}</Typography>
         <div className="cards-row">
           {shuffledImages.map((anime, index) => (
-            <Button key={index} variant="text" color="default" className="btn_anime">
-              <img src={ramka_anime_manga} className="glav_anime_manga_1" alt="рамка"/>
-              <img src={anime.poster} className="glav_anime_manga_2" alt={anime.title}/>
-            </Button>
-          ))}
-        </div>
-      </div>
+        <Link 
+        key={index} 
+        to="/AnimeDetailsPage"
+        className="anime-link"
+      >
+        <Button variant="text" color="default" className="btn_anime">
+          <img src={ramka_anime_manga} className="glav_anime_manga_1" alt="рамка"/>
+          <img src={anime.poster} className="glav_anime_manga_2" alt={anime.title}/>
+        </Button>
+      </Link>
+    ))}
+  </div>
+</div>
 
-      <div className="Rekomenduemoe_2">
-        <Typography variant="h5">{t.recommendationsManga}</Typography>
-      </div>
+<div className="Rekomenduemoe_2">
+  <Typography variant="h5">{t.recommendationsManga}</Typography>
+  <div className="cards-row">
+    {shuffledImages.map((anime, index) => (
+      <Link 
+        key={index} 
+        to="/MangaDetailsPage"
+        className="manga-link"
+      >
+        <Button variant="text" color="default" className="btn_manga">
+          <img src={ramka_anime_manga} className="glav_anime_manga_1" alt="рамка"/>
+          <img src={anime.poster} className="glav_anime_manga_2" alt={anime.title}/>
+        </Button>
+      </Link>
+    ))}
+  </div>
+</div>
     </div>
   );
 };

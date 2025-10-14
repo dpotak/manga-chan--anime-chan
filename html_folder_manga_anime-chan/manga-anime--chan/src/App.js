@@ -35,7 +35,8 @@ import QuestionsPage from "./pages/QuestionsPage";
 import Anime_chan from "./pages/Anime_chan";
 import Manga_chan from "./pages/Manga_chan";
 import Contacts from "./pages/Contacts";
-import Register from "./pages/RegisterPage";
+import AnimeDetailsPage from "./pages/AnimeDetailsPage";
+import MangaDetailsPage from "./pages/MangaDetailsPage";
 
 function App() {
   return (
@@ -50,6 +51,8 @@ function App() {
           <Route path="/Anime_chan" element={<Anime_chan />} />
           <Route path="/Manga_chan" element={<Manga_chan />} />
           <Route path="/Contacts" element={<Contacts />} />
+          <Route path="/anime/:title" element={<AnimeDetailsPage />} />
+          <Route path="/manga/:title" element={<MangaDetailsPage />} />
         </Routes>
       </main>
     </>
