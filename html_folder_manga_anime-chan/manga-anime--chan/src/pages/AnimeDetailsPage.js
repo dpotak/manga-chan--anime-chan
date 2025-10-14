@@ -7,8 +7,13 @@ import { Link } from "react-router-dom";
 const AnimeDetailsPage = () => {
 
   return (
-    <div className="header">
+    <div>
+      <div className="header">
+         <Link to="/">Назад</Link>
+      </div>
       
+       <h1 className=""></h1>
+
     </div>
   );
 };
