@@ -1,0 +1,12 @@
+.img_button_anime , .button_anime {
+    justify-content: right;
+    display: flex;
+}
+
+.button_anime_btn {
+    border-radius: 8px;
+    width: 120px;
+    height: 40px;
+    margin-right: 90px;
+}
+
