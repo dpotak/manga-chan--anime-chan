@@ -1,22 +1,32 @@
-.img_button_anime , .button_anime {
-    justify-content: right;
+/* Основной контейнер: текст слева, картинка с кнопкой справа */
+.content_Anime {
     display: flex;
+    justify-content: space-between; /* Разделяет текст и картинку по краям */
+    align-items: flex-start; /* Выровнять по верхнему краю */
+    margin: 20px;
 }
 
+/* Левая часть: текст */
+.Opisanie_Anime {
+    max-width: 50%; /* Чтобы текст не растягивался слишком широко */
+}
+
+/* Правая часть: картинка и кнопка */
+.anime_right {
+    display: flex;
+    flex-direction: column; /* Картинка сверху, кнопка снизу */
+    align-items: flex-end; /* Выравнивание по правому краю */
+}
+
+/* Кнопка */
 .button_anime_btn {
     border-radius: 8px;
     width: 120px;
     height: 40px;
-    margin-right: 135px;
     margin-top: 15px;
 }
 
+/* Картинка */
 .img_img {
-    margin-top: 55px;
-    margin-right: 45px;
-}
-
-.Opisanie_Anime {
-    margin-left: 45px;
-    margin-top: 25px;
+    justify-content: right;
 }
