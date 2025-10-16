@@ -8,7 +8,7 @@
 
 /* Левая часть: текст */
 .Opisanie_Anime {
-    max-width: 50%; /* Чтобы текст не растягивался слишком широко */
+    max-width: 80%; /* Чтобы текст не растягивался слишком широко */
 }
 
 /* Правая часть: картинка и кнопка */
@@ -24,9 +24,11 @@
     width: 120px;
     height: 40px;
     margin-top: 15px;
+    margin-right: 125px;
 }
 
 /* Картинка */
 .img_img {
-    justify-content: right;
+    margin-right: 45px;
 }
+
