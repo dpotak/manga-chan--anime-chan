@@ -32,3 +32,42 @@
     margin-right: 45px;
 }
 
+.Group_hanr_1 {
+    display: flex;
+
+}
+
+.Group_hanr_2 {
+    display: flex;
+}
+
+.Group_hanr_3 {
+    display: flex;
+}
+
+.hanr_1 {
+    background-color: blue;
+    border-radius: 8px;
+    width: 115px;
+    height: 25px;
+    margin-top: 8px;
+    margin-left: 18px;
+}
+
+.hanr_2 {
+    background-color: blue;
+    border-radius: 8px;
+    width: 115px;
+    height: 25px;
+    margin-top: 8px;
+    margin-left: 25px;
+}
+
+.hanr_3 {
+    background-color: blue;
+    border-radius: 8px;
+    width: 115px;
+    height: 25px;
+    margin-top: 8px;
+    margin-left: 18px;
+}
