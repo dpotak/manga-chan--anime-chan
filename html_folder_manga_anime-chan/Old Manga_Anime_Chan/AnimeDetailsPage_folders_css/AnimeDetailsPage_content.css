@@ -41,14 +41,10 @@
     display: flex;
 }
 
-.Group_hanr_3 {
-    display: flex;
-}
-
 .hanr_1 {
     background-color: blue;
     border-radius: 8px;
-    width: 115px;
+    width: 145px;
     height: 25px;
     margin-top: 25px;
     margin-left: 18px;
