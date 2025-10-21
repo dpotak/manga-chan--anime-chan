@@ -2,7 +2,7 @@
     display: flex;
 }
 
-.List_manga_read {
+.list_manga_name {
     margin-top: 40px;
     margin-left: 565px;
     font-size: 25px;
@@ -13,8 +13,10 @@
 }
 
 .manga_list_background {
-    width: 270px;
-    height: 240px;
+    width: 580px;
+    height: 640px;
     background-color: #09b6fb;
     border-radius: 10px;
+    margin-left: 375px;
 }
+
