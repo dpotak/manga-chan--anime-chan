@@ -1,1 +1,9 @@
-.List_manga_read {}
+.form_search_table {
+    display: flex;
+}
+
+.List_manga_read {
+    margin-top: 55px;
+    margin-left: 35px;
+}
+
