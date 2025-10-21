@@ -146,7 +146,7 @@ const Manga_chan = () => {
               ))
             ) : (
               <Typography variant="body1" color="text.secondary" style={{ marginTop: "20px" }}>
-                Манга не найдена 😞
+                Манга не найдена 
               </Typography>
             )}
           </div>

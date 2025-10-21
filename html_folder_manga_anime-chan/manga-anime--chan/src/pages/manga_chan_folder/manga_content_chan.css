@@ -8,10 +8,6 @@
     font-size: 25px;
 }
 
-.Manga_Janri {
-  margin-top: 15px;
-}
-
 .manga_list_background {
     width: 580px;
     height: 640px;
@@ -20,3 +16,10 @@
     margin-left: 375px;
 }
 
+.manga_card {
+    margin-top: 15px;
+}
+
+.read_button {
+    border-radius: 2px;
+}
