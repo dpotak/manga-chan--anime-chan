@@ -29,6 +29,17 @@ const Manga_chan = () => {
 
   const [showGenres, setShowGenres] = useState(false);
 
+  // Список манги
+  const list_manga = [
+    "Chanisaw",
+    "Kusuriyanohi 2 season",
+    "Kusuriyanohi 1 season",
+    "Inuyasha",
+    "DemonSlayer"
+  ];
+
+  
+
   return (
     <div>
       <div className="header">
