@@ -5,16 +5,15 @@ import estonianflag from './foto/estonian.png';
 import './manga_chan_folder/manga_chan_1.css';
 import './manga_chan_folder/manga_chan_2.css';
 import './manga_chan_folder/manga_content_chan.css';
-import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
+import { Button, Card, CardContent, Typography , Avatar , CardHeader } from '@mui/material';
+import { Link } from "react-router-dom";
 import { Manga_Pages_Transition } from "../hooks/Manga_Pages_Transition";
 import { MangaPage_Translator } from "../hooks/MangaPage_Translator";
-import { Link } from "react-router-dom";
 
 const Manga_chan = () => {
-  // 🔹 Вызов перехода или анимации
   Manga_Pages_Transition();
 
-  // Список жанров манги
+  // 🔹 Список жанров
   const genres = [
     "Shonen",
     "Shoujo",
@@ -25,27 +24,34 @@ const Manga_chan = () => {
     "Comedy",
     "Drama",
     "Fantasy",
-    "Horror"
+    "Horror",
   ];
 
+  // 🔹 База манги
+  const mangaList = [
+    { title: "Chainsaw Man", genre: "Shonen", description: "История о парне с бензопилой.", poster: "" },
+    { title: "Demon Slayer", genre: "Action", description: "Охота на демонов и сила семьи.", poster: "" },
+    { title: "Inuyasha", genre: "Fantasy", description: "Девушка из будущего и демон с мечом.", poster: "" },
+    { title: "Kusuriya no Hitorigoto", genre: "Josei", description: "Таинственная придворная аптекарша.", poster: "" },
+    { title: "One Piece", genre: "Adventure", description: "Пираты, море и мечта о свободе.", poster: "" },
+  ];
+
+  // 🔹 Состояния
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedGenre, setSelectedGenre] = useState("");
   const [showGenres, setShowGenres] = useState(false);
 
-  // Список манги
-  const list_manga = [
-    "Chanisaw",
-    "Kusuriyanohi 2 season",
-    "Kusuriyanohi 1 season",
-    "Inuyasha",
-    "DemonSlayer"
-  ];
-
-  const [ListManga, setListManga] = useState(false);
-
+  // 🔹 Фильтрация манги
+  const filteredManga = mangaList.filter(manga => {
+    const matchesSearch = manga.title.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesGenre = selectedGenre ? manga.genre === selectedGenre : true;
+    return matchesSearch && matchesGenre;
+  });
 
   return (
     <div>
       <div className="header">
-        <h1 className="Glavnaja_1" >Manga-chan</h1>
+        <h1 className="Glavnaja_1">Manga-chan</h1>
 
         <nav className="nav-bar">
           <div className="dropdown">
@@ -59,75 +65,92 @@ const Manga_chan = () => {
           <Link to="/">Главная</Link>
           <Link to="/ForumPage">Обсуждение</Link>
           <Link to="/NewsPage">Новости</Link>
-          <Link to="/QuestionsPage">Вопросы и ответы</Link>
+          <Link to="/QuestionsPage">FAQ</Link>
           <Link to="/Contacts">Контакты</Link>
-          <Link to="/RegisterPage">Регистрация/Войти</Link>
-
-          <form id="searchForm">
-            <input type="text" placeholder="Искать здесь..." />
-            <button type="submit"></button>
-          </form>
+          <Link to="/RegisterPage">Регистрация / Вход</Link>
 
           <div className="language">
-            <button className="ENG">
-              <img src={britainFlag} width="20" height="20" alt="EN" />
-            </button>
-            <button className="rus">
-              <img src={russianFlag} width="20" height="20" alt="RU" />
-            </button>
-            <button className="EST">
-              <img src={estonianflag} width="20" height="20" alt="EST" />
-            </button>
+            <button><img src={britainFlag} width="20" height="20" alt="EN" /></button>
+            <button><img src={russianFlag} width="20" height="20" alt="RU" /></button>
+            <button><img src={estonianflag} width="20" height="20" alt="EST" /></button>
           </div>
         </nav>
       </div>
 
       <div className="form_search_table">
         <div className="form_search">
-        <form id="searchForm">
-          <input
-            className="input_search"
-            type="text"
-            placeholder="Искать здесь..."
-            onFocus={() => setListManga(true)}
-            onBlur={() => setTimeout(() => setListManga(false), 100)}
-          />
-          {ListManga && (
-              <ul className="genre_list">
-                {list_manga.map((genre, index) => (
-                  <li key={index}>{genre}</li>
-                ))}
-              </ul>
-            )}
-
-          <div className="Manga_Janri">
+          <form id="searchForm" onSubmit={(e) => e.preventDefault()}>
             <input
-              className="manga_content_janr"
+              className="input_search"
               type="text"
-              placeholder="Жанры манги..."
-              onFocus={() => setShowGenres(true)}
-              onBlur={() => setTimeout(() => setShowGenres(false), 100)}
+              placeholder="Искать мангу по названию..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
             />
-            {showGenres && (
-              <ul className="genre_list">
-                {genres.map((genre, index) => (
-                  <li key={index}>{genre}</li>
-                ))}
-              </ul>
+
+            <div className="Manga_Janri">
+              <input
+                className="manga_content_janr"
+                type="text"
+                placeholder="Выбрать жанр..."
+                value={selectedGenre}
+                onFocus={() => setShowGenres(true)}
+                onBlur={() => setTimeout(() => setShowGenres(false), 100)}
+                readOnly
+              />
+              {showGenres && (
+                <ul className="genre_list">
+                  {genres.map((genre, index) => (
+                    <li
+                      key={index}
+                      onClick={() => {
+                        setSelectedGenre(genre);
+                        setShowGenres(false);
+                      }}
+                    >
+                      {genre}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </form>
+        </div>
+
+        <div className="List_manga_read">
+          <h2 className="list_manga_name">Список манги</h2>
+
+          <div className="manga_list_background">
+            {filteredManga.length > 0 ? (
+              filteredManga.map((manga, index) => (
+                <Card key={index} className="manga_card">
+                  <CardHeader
+                    avatar={<Avatar>{manga.title.charAt(0)}</Avatar>}
+                    title={manga.title}
+                    subheader={manga.genre}
+                  />
+                  <CardContent>
+                    <Typography variant="body2" color="text.secondary">
+                      {manga.description}
+                    </Typography>
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      className="read_button"
+                      style={{ marginTop: "10px" }}
+                    >
+                      Читать →
+                    </Button>
+                  </CardContent>
+                </Card>
+              ))
+            ) : (
+              <Typography variant="body1" color="text.secondary" style={{ marginTop: "20px" }}>
+                Манга не найдена 😞
+              </Typography>
             )}
           </div>
-        </form>
-
-      </div>
-
-       <div className="List_manga_read">
-         <h2 className="list_manga_name">Список манги </h2>
-
-         <div className="manga_list_background">
-
-         </div>
-         
-       </div>
+        </div>
       </div>
     </div>
   );
