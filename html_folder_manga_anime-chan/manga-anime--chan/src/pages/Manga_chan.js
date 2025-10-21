@@ -29,11 +29,11 @@ const Manga_chan = () => {
 
   // 🔹 База манги
   const mangaList = [
-    { title: "Chainsaw Man", genre: "Shonen", description: "История о парне с бензопилой.", poster: "" },
-    { title: "Demon Slayer", genre: "Action", description: "Охота на демонов и сила семьи.", poster: "" },
-    { title: "Inuyasha", genre: "Fantasy", description: "Девушка из будущего и демон с мечом.", poster: "" },
-    { title: "Kusuriya no Hitorigoto", genre: "Josei", description: "Таинственная придворная аптекарша.", poster: "" },
-    { title: "One Piece", genre: "Adventure", description: "Пираты, море и мечта о свободе.", poster: "" },
+    { title: "Chainsaw Man", genre: "Shonen", description: "История о парне с бензопилой.", poster: "" , href:"" },
+    { title: "Demon Slayer", genre: "Action", description: "Охота на демонов и сила семьи.", poster: "" , href:"" },
+    { title: "Inuyasha", genre: "Fantasy", description: "Девушка из будущего и демон с мечом.", poster: "" , href:"" },
+    { title: "Kusuriya no Hitorigoto", genre: "Josei", description: "Таинственная придворная аптекарша.", poster: "" , href:"" },
+    { title: "One Piece", genre: "Adventure", description: "Пираты, море и мечта о свободе.", poster: "" , href:"" },
   ];
 
   // 🔹 Состояния
@@ -139,7 +139,7 @@ const Manga_chan = () => {
                       className="read_button"
                       style={{ marginTop: "10px" }}
                     >
-                      <Link to="">Читать →</Link>
+                      Читать →
                     </Button>
                   </CardContent>
                 </Card>
