@@ -38,7 +38,8 @@ const Manga_chan = () => {
     "DemonSlayer"
   ];
 
-  
+  const [ListManga, setListManga] = useState(false);
+
 
   return (
     <div>
@@ -87,8 +88,16 @@ const Manga_chan = () => {
             className="input_search"
             type="text"
             placeholder="Искать здесь..."
+            onFocus={() => setListManga(true)}
+            onBlur={() => setTimeout(() => setListManga(false), 100)}
           />
-          <button type="submit"></button>
+          {ListManga && (
+              <ul className="genre_list">
+                {list_manga.map((genre, index) => (
+                  <li key={index}>{genre}</li>
+                ))}
+              </ul>
+            )}
 
           <div className="Manga_Janri">
             <input
