@@ -139,7 +139,7 @@ const Manga_chan = () => {
                       className="read_button"
                       style={{ marginTop: "10px" }}
                     >
-                      Читать →
+                      <Link to="">Читать →</Link>
                     </Button>
                   </CardContent>
                 </Card>
