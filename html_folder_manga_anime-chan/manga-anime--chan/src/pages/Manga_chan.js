@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
 import estonianflag from './foto/estonian.png';
@@ -10,9 +10,24 @@ import { MangaPage_Translator } from "../hooks/MangaPage_Translator";
 import { Link } from "react-router-dom";
 
 const Manga_chan = () => {
-  
   // 🔹 Вызов перехода или анимации
   Manga_Pages_Transition();
+
+  // Список жанров манги
+  const genres = [
+    "Shonen",
+    "Shoujo",
+    "Seinen",
+    "Josei",
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Horror"
+  ];
+
+  const [showGenres, setShowGenres] = useState(false);
 
   return (
     <div>
@@ -54,7 +69,8 @@ const Manga_chan = () => {
         </nav>
       </div>
 
-      <div className="form_search">
+      <div className="form_search_table">
+        <div className="form_search">
         <form id="searchForm">
           <input
             className="input_search"
@@ -64,15 +80,23 @@ const Manga_chan = () => {
           <button type="submit"></button>
 
           <div className="Manga_Janri">
-            <form id="form_search">
-              <input
-                className="manga_content_janr"
-                type="text"
-                placeholder="Жанры манги..."
-              />
-            </form>
+            <input
+              className="manga_content_janr"
+              type="text"
+              placeholder="Жанры манги..."
+              onFocus={() => setShowGenres(true)}
+              onBlur={() => setTimeout(() => setShowGenres(false), 100)}
+            />
+            {showGenres && (
+              <ul className="genre_list">
+                {genres.map((genre, index) => (
+                  <li key={index}>{genre}</li>
+                ))}
+              </ul>
+            )}
           </div>
         </form>
+      </div>
       </div>
     </div>
   );

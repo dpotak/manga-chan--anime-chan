@@ -13,6 +13,21 @@ const Anime_chan = () => {
   // вызываем твой хук для плавных переходов
   Anime_Pages_Transition();
 
+  // Список жанров манги
+    const genres = [
+      "Shonen",
+      "Shoujo",
+      "Seinen",
+      "Josei",
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Drama",
+      "Fantasy",
+      "Horror"
+    ];
+  
+
   return (
     <div> 
      <div className="header">
@@ -53,7 +68,7 @@ const Anime_chan = () => {
              </nav>
            </div>
 
-            <div className="form_search">
+         <div className="form_search">
            <form id="searchForm">
             <input className="input_search" type="text" placeholder="Искать здесь..." />
             <button type="submit"></button>
@@ -64,9 +79,11 @@ const Anime_chan = () => {
             </form>
             </div>
           </form>
-         </div>
+        </div>
+
     </div>
   );
 };
 
 export default Anime_chan;
+
