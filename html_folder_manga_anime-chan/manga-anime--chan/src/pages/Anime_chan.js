@@ -13,7 +13,6 @@ const Anime_chan = () => {
   // вызываем твой хук для плавных переходов
   Anime_Pages_Transition();
 
-  // Список жанров манги
     // Список жанров манги
       const genres = [
         "Shonen",
