@@ -14,18 +14,32 @@ const Anime_chan = () => {
   Anime_Pages_Transition();
 
   // Список жанров манги
-    const genres = [
-      "Shonen",
-      "Shoujo",
-      "Seinen",
-      "Josei",
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Drama",
-      "Fantasy",
-      "Horror"
-    ];
+    // Список жанров манги
+      const genres = [
+        "Shonen",
+        "Shoujo",
+        "Seinen",
+        "Josei",
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Drama",
+        "Fantasy",
+        "Horror"
+      ];
+    
+     // const [showGenres, setShowGenres] = useState(false);
+    
+      // Список манги
+      const list_manga = [
+        "Chanisaw",
+        "Kusuriyanohi 2 season",
+        "Kusuriyanohi 1 season",
+        "Inuyasha",
+        "DemonSlayer"
+      ];
+    
+     // const [ListAnime, setListAnime] = useState(false);
   
 
   return (
