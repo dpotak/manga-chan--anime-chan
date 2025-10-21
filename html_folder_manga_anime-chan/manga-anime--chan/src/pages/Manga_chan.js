@@ -121,7 +121,7 @@ const Manga_chan = () => {
       </div>
 
        <div className="List_manga_read">
-         <h2 className="list_manga_name">Список манги: </h2>
+         <h2 className="list_manga_name">Список манги </h2>
        </div>
 
       </div>
