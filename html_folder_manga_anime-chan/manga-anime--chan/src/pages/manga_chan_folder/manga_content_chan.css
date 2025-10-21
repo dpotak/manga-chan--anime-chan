@@ -1,9 +1,5 @@
 .form_search_table {
     display: flex;
-    width: 270px;
-    height: 240px;
-    background-color: #09b6fb;
-    border-radius: 10px;
 }
 
 .List_manga_read {
@@ -16,3 +12,9 @@
   margin-top: 15px;
 }
 
+.manga_list_background {
+    width: 270px;
+    height: 240px;
+    background-color: #09b6fb;
+    border-radius: 10px;
+}
