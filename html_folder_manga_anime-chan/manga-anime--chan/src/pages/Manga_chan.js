@@ -4,6 +4,7 @@ import russianFlag from './foto/russian_flag.jpg';
 import estonianflag from './foto/estonian.png';
 import './manga_chan_folder/manga_chan_1.css';
 import './manga_chan_folder/manga_chan_2.css';
+import './manga_chan_folder/manga_content_chan.css';
 import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { Manga_Pages_Transition } from "../hooks/Manga_Pages_Transition";
 import { MangaPage_Translator } from "../hooks/MangaPage_Translator";
@@ -118,6 +119,11 @@ const Manga_chan = () => {
         </form>
       </div>
       </div>
+
+      <div className="List_manga_read">
+        
+      </div>
+      
     </div>
   );
 };
