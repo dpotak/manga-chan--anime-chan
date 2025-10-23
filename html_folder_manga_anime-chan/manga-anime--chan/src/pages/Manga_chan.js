@@ -20,7 +20,7 @@ import Kusuriya_No_Hitorigoto_manga from "./manga_chan_folder_foto/Kusuriya_no_H
 
 
 const Manga_chan = () => {
-  Manga_Pages_Transition();
+  Manga_Pages_Transition(); 
 
   // 🔹 Список жанров
   const genres = [
