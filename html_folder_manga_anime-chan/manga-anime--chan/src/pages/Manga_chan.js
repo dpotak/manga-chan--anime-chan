@@ -10,6 +10,15 @@ import { Link } from "react-router-dom";
 import { Manga_Pages_Transition } from "../hooks/Manga_Pages_Transition";
 import { MangaPage_Translator } from "../hooks/MangaPage_Translator";
 
+
+// Пути до постреров мангов
+import Manga_Chainsaw_Man_manga from "./manga_chan_folder_foto/chainsaw_man_manga.png";
+import Inuyasha_manga from "./manga_chan_folder_foto/Inuyasha.png";
+import One_Piece_manga from "./manga_chan_folder_foto/One_Piece.png";
+import Demon_Slayer_manga from "./manga_chan_folder_foto/Demon_Slayer_manga.png";
+import Kusuriya_No_Hitorigoto_manga from "./manga_chan_folder_foto/Kusuriya_no_Hitorigoto.png";
+
+
 const Manga_chan = () => {
   Manga_Pages_Transition();
 
@@ -29,11 +38,11 @@ const Manga_chan = () => {
 
   // 🔹 База манги
   const mangaList = [
-    { title: "Chainsaw Man", genre: "Shonen", description: "История о парне с бензопилой.", poster: "" , href:"" },
-    { title: "Demon Slayer", genre: "Action", description: "Охота на демонов и сила семьи.", poster: "" , href:"" },
-    { title: "Inuyasha", genre: "Fantasy", description: "Девушка из будущего и демон с мечом.", poster: "" , href:"" },
-    { title: "Kusuriya no Hitorigoto", genre: "Josei", description: "Таинственная придворная аптекарша.", poster: "" , href:"" },
-    { title: "One Piece", genre: "Adventure", description: "Пираты, море и мечта о свободе.", poster: "" , href:"" },
+    { title: "Chainsaw Man", genre: "Shonen", description: "История о парне с бензопилой.", poster: Manga_Chainsaw_Man_manga },
+    { title: "Demon Slayer", genre: "Action", description: "Охота на демонов и сила семьи.", poster: Demon_Slayer_manga },
+    { title: "Inuyasha", genre: "Fantasy", description: "Девушка из будущего и демон с мечом.", poster: Inuyasha_manga },
+    { title: "Kusuriya no Hitorigoto", genre: "Josei", description: "Таинственная придворная аптекарша.", poster: Kusuriya_No_Hitorigoto_manga },
+    { title: "One Piece", genre: "Adventure", description: "Пираты, море и мечта о свободе.", poster: One_Piece_manga },
   ];
 
   // 🔹 Состояния
@@ -122,26 +131,26 @@ const Manga_chan = () => {
 
           <div className="manga_list_background">
             {filteredManga.length > 0 ? (
-              filteredManga.map((manga, index) => (
+                filteredManga.map((manga, index) => (
                 <Card key={index} className="manga_card">
-                  <CardHeader
-                    avatar={<Avatar>{manga.title.charAt(0)}</Avatar>}
-                    title={manga.title}
-                    subheader={manga.genre}
-                  />
-                  <CardContent>
-                    <Typography variant="body2" color="text.secondary">
-                      {manga.description}
-                    </Typography>
-                    <Button
+                  <div className="poster_container">
+                    <img src={manga.poster} alt={manga.title} className="poster_img" />
+                    <div className="poster_overlay"></div>
+                    <div className="poster_text">
+                      <h3>{manga.title}</h3>   
+                      <p>{manga.genre}</p>
+                      <Link to={`/Manga/${encodeURIComponent(manga.title)}`}>
+                      <Button
                       variant="contained"
                       color="primary"
                       className="read_button"
-                      style={{ marginTop: "10px" }}
-                    >
-                      Читать →
-                    </Button>
-                  </CardContent>
+                      >
+                        Читать →
+                      </Button>
+                    </Link>
+
+                      </div>
+                    </div>
                 </Card>
               ))
             ) : (
