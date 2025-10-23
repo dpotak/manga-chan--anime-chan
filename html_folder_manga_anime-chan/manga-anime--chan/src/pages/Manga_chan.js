@@ -21,6 +21,7 @@ import Kusuriya_No_Hitorigoto_manga from "./manga_chan_folder_foto/Kusuriya_no_H
 
 const Manga_chan = () => {
   Manga_Pages_Transition(); 
+  const { t, changeLanguage } = MangaPage_Translator();
 
   // 🔹 Список жанров
   const genres = [
@@ -64,7 +65,7 @@ const Manga_chan = () => {
 
         <nav className="nav-bar">
           <div className="dropdown">
-            <button className="dropbtn">Каталог</button>
+            <button className="dropbtn"> { t.catalog } </button>
             <div className="dropdown-content">
               <Link to="/Manga_chan">Манга</Link>
               <Link to="/Anime_chan">Аниме</Link>
@@ -79,10 +80,16 @@ const Manga_chan = () => {
           <Link to="/RegisterPage">Регистрация / Вход</Link>
 
           <div className="language">
-            <button><img src={britainFlag} width="20" height="20" alt="EN" /></button>
-            <button><img src={russianFlag} width="20" height="20" alt="RU" /></button>
-            <button><img src={estonianflag} width="20" height="20" alt="EST" /></button>
-          </div>
+                      <button onClick={() => changeLanguage("en")}>
+                        <img src={britainFlag} width="20" height="20" alt="EN" />
+                      </button>
+                      <button onClick={() => changeLanguage("ru")}>
+                        <img src={russianFlag} width="20" height="20" alt="RU" />
+                      </button>
+                      <button onClick={() => changeLanguage("ee")}>
+                        <img src={estonianflag} width="20" height="20" alt="EST" />
+                      </button>
+                    </div>
         </nav>
       </div>
 
