@@ -11,7 +11,7 @@ const MangaDetailsPage = () => {
   // 📚 Список томов (пути к PDF)
   const mangaVolumes = {
     "Chainsaw Man": [
-      { name: "Том 1", file: "/manga_pdf/Chainsaw_Man_chapters/tom_1.pdf" },
+      // { name: "Том 1", file: "/manga_pdf/Chainsaw_Man_chapters/tom_1.pdf" },
       // { name: "Том 2", file: "/manga_pdf/chainsaw_volume2.pdf" },
     ],
     "Demon Slayer": [
