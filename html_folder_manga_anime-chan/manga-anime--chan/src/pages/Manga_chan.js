@@ -67,29 +67,29 @@ const Manga_chan = () => {
           <div className="dropdown">
             <button className="dropbtn"> { t.catalog } </button>
             <div className="dropdown-content">
-              <Link to="/Manga_chan">Манга</Link>
-              <Link to="/Anime_chan">Аниме</Link>
+              <Link to="/Manga_chan"> {t.Manga_catalog} </Link>
+              <Link to="/Anime_chan"> {t.Anime_catalog} </Link>
             </div>
           </div>
 
-          <Link to="/">Главная</Link>
-          <Link to="/ForumPage">Обсуждение</Link>
-          <Link to="/NewsPage">Новости</Link>
-          <Link to="/QuestionsPage">FAQ</Link>
-          <Link to="/Contacts">Контакты</Link>
-          <Link to="/RegisterPage">Регистрация / Вход</Link>
+          <Link to="/"> {t.home} </Link>
+          <Link to="/ForumPage"> {t.forum} </Link>
+          <Link to="/NewsPage"> {t.news} </Link>
+          <Link to="/QuestionsPage"> {t.faq} </Link>
+          <Link to="/Contacts"> {t.contacts} </Link>
+          <Link to="/RegisterPage"> {t.login} </Link>
 
           <div className="language">
-                      <button onClick={() => changeLanguage("en")}>
-                        <img src={britainFlag} width="20" height="20" alt="EN" />
-                      </button>
-                      <button onClick={() => changeLanguage("ru")}>
-                        <img src={russianFlag} width="20" height="20" alt="RU" />
-                      </button>
-                      <button onClick={() => changeLanguage("ee")}>
-                        <img src={estonianflag} width="20" height="20" alt="EST" />
-                      </button>
-                    </div>
+            <button onClick={() => changeLanguage("en")}>
+              <img src={britainFlag} width="20" height="20" alt="EN" />
+            </button>
+            <button onClick={() => changeLanguage("ru")}>
+              <img src={russianFlag} width="20" height="20" alt="RU" />
+            </button>
+            <button onClick={() => changeLanguage("ee")}>
+              <img src={estonianflag} width="20" height="20" alt="EST" />
+            </button>
+          </div>
         </nav>
       </div>
 
