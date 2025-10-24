@@ -20,7 +20,13 @@ const AnimeDetailsPage = () => {
       { name: "Серия 1", file: "/anime_video/Inuyasha/episode1.mp4" },
     ],
     "One Piece": [
-      { name: "", file: "" },
+      { name: "Серия 1", file: "" },
+      { name: "Серия 2", file: "" },
+      { name: "Серия 3", file: "" },
+      { name: "Серия 4", file: "" },
+    ],
+    "Kusuriya no Hitorigoto": [ // 2 season
+      {name: "Серия 2 - 2 сеазон", file: "https://www.dropbox.com/scl/fi/04zfn3cd02y9loxauis8i/2_seria.mp4?rlkey=ojedxvwoj6t06ckiiq9wpd5nj&raw=1"},
     ],
   };
 
