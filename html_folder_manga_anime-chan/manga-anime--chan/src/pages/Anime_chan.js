@@ -12,10 +12,10 @@ import { Link } from "react-router-dom";
 
 // База данных с постерами для аниме
 import chainsaw_man_anime from "./anime_chan_folder_foto/Chanisaw.png";
-// import chainsaw_man_anime from "";
-// import chainsaw_man_anime from "";
-// import chainsaw_man_anime from "";
-// import chainsaw_man_anime from "";
+import monolog_Formacevta_anime from "./anime_chan_folder_foto/monologFormacevta.png";
+import DemonSlayer_anime from "./anime_chan_folder_foto/DemonSlayer.png";
+import inuyasha_anime from "./anime_chan_folder_foto/inuyasha.png";
+import OnePiece_anime from "./anime_chan_folder_foto/OnePiece.png";
 
 const Anime_chan = () => {
   // вызываем твой хук для плавных переходов
@@ -38,10 +38,10 @@ const Anime_chan = () => {
       // Список манги
       const ListAnime = [
           { title: "Chainsaw Man", genre: "Shonen", description: "История о парне с бензопилой.", poster: chainsaw_man_anime },
-          { title: "Demon Slayer", genre: "Action", description: "Охота на демонов и сила семьи.", poster: "" },
-          { title: "Inuyasha", genre: "Fantasy", description: "Девушка из будущего и демон с мечом.", poster: "" },
-          { title: "Kusuriya no Hitorigoto", genre: "Josei", description: "Таинственная придворная аптекарша.", poster: "" },
-          { title: "One Piece", genre: "Adventure", description: "Пираты, море и мечта о свободе.", poster: "" },
+          { title: "Demon Slayer", genre: "Action", description: "Охота на демонов и сила семьи.", poster: DemonSlayer_anime },
+          { title: "Inuyasha", genre: "Fantasy", description: "Девушка из будущего и демон с мечом.", poster: inuyasha_anime },
+          { title: "Kusuriya no Hitorigoto", genre: "Josei", description: "Таинственная придворная аптекарша.", poster: monolog_Formacevta_anime },
+          { title: "One Piece", genre: "Adventure", description: "Пираты, море и мечта о свободе.", poster: OnePiece_anime },
         ];
   
   return (
