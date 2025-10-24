@@ -26,6 +26,17 @@ const MangaDetailsPage = () => {
   const volumes = mangaVolumes[decodeURIComponent(title)] || [];
 
   return (
+   <div className="">
+    <div className="">
+      <h1 className=""></h1>
+
+      <nav className="nav-bar">
+        <div className="">
+
+        </div>
+      </nav>
+    </div>
+    
     <div style={{ padding: "20px" }}>
       <h1>{decodeURIComponent(title)}</h1>
       <Link to="/Manga_chan">
@@ -48,6 +59,7 @@ const MangaDetailsPage = () => {
         <p>Томы для этой манги пока не добавлены.</p>
       )}
     </div>
+   </div>
   );
 };
 

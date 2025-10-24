@@ -33,6 +33,36 @@ const AnimeDetailsPage = () => {
   const episodes = animeEpisodes[decodeURIComponent(title)] || [];
 
   return (
+
+    <div className="Anime_details_header">
+      <div className="header">
+        <h1 className="Glavnaja_1"></h1>
+
+        <nav className="nav-bar">
+        <div className="dropdown">
+           <button className="dropbtn">Каталог</button>
+            <div className="dropdown-content">
+              <Link to="/Manga_chan">Манга</Link>
+              <Link to="/Anime_chan">Аниме</Link>
+            </div>
+
+              <Link to="/">Главная</Link>
+              <Link to="/ForumPage">Обсуждение</Link>
+              <Link to="/NewsPage">Новости</Link>
+              <Link to="/QuestionsPage">Вопросы и ответы</Link>
+              <Link to="/Contacts">Контакты</Link>  
+              <Link to="/RegisterPage">Регистрация/Войти</Link> 
+
+              <div>
+                <form id="searchForm">
+                  <input type="text" placeholder="Искать здесь..." />
+                  <button type="submit"></button>
+                </form> 
+              </div>
+        </div>
+      </nav>
+      </div>
+      
     <div style={{ padding: "20px" }}>
       <h1>{decodeURIComponent(title)}</h1>
       <Link to="/Anime_chan">
@@ -76,6 +106,8 @@ const AnimeDetailsPage = () => {
       ) : (
         <p>Серии для этого аниме пока не добавлены.</p>
       )}
+    </div>
+
     </div>
   );
 };
