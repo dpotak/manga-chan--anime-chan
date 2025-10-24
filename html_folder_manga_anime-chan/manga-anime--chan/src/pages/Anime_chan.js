@@ -20,6 +20,7 @@ import OnePiece_anime from "./anime_chan_folder_foto/OnePiece.png";
 const Anime_chan = () => {
   // вызываем твой хук для плавных переходов
   Anime_Pages_Transition();
+  const { t, changeLanguage } = AnimePageTranslator();
 
     // Список жанров манги
       const genres = [
@@ -71,16 +72,16 @@ const Anime_chan = () => {
                </form>
      
                <div className="language">
-                 <button className="ENG">
-                   <img src={britainFlag} width="20" height="20" alt="EN" />
-                 </button>
-                 <button className="rus">
-                   <img src={russianFlag} width="20" height="20" alt="RU" />
-                 </button>
-                 <button className="EST">
-                  <img src={estonianflag} width="20" height="20" alt="EST"></img>
+                <button onClick={() => changeLanguage("en")}>
+                  <img src={britainFlag} width="20" height="20" alt="EN" />
                 </button>
-               </div>
+                <button onClick={() => changeLanguage("ru")}>
+                  <img src={russianFlag} width="20" height="20" alt="RU" />
+                </button>
+                <button onClick={() => changeLanguage("ee")}>
+                  <img src={estonianflag} width="20" height="20" alt="EST" />
+                </button>
+              </div>
              </nav>
            </div>
 
