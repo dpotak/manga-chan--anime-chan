@@ -9,6 +9,14 @@ import { Anime_Pages_Transition } from "../hooks/Anime_Pages_Transition";
 import { AnimePageTranslator } from "../hooks/AnimePages_Translator";
 import { Link } from "react-router-dom";
 
+
+// База данных с постерами для аниме
+import chainsaw_man_anime from "./anime_chan_folder_foto/Chanisaw.png";
+// import chainsaw_man_anime from "";
+// import chainsaw_man_anime from "";
+// import chainsaw_man_anime from "";
+// import chainsaw_man_anime from "";
+
 const Anime_chan = () => {
   // вызываем твой хук для плавных переходов
   Anime_Pages_Transition();
@@ -26,21 +34,16 @@ const Anime_chan = () => {
         "Fantasy",
         "Horror"
       ];
-    
-     // const [showGenres, setShowGenres] = useState(false);
-    
+        
       // Список манги
-      const list_manga = [
-        "Chanisaw",
-        "Kusuriyanohi 2 season",
-        "Kusuriyanohi 1 season",
-        "Inuyasha",
-        "DemonSlayer"
-      ];
-    
-     // const [ListAnime, setListAnime] = useState(false);
+      const ListAnime = [
+          { title: "Chainsaw Man", genre: "Shonen", description: "История о парне с бензопилой.", poster: chainsaw_man_anime },
+          { title: "Demon Slayer", genre: "Action", description: "Охота на демонов и сила семьи.", poster: "" },
+          { title: "Inuyasha", genre: "Fantasy", description: "Девушка из будущего и демон с мечом.", poster: "" },
+          { title: "Kusuriya no Hitorigoto", genre: "Josei", description: "Таинственная придворная аптекарша.", poster: "" },
+          { title: "One Piece", genre: "Adventure", description: "Пираты, море и мечта о свободе.", poster: "" },
+        ];
   
-
   return (
     <div> 
      <div className="header">
@@ -93,6 +96,36 @@ const Anime_chan = () => {
             </div>
           </form>
         </div>
+
+        <div className="anime_list_section">
+        <h2 className="anime_list_title">Список аниме</h2>
+
+        <div className="anime_card_container">
+          {ListAnime.map((anime, index) => (
+            <Card key={index} className="anime_card">
+              <div className="anime_poster_container">
+                <img src={anime.poster} alt={anime.title} className="anime_poster" />
+                <div className="anime_poster_overlay" />
+              </div>
+              <CardHeader
+                avatar={<Avatar>{anime.title.charAt(0)}</Avatar>}
+                title={anime.title}
+                subheader={anime.genre}
+              />
+              <CardContent>
+                <Typography variant="body2" color="text.secondary">
+                  {anime.description}
+                </Typography>
+                <Link to={`/AnimeDetailsPage/${encodeURIComponent(anime.title)}`}>
+                  <Button variant="contained" color="primary" style={{ marginTop: "10px" }}>
+                    Смотреть →
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
 
     </div>
   );

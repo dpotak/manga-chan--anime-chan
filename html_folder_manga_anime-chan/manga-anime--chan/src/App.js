@@ -51,7 +51,7 @@ function App() {
           <Route path="/Anime_chan" element={<Anime_chan />} />
           <Route path="/Manga_chan" element={<Manga_chan />} />
           <Route path="/Contacts" element={<Contacts />} />
-          <Route path="/AnimeDetailsPage" element={<AnimeDetailsPage />} />
+          <Route path="/AnimeDetailsPage/:title" element={<AnimeDetailsPage />} />
           <Route path="/Manga/:title" element={<MangaDetailsPage />} />
         </Routes>
       </main>
