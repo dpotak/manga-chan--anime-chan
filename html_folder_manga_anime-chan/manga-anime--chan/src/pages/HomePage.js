@@ -80,7 +80,7 @@ const HomePage = () => {
       </div>
 
       <div id="particles-js"></div>
-      <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> 
+      <div class="count-particles"> <span class="js-count-particles"></span> </div> 
 
       <div className="Glav_stanica">
         <h1 className="h1_glavnaja">{t.headline}</h1>
