@@ -7,6 +7,7 @@ import "./otvetinavoprosi_folder_css/otvetinavoprosi.css";
 import "./otvetinavoprosi_folder_css/otvetinavoprosi_2.css";
 import { UseQuestionsPages_Transition } from "../hooks/QuestionsPages_Transition";
 import { useQuestionsPageTranslator } from "../hooks/QuestionsPages_Translator";
+import { background_partijs } from "../background_for_page/background_partijs";
 
 const faqData = [
   { question: "Что такое “Manga-chan / Anime-chan?", 

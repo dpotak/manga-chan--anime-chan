@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams , Link } from "react-router-dom";
 import { Button, Card, CardContent, Typography , Avatar , CardHeader } from '@mui/material';
+import { background_partijs } from "../background_for_page/background_partijs";
 // import britainFlag from './foto/britain_flags.png';
 // import russianFlag from './foto/russian_flag.jpg';
 // import estonianflag from './foto/estonian.png';

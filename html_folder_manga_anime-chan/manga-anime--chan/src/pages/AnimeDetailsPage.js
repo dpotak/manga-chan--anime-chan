@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Button, Typography } from "@mui/material";
+import { background_partijs } from "../background_for_page/background_partijs";
 
 const AnimeDetailsPage = () => {
   const { title } = useParams();

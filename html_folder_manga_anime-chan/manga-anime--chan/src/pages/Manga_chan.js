@@ -9,7 +9,7 @@ import { Button, Card, CardContent, Typography , Avatar , CardHeader } from '@mu
 import { Link } from "react-router-dom";
 import { Manga_Pages_Transition } from "../hooks/Manga_Pages_Transition";
 import { MangaPage_Translator } from "../hooks/MangaPage_Translator";
-
+import { background_partijs } from "../background_for_page/background_partijs";
 
 // Пути до постреров мангов
 import Manga_Chainsaw_Man_manga from "./manga_chan_folder_foto/chainsaw_man_manga.png";

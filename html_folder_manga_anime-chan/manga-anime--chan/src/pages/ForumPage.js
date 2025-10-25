@@ -7,6 +7,7 @@ import estonianflag from './foto/estonian.png';
 import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { ForumPages_Transition, useForumPages_Transition } from "../hooks/ForumPages_Transition";
 import { useForumPagesPageTranslator } from "../hooks/ForumPages_Translator";
+import { background_partijs } from "../background_for_page/background_partijs";
 import { Link } from "react-router-dom";
 
 const ForumPage = () => {

@@ -7,6 +7,7 @@ import './anime_chan_folder/anime_chan_2.css';
 import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { Anime_Pages_Transition } from "../hooks/Anime_Pages_Transition";
 import { AnimePageTranslator } from "../hooks/AnimePages_Translator";
+import { background_partijs } from "../background_for_page/background_partijs";
 import { Link } from "react-router-dom";
 
 

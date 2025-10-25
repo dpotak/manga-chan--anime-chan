@@ -7,6 +7,7 @@ import './nov_folder_css/nowesti_2.css';
 import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { NewsPages_Transition } from "../hooks/NewsPages_Transition";
 import { useNewsPagesPageTranslator } from "../hooks/NewsPage_Translator";
+import { background_partijs } from "../background_for_page/background_partijs";
 import demonslayer from "./news_folder_foto/demonslayer.png";
 import { Link } from "react-router-dom";
 

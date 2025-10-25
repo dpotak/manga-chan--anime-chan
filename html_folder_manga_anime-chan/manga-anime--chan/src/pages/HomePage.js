@@ -6,6 +6,7 @@ import estonianflag from './foto/estonian.png';
 import { Button, Typography } from '@mui/material';
 import { useHomePagesTransition } from "../hooks/HomePages_Transition";
 import { useHomePageTranslator } from "../hooks/HomePage_translator";
+import { background_partijs } from "../background_for_page/background_partijs";
 import ramka_anime_manga from './foto/ramka_anime_manga.jpg';
 import Chanisaw from './ramka_anime_folder/Chanisaw.jpg';
 import kusuriyanohi_2season from './ramka_anime_folder/kusuriyanohi_2season.jpg';

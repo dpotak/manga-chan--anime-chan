@@ -9,6 +9,7 @@ import GiThub from "./register_foto/gitHub.png";
 import { Link } from "react-router-dom";
 import { useTranslatorRegister } from "../hooks/Register_Translator";
 import { useTransitionRegister } from "../hooks/Register_Transition";
+import { background_partijs } from "../background_for_page/background_partijs";
 
 
 const RegisterPage = () => {

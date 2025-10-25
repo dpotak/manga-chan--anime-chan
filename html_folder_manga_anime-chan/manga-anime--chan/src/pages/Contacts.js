@@ -11,6 +11,7 @@ import Boosty_foto from './contacts_folders_foto/download.png';
 import Contacts_gmail_socialmedia_questions from './for_sites_watchAnime/contacts_gmail_socialmedia_quations.png';
 import { UseContactsPageTranslator } from "../hooks/ContactsPages_translator";
 import { UseContact_Pages_Transition } from "../hooks/Contact_Pages_Transition";
+import { background_partijs } from "../background_for_page/background_partijs";
 
 const Contacts = () => {
 
