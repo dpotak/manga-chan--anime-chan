@@ -8,6 +8,8 @@ import "./register_folder_css/register.css";
 import "./register_folder_css/particlesjs_register.css";
 import Google from "./register_foto/google.png";
 import GiThub from "./register_foto/gitHub.png";
+import Facebook from "./register_foto/Facebook.png";
+import VK from "./register_foto/VK.png";
 import { Link } from "react-router-dom";
 import { useTranslatorRegister } from "../hooks/Register_Translator";
 import { useTransitionRegister } from "../hooks/Register_Transition";
@@ -74,6 +76,8 @@ const RegisterPage = () => {
           <div className="Reg_Google_GitHub">
             <button className="GitHub"><img src={ GiThub } width={"30px"} height={"25px"}></img></button>
             <button className="Google"><img src={ Google } width={"30px"} height={"25px"}></img></button>
+            <button className="VK"><img src={ VK } width={"30px"} height={"25px"}></img></button>
+            <button className="Facebook"><img src={ Facebook } width={"30px"} height={"25px"}></img></button>
           </div>
         </div>
 
