@@ -1,9 +1,11 @@
 import React from "react";
+import { useEffect , useState } from "react";
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
 import estonianflag from './foto/estonian.png';
 import './nov_folder_css/nowesti.css';
 import './nov_folder_css/nowesti_2.css';
+import "./nov_folder_css/particlesjs_news.css";
 import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { NewsPages_Transition } from "../hooks/NewsPages_Transition";
 import { useNewsPagesPageTranslator } from "../hooks/NewsPage_Translator";
@@ -13,6 +15,10 @@ import { Link } from "react-router-dom";
 
 
 const NewsPage = () => {
+  useEffect(() => {
+      background_partijs();
+    }, []);
+
   NewsPages_Transition(); // <-- хук вызываем внутри компонента
   const { t, changeLanguage } = useNewsPagesPageTranslator();
 
@@ -54,6 +60,9 @@ const NewsPage = () => {
     </div>
    </nav>
   </div>
+
+  <div id="particles-js"></div>
+  <div class="count-particles"> <span class="js-count-particles"></span> </div> 
 
   <div className="News_text_h1">
     <h1 className="news_h1"> {t.news_h1} </h1>

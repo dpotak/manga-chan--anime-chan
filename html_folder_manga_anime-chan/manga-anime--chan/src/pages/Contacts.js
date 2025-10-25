@@ -1,8 +1,10 @@
 import React from "react"; 
+import { useEffect , useState } from "react";
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
 import estonianflag from './foto/estonian.png';
 import "./contacts_folder_css/contacts_1.css";
+import "./contacts_folder_css/particlesjs_contacts.css";
 import { Link } from "react-router-dom";
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import Instagram_foto from './contacts_folders_foto/instagram.png';
@@ -14,6 +16,9 @@ import { UseContact_Pages_Transition } from "../hooks/Contact_Pages_Transition";
 import { background_partijs } from "../background_for_page/background_partijs";
 
 const Contacts = () => {
+  useEffect(() => {
+      background_partijs();
+    }, []);
 
   UseContact_Pages_Transition();
   const { t, changeLanguage } = UseContactsPageTranslator();
@@ -64,6 +69,9 @@ const Contacts = () => {
           </div>
         </nav>
       </div>
+
+      <div id="particles-js"></div>
+      <div class="count-particles"> <span class="js-count-particles"></span> </div> 
 
       <div className="h1_Contacts_text_h1">
         <h1 className="h1_Cont_text"> {t.H1_cont_text} </h1>

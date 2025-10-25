@@ -1,9 +1,11 @@
 // RegisterPage.jsx
 import React from "react";
+import { useEffect , useState } from "react";
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
 import estonianflag from './foto/estonian.png';
 import "./register_folder_css/register.css";
+import "./register_folder_css/particlesjs_register.css";
 import Google from "./register_foto/google.png";
 import GiThub from "./register_foto/gitHub.png";
 import { Link } from "react-router-dom";
@@ -13,11 +15,19 @@ import { background_partijs } from "../background_for_page/background_partijs";
 
 
 const RegisterPage = () => {
+  useEffect(() => {
+      background_partijs();
+    }, []);
+
   useTransitionRegister();
   const { t, changeLanguage } = useTranslatorRegister();
 
   return (
-    <div className="register-page">
+  
+    <div>
+       <div id="particles-js"></div>
+        <div class="count-particles"> <span class="js-count-particles"></span> </div> 
+      <div className="register-page">
 
       <nav className="nav-bar">
         <div className="language">
@@ -78,8 +88,9 @@ const RegisterPage = () => {
             <Link to="/"> {t.LinK_Home} </Link>
           </div>
         </div>
-
       </div>
+
+    </div>
     </div>
   );
 };

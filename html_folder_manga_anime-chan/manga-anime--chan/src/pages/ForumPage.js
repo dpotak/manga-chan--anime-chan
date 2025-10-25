@@ -1,6 +1,8 @@
 import React from "react";
+import { useEffect , useState } from "react";
 import "./styles_css_forum/obsujdenie.css";
 import "./styles_css_forum/obsijdenie_2.css";
+import "./styles_css_forum/particlesjs_forum.css";
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg'; 
 import estonianflag from './foto/estonian.png';
@@ -11,6 +13,10 @@ import { background_partijs } from "../background_for_page/background_partijs";
 import { Link } from "react-router-dom";
 
 const ForumPage = () => {
+  useEffect(() => {
+      background_partijs();
+    }, []);
+
   useForumPages_Transition(); // активируем плавные переходы
   const { t, changeLanguage } = useForumPagesPageTranslator();
 
@@ -53,6 +59,9 @@ const ForumPage = () => {
           </div>
         </nav>
       </div>
+
+      <div id="particles-js"></div>
+      <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> 
 
       <div className="Forum_text">
         <h1 className="text_h1_forum"> {t.text_h1_forum} </h1>

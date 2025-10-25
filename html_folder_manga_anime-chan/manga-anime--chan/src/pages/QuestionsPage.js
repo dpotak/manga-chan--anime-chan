@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import britainFlag from "./foto/britain_flags.png";
 import russianFlag from "./foto/russian_flag.jpg";
 import estonianflag from './foto/estonian.png';
 import "./otvetinavoprosi_folder_css/otvetinavoprosi.css";
 import "./otvetinavoprosi_folder_css/otvetinavoprosi_2.css";
+import "./otvetinavoprosi_folder_css/particlesjs_Questions.css";
 import { UseQuestionsPages_Transition } from "../hooks/QuestionsPages_Transition";
 import { useQuestionsPageTranslator } from "../hooks/QuestionsPages_Translator";
 import { background_partijs } from "../background_for_page/background_partijs";
@@ -74,6 +76,9 @@ const FAQItem = ({ question, answer, isOpen, onToggle }) => (
 );
 
 const QuestionsPage = () => {
+  useEffect(() => {
+      background_partijs();
+    }, []);
 
   UseQuestionsPages_Transition();
   const { t, changeLanguage } = useQuestionsPageTranslator();
@@ -130,6 +135,9 @@ const QuestionsPage = () => {
               </div>
         </nav>
       </div>
+
+      <div id="particles-js"></div>
+      <div class="count-particles"> <span class="js-count-particles"></span> </div>
 
       <div className="Questions_1">
         <h1> {t.Questions_1} </h1>
