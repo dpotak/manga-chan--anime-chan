@@ -27,7 +27,6 @@ const HomePage = () => {
   useHomePagesTransition();
   const { t, changeLanguage } = useHomePageTranslator();
   
-
   const animeImages = [
     { title: "Chanisaw", poster: Chanisaw },
     { title: "Kusuriyanohi 2", poster: kusuriyanohi_2season },
