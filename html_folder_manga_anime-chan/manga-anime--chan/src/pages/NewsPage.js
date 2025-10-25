@@ -61,9 +61,6 @@ const NewsPage = () => {
    </nav>
   </div>
 
-  <div id="particles-js"></div>
-  <div class="count-particles"> <span class="js-count-particles"></span> </div> 
-
   <div className="News_text_h1">
     <h1 className="news_h1"> {t.news_h1} </h1>
   </div>
@@ -110,9 +107,12 @@ const NewsPage = () => {
         <button className="btn_news_1">{t.btn_news_1}</button>
       </div>
     </div>
+    
+    <div id="particles-js"></div>
+    <div class="count-particles"> <span class="js-count-particles"></span> </div> 
 
   </div>
-    </div>
+</div>
     
   );
 };

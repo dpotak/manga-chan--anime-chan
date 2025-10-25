@@ -60,9 +60,6 @@ const ForumPage = () => {
         </nav>
       </div>
 
-      <div id="particles-js"></div>
-      <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> 
-
       <div className="Forum_text">
         <h1 className="text_h1_forum"> {t.text_h1_forum} </h1>
       </div>
@@ -78,6 +75,9 @@ const ForumPage = () => {
           </div>
         </div>
       </div>
+
+      <div id="particles-js"></div>
+      <div class="count-particles"> <span class="js-count-particles"></span> </div> 
 
     </div>
 

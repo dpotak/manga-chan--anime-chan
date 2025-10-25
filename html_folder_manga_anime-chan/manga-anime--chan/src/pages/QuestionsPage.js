@@ -216,6 +216,10 @@ const QuestionsPage = () => {
         </h4>
         <Link to="/Contacts" title="Посетите наши контакты"> {t.Link_contacts} </Link>
       </div>
+
+      <div id="particles-js"></div>
+      <div class="count-particles"> <span class="js-count-particles"></span> </div>
+
     </div>
   );
 };
