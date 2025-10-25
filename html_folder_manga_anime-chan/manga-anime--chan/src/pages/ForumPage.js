@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect , useState } from "react";
+import { useEffect , useState , useRef } from "react";
 import "./styles_css_forum/obsujdenie.css";
 import "./styles_css_forum/obsijdenie_2.css";
 import "./styles_css_forum/particlesjs_forum.css";
@@ -19,6 +19,30 @@ const ForumPage = () => {
 
   useForumPages_Transition(); // активируем плавные переходы
   const { t, changeLanguage } = useForumPagesPageTranslator();
+
+
+  const changeTextRef = useRef(null);
+
+  useEffect(() => {
+    const changeTextElement = changeTextRef.current;
+
+    document.getElementById('changeButton_anime').addEventListener('click', () => {
+      changeTextElement.innerText = 'Обсуждение аниме';
+    });
+
+    document.getElementById('changeButton_manga').addEventListener('click', () => {
+      changeTextElement.innerText = 'Обсуждение манги';
+    });
+
+    document.getElementById('changeButton_news').addEventListener('click', function() {
+      changeTextElement.innerText = 'Новости индустрии';
+    });
+
+    document.getElementById('changeButton_FanArt').addEventListener('click', function() {
+      changeTextElement.innerText = 'Фан-арт и творчество';
+    });
+
+  }, []);
 
   return (
     <div>
@@ -66,12 +90,23 @@ const ForumPage = () => {
 
       <div className="forum_obs_1">
         <div className="forum_border_kvadrat">
-          <button className="btn_1_kvad"><img src="" width="50px" height="30px"></img>Обсуждение аниме</button>
-          <button className="btn_2_kvad"><img src="" width="50px" height="30px"></img>Обсуждение манги</button>
-          <button className="btn_1_kvad"><img src="" width="50px" height="30px"></img>Новости индустрии</button>
-          <button className="btn_2_kvad"><img src="" width="50px" height="30px"></img>Фан-арт и творчество</button>
+          <button className="btn_1_kvad"><img src="" id="changeButton_anime" width="50px" height="30px"></img>Обсуждение аниме</button>
+          <button className="btn_2_kvad"><img src="" id="changeButton_manga" width="50px" height="30px"></img>Обсуждение манги</button>
+          <button className="btn_1_kvad"><img src="" id="changeButton_news" width="50px" height="30px"></img>Новости индустрии</button>
+          <button className="btn_2_kvad"><img src="" id="changeButton_FanArt" width="50px" height="30px"></img>Фан-арт и творчество</button>
           <div className="text_kvadrat_1">
             <button className=""></button>
+          </div>
+          <div className="kvadrat_forum">
+
+            <div className="kavdrat_forum_Nr_two">
+              <p ref={changeTextRef} className="Text_glavnaja">Привествуем вас на нашем форуме!</p>
+            </div>
+
+            <div className="text_forKvadrat">
+
+            </div>
+            
           </div>
         </div>
       </div>
