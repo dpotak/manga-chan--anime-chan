@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect , useState } from "react";
 import { Link } from "react-router-dom";
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
@@ -16,10 +17,16 @@ import "./styles/index_chan.css";
 import "./styles/index_chan_2.css";
 import "./styles/forms_website.css";
 import "./styles/Scroll_ramka_anime.css";
+import "./styles/particlesjs.css";
 
 const HomePage = () => {
+    useEffect(() => {
+    background_partijs();
+  }, []);
+
   useHomePagesTransition();
   const { t, changeLanguage } = useHomePageTranslator();
+  
 
   const animeImages = [
     { title: "Chanisaw", poster: Chanisaw },
@@ -31,9 +38,11 @@ const HomePage = () => {
   const shuffleArray = (array) => [...array].sort(() => Math.random() - 0.5);
   const shuffledImages = shuffleArray(animeImages);
 
+
   return (
     <div>
       <div className="header">
+
         <h1 className="Glavnaja_1">Manga-chan--Anime-chan</h1>
         <nav className="nav-bar">
           <div className="dropdown">
@@ -69,6 +78,9 @@ const HomePage = () => {
           </div>
         </nav>
       </div>
+
+      <div id="particles-js"></div>
+      <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> 
 
       <div className="Glav_stanica">
         <h1 className="h1_glavnaja">{t.headline}</h1>
@@ -135,6 +147,7 @@ const HomePage = () => {
     ))}
   </div>
 </div>
+
     </div>
   );
 };
