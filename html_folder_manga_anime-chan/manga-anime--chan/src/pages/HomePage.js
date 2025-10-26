@@ -39,7 +39,7 @@ const HomePage = () => {
 
 
   return (
-    <div>
+    <div id="page-container">
       <div className="header">
 
         <h1 className="Glavnaja_1">Manga-chan--Anime-chan</h1>

@@ -1,8 +1,16 @@
 /* global particlesJS, Stats */
 
 export const background_partijs = () => {
-  window.addEventListener("load", () => {
-    if (!window.particlesJS) return;
+  // Удаляем предыдущий canvas, если он остался
+  const oldCanvas = document.querySelector("#particles-js > canvas");
+  if (oldCanvas) oldCanvas.remove();
+
+  // Если библиотека ещё не загружена — ждём немного
+  const initParticles = () => {
+    if (!window.particlesJS) {
+      setTimeout(initParticles, 100);
+      return;
+    }
 
     particlesJS("particles-js", {
       particles: {
@@ -26,17 +34,7 @@ export const background_partijs = () => {
       },
       retina_detect: true,
     });
+  };
 
-    if (window.Stats) {
-      const stats = new Stats();
-      stats.showPanel(0);
-      document.body.appendChild(stats.dom);
-      const update = () => {
-        stats.begin();
-        stats.end();
-        requestAnimationFrame(update);
-      };
-      update();
-    }
-  });
+  initParticles();
 };

@@ -23,7 +23,7 @@ const NewsPage = () => {
   const { t, changeLanguage } = useNewsPagesPageTranslator();
 
   return (
-    <div>
+    <div id="page-container">
        <div className="header">
       <h1 className="Glavnaja_1">Manga-chan--Anime-chan: {t.news_h1_2} </h1>
     <nav className="nav-bar">

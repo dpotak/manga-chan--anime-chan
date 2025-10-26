@@ -5,16 +5,27 @@ export const useHomePagesTransition = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Плавное появление страницы
-    document.body.style.opacity = 0;
-    document.body.style.transition = "opacity 0.5s ease";
-    document.body.style.opacity = 1;
+    const container = document.getElementById("page-container");
+    if (!container) return;
 
+    container.style.opacity = 0;
+    container.style.transition = "opacity 0.6s ease";
+    requestAnimationFrame(() => {
+      container.style.opacity = 1;
+    });
   }, []);
 
   const handleTransitionClick = (path) => {
-    document.body.style.opacity = 0;
-    setTimeout(() => navigate(path), 500);
+    const container = document.getElementById("page-container");
+    if (!container) {
+      navigate(path);
+      return;
+    }
+
+    container.style.opacity = 0;
+    setTimeout(() => {
+      navigate(path);
+    }, 600);
   };
 
   return handleTransitionClick;
