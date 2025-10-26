@@ -11,6 +11,7 @@ import { NewsPages_Transition } from "../hooks/NewsPages_Transition";
 import { useNewsPagesPageTranslator } from "../hooks/NewsPage_Translator";
 import { background_partijs } from "../background_for_page/background_partijs";
 import demonslayer from "./news_folder_foto/demonslayer.png";
+import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
 import { Link } from "react-router-dom";
 
 
@@ -25,7 +26,12 @@ const NewsPage = () => {
   return (
     <div id="page-container">
        <div className="header">
-      <h1 className="Glavnaja_1">Manga-chan--Anime-chan: {t.news_h1_2} </h1>
+
+       <div className="glavnaja_icon_TEXT">
+          <img className="glavnaja_icon" src={icon_glavnaja} width={"65px"} height={"65px"}></img>
+          <h1 className="Glavnaja_1"> Manga-chan--Anime-chan {t.news_h1_2} </h1>
+        </div>
+      
     <nav className="nav-bar">
         <div className="dropdown">
           <button className="dropbtn">{t.catalog}</button>

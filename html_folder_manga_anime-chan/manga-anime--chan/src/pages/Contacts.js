@@ -10,6 +10,7 @@ import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import Instagram_foto from './contacts_folders_foto/instagram.png';
 import Telegram_foto from './contacts_folders_foto/telega.png';
 import Boosty_foto from './contacts_folders_foto/download.png';
+import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
 import Contacts_gmail_socialmedia_questions from './for_sites_watchAnime/contacts_gmail_socialmedia_quations.png';
 import { UseContactsPageTranslator } from "../hooks/ContactsPages_translator";
 import { UseContact_Pages_Transition } from "../hooks/Contact_Pages_Transition";
@@ -33,7 +34,11 @@ const Contacts = () => {
   return (
     <div>
       <div className="header">
-        <h1 className="Glavnaja_1" >Manga-chan--Anime-chan: {t.H1_cont_text_2} </h1>
+
+        <div className="glavnaja_icon_TEXT">
+          <img className="glavnaja_icon" src={icon_glavnaja} width={"65px"} height={"65px"}></img>
+          <h1 className="Glavnaja_1"> Manga-chan--Anime-chan  {t.H1_cont_text_2} </h1>
+        </div>
 
         <nav className="nav-bar">
           <div className="dropdown">

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import britainFlag from "./foto/britain_flags.png";
 import russianFlag from "./foto/russian_flag.jpg";
 import estonianflag from './foto/estonian.png';
+import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
 import "./otvetinavoprosi_folder_css/otvetinavoprosi.css";
 import "./otvetinavoprosi_folder_css/otvetinavoprosi_2.css";
 import "./otvetinavoprosi_folder_css/particlesjs_Questions.css";
@@ -99,7 +100,11 @@ const QuestionsPage = () => {
   return (
     <div>
       <div className="header">
-        <h1 className="Glavnaja_1" >Manga-chan--Anime-chan: {t.h1_News} </h1>
+
+        <div className="glavnaja_icon_TEXT">
+          <img className="glavnaja_icon" src={icon_glavnaja} width={"65px"} height={"65px"}></img>
+          <h1 className="Glavnaja_1"> Manga-chan--Anime-chan  {t.h1_News}</h1>
+        </div>
 
         <nav className="nav-bar">
           <div className="dropdown">

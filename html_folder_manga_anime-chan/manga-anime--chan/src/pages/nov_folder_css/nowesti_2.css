@@ -80,3 +80,11 @@ body {
   font-size: 125px;
 }
 
+.glavnaja_icon_TEXT {
+  display: flex;
+}
+
+.Glavnaja_1 {
+  margin-top: 20px;
+  margin-left: 10px;
+}
