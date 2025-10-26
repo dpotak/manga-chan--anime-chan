@@ -19,3 +19,12 @@
   line-height: 1.6;
   color: #3d3d3d;
 }
+
+.glavnaja_icon_TEXT {
+  display: flex;
+}
+
+.Glavnaja_1 {
+  margin-top: 20px;
+  margin-left: 10px;
+}

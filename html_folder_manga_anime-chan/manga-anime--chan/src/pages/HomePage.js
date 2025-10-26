@@ -13,6 +13,7 @@ import Chanisaw from './ramka_anime_folder/Chanisaw.jpg';
 import kusuriyanohi_2season from './ramka_anime_folder/kusuriyanohi_2season.jpg';
 import inuyasha from './ramka_anime_folder/inuyasha.jpg';
 import kusuriyanohitorigoto_1season from './ramka_anime_folder/kusuriyanohitorigoto_1season.jpg';
+import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
 import "./styles/index_chan.css";
 import "./styles/index_chan_2.css";
 import "./styles/forms_website.css";
@@ -42,7 +43,11 @@ const HomePage = () => {
     <div id="page-container">
       <div className="header">
 
-        <h1 className="Glavnaja_1">Manga-chan--Anime-chan</h1>
+        <div className="glavnaja_icon_TEXT">
+          <img className="glavnaja_icon" src={icon_glavnaja} width={"65px"} height={"65px"}></img>
+          <h1 className="Glavnaja_1"> Manga-chan--Anime-chan </h1>
+        </div>
+
         <nav className="nav-bar">
           <div className="dropdown">
             <button className="dropbtn">{t.catalog}</button>
@@ -79,7 +84,7 @@ const HomePage = () => {
       </div>
 
       <div id="particles-js"></div>
-      <div class="count-particles"> <span class="js-count-particles"></span> </div> 
+      <div class="count-particles"><span class="js-count-particles"></span></div> 
 
       <div className="Glav_stanica">
         <h1 className="h1_glavnaja">{t.headline}</h1>
