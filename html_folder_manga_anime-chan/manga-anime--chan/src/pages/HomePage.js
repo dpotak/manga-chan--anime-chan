@@ -59,20 +59,22 @@ const HomePage = () => {
     { title: "" , poster: "" },
   ];
 
+  // для рекомендации манги/аниме
   const shuffleArray = (array) => [...array].sort(() => Math.random() - 0.5);
   const shuffledImages = shuffleArray(animeImages, mangaImages);
 
-  
 
   return (
     <div id="page-container">
       <div className="header">
 
+        {/* Название сайта и логотип */}
         <div className="glavnaja_icon_TEXT">
           <img className="glavnaja_icon" src={icon_glavnaja} width={"65px"} height={"65px"}></img>
           <h1 className="Glavnaja_1"> Manga-chan--Anime-chan </h1>
         </div>
 
+         {/* Основа для ссылок для под-страницы для сайта */}
         <nav className="nav-bar">
           <div className="dropdown">
             <button className="dropbtn">{t.catalog}</button>
@@ -82,6 +84,7 @@ const HomePage = () => {
             </div>
           </div>
 
+           {/* Ссылки на другие под-страницы для сайта */}
           <Link to="/">{t.home}</Link>
           <Link to="/ForumPage">{t.forum}</Link>
           <Link to="/NewsPage">{t.news}</Link>
@@ -89,11 +92,13 @@ const HomePage = () => {
           <Link to="/Contacts">{t.contacts}</Link>
           <Link to="/RegisterPage">{t.login}</Link>
 
+           {/* Поисковая строка */}
           <form id="searchForm">
             <input type="text" placeholder={t.searchPlaceholder} />
             <button type="submit"></button>
           </form>
 
+           {/* Языки для перевода сайта */}
           <div className="language">
             <button onClick={() => changeLanguage("en")}>
               <img src={britainFlag} width="20" height="20" alt="EN" />
@@ -108,9 +113,11 @@ const HomePage = () => {
         </nav>
       </div>
 
+       {/* Модуль particles */}
       <div id="particles-js"></div>
       <div class="count-particles"><span class="js-count-particles"></span></div> 
 
+      {/* Описание самого проекта (сайта) */}
       <div className="Glav_stanica">
         <h1 className="h1_glavnaja">{t.headline}</h1>
         <div className="project-description">
@@ -119,6 +126,7 @@ const HomePage = () => {
           </p>
         </div>
 
+         {/* Описание сайта о аниме и о мангах */}
         <div className="Opisanie_1">
             <Typography variant="h5" color="initial" className="h2_op_1">
                 {t.animeTitle}
@@ -141,6 +149,7 @@ const HomePage = () => {
         </div>
       </div>
 
+       {/* Рекомендации по манги и по аниме */}
       <div className="Rekomenduemoe">
         <Typography variant="h5">{t.recommendationsAnime}</Typography>
         <div className="cards-row">
