@@ -28,6 +28,7 @@ import Demon_Slayer_manga from "./manga_chan_folder_foto/Demon_Slayer_manga.png"
 import OnePiece_manga from "./manga_chan_folder_foto/One_Piece.png";
 import Kusuriya_no_Hitorigoto_manga from "./manga_chan_folder_foto/Kusuriya_no_Hitorigoto.png";
 
+
 // подключенные файлы CSS 
 import "./styles/index_chan.css";
 import "./styles/index_chan_2.css";
@@ -52,16 +53,18 @@ const HomePage = () => {
   ];
 
   // для рекомендации манги
-  const mangaImages = [
-    { title: "chainsaw" , poster: chainsaw_manga },
-    { title: "" , poster: "" },
-    { title: "" , poster: "" },
-    { title: "" , poster: "" },
-  ];
+ const mangaImages = [
+  { title: "Chainsaw_Man", poster: chainsaw_manga },
+  { title: "Inuyasha", poster: inuyasha_manga },
+  { title: "Demon_Slayer", poster: Demon_Slayer_manga },
+  { title: "OnePiece", poster: OnePiece_manga },
+  { title: "Kusuriya_no_Hitorigoto", poster: Kusuriya_no_Hitorigoto_manga },
+];
 
   // для рекомендации манги/аниме
   const shuffleArray = (array) => [...array].sort(() => Math.random() - 0.5);
-  const shuffledImages = shuffleArray(animeImages, mangaImages);
+  const shuffledImages = shuffleArray(animeImages);
+  const shuffledManga = shuffleArray(mangaImages);
 
 
   return (
@@ -156,7 +159,7 @@ const HomePage = () => {
           {shuffledImages.map((anime, index) => (
         <Link 
         key={index} 
-        to="/AnimeDetailsPage"
+        to={`/AnimeDetailsPage/${anime.title}`}
         className="anime-link"
       >
         <Button variant="text" color="default" className="btn_anime">
@@ -169,22 +172,23 @@ const HomePage = () => {
 </div>
 
 <div className="Rekomenduemoe_2">
-  <Typography variant="h5">{t.recommendationsManga}</Typography>
-  <div className="cards-row">
-    {shuffledImages.map((anime, index) => (
-      <Link 
-        key={index} 
-        to="/MangaDetailsPage"
-        className="manga-link"
-      >
-        <Button variant="text" color="default" className="btn_manga">
-          <img src={ramka_anime_manga} className="glav_anime_manga_1" alt="рамка"/>
-          <img src={anime.poster} className="glav_anime_manga_2" alt={anime.title}/>
-        </Button>
-      </Link>
-    ))}
-  </div>
-</div>
+        <Typography variant="h5">{t.recommendationsManga}</Typography>
+        <div className="cards-row">
+          {shuffledManga.map((manga, index) => (
+            <Link 
+              key={index} 
+              to={`/Manga/${manga.title}`}
+              className="manga-link"
+            >
+              <Button variant="text" color="default" className="btn_manga">
+                <img src={ramka_anime_manga} className="glav_anime_manga_1" alt="рамка"/>
+                <img src={manga.poster} className="glav_anime_manga_2" alt={manga.title}/>
+              </Button>
+            </Link>
+          ))}
+        </div>
+      </div>
+      
 
     </div>
   );
