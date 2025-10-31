@@ -18,6 +18,9 @@ import DemonSlayer_anime from "./anime_chan_folder_foto/DemonSlayer.png";
 import inuyasha_anime from "./anime_chan_folder_foto/inuyasha.png";
 import OnePiece_anime from "./anime_chan_folder_foto/OnePiece.png";
 
+import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
+
+
 const Anime_chan = () => {
   // вызываем твой хук для плавных переходов
   Anime_Pages_Transition();
@@ -49,7 +52,10 @@ const Anime_chan = () => {
   return (
     <div> 
      <div className="header">
-             <h1 className="Glavnaja_1" >Anime-chan</h1>
+             <div className="glavnaja_icon_TEXT">
+              <Link to={"/"}><img className="glavnaja_icon" src={icon_glavnaja} width={"65px"} height={"65px"}></img></Link>
+              <h1 className="Glavnaja_1" >Anime-chan</h1>
+             </div>
              
              <nav className="nav-bar">
                <div className="dropdown">

@@ -36,7 +36,7 @@ const Contacts = () => {
       <div className="header">
 
         <div className="glavnaja_icon_TEXT">
-          <img className="glavnaja_icon" src={icon_glavnaja} width={"65px"} height={"65px"}></img>
+          <Link to={"/"}><img className="glavnaja_icon" src={icon_glavnaja} width={"65px"} height={"65px"}></img></Link>
           <h1 className="Glavnaja_1"> Manga-chan--Anime-chan  {t.H1_cont_text_2} </h1>
         </div>
 

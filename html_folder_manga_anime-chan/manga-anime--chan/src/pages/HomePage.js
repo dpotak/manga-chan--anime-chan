@@ -28,7 +28,6 @@ import Demon_Slayer_manga from "./manga_chan_folder_foto/Demon_Slayer_manga.png"
 import OnePiece_manga from "./manga_chan_folder_foto/One_Piece.png";
 import Kusuriya_no_Hitorigoto_manga from "./manga_chan_folder_foto/Kusuriya_no_Hitorigoto.png";
 
-
 // подключенные файлы CSS 
 import "./styles/index_chan.css";
 import "./styles/index_chan_2.css";
@@ -66,14 +65,13 @@ const HomePage = () => {
   const shuffledImages = shuffleArray(animeImages);
   const shuffledManga = shuffleArray(mangaImages);
 
-
   return (
     <div id="page-container">
       <div className="header">
 
         {/* Название сайта и логотип */}
         <div className="glavnaja_icon_TEXT">
-          <img className="glavnaja_icon" src={icon_glavnaja} width={"65px"} height={"65px"}></img>
+          <Link to={"/"}><img className="glavnaja_icon" src={icon_glavnaja} width={"65px"} height={"65px"}></img></Link>
           <h1 className="Glavnaja_1"> Manga-chan--Anime-chan </h1>
         </div>
 

@@ -63,7 +63,7 @@ const ForumPage = () => {
       <div className="header">
 
         <div className="glavnaja_icon_TEXT">
-          <img className="glavnaja_icon" src={icon_glavnaja} width={"65px"} height={"65px"}></img>
+          <Link to={"/"}><img className="glavnaja_icon" src={icon_glavnaja} width={"65px"} height={"65px"}></img></Link>
           <h1 className="Glavnaja_1"> Manga-chan--Anime-chan  {t.h1_name}</h1>
         </div>
 

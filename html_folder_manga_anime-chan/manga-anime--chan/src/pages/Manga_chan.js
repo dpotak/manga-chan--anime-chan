@@ -18,6 +18,7 @@ import One_Piece_manga from "./manga_chan_folder_foto/One_Piece.png";
 import Demon_Slayer_manga from "./manga_chan_folder_foto/Demon_Slayer_manga.png";
 import Kusuriya_No_Hitorigoto_manga from "./manga_chan_folder_foto/Kusuriya_no_Hitorigoto.png";
 
+import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
 
 const Manga_chan = () => {
   Manga_Pages_Transition(); 
@@ -61,7 +62,11 @@ const Manga_chan = () => {
   return (
     <div>
       <div className="header">
-        <h1 className="Glavnaja_1">Manga-chan</h1>
+
+        <div className="glavnaja_icon_TEXT">
+          <Link to={"/"}><img className="glavnaja_icon" src={icon_glavnaja} width={"65px"} height={"65px"}></img></Link>
+          <h1 className="Glavnaja_1">Manga-chan</h1>
+        </div>        
 
         <nav className="nav-bar">
           <div className="dropdown">
