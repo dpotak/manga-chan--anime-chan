@@ -43,7 +43,7 @@ const HomePage = () => {
   useHomePagesTransition();
   const { t, changeLanguage } = useHomePageTranslator();
   
-  //
+  // для рекомендации аниме
   const animeImages = [
     { title: "Chanisaw", poster: Chanisaw },
     { title: "Kusuriyanohi 2", poster: kusuriyanohi_2season },
@@ -51,12 +51,12 @@ const HomePage = () => {
     { title: "Inuyasha", poster: inuyasha },
   ];
 
-  // 
+  // для рекомендации манги
   const mangaImages = [
-    {},
-    {},
-    {},
-    {},
+    { title: "" , poster: "" },
+    { title: "" , poster: "" },
+    { title: "" , poster: "" },
+    { title: "" , poster: "" },
   ];
 
   const shuffleArray = (array) => [...array].sort(() => Math.random() - 0.5);
