@@ -53,7 +53,7 @@ const HomePage = () => {
 
   // для рекомендации манги
   const mangaImages = [
-    { title: "" , poster: "" },
+    { title: "chainsaw" , poster: chainsaw_manga },
     { title: "" , poster: "" },
     { title: "" , poster: "" },
     { title: "" , poster: "" },
