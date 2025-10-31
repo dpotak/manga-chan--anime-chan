@@ -8,6 +8,7 @@ import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
 import "./otvetinavoprosi_folder_css/otvetinavoprosi.css";
 import "./otvetinavoprosi_folder_css/otvetinavoprosi_2.css";
 import "./otvetinavoprosi_folder_css/particlesjs_Questions.css";
+import "./otvetinavoprosi_folder_css/ontvetinavoprosi_webFormsSite.css";
 import { UseQuestionsPages_Transition } from "../hooks/QuestionsPages_Transition";
 import { useQuestionsPageTranslator } from "../hooks/QuestionsPages_Translator";
 import { background_partijs } from "../background_for_page/background_partijs";

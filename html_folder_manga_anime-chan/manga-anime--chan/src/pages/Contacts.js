@@ -5,6 +5,7 @@ import russianFlag from './foto/russian_flag.jpg';
 import estonianflag from './foto/estonian.png';
 import "./contacts_folder_css/contacts_1.css";
 import "./contacts_folder_css/particlesjs_contacts.css";
+import "./contacts_folder_css/contacts_websiteForms.css";
 import { Link } from "react-router-dom";
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import Instagram_foto from './contacts_folders_foto/instagram.png';

@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import "./styles_css_forum/obsujdenie.css";
 import "./styles_css_forum/obsijdenie_2.css";
 import "./styles_css_forum/particlesjs_forum.css";
+import "./styles_css_forum/forms_website_obs.css";
 import britainFlag from "./foto/britain_flags.png";
 import russianFlag from "./foto/russian_flag.jpg";
 import estonianflag from "./foto/estonian.png";

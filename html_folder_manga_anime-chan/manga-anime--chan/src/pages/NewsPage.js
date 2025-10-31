@@ -6,6 +6,7 @@ import estonianflag from './foto/estonian.png';
 import './nov_folder_css/nowesti.css';
 import './nov_folder_css/nowesti_2.css';
 import "./nov_folder_css/particlesjs_news.css";
+import "./nov_folder_css/now_form_website.css";
 import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { NewsPages_Transition } from "../hooks/NewsPages_Transition";
 import { useNewsPagesPageTranslator } from "../hooks/NewsPage_Translator";
