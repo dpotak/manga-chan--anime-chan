@@ -69,7 +69,7 @@ body {
 }
 
 /* сама кнопка/карточка — позиционированный контейнер */
-.btn_anime {
+.btn_anime , .btn_manga {
   width: 95px;
   height: 125px;
   position: relative;
