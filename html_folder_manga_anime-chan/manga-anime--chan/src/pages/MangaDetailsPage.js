@@ -2,9 +2,13 @@ import React from "react";
 import { useParams , Link } from "react-router-dom";
 import { Button, Card, CardContent, Typography , Avatar , CardHeader } from '@mui/material';
 import { background_partijs } from "../background_for_page/background_partijs";
-// import britainFlag from './foto/britain_flags.png';
-// import russianFlag from './foto/russian_flag.jpg';
-// import estonianflag from './foto/estonian.png';
+
+/// подклченные PNG файлы которые предназначены для флагов-переводов
+import britainFlag from './foto/britain_flags.png';
+import russianFlag from './foto/russian_flag.jpg';
+import estonianflag from './foto/estonian.png';
+import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
+
 
 const MangaDetailsPage = () => {
   const { title } = useParams(); // получаем название из URL
@@ -29,11 +33,18 @@ const MangaDetailsPage = () => {
   return (
    <div className="">
     <div className="">
-      <h1 className=""></h1>
+      <div className="glavnaja_icon_TEXT">
+        <Link to={"/"}><img className="glavnaja_icon" src={icon_glavnaja} width={"65px"} height={"65px"}></img></Link>
+        <h1 className="Glavnaja_1"> Manga-chan--Anime-chan </h1>
+      </div>
 
       <nav className="nav-bar">
-        <div className="">
-
+       <div className="dropdown">
+        <button className="dropbtn">Каталог</button>
+          <div className="dropdown-content">
+            <Link to="/Manga_chan"> Манга </Link>
+            <Link to="/Anime_chan"> Аниме </Link>
+          </div>
         </div>
       </nav>
     </div>
