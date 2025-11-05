@@ -3,9 +3,24 @@ import { useParams, Link } from "react-router-dom";
 import { Button, Typography } from "@mui/material";
 import { background_partijs } from "../background_for_page/background_partijs";
 
+/// подклченные PNG файлы которые предназначены для флагов-переводов
+import britainFlag from './foto/britain_flags.png';
+import russianFlag from './foto/russian_flag.jpg';
+import estonianflag from './foto/estonian.png';
+import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
+
+// подключенные файлы CSS 
+import "./manga_anime_Details/Anime_details.css";
+
+// 
+import { Anime_Details_Translator } from "../hooks/Anime_Details_Translator";
+
+
 const AnimeDetailsPage = () => {
   const { title } = useParams();
   const [selectedEpisode, setSelectedEpisode] = useState(null);
+
+  const { t, changeLanguage } = Anime_Details_Translator();
 
   // 🎥 Список серий
   const animeEpisodes = {
@@ -37,32 +52,52 @@ const AnimeDetailsPage = () => {
 
     <div className="Anime_details_header">
       <div className="header">
-        <h1 className="Glavnaja_1"></h1>
+        
+        {/* Название сайта и логотип */}
+        <div className="glavnaja_icon_TEXT">
+          <Link to={"/"}><img className="glavnaja_icon" src={icon_glavnaja} width={"65px"} height={"65px"}></img></Link>
+          <h1 className="Glavnaja_1"> Manga-chan--Anime-chan </h1>
+        </div>
 
-        <nav className="nav-bar">
-        <div className="dropdown">
-           <button className="dropbtn">Каталог</button>
-            <div className="dropdown-content">
-              <Link to="/Manga_chan">Манга</Link>
-              <Link to="/Anime_chan">Аниме</Link>
-            </div>
-
-              <Link to="/">Главная</Link>
-              <Link to="/ForumPage">Обсуждение</Link>
-              <Link to="/NewsPage">Новости</Link>
-              <Link to="/QuestionsPage">Вопросы и ответы</Link>
-              <Link to="/Contacts">Контакты</Link>  
-              <Link to="/RegisterPage">Регистрация/Войти</Link> 
-
-              <div>
-                <form id="searchForm">
-                  <input type="text" placeholder="Искать здесь..." />
-                  <button type="submit"></button>
-                </form> 
-              </div>
+      <nav className="nav-bar">
+       <div className="dropdown">
+        <button className="dropbtn">{t.catalog}</button>
+          <div className="dropdown-content">
+            <Link to="/Manga_chan"> {t.Manga_catalog} </Link>
+            <Link to="/Anime_chan"> {t.Anime_catalog} </Link>
+          </div>
+        </div>
+       
+        <Link to="/">{t.home}</Link>
+        <Link to="/ForumPage">{t.forum}</Link>
+        <Link to="/NewsPage">{t.news}</Link>
+        <Link to="/QuestionsPage">{t.faq}</Link>
+        <Link to="/Contacts">{t.contacts}</Link>
+        <Link to="/RegisterPage">{t.login}</Link>
+       
+        {/* Поисковая строка */}
+        <form id="searchForm">
+          <input type="text" placeholder={t.searchPlaceholder} />
+          <button type="submit"></button>
+        </form>
+       
+          <div className="language">
+          <button onClick={() => changeLanguage("en")}>
+            <img src={britainFlag} width="20" height="20" alt="EN" />
+          </button>
+          <button onClick={() => changeLanguage("ru")}>
+            <img src={russianFlag} width="20" height="20" alt="RU" />
+          </button>
+          <button onClick={() => changeLanguage("ee")}>
+            <img src={estonianflag} width="20" height="20" alt="EST" />
+          </button>
         </div>
       </nav>
-      </div>
+    </div>
+
+    <div className="opisanie_anime">
+
+    </div>
       
     <div style={{ padding: "20px" }}>
       <h1>{decodeURIComponent(title)}</h1>
