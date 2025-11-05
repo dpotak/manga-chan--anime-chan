@@ -9,6 +9,15 @@ import russianFlag from './foto/russian_flag.jpg';
 import estonianflag from './foto/estonian.png';
 import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
 
+// подключенные файлы CSS 
+import "./manga_anime_Details/manga_Details.css";
+
+// подключенные модули и другие файлы JS
+// import { background_partijs } from "../background_for_page/background_partijs";
+
+//
+import { Translator_Manga_Details } from "../hooks/Manga_Details_Translator";
+
 
 const MangaDetailsPage = () => {
   const { title } = useParams(); // получаем название из URL
@@ -30,9 +39,13 @@ const MangaDetailsPage = () => {
 
   const volumes = mangaVolumes[decodeURIComponent(title)] || [];
 
+  const { t, changeLanguage } = Translator_Manga_Details();
+
   return (
    <div className="">
-    <div className="">
+    <div className="header">
+
+      {/* Название сайта и логотип */}
       <div className="glavnaja_icon_TEXT">
         <Link to={"/"}><img className="glavnaja_icon" src={icon_glavnaja} width={"65px"} height={"65px"}></img></Link>
         <h1 className="Glavnaja_1"> Manga-chan--Anime-chan </h1>
@@ -40,13 +53,43 @@ const MangaDetailsPage = () => {
 
       <nav className="nav-bar">
        <div className="dropdown">
-        <button className="dropbtn">Каталог</button>
+        <button className="dropbtn">{t.catalog}</button>
           <div className="dropdown-content">
-            <Link to="/Manga_chan"> Манга </Link>
-            <Link to="/Anime_chan"> Аниме </Link>
+            <Link to="/Manga_chan"> {t.Manga_catalog} </Link>
+            <Link to="/Anime_chan"> {t.Anime_catalog} </Link>
           </div>
         </div>
+
+        {/* Ссылки на другие под-страницы для сайта */}
+        <Link to="/">{t.home}</Link>
+        <Link to="/ForumPage">{t.forum}</Link>
+        <Link to="/NewsPage">{t.news}</Link>
+        <Link to="/QuestionsPage">{t.faq}</Link>
+        <Link to="/Contacts">{t.contacts}</Link>  
+        <Link to="/RegisterPage">{t.login}</Link>
+
+        {/* Поисковая строка */}
+        <form id="searchForm">
+          <input type="text" placeholder= {t.searchPlaceholder} />
+          <button type="submit"></button>
+        </form>
+
+        <div className="language">
+          <button onClick={() => changeLanguage("en")}>
+            <img src={britainFlag} width="20" height="20" alt="EN" />
+          </button>
+          <button onClick={() => changeLanguage("ru")}>
+            <img src={russianFlag} width="20" height="20" alt="RU" />
+          </button>
+          <button onClick={() => changeLanguage("ee")}>
+            <img src={estonianflag} width="20" height="20" alt="EST" />
+          </button>
+        </div>
       </nav>
+    </div>
+
+    <div className="opisanie_manga">
+
     </div>
     
     <div style={{ padding: "20px" }}>
