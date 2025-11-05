@@ -8,6 +8,8 @@ export const translations = {
     contacts: "Контакты",
     login: "Регистрация/Войти",
     searchPlaceholder: "Искать здесь...",
+    Manga_catalog: "Манга",
+    Anime_catalog: "Аниме",
   },
   en: {
     catalog: "Catalog",
@@ -18,6 +20,8 @@ export const translations = {
     contacts: "Contacts",
     login: "Login / Register",
     searchPlaceholder: "Search here...",
+    Manga_catalog: "Manga",
+    Anime_catalog: "Anime",
   },
   ee: {
     catalog: "Kataloog",
@@ -28,5 +32,8 @@ export const translations = {
     contacts: "Kontaktid",
     login: "Registreeru / Logi sisse",
     searchPlaceholder: "Otsi siit...",
+    Manga_catalog: "Manga",
+    Anime_catalog: "Anime",
   },
 };
+
