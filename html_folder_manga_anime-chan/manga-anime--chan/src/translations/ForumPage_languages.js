@@ -13,6 +13,19 @@ export const translations = {
     Anime_catalog: "Аниме",
     text_h1_forum: "Обсуждение/Форум: ",
     h1_name: "Обсуждение",
+    btn_1_1_kvad: "Обсуждение аниме",
+    btn_1_2_kvad: "Обсуждение манги",
+    btn_2_1_kvad: "Новости индустрии",
+    btn_2_2_kvad: "Фан-арт и творчество",
+    anime: "Обсуждение аниме",  // Надо исправлять баг с переводчиком
+    manga: "Обсуждение манги", // Надо исправлять баг с переводчиком
+    news: "Новости индустрии", // Надо исправлять баг с переводчиком
+    fanart: "Фан-арт и творчество", // Надо исправлять баг с переводчиком
+    button_create_chat: "Создать тему",
+    forum_content_forms: "Пока нет обсуждений",
+    message_input_text: "Напишите сообщение...",
+    message_input_button: "Отправить",
+    forum_sidebar_text: "Введите тему...",
   },
 
   en: {
@@ -29,6 +42,19 @@ export const translations = {
     Anime_catalog: "Anime",
     text_h1_forum: "Discussion/Forum: ",
     h1_name: "Discussion",
+    btn_1_1_kvad: "Anime Discussion",
+    btn_1_2_kvad: "Manga Discussion",
+    btn_2_1_kvad: "Industry News",
+    btn_2_2_kvad: "Fan Art and Creativity",
+    anime: "Anime Discussion",
+    manga: "Manga Discussion",
+    news: "Industry News",
+    fanart: "Fan Art and Creativity",
+    button_create_chat: "Create a topic",
+    forum_content_forms: "No discussions yet",
+    message_input_text: "Write a message...",
+    message_input_button: "Submit",
+    forum_sidebar_text: "Enter a subject...",
   },
 
   ee: {
@@ -45,5 +71,18 @@ export const translations = {
     Anime_catalog: "Anime",
     text_h1_forum: "Arutelu/Foorum: ",
     h1_name: "Arutelu",
+    btn_1_1_kvad: "Anime arutelu",
+    btn_1_2_kvad: "Manga arutelu",
+    btn_2_1_kvad: "Tööstusuudised",
+    btn_2_2_kvad: "Fännikunst ja loovus",
+    anime: "Anime arutelu",
+    manga: "Manga arutelu",
+    news: "Tööstusuudised",
+    fanart: "Fännikunst ja loovus",
+    button_create_chat: "Loo teema",
+    forum_content_forms: "Arutelusid veel pole",
+    message_input_text: "Kirjuta sõnum...",
+    message_input_button: "Saada",
+    forum_sidebar_text: "Sisesta teema...",
   },
 };

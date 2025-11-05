@@ -27,7 +27,6 @@ import { background_partijs } from "../background_for_page/background_partijs";
 import { Link } from "react-router-dom";
 
 const ForumPage = () => {
-  const { t, changeLanguage } = useForumPagesPageTranslator();
   useForumPages_Transition();
 
   const [activeForum, setActiveForum] = useState("anime");
@@ -58,6 +57,8 @@ const ForumPage = () => {
     localStorage.setItem("forumsData", JSON.stringify(updated));
     setNewTopic("");
   };
+
+  const { t, changeLanguage } = useForumPagesPageTranslator();
 
   return (
     <div>
@@ -116,28 +117,28 @@ const ForumPage = () => {
               className="btn_1_kvad"
               onClick={() => setActiveForum("anime")}
             >
-              Обсуждение аниме
+              {t.btn_1_1_kvad}
             </button>
             <button
               id="changeButton_manga"
               className="btn_2_kvad"
               onClick={() => setActiveForum("manga")}
             >
-              Обсуждение манги
+              {t.btn_1_2_kvad}
             </button>
             <button
               id="changeButton_news"
               className="btn_1_kvad"
               onClick={() => setActiveForum("news")}
             >
-              Новости индустрии
+              {t.btn_2_1_kvad}
             </button>
             <button
               id="changeButton_FanArt"
               className="btn_2_kvad"
               onClick={() => setActiveForum("fanart")}
             >
-              Фан-арт и творчество
+              {t.btn_2_2_kvad}
             </button>
           </div>
 
@@ -157,17 +158,17 @@ const ForumPage = () => {
               <div className="forum_sidebar">
                 <input
                   type="text"
-                  placeholder="Введите тему..."
+                  placeholder= {t.forum_sidebar_text}
                   value={newTopic}
                   onChange={(e) => setNewTopic(e.target.value)}
                 />
-                <button onClick={addTopic}>Создать тему</button>
+                <button onClick={addTopic}>{t.button_create_chat}</button>
               </div>
 
               {/* Контент */}
               <div className="forum_content">
                 {forums[activeForum].length === 0 ? (
-                  <p>Пока нет обсуждений</p>
+                  <p>{t.forum_content_forms}</p>
                 ) : (
                   forums[activeForum].map((topic, i) => (
                     <Topic
@@ -207,6 +208,9 @@ const Topic = ({ topic, forumKey, index, forums, setForums }) => {
     setMessage("");
   };
 
+  const { t } = useForumPagesPageTranslator();
+
+
   return (
     <div className="topic">
       <h3>{topic.title}</h3>
@@ -222,11 +226,11 @@ const Topic = ({ topic, forumKey, index, forums, setForums }) => {
       <div className="message_input">
         <input
           type="text"
-          placeholder="Напишите сообщение..."
+          placeholder= {t.message_input_text}
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
-        <button onClick={addMessage}>Отправить</button>
+        <button onClick={addMessage}>{t.message_input_button}</button>
       </div>
     </div>
   );
