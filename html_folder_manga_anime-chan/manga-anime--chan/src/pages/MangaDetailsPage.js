@@ -87,10 +87,6 @@ const MangaDetailsPage = () => {
         </div>
       </nav>
     </div>
-
-    <div className="opisanie_manga">
-
-    </div>
     
     <div style={{ padding: "20px" }}>
       <h1>{decodeURIComponent(title)}</h1>
@@ -114,6 +110,16 @@ const MangaDetailsPage = () => {
         <p>Томы для этой манги пока не добавлены.</p>
       )}
     </div>
+
+    <div className="opisanie_manga">
+      <img className="image_manga" src="" width="" height=""></img>
+      <h2 className="name-manga"></h2>
+    </div>
+
+    <div className="Opisanie_manga_p">
+      <p className="p_manga_1"></p>
+    </div>
+
    </div>
   );
 };
