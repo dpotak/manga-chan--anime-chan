@@ -53,16 +53,16 @@ function App() {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/hello')
-      .then(response => response.json())
+    fetch('/api/hello')  // прокси направит на Flask
+      .then(res => res.json())
       .then(data => setMessage(data.message))
-      .catch(error => console.error('Ошибка:', error));
+      .catch(err => console.error(err));
   }, []);
 
   return (
     <main>
       <AnimatedRoutes />
-      {message && <p>{message}</p>} {/* Просто выводим сообщение без лишних элементов */}
+      {message && <p>{message}</p>} {/* выводим сообщение от API */}
     </main>
   );
 }
