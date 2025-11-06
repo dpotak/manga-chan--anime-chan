@@ -1,6 +1,7 @@
 
 // src/App.js
 import React from "react";
+import { useEffect, useState } from 'react';
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import HomePage from "./pages/HomePage";
@@ -49,9 +50,19 @@ const PageWrapper = ({ children }) => (
 );
 
 function App() {
+  const [message, setMessage] = useState('');
+
+  useEffect(() => {
+    fetch('http://localhost:5000/api/hello')
+      .then(response => response.json())
+      .then(data => setMessage(data.message))
+      .catch(error => console.error('Ошибка:', error));
+  }, []);
+
   return (
     <main>
       <AnimatedRoutes />
+      {message && <p>{message}</p>} {/* Просто выводим сообщение без лишних элементов */}
     </main>
   );
 }
