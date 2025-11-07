@@ -20,12 +20,33 @@ import { useQuestionsPageTranslator } from "../hooks/QuestionsPages_Translator";
 import { background_partijs } from "../background_for_page/background_partijs";
 
 
-const faqData = [ // Надо сначала написать ответы на вопросы и уже потом переводить
-  { question: "Что такое “Manga-chan / Anime-chan?", // Сделано
-    answer: "Это проект в котором прекрасно сочетаются чтение манги и просмотр аниме. Он позволяет пользователям удобно просматривать контент, обсуждать любимые произведения и следить за новостями индустрии." 
+
+const QuestionsPage = () => {
+  useEffect(() => {
+      background_partijs();
+    }, []);
+
+  UseQuestionsPages_Transition();
+  const { t, changeLanguage } = useQuestionsPageTranslator();
+
+  // отдельное состояние для каждой секции FAQ
+  const [openIndexFaq, setOpenIndexFaq] = useState(null);
+  const [openIndexFunc, setOpenIndexFunc] = useState(null);
+  const [openIndexDon, setOpenIndexDon] = useState(null);
+  const [openIndexNews, setOpenIndexNews] = useState(null);
+  const [openIndexContact, setOpenIndexContact] = useState(null);
+
+  const handleToggle = (index, setOpen) => {
+    setOpen(prev => (prev === index ? null : index));
+
+  };
+
+  const faqData = [ // Надо сначала написать ответы на вопросы и уже потом переводить
+  { question: t.faqData_1, // Сделано
+    answer: t.faqData_1_answer, 
   },
   { question: "Зачем вы создали этот проект?", // Сделано
-    answer: "Проект был создан для того чтобы фанаиы аниме и манги могли на одном сайте смотреть аниме и читать мангу как в оригинальном вырианте так и с переводом.." 
+    answer: "Проект был создан для того чтобы фанаиы аниме и манги могли на одном сайте смотреть аниме и читать мангу как в оригинальном вырианте так и с переводом." 
   },
   { question: "Кто стоит за проектом?", // Сделано
     answer: "Пока проектом управляет один человек." 
@@ -89,27 +110,6 @@ const FAQItem = ({ question, answer, isOpen, onToggle }) => (
     )}
   </div>
 );
-
-const QuestionsPage = () => {
-  useEffect(() => {
-      background_partijs();
-    }, []);
-
-  UseQuestionsPages_Transition();
-  const { t, changeLanguage } = useQuestionsPageTranslator();
-
-  
-  // отдельное состояние для каждой секции FAQ
-  const [openIndexFaq, setOpenIndexFaq] = useState(null);
-  const [openIndexFunc, setOpenIndexFunc] = useState(null);
-  const [openIndexDon, setOpenIndexDon] = useState(null);
-  const [openIndexNews, setOpenIndexNews] = useState(null);
-  const [openIndexContact, setOpenIndexContact] = useState(null);
-
-  const handleToggle = (index, setOpen) => {
-    setOpen(prev => (prev === index ? null : index));
-
-  };
 
   return (
     <div>
