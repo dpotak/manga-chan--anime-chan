@@ -1,21 +1,20 @@
-// 
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-// 
+// подклченные PNG файлы которые предназначены для флагов-переводов
 import britainFlag from "./foto/britain_flags.png";
 import russianFlag from "./foto/russian_flag.jpg";
 import estonianflag from './foto/estonian.png';
 import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
 
-// 
+// подключенные файлы CSS 
 import "./otvetinavoprosi_folder_css/otvetinavoprosi.css";
 import "./otvetinavoprosi_folder_css/otvetinavoprosi_2.css";
 import "./otvetinavoprosi_folder_css/particlesjs_Questions.css";
 import "./otvetinavoprosi_folder_css/ontvetinavoprosi_webFormsSite.css";
 
-// 
+// подключенные модули и другие файлы JS
 import { UseQuestionsPages_Transition } from "../hooks/QuestionsPages_Transition";
 import { useQuestionsPageTranslator } from "../hooks/QuestionsPages_Translator";
 import { background_partijs } from "../background_for_page/background_partijs";
