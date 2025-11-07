@@ -17,6 +17,8 @@ export const translations = {
     Questions_Projects_5: "Связь с администрацией:",
     Contacts_Questions_oma_1: "Если вы хотите задать лично нам свои вопросы, то пишите нам лично:",
     Link_contacts: "Наши контакты",
+
+    // 
     faqData_1: "Что такое “Manga-chan / Anime-chan?",
     faqData_1_answer: "Это проект в котором прекрасно сочетаются чтение манги и просмотр аниме. Он позволяет пользователям удобно просматривать контент, обсуждать любимые произведения и следить за новостями индустрии.",
     faqData_2: "Зачем вы создали этот проект?",
@@ -65,6 +67,8 @@ export const translations = {
     Questions_Projects_5: "Communication with the Administration:",
     Contacts_Questions_oma_1: "If you want to ask us your questions in person, write to us in person:",
     Link_contacts: "Our contacts",
+    
+    // 
     faqData_1: "What is “Manga-chan / Anime-chan?",
     faqData_1_answer: "This project seamlessly combines manga reading and anime watching. It allows users to conveniently browse content, discuss their favorite works, and keep up with industry news.",
     faqData_2: "Why did you create this project?",
@@ -113,6 +117,8 @@ export const translations = {
     Questions_Projects_5: "Side administratsiooniga:",
     Contacts_Questions_oma_1: "Kui soovid meile isiklikult oma küsimusi esitada, siis kirjuta meile isiklikult: ",
     Link_contacts: "Meie kontaktid",
+
+    // 
     faqData_1: "Mis on Manga-chan / Anime-chan?",
     faqData_1_answer: "See projekt ühendab sujuvalt manga lugemise ja anime vaatamise. See võimaldab kasutajatel mugavalt sisu sirvida, oma lemmikteoseid arutada ja valdkonna uudistega kursis olla.",
     faqData_2: "Miks te selle projekti lõite?",

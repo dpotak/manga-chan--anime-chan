@@ -42,14 +42,14 @@ const QuestionsPage = () => {
   };
 
   const faqData = [ // Надо сначала написать ответы на вопросы и уже потом переводить
-  { question: t.faqData_1, // Сделано
+  { question: t.faqData_1, 
     answer: t.faqData_1_answer, 
   },
-  { question: "Зачем вы создали этот проект?", // Сделано
-    answer: "Проект был создан для того чтобы фанаиы аниме и манги могли на одном сайте смотреть аниме и читать мангу как в оригинальном вырианте так и с переводом." 
+  { question: t.faqData_2, 
+    answer: t.faqData_2_answer ,
   },
-  { question: "Кто стоит за проектом?", // Сделано
-    answer: "Пока проектом управляет один человек." 
+  { question: t.faqData_3 , 
+    answer: t.faqData_3_answer ,
   }
 ];
 
