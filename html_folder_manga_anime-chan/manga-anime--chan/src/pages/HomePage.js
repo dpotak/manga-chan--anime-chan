@@ -114,6 +114,11 @@ const HomePage = () => {
         </nav>
       </div>
 
+      <div className="white_black_page">
+        <button className=""></button>
+        <button className=""></button>
+      </div>
+
        {/* Модуль particles */}
       <div id="particles-js"></div>
       <div class="count-particles"><span class="js-count-particles"></span></div> 
