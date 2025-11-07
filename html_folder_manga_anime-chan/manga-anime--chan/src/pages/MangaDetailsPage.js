@@ -1,7 +1,7 @@
 import React from "react";
+import { useEffect , useState } from "react";
 import { useParams , Link } from "react-router-dom";
 import { Button, Card, CardContent, Typography , Avatar , CardHeader } from '@mui/material';
-import { background_partijs } from "../background_for_page/background_partijs";
 
 /// подклченные PNG файлы которые предназначены для флагов-переводов
 import britainFlag from './foto/britain_flags.png';
@@ -11,29 +11,36 @@ import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
 
 // подключенные файлы CSS 
 import "./manga_anime_Details/manga_Details.css";
+import "./manga_anime_Details/particlesjs_MangaDetails.css";
 
 // подключенные модули и другие файлы JS
-// import { background_partijs } from "../background_for_page/background_partijs";
-
-//
 import { Translator_Manga_Details } from "../hooks/Manga_Details_Translator";
+import { background_partijs } from "../background_for_page/background_partijs";
 
 
 const MangaDetailsPage = () => {
+   useEffect(() => {
+  try {
+    background_partijs();
+  } catch (error) {
+    console.error("Background particles error:", error);
+  }
+}, []);
+
   const { title } = useParams(); // получаем название из URL
 
   // 📚 Список томов (пути к PDF)
   const mangaVolumes = {
     "Chainsaw Man": [
-      // { name: "Том 1", file: "/manga_pdf/Chainsaw_Man_chapters/tom_1.pdf" },
+      { name: "Том 1", file: "" },
       // { name: "Том 2", file: "/manga_pdf/chainsaw_volume2.pdf" },
     ],
     "Demon Slayer": [
-      // { name: "Том 1", file: "/manga_pdf/demonslayer_volume1.pdf" },
+      { name: "Том 1", file: "" },
       // { name: "Том 2", file: "/manga_pdf/demonslayer_volume2.pdf" },
     ],
     "Inuyasha": [
-      // { name: "Том 1", file: "/manga_pdf/inuyasha_volume1.pdf" },
+      { name: "Том 1", file: "" },
     ],
   };
 
