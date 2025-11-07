@@ -125,6 +125,7 @@ export const translations = {
     faqData_2_answer: "Projekt loodi selleks, et anime ja manga fännid saaksid ühel veebisaidil animet vaadata ja mangat lugeda nii originaal- kui ka tõlgitud versioonis.",
     faqData_3: "Kes selle projekti taga on?",
     faqData_3_answer: "Praegu haldab projekti üks inimene.",
+    
     FAQ_1_1: "Kas ma saan veebisaidil otse mangat lugeda või animet vaadata?",
     FAQ_1_1_answer: "Jah, saate. Vaid paar klikki!",
     FAQ_1_2: "Kui tihti sisu uuendatakse?",
@@ -133,16 +134,19 @@ export const translations = {
     FAQ_1_3_answer: "Anime episoodide või peatükkide ilmumiskuupäevad kuvatakse veebisaidil endal." ,
     FAQ_1_4: "Kas tuleb mobiilirakendus või Telegrami bot?",
     FAQ_1_4_answer: "Praegu on olemas Telegrami bot, mis sisaldab uudiseid projekti ja selle muudatuste kohta.",
+    
     FAQ_2_1: "Kuidas saan projekti toetada?",
     FAQ_2_1_answer: "Saate projekti toetada Boosty kaudu. Alates ,Täname projekti eest, tellimustasemest kuni tasemeni, kus saate osaleda selle arendamises.",
     FAQ_2_2: "Miks projekt vajab annetusi?",
     FAQ_2_2_answer: "Annetused investeeritakse projekti arendamisse.",
     FAQ_2_3: "Kas Boosty tellijatele on boonuseid?",
     FAQ_2_3_answer: "Sõltuvalt Boosty tellimustasemest saavad tellijad projekti lihtsalt rahaliselt toetada või isegi selle loomises osaleda.",
+    
     FAQ_3_1: "Kust te saate oma manga ja anime uudiseid?",
     FAQ_3_1_answer: "Anime ja manga kohta käiv teave võetakse ametlikest allikatest. Tellijad saavad samuti uudiseid esitada.",
     FAQ_3_2: "Kas ma saan soovitada uudiseid või materjali?",
     FAQ_3_2_answer: "Jah, saan!",
+    
     FAQ_4_1: "Kuidas saan projektimeeskonnaga ühendust võtta?",
     FAQ_4_1_answer: "Projektimeeskonnaga saate ühendust võtta Instagrami, Telegrami või e-posti teel.",
     FAQ_4_2: "Kas ma saan meeskonna liikmeks (toimetaja, disainer, tõlkija) hakata?",
