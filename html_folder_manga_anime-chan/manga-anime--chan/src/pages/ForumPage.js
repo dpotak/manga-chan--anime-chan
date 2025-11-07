@@ -104,6 +104,12 @@ const ForumPage = () => {
         </nav>
       </div>
 
+      {/* Черный-голубой фон (body) */}
+      <div className="white_black_page">
+        <button className="white_btn"></button>
+        <button className="black_btn"></button>
+      </div>
+
       <div className="Forum_text">
         <h1 className="text_h1_forum">{t.text_h1_forum}</h1>
       </div>

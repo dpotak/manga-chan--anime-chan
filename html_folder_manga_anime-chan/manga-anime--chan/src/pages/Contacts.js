@@ -76,6 +76,12 @@ const Contacts = () => {
         </nav>
       </div>
 
+      {/* Черный-голубой фон (body) */}
+      <div className="white_black_page">
+        <button className="white_btn"></button>
+        <button className="black_btn"></button>
+      </div>
+
       <div id="particles-js"></div>
       <div class="count-particles"> <span class="js-count-particles"></span> </div> 
 

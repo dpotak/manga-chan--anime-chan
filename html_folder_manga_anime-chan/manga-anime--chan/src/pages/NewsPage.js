@@ -68,6 +68,12 @@ const NewsPage = () => {
    </nav>
   </div>
 
+  {/* Черный-голубой фон (body) */}
+  <div className="white_black_page">
+    <button className="white_btn"></button>
+    <button className="black_btn"></button>
+  </div>
+
   <div className="News_text_h1">
     <h1 className="news_h1"> {t.news_h1} </h1>
   </div>

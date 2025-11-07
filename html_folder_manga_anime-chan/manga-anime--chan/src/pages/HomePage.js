@@ -114,6 +114,7 @@ const HomePage = () => {
         </nav>
       </div>
 
+      {/* Черный-голубой фон (body) */}
       <div className="white_black_page">
         <button className="white_btn"></button>
         <button className="black_btn"></button>
