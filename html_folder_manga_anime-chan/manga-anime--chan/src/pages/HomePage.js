@@ -115,8 +115,8 @@ const HomePage = () => {
       </div>
 
       <div className="white_black_page">
-        <button className=""></button>
-        <button className=""></button>
+        <button className="white_btn"></button>
+        <button className="black_btn"></button>
       </div>
 
        {/* Модуль particles */}
