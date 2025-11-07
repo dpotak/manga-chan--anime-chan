@@ -146,10 +146,10 @@ const ForumPage = () => {
           <div className="kvadrat_forum">
             <div className="kavdrat_forum_Nr_two">
               <p className="Text_glavnaja">
-                {activeForum === "anime" && "Обсуждение аниме"}
-                {activeForum === "manga" && "Обсуждение манги"}
-                {activeForum === "news" && "Новости индустрии"}
-                {activeForum === "fanart" && "Фан-арт и творчество"}
+                {activeForum === "anime" && t.anime }
+                {activeForum === "manga" && t.manga }
+                {activeForum === "news" && t.news }
+                {activeForum === "fanart" && t.fanart }
               </p>
             </div>
 
