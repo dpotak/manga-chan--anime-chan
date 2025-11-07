@@ -1,27 +1,35 @@
+// 
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+
+// 
 import britainFlag from "./foto/britain_flags.png";
 import russianFlag from "./foto/russian_flag.jpg";
 import estonianflag from './foto/estonian.png';
 import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
+
+// 
 import "./otvetinavoprosi_folder_css/otvetinavoprosi.css";
 import "./otvetinavoprosi_folder_css/otvetinavoprosi_2.css";
 import "./otvetinavoprosi_folder_css/particlesjs_Questions.css";
 import "./otvetinavoprosi_folder_css/ontvetinavoprosi_webFormsSite.css";
+
+// 
 import { UseQuestionsPages_Transition } from "../hooks/QuestionsPages_Transition";
 import { useQuestionsPageTranslator } from "../hooks/QuestionsPages_Translator";
 import { background_partijs } from "../background_for_page/background_partijs";
+
 
 const faqData = [ // Надо сначала написать ответы на вопросы и уже потом переводить
   { question: "Что такое “Manga-chan / Anime-chan?", // Сделано
     answer: "Это проект в котором прекрасно сочетаются чтение манги и просмотр аниме. Он позволяет пользователям удобно просматривать контент, обсуждать любимые произведения и следить за новостями индустрии." 
   },
-  { question: "Зачем вы создали этот проект?", 
-    answer: "CSS — это каскадные таблицы стилей, отвечающие за внешний вид и оформление элементов HTML." 
+  { question: "Зачем вы создали этот проект?", // Сделано
+    answer: "Проект был создан для того чтобы фанаиы аниме и манги могли на одном сайте смотреть аниме и читать мангу как в оригинальном вырианте так и с переводом.." 
   },
-  { question: "Кто стоит за проектом?", 
-    answer: "React — это библиотека JavaScript для построения пользовательских интерфейсов, основанная на компонентах." 
+  { question: "Кто стоит за проектом?", // Сделано
+    answer: "Пока проектом управляет один человек." 
   }
 ];
 
@@ -38,8 +46,6 @@ const FAQ_1 = [ // Надо сначала написать ответы на в
   { question: "Будет ли мобильное приложение или Telegram-бот?", // Сделано
     answer: "В данный момент будет Telegram-бот в котором будут новости о проекте и о его изменениях." },
 
-  { question: "Как работает система комментариев или форума?", 
-    answer: "Манга — это японские комиксы, а аниме — японская анимация. Они тесно связаны и популярны во всём мире." }
 ];
 
 const FAQ_2 = [ // Надо сначала написать ответы на вопросы и уже потом переводить
@@ -54,8 +60,8 @@ const FAQ_2 = [ // Надо сначала написать ответы на в
 ];
 
 const FAQ_3 = [ // Надо сначала написать ответы на вопросы и уже потом переводить
-  { question: "Откуда вы берете новости о манге и аниме?", 
-    answer: "HTML — это язык гипертекстовой разметки, используемый для создания структуры веб-страниц." },
+  { question: "Откуда вы берете новости о манге и аниме?", // Сделано
+    answer: "Информация об аниме или о мангах будут браться из официальных источников. Также подписчики смогут отправлять новости." },
 
   { question: "Можно ли предложить новость или материал?", // Сделано
     answer: "Да , можно!" }
