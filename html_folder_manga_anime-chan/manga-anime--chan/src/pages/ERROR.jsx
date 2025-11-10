@@ -10,23 +10,7 @@ import estonianflag from './foto/estonian.png';
 const Error = () => {
     <div>
         <div className="header">
-            <div className="">
-                <div className="language">
-                    <button>
-                        <img src="" width="" height=""></img>
-                    </button>
-                    <button>
-                        <img src="" width="" height=""></img>
-                    </button>
-                    <button>
-                        <img src="" width="" height=""></img>
-                    </button>
-                </div>
-            </div>
-
-            <div className="ERROR_website">
-
-            </div>
+            
         </div>
     </div>
 };
