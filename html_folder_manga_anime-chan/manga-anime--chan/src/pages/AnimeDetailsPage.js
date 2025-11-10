@@ -7,6 +7,7 @@ import { background_partijs } from "../background_for_page/background_partijs";
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
 import estonianflag from './foto/estonian.png';
+
 import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
 
 // подключенные файлы CSS 
