@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import britainFlag from './foto/britain_flags.png';
-import russianFlag from './foto/russian_flag.jpg';
-import estonianflag from './foto/estonian.png';
+import React, { useState , useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Button, Card, CardContent, Typography , Avatar , CardHeader } from '@mui/material';
+
 import './manga_chan_folder/manga_chan_1.css';
 import './manga_chan_folder/manga_chan_2.css';
 import './manga_chan_folder/manga_content_chan.css';
-import { Button, Card, CardContent, Typography , Avatar , CardHeader } from '@mui/material';
-import { Link } from "react-router-dom";
+import './manga_chan_folder/manga_chan_particles.css';
+
 import { Manga_Pages_Transition } from "../hooks/Manga_Pages_Transition";
 import { MangaPage_Translator } from "../hooks/MangaPage_Translator";
 import { background_partijs } from "../background_for_page/background_partijs";
@@ -17,12 +17,20 @@ import Inuyasha_manga from "./manga_chan_folder_foto/Inuyasha.png";
 import One_Piece_manga from "./manga_chan_folder_foto/One_Piece.png";
 import Demon_Slayer_manga from "./manga_chan_folder_foto/Demon_Slayer_manga.png";
 import Kusuriya_No_Hitorigoto_manga from "./manga_chan_folder_foto/Kusuriya_no_Hitorigoto.png";
-
 import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
 
+import britainFlag from './foto/britain_flags.png';
+import russianFlag from './foto/russian_flag.jpg';
+import estonianflag from './foto/estonian.png';
+
 const Manga_chan = () => {
-  Manga_Pages_Transition(); 
-  const { t, changeLanguage } = MangaPage_Translator();
+  useEffect(() => {
+    background_partijs();
+  }, []);
+  
+const { t, changeLanguage } = MangaPage_Translator();
+Manga_Pages_Transition(); 
+
 
   // 🔹 Список жанров
   const genres = [
@@ -97,6 +105,10 @@ const Manga_chan = () => {
           </div>
         </nav>
       </div>
+
+      {/* Модуль particles */}
+      <div id="particles-js"></div>
+      <div class="count-particles"><span class="js-count-particles"></span></div> 
 
       <div className="form_search_table">
         <div className="form_search">

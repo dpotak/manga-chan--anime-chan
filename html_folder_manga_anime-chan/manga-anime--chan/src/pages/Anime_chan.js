@@ -1,15 +1,14 @@
-import React from "react";
-import britainFlag from './foto/britain_flags.png';
-import russianFlag from './foto/russian_flag.jpg';
-import estonianflag from './foto/estonian.png';
-import './anime_chan_folder/anime_chan_1.css';
-import './anime_chan_folder/anime_chan_2.css';
+import React, { useState , useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
 import { Anime_Pages_Transition } from "../hooks/Anime_Pages_Transition";
 import { AnimePageTranslator } from "../hooks/AnimePages_Translator";
 import { background_partijs } from "../background_for_page/background_partijs";
-import { Link } from "react-router-dom";
 
+import './anime_chan_folder/anime_chan_1.css';
+import './anime_chan_folder/anime_chan_2.css';
+import './anime_chan_folder/anime_particles.css';
+import './anime_chan_folder/animeChan_websiteForms.css';
 
 // База данных с постерами для аниме
 import chainsaw_man_anime from "./anime_chan_folder_foto/Chanisaw.png";
@@ -17,37 +16,44 @@ import monolog_Formacevta_anime from "./anime_chan_folder_foto/monologFormacevta
 import DemonSlayer_anime from "./anime_chan_folder_foto/DemonSlayer.png";
 import inuyasha_anime from "./anime_chan_folder_foto/inuyasha.png";
 import OnePiece_anime from "./anime_chan_folder_foto/OnePiece.png";
-
 import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
+
+import britainFlag from './foto/britain_flags.png';
+import russianFlag from './foto/russian_flag.jpg';
+import estonianflag from './foto/estonian.png';
 
 
 const Anime_chan = () => {
-  // вызываем твой хук для плавных переходов
-  Anime_Pages_Transition();
-  const { t, changeLanguage } = AnimePageTranslator();
+  useEffect(() => {
+      background_partijs();
+    }, []);
 
-    // Список жанров манги
-      const genres = [
-        "Shonen",
-        "Shoujo",
-        "Seinen",
-        "Josei",
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Drama",
-        "Fantasy",
-        "Horror"
-      ];
+// вызываем твой хук для плавных переходов
+Anime_Pages_Transition();
+const { t, changeLanguage } = AnimePageTranslator();
+
+// Список жанров манги
+const genres = [
+  "Shonen",
+  "Shoujo",
+  "Seinen",
+  "Josei",
+  "Action",
+  "Adventure",
+  "Comedy",
+  "Drama",
+  "Fantasy",
+  "Horror"
+];
         
-      // Список манги
-      const ListAnime = [
-          { title: "Chainsaw Man", genre: "Shonen", description: "История о парне с бензопилой.", poster: chainsaw_man_anime },
-          { title: "Demon Slayer", genre: "Action", description: "Охота на демонов и сила семьи.", poster: DemonSlayer_anime },
-          { title: "Inuyasha", genre: "Fantasy", description: "Девушка из будущего и демон с мечом.", poster: inuyasha_anime },
+// Список манги
+const ListAnime = [
+    { title: "Chainsaw Man", genre: "Shonen", description: "История о парне с бензопилой.", poster: chainsaw_man_anime },
+    { title: "Demon Slayer", genre: "Action", description: "Охота на демонов и сила семьи.", poster: DemonSlayer_anime },
+    { title: "Inuyasha", genre: "Fantasy", description: "Девушка из будущего и демон с мечом.", poster: inuyasha_anime },
           { title: "Kusuriya no Hitorigoto", genre: "Josei", description: "Таинственная придворная аптекарша.", poster: monolog_Formacevta_anime },
-          { title: "One Piece", genre: "Adventure", description: "Пираты, море и мечта о свободе.", poster: OnePiece_anime },
-        ];
+    { title: "One Piece", genre: "Adventure", description: "Пираты, море и мечта о свободе.", poster: OnePiece_anime },
+  ];
   
   return (
     <div> 
@@ -91,6 +97,10 @@ const Anime_chan = () => {
               </div>
              </nav>
            </div>
+
+           {/* Модуль particles */}
+           <div id="particles-js"></div>
+           <div class="count-particles"><span class="js-count-particles"></span></div> 
 
          <div className="form_search">
            <form id="searchForm">
