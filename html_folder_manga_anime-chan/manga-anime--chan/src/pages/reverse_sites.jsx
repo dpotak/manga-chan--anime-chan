@@ -10,6 +10,8 @@ import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
 import estonianflag from './foto/estonian.png';
 
+import reverse_foto from './Reverse_ERROR_foto/reverse_foto.png';
+
 
 const reverse_site = () => {
    return (
@@ -21,7 +23,12 @@ const reverse_site = () => {
       transition={{ duration: 0.8 }}
     >
       <div className="reverse-loader">
-        <h2>Загрузка...</h2>
+         <div class="reverse_content">
+            <div className="content_reverse">
+                <img className="img_content_reverse" src={reverse_foto}  width="220px" height="220px" ></img>
+            </div>
+        </div>
+        <h2>Идет загрузка страницы...</h2>
         <div className="spinner"></div>
       </div>
     </motion.div>

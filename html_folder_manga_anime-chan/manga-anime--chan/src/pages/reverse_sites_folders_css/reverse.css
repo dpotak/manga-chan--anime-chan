@@ -29,3 +29,7 @@
     transform: rotate(360deg);
   }
 }
+
+.img_content_reverse {
+  margin-left: 85px;
+}
