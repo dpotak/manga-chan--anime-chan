@@ -58,78 +58,78 @@ const ListAnime = [
   return (
     <div> 
      <div className="header">
-             <div className="glavnaja_icon_TEXT">
-              <Link to={"/"}><img className="glavnaja_icon" src={icon_glavnaja} width={"65px"} height={"65px"}></img></Link>
-              <h1 className="Glavnaja_1" >Anime-chan</h1>
-             </div>
+      <div className="glavnaja_icon_TEXT">
+        <Link to={"/"}><img className="glavnaja_icon" src={icon_glavnaja} width={"65px"} height={"65px"}></img></Link>
+       <h1 className="Glavnaja_1" >Anime-chan</h1>
+      </div>
              
-             <nav className="nav-bar">
-               <div className="dropdown">
-                 <button className="dropbtn">Каталог</button>
-                 <div className="dropdown-content">
-                   <Link to="/Manga_chan">Манга</Link>
-                   <Link to="/Anime_chan">Аниме</Link>
-                 </div>
-               </div>
-     
-               <Link to="/">Главная</Link>
-               <Link to="/ForumPage">Обсуждение</Link>
-               <Link to="/NewsPage">Новости</Link>
-               <Link to="/QuestionsPage">Вопросы и ответы</Link>
-               <Link to="/Contacts">Контакты</Link>  
-               <Link to="/RegisterPage">Регистрация/Войти</Link>
-     
-               <form id="searchForm">
-                 <input type="text" placeholder="Искать здесь..." />
-                 <button type="submit"></button>
-               </form>
-     
-               <div className="language">
-                <button onClick={() => changeLanguage("en")}>
-                  <img src={britainFlag} width="20" height="20" alt="EN" />
-                </button>
-                <button onClick={() => changeLanguage("ru")}>
-                  <img src={russianFlag} width="20" height="20" alt="RU" />
-                </button>
-                <button onClick={() => changeLanguage("ee")}>
-                  <img src={estonianflag} width="20" height="20" alt="EST" />
-                </button>
-              </div>
-             </nav>
-           </div>
-
-           {/* Модуль particles */}
-           <div id="particles-js"></div>
-           <div class="count-particles"><span class="js-count-particles"></span></div> 
-
-         <div className="form_search">
-           <form id="searchForm">
-            <input className="input_search" type="text" placeholder="Искать здесь..." />
-            <button type="submit"></button>
-
-            <div className="Anime_Janri">
-              <form id="form_search">
-              <input className="anime_content_janr" type="" placeholder=""></input>
-            </form>
-            </div>
-          </form>
+      <nav className="nav-bar">
+        <div className="dropdown">
+          <button className="dropbtn">Каталог</button>
+          <div className="dropdown-content">
+            <Link to="/Manga_chan">Манга</Link>
+            <Link to="/Anime_chan">Аниме</Link>
+          </div>
         </div>
+     
+        <Link to="/">Главная</Link>
+        <Link to="/ForumPage">Обсуждение</Link>
+        <Link to="/NewsPage">Новости</Link>
+        <Link to="/QuestionsPage">Вопросы и ответы</Link>
+        <Link to="/Contacts">Контакты</Link>  
+        <Link to="/RegisterPage">Регистрация/Войти</Link>
+     
+        <form id="searchForm">
+          <input type="text" placeholder="Искать здесь..." />
+          <button type="submit"></button>
+        </form>
+     
+        <div className="language">
+        <button onClick={() => changeLanguage("en")}>
+          <img src={britainFlag} width="20" height="20" alt="EN" />
+        </button>
+        <button onClick={() => changeLanguage("ru")}>
+          <img src={russianFlag} width="20" height="20" alt="RU" />
+        </button>
+        <button onClick={() => changeLanguage("ee")}>
+          <img src={estonianflag} width="20" height="20" alt="EST" />
+        </button>
+      </div>
+      </nav>
+    </div>
 
-        <div className="anime_list_section">
-        <h2 className="anime_list_title">Список аниме</h2>
+    {/* Модуль particles */}
+    <div id="particles-js"></div>
+    <div class="count-particles"><span class="js-count-particles"></span></div> 
 
-        <div className="anime_card_container">
-          {ListAnime.map((anime, index) => (
-            <Card key={index} className="anime_card">
-              <div className="anime_poster_container">
+  <div className="form_search">
+    <form id="searchForm">
+    <input className="input_search" type="text" placeholder="Искать здесь..." />
+    <button type="submit"></button>
+
+    <div className="Anime_Janri">
+      <form id="form_search">
+      <input className="anime_content_janr" type="" placeholder=""></input>
+    </form>
+    </div>
+  </form>
+</div>
+
+<div className="anime_list_section">
+<h2 className="anime_list_title">Список аниме</h2>
+
+      <div className="anime_card_container">
+        {ListAnime.map((anime, index) => (
+          <Card key={index} className="anime_card">
+            <div className="anime_poster_container">
                 <img src={anime.poster} alt={anime.title} className="anime_poster" />
                 <div className="anime_poster_overlay" />
-              </div>
-              <CardHeader
+            </div>
+            <CardHeader
                 avatar={<Avatar>{anime.title.charAt(0)}</Avatar>}
                 title={anime.title}
                 subheader={anime.genre}
-              />
+            />
               <CardContent>
                 <Typography variant="body2" color="text.secondary">
                   {anime.description}
