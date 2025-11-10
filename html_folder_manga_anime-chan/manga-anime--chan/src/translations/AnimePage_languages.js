@@ -8,6 +8,10 @@ export const translations = {
     contacts: "Контакты",
     login: "Регистрация/Войти",
     searchPlaceholder: "Искать здесь...",
+    Manga_catalog: "Манга",
+    Anime_catalog: "Аниме",
+    list_anime: "Список аниме",
+    watch_Anime: "Смотреть →",
   },
   en: {
     catalog: "Catalog",
@@ -18,6 +22,10 @@ export const translations = {
     contacts: "Contacts",
     login: "Login / Register",
     searchPlaceholder: "Search here...",
+    Manga_catalog: "Manga",
+    Anime_catalog: "Anime",
+    list_anime: "Anime List",
+    watch_Anime: "Watch →",
   },
   ee: {
     catalog: "Kataloog",
@@ -28,5 +36,9 @@ export const translations = {
     contacts: "Kontaktid",
     login: "Registreeru / Logi sisse",
     searchPlaceholder: "Otsi siit...",
+    Manga_catalog: "Manga",
+    Anime_catalog: "Anime",
+    list_anime: "Animede nimekiri",
+    watch_Anime: "Vaata →",
   },
 };

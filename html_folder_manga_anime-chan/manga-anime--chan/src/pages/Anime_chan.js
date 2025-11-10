@@ -65,22 +65,22 @@ const ListAnime = [
              
       <nav className="nav-bar">
         <div className="dropdown">
-          <button className="dropbtn">Каталог</button>
+          <button className="dropbtn">{t.catalog} </button>
           <div className="dropdown-content">
-            <Link to="/Manga_chan">Манга</Link>
-            <Link to="/Anime_chan">Аниме</Link>
+            <Link to="/Manga_chan"> {t.Manga_catalog} </Link>
+            <Link to="/Anime_chan">{t.Anime_catalog}</Link>
           </div>
         </div>
      
-        <Link to="/">Главная</Link>
-        <Link to="/ForumPage">Обсуждение</Link>
-        <Link to="/NewsPage">Новости</Link>
-        <Link to="/QuestionsPage">Вопросы и ответы</Link>
-        <Link to="/Contacts">Контакты</Link>  
-        <Link to="/RegisterPage">Регистрация/Войти</Link>
+        <Link to="/">{t.home}</Link>
+        <Link to="/ForumPage">{t.forum}</Link>
+        <Link to="/NewsPage">{t.news}</Link>
+        <Link to="/QuestionsPage">{t.faq}</Link>
+        <Link to="/Contacts">{t.contacts}</Link>  
+        <Link to="/RegisterPage">{t.login}</Link>
      
         <form id="searchForm">
-          <input type="text" placeholder="Искать здесь..." />
+          <input type="text" placeholder={t.searchPlaceholder} />
           <button type="submit"></button>
         </form>
      
@@ -104,7 +104,7 @@ const ListAnime = [
 
   <div className="form_search">
     <form id="searchForm">
-    <input className="input_search" type="text" placeholder="Искать здесь..." />
+    <input className="input_search" type="text" placeholder={t.searchPlaceholder} />
     <button type="submit"></button>
 
     <div className="Anime_Janri">
@@ -116,7 +116,7 @@ const ListAnime = [
 </div>
 
 <div className="anime_list_section">
-<h2 className="anime_list_title">Список аниме</h2>
+<h2 className="anime_list_title">{t.list_anime}</h2>
 
       <div className="anime_card_container">
         {ListAnime.map((anime, index) => (
@@ -136,7 +136,7 @@ const ListAnime = [
                 </Typography>
                 <Link to={`/AnimeDetailsPage/${encodeURIComponent(anime.title)}`}>
                   <Button variant="contained" color="primary" style={{ marginTop: "10px" }}>
-                    Смотреть →
+                    {t.watch_Anime}
                   </Button>
                 </Link>
               </CardContent>
