@@ -16,7 +16,6 @@ import "./manga_anime_Details/particles_AnimeDetails.css";
 // 
 import { Anime_Details_Translator } from "../hooks/Anime_Details_Translator";
 
-
 const AnimeDetailsPage = () => {
   useEffect(() => {
       background_partijs();
