@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Button, Typography } from "@mui/material";
 import { background_partijs } from "../background_for_page/background_partijs";
@@ -11,12 +11,17 @@ import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
 
 // подключенные файлы CSS 
 import "./manga_anime_Details/Anime_details.css";
+import "./manga_anime_Details/particles_AnimeDetails.css";
 
 // 
 import { Anime_Details_Translator } from "../hooks/Anime_Details_Translator";
 
 
 const AnimeDetailsPage = () => {
+  useEffect(() => {
+      background_partijs();
+    }, []);
+
   const { title } = useParams();
   const [selectedEpisode, setSelectedEpisode] = useState(null);
 
@@ -94,6 +99,10 @@ const AnimeDetailsPage = () => {
         </div>
       </nav>
     </div>
+
+    {/* Модуль particles */}
+    <div id="particles-js"></div>
+    <div class="count-particles"><span class="js-count-particles"></span></div> 
 
     <div className="opisanie_anime">
 
