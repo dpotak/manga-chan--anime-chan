@@ -2,8 +2,8 @@
 // src/App.js
 import React from "react";
 import { useEffect, useState } from 'react';
-import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
+import { Routes, Route, useLocation } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import NewsPage from "./pages/NewsPage";
 import RegisterPage from "./pages/RegisterPage";
@@ -14,6 +14,7 @@ import Manga_chan from "./pages/Manga_chan";
 import Contacts from "./pages/Contacts";
 import AnimeDetailsPage from "./pages/AnimeDetailsPage";
 import MangaDetailsPage from "./pages/MangaDetailsPage";
+import ReversePage from "./pages/reverse_sites.jsx";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -50,21 +51,28 @@ const PageWrapper = ({ children }) => (
 );
 
 function App() {
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/api/hello')  // прокси направит на Flask
-      .then(res => res.json())
-      .then(data => setMessage(data.message))
-      .catch(err => console.error(err));
+    // имитация загрузки при старте
+    const timer = setTimeout(() => setLoading(false), 1500);
+    fetch("/api/hello")
+      .then((res) => res.json())
+      .then((data) => setMessage(data.message))
+      .catch((err) => console.error(err));
+    return () => clearTimeout(timer);
   }, []);
+
+  if (loading) return <ReversePage />;
 
   return (
     <main>
       <AnimatedRoutes />
-      {message && <p>{message}</p>} {/* выводим сообщение от API */}
+      {message && <p>{message}</p>}
     </main>
   );
 }
+
 
 export default App;
