@@ -13,7 +13,7 @@ import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
 import "./manga_anime_Details/Anime_details.css";
 import "./manga_anime_Details/particles_AnimeDetails.css";
 
-// 
+// подключенные файлы JS
 import { Anime_Details_Translator } from "../hooks/Anime_Details_Translator";
 
 const AnimeDetailsPage = () => {
