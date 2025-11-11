@@ -8,6 +8,9 @@ import russianFlag from "./foto/russian_flag.jpg";
 import estonianflag from './foto/estonian.png';
 import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
 
+import black_perehod from "./Perehod_whiteAndBlack/black.jpg";
+import berjuzovii_perehod from "./Perehod_whiteAndBlack/ICON_perehod_2.png";
+
 // подключенные файлы CSS 
 import "./otvetinavoprosi_folder_css/otvetinavoprosi.css";
 import "./otvetinavoprosi_folder_css/otvetinavoprosi_2.css";

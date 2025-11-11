@@ -1,17 +1,24 @@
 import React from "react"; 
 import { useEffect , useState } from "react";
+import { Link } from "react-router-dom";
+
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
 import estonianflag from './foto/estonian.png';
+
 import "./contacts_folder_css/contacts_1.css";
 import "./contacts_folder_css/particlesjs_contacts.css";
 import "./contacts_folder_css/contacts_websiteForms.css";
-import { Link } from "react-router-dom";
+
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import Instagram_foto from './contacts_folders_foto/instagram.png';
 import Telegram_foto from './contacts_folders_foto/telega.png';
 import Boosty_foto from './contacts_folders_foto/download.png';
 import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
+
+import black_perehod from "./Perehod_whiteAndBlack/black.jpg";
+import berjuzovii_perehod from "./Perehod_whiteAndBlack/ICON_perehod_2.png";
+
 import Contacts_gmail_socialmedia_questions from './for_sites_watchAnime/contacts_gmail_socialmedia_quations.png';
 import { UseContactsPageTranslator } from "../hooks/ContactsPages_translator";
 import { UseContact_Pages_Transition } from "../hooks/Contact_Pages_Transition";

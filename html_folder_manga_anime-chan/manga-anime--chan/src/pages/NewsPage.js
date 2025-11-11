@@ -13,6 +13,10 @@ import { useNewsPagesPageTranslator } from "../hooks/NewsPage_Translator";
 import { background_partijs } from "../background_for_page/background_partijs";
 import demonslayer from "./news_folder_foto/demonslayer.png";
 import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
+
+import black_perehod from "./Perehod_whiteAndBlack/black.jpg";
+import berjuzovii_perehod from "./Perehod_whiteAndBlack/ICON_perehod_2.png";
+
 import { Link } from "react-router-dom";
 
 
