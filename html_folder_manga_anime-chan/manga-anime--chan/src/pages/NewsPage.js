@@ -1,23 +1,25 @@
 import React from "react";
 import { useEffect , useState } from "react";
+import { Link } from "react-router-dom";
+import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
+
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
 import estonianflag from './foto/estonian.png';
+
 import './nov_folder_css/nowesti.css';
 import './nov_folder_css/nowesti_2.css';
 import "./nov_folder_css/particlesjs_news.css";
 import "./nov_folder_css/now_form_website.css";
-import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
+
 import { NewsPages_Transition } from "../hooks/NewsPages_Transition";
 import { useNewsPagesPageTranslator } from "../hooks/NewsPage_Translator";
 import { background_partijs } from "../background_for_page/background_partijs";
+
 import demonslayer from "./news_folder_foto/demonslayer.png";
 import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
-
 import black_perehod from "./Perehod_whiteAndBlack/black.jpg";
 import berjuzovii_perehod from "./Perehod_whiteAndBlack/ICON_perehod_2.png";
-
-import { Link } from "react-router-dom";
 
 
 const NewsPage = () => {
@@ -68,18 +70,32 @@ const NewsPage = () => {
       <button onClick={() => changeLanguage("ee")}>
         <img src={estonianflag} width="20" height="20" alt="EST" />
       </button>
+
+       {/* Черный-голубой фон (body) */}
+        <div className="white_black_page">
+          <button className="white_btn"></button>
+          <button className="black_btn"></button>
+        </div>
+        
     </div>
    </nav>
   </div>
 
-  {/* Черный-голубой фон (body) */}
-  <div className="white_black_page">
-    <button className="white_btn"></button>
-    <button className="black_btn"></button>
-  </div>
-
   <div className="News_text_h1">
     <h1 className="news_h1"> {t.news_h1} </h1>
+
+    {/* 🔄 Кнопка обновления новостей */}
+    <button
+      className="btn_refresh"
+      onClick={() => {
+        fetch("/api/fetch_news")
+          .then(res => res.json())
+          .then(data => alert(data.message || "Новости обновлены!"))
+          .catch(() => alert("Ошибка при обновлении новостей"));
+      }}
+    >
+      🔄 Обновить новости
+    </button>
   </div>
 
   {/* Карточки для новостей */}
