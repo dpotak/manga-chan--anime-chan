@@ -26,11 +26,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "concurrently \"npm run server\" \"npm run client\" \"npm run start-flask\"",
     "server": "cd backend/MongoDB && node server.js",
     "client": "react-scripts start",
-    "start-flask": "cd backend/Rest_Api && python app.py"
+    "start-flask": "cd backend/Rest_Api && python -u app.py"
   },
+  
   "eslintConfig": {
     "extends": [
       "react-app",
