@@ -20,6 +20,7 @@ import kusuriyanohi_2season from './ramka_anime_folder/kusuriyanohi_2season.jpg'
 import inuyasha from './ramka_anime_folder/inuyasha.jpg';
 import kusuriyanohitorigoto_1season from './ramka_anime_folder/kusuriyanohitorigoto_1season.jpg';
 import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
+
 import black_perehod from "./Perehod_whiteAndBlack/black.jpg";
 import berjuzovii_perehod from "./Perehod_whiteAndBlack/ICON_perehod_2.png";
 

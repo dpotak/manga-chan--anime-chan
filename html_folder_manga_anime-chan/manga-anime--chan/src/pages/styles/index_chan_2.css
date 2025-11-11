@@ -117,3 +117,11 @@ body {
   font-size: 125px;
 }
 
+.white_black_page , .language {
+  display: flex;
+}
+
+.white_black_page {
+  margin-left: 6px;
+}
+

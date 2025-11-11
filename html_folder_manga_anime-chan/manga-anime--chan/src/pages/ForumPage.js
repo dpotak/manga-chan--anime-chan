@@ -3,10 +3,15 @@ import "./styles_css_forum/obsujdenie.css";
 import "./styles_css_forum/obsijdenie_2.css";
 import "./styles_css_forum/particlesjs_forum.css";
 import "./styles_css_forum/forms_website_obs.css";
+
 import britainFlag from "./foto/britain_flags.png";
 import russianFlag from "./foto/russian_flag.jpg";
 import estonianflag from "./foto/estonian.png";
 import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
+
+import black_perehod from "./Perehod_whiteAndBlack/black.jpg";
+import berjuzovii_perehod from "./Perehod_whiteAndBlack/ICON_perehod_2.png";
+
 import {
   Button,
   Card,
@@ -100,15 +105,22 @@ const ForumPage = () => {
             <button onClick={() => changeLanguage("ee")}>
               <img src={estonianflag} width="20" height="20" alt="EST" />
             </button>
+
+            {/* Черный-голубой фон (body) */}
+            <div className="white_black_page">
+              <button className="black_btn">
+                <img src={black_perehod} width="20" height="20"></img>
+              </button>
+              <button className="white_btn">
+                <img src={berjuzovii_perehod} width="20" height="20"></img>
+              </button>
+            </div>
+
           </div>
         </nav>
       </div>
 
-      {/* Черный-голубой фон (body) */}
-      <div className="white_black_page">
-        <button className="white_btn"></button>
-        <button className="black_btn"></button>
-      </div>
+      
 
       <div className="Forum_text">
         <h1 className="text_h1_forum">{t.text_h1_forum}</h1>
