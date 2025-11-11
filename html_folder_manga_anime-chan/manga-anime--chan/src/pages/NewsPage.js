@@ -23,11 +23,30 @@ import berjuzovii_perehod from "./Perehod_whiteAndBlack/ICON_perehod_2.png";
 
 
 const NewsPage = () => {
-  useEffect(() => {
-      background_partijs();
-    }, []);
+  const [news, setNews] = useState([]); // состояние для новостей
+  const [loading, setLoading] = useState(true); // индикатор загрузки
 
-  NewsPages_Transition(); // <-- хук вызываем внутри компонента
+  useEffect(() => {
+    background_partijs();
+  }, []);
+
+  useEffect(() => {
+    // Загружаем новости с Flask API
+    const fetchNews = async () => {
+      try {
+        const res = await fetch("/api/news");
+        const data = await res.json();
+        setNews(data);
+      } catch (error) {
+        console.error("Ошибка загрузки новостей:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchNews();
+  }, []);
+
+  NewsPages_Transition();
   const { t, changeLanguage } = useNewsPagesPageTranslator();
 
   return (
@@ -83,66 +102,37 @@ const NewsPage = () => {
 
   <div className="News_text_h1">
     <h1 className="news_h1"> {t.news_h1} </h1>
-
-    {/* 🔄 Кнопка обновления новостей */}
-    <button
-      className="btn_refresh"
-      onClick={() => {
-        fetch("/api/fetch_news")
-          .then(res => res.json())
-          .then(data => alert(data.message || "Новости обновлены!"))
-          .catch(() => alert("Ошибка при обновлении новостей"));
-      }}
-    >
-      Обновить новости
-    </button>
   </div>
 
-  {/* Карточки для новостей */}
   <div className="News_Content">
 
-    <div class="card-header">
-      <h1 className="card-header_h1"> {t.news_language_translate} </h1>
-      <img className="img_footer_h1" src={ demonslayer } width="" height="" ></img>
-      <div className="">
-        <strong></strong>
-        <p className="p_news_1"></p>
-        <button className="btn_news_1">{t.btn_news_1}</button>
-      </div>
-    </div>
+    {/* Если идёт загрузка */}
+    {loading && <h2 style={{ textAlign: "center", color: "white" }}>Загрузка новостей...</h2>}
 
-    <div class="card-body">
-      <h1 className="card-body_h1"> {t.news_language_translate} </h1>
-      <img className="img_footer_h1" src={ demonslayer } width="" height="" ></img>
-      <div className="">
-        <strong></strong>
-        <p className="p_news_1"></p>
-        <button className="btn_news_1"> {t.btn_news_1} </button>
-      </div>
-    </div>
+    {/* Если новости загружены */}
+    {!loading && news.length > 0 ? (
+      news.map((item, index) => (
+        <div key={index} className="card-header">
+          <h1 className="card-header_h1">{item.title}</h1>
+          <img className="img_footer_h1" src={demonslayer} alt="news" />
+          <div>
+            <p className="p_news_1">{item.content}</p>
+            {item.link && (
+              <a href={item.link} target="_blank" rel="noopener noreferrer">
+                <button className="btn_news_1">{t.btn_news_1}</button>
+              </a>
+            )}
+          </div>
+        </div>
+      ))
+    ) : (
+      !loading && <p style={{ textAlign: "center", color: "white" }}>Новости отсутствуют</p>
+    )}
 
-    <div class="card-footer">
-      <h1 className="card-footer_h1"> {t.news_language_translate} </h1>
-      <img className="img_footer_h1" src={ demonslayer } width="" height="" ></img>
-      <div className="">
-        <strong></strong>
-        <p className="p_news_1"></p>
-        <button className="btn_news_1">{t.btn_news_1}</button>
-      </div>
-    </div>
-
-    <div class="card-hooter">
-      <h1 className="card-hooter_h1"> {t.news_language_translate} </h1>
-      <img className="img_footer_h1" src={ demonslayer } width="" height="" ></img>
-      <div className="">
-        <strong></strong>
-        <p className="p_news_1"></p>
-        <button className="btn_news_1">{t.btn_news_1}</button>
-      </div>
-    </div>
-    
     <div id="particles-js"></div>
-    <div class="count-particles"> <span class="js-count-particles"></span> </div> 
+    <div className="count-particles">
+      <span className="js-count-particles"></span>
+    </div>
 
   </div>
 </div>
