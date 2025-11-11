@@ -20,6 +20,8 @@ import kusuriyanohi_2season from './ramka_anime_folder/kusuriyanohi_2season.jpg'
 import inuyasha from './ramka_anime_folder/inuyasha.jpg';
 import kusuriyanohitorigoto_1season from './ramka_anime_folder/kusuriyanohitorigoto_1season.jpg';
 import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
+import black_perehod from "./Perehod_whiteAndBlack/black.jpg";
+import berjuzovii_perehod from "./Perehod_whiteAndBlack/ICON_perehod_2.png";
 
 // для манга рекомендации
 import chainsaw_manga from "./manga_chan_folder_foto/chainsaw_man_manga.png";
@@ -114,10 +116,10 @@ const HomePage = () => {
             {/* Черный-голубой фон (body) */}
             <div className="white_black_page">
               <button className="white_btn">
-                <img src="" width="20" height="20"></img>
+                <img src={berjuzovii_perehod} width="20" height="20"></img>
               </button>
               <button className="black_btn">
-                <img src="" width="20" height="20"></img>
+                <img src={black_perehod} width="20" height="20"></img>
               </button>
             </div>
             
