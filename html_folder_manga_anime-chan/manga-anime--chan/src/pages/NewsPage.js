@@ -131,7 +131,7 @@ const NewsPage = () => {
               />
               <div>
                 <p className="p_news_1">{item.content}</p>
-                <button className="btn_news_1">{t.btn_news_1}</button>
+                <Link to="/NewsPage_details"><button className="btn_news_1">{t.btn_news_1}</button></Link>
               </div>
             </div>
           ))

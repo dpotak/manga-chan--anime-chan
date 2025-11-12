@@ -16,6 +16,7 @@ import AnimeDetailsPage from "./pages/AnimeDetailsPage";
 import MangaDetailsPage from "./pages/MangaDetailsPage";
 import ReversePage from "./pages/reverse_sites.jsx";
 import ErrorPage from "./pages/ERROR.jsx";
+import NewsPage_details from "./pages/NewsPage_details.js";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -33,6 +34,7 @@ function AnimatedRoutes() {
         <Route path="/Contacts" element={<PageWrapper><Contacts /></PageWrapper>} />
         <Route path="/AnimeDetailsPage/:title" element={<PageWrapper><AnimeDetailsPage /></PageWrapper>} />
         <Route path="/Manga/:title" element={<PageWrapper><MangaDetailsPage /></PageWrapper>} />
+        <Route path="/NewsPage_details" element={<PageWrapper> <NewsPage_details/> </PageWrapper>}/>
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </AnimatePresence>
