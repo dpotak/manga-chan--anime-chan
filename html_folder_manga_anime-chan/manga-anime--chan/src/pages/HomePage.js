@@ -141,6 +141,7 @@ const HomePage = () => {
           </p>
         </div>
 
+
          {/* Описание сайта о аниме и о мангах */}
          <div className="Opisanie_1">
             <Typography variant="h5" color="initial" className="h2_op_1">
@@ -148,24 +149,30 @@ const HomePage = () => {
             </Typography>
             
             <div className="title-anime-name">
-              <p className="title-p-1" >{t.animeSubtitle}</p>
+              <p className="title-anime-p-1" >{t.animeSubtitle}</p>
             </div>
            
           <div className="anime-text-list">
-             <div className="anime-text-1">
-              <p className="" >{t.animeText1}</p>
+
+             <div className="Number-text-anime-1">
+              <div className="anime-text-1">
+              <p className="anime-text-p-1" >{t.animeText1}</p>
             </div>
             <div className="anime-text-2">
-              <p className="" >{t.animeText2}</p>
+              <p className="anime-text-p-2" >{t.animeText2}</p>
             </div>
-            <div className="anime-text-3">
-              <p className="" >{t.animeText3}</p>
+             </div>
+
+           <div className="Number-text-anime-2">
+             <div className="anime-text-3">
+              <p className="anime-text-p-3" >{t.animeText3}</p>
             </div>
             <div className="anime-text-4">
-              <p className="" >{t.animeText4}</p>
+              <p className="anime-text-p-4" >{t.animeText4}</p>
             </div>
-          </div>
+           </div>
 
+          </div>
             </div>
 
         <div className="Opisanie_2">
@@ -174,19 +181,26 @@ const HomePage = () => {
             </Typography>
         
         <div className="title-manga-name">
-          <p className="" >{t.mangaText1}</p>
+          <p className="title-p-manga-1" >{t.mangaText1}</p>
         </div>
 
         <div className="manga-text-list">
-          <div className="manga-text-1">
-          <p>{t.mangaText2}</p>
+          
+          <div className="Number-text-manga-1">
+            <div className="manga-text-1">
+              <p className="manga-text-p-1" >{t.mangaText2}</p>
+            </div>
+            <div className="manga-text-2">
+              <p className="manga-text-p-2" >{t.mangaText3}</p>
+            </div>
+          </div>
+
+        <div className="Number-text-manga-2">
+          <div className="manga-text-3">
+            <p className="manga-text-p-3" >{t.mangaText4}</p>
+          </div>
         </div>
-        <div className="manga-text-2">
-          <p>{t.mangaText3}</p>
-        </div>
-        <div className="manga-text-3">
-          <p>{t.mangaText4}</p>
-        </div>
+        
         </div>
 
         </div>
