@@ -84,3 +84,57 @@
     text-align: center;
   }
 }
+
+
+/* Описание о аниме и манги */
+.anime-text-1 , .anime-text-2 , .anime-text-3 , .anime-text-4 {
+  width: 395px;
+  height: 45px;
+  border-radius: 12px solid 1px black;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 8px;
+  display: flex; /* Включаем Flexbox */
+  justify-content: center; /* Выравнивание по горизонтали */
+  align-items: center; /* Выравнивание по вертикали */
+  padding: 20px; /* Добавляем внутренние отступы, чтобы текст не касался краев */
+}
+
+.title-anime-name {
+  width: 195px;
+  height: 35px;
+  border-radius: 12px solid 1px black;
+  border-radius: 8px;
+  background-color: white;
+  display: flex; /* Включаем Flexbox */
+  justify-content: center; /* Выравнивание по горизонтали */
+  align-items: center; /* Выравнивание по вертикали */
+  padding: 20px; /* Добавляем внутренние отступы, чтобы текст не касался краев */
+}
+
+.manga-text-1 , .manga-text-2 , .manga-text-3 {
+  width: 395px;
+  height: 35px;
+  border-radius: 12px solid 1px black;
+  border-radius: 8px;
+  margin-top: 10px;
+  background-color: white;
+  display: flex; /* Включаем Flexbox */
+  justify-content: center; /* Выравнивание по горизонтали */
+  align-items: center; /* Выравнивание по вертикали */
+  padding: 20px; /* Добавляем внутренние отступы, чтобы текст не касался краев */
+}
+
+.title-manga-name {
+  width: 395px;
+  height: 35px;
+  border-radius: 12px solid 1px black;
+  border-radius: 8px;
+  background-color: white;
+  display: flex; /* Включаем Flexbox */
+  justify-content: center; /* Выравнивание по горизонтали */
+  align-items: center; /* Выравнивание по вертикали */
+  padding: 20px; /* Добавляем внутренние отступы, чтобы текст не касался краев */
+}
+
+

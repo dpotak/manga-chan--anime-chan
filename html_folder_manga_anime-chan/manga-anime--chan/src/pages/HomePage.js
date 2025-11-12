@@ -142,14 +142,30 @@ const HomePage = () => {
         </div>
 
          {/* Описание сайта о аниме и о мангах */}
-        <div className="Opisanie_1">
+         <div className="Opisanie_1">
             <Typography variant="h5" color="initial" className="h2_op_1">
                 {t.animeTitle}
             </Typography>
             
-            <p>{t.animeSubtitle}</p>
-            <p>{t.animeText1}</p>
-            <p>{t.animeText2}</p>
+            <div className="title-anime-name">
+              <p className="title-p-1" >{t.animeSubtitle}</p>
+            </div>
+           
+          <div className="anime-text-list">
+             <div className="anime-text-1">
+              <p className="" >{t.animeText1}</p>
+            </div>
+            <div className="anime-text-2">
+              <p className="" >{t.animeText2}</p>
+            </div>
+            <div className="anime-text-3">
+              <p className="" >{t.animeText3}</p>
+            </div>
+            <div className="anime-text-4">
+              <p className="" >{t.animeText4}</p>
+            </div>
+          </div>
+
             </div>
 
         <div className="Opisanie_2">
@@ -157,9 +173,21 @@ const HomePage = () => {
                 {t.mangaTitle}
             </Typography>
         
-        <p>{t.mangaText1}</p>
-        <p>{t.mangaText2}</p>
-        <p>{t.mangaText3}</p>
+        <div className="title-manga-name">
+          <p className="" >{t.mangaText1}</p>
+        </div>
+
+        <div className="manga-text-list">
+          <div className="manga-text-1">
+          <p>{t.mangaText2}</p>
+        </div>
+        <div className="manga-text-2">
+          <p>{t.mangaText3}</p>
+        </div>
+        <div className="manga-text-3">
+          <p>{t.mangaText4}</p>
+        </div>
+        </div>
 
         </div>
       </div>
