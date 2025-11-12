@@ -10,13 +10,13 @@
 # ⚙️ Technologies Used
 - Python (Flask)
 - Docker (Docker Compose)
-- React
-- Material UI
+- React (Material UI and Particles.js)
 - HTML , CSS 
 - Vagrant
 - MongoDB
 - Git
 - Apache2
+- Netlify
 
 
 # 🧱 Architecture
@@ -27,6 +27,10 @@
 |             |          | Docker Container)  |          |             |
 +-------------+          +--------------------+          +-------------+
 ```
+
+## ✔ The Ansible server contains YAML code that automatically installs and configures all necessary components: Docker, MongoDB, Apache2.
+## ✔ The second Linux already has the components installed and configured.
+
 
 # 📂 Project Structure
 
