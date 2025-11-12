@@ -29,6 +29,7 @@
 ```
 
 ✔ The Ansible server contains YAML code that automatically installs and configures all necessary components: Docker, MongoDB, Apache2.
+
 ✔ The second Linux already has the components installed and configured.
 
 
