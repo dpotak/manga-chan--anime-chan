@@ -32,18 +32,19 @@ const NewsPage = () => {
   }, []);
 
   useEffect(() => {
-    // Загружаем новости с Flask API
+     // Загружаем новости из Flask API
     const fetchNews = async () => {
       try {
-        const res = await fetch("/api/news");
-        const data = await res.json();
+        const response = await fetch("http://127.0.0.1:5000/api/news");
+        const data = await response.json();
         setNews(data);
       } catch (error) {
-        console.error("Ошибка загрузки новостей:", error);
+        console.error("Ошибка при загрузке новостей:", error);
       } finally {
         setLoading(false);
       }
     };
+
     fetchNews();
   }, []);
 
@@ -111,28 +112,31 @@ const NewsPage = () => {
 
   <div className="News_Content">
 
-    {/* Если идёт загрузка */}
-    {loading && <h2 style={{ textAlign: "center", color: "white" }}>Загрузка новостей...</h2>}
-
-    {/* Если новости загружены */}
-    {!loading && news.length > 0 ? (
-      news.map((item, index) => (
-        <div key={index} className="card-header">
-          <h1 className="card-header_h1">{item.title}</h1>
-          <img className="img_footer_h1" src={demonslayer} alt="news" />
-          <div>
-            <p className="p_news_1">{item.content}</p>
-            {item.link && (
-              <a href={item.link} target="_blank" rel="noopener noreferrer">
+   {/* Карточки для новостей */}
+      <div className="News_Content">
+        {loading ? (
+          <p>Загрузка новостей...</p>
+        ) : news.length === 0 ? (
+          <p>Новости отсутствуют.</p>
+        ) : (
+          news.map((item, index) => (
+            <div key={index} className="card-news">
+              <h1 className="card-news_h1">{item.title}</h1>
+              <img
+                className="img_footer_h1"
+                src={demonslayer}
+                alt="news"
+                width="250"
+                height="150"
+              />
+              <div>
+                <p className="p_news_1">{item.content}</p>
                 <button className="btn_news_1">{t.btn_news_1}</button>
-              </a>
-            )}
-          </div>
-        </div>
-      ))
-    ) : (
-      !loading && <p style={{ textAlign: "center", color: "white" }}>Новости отсутствуют</p>
-    )}
+              </div>
+            </div>
+          ))
+        )}
+      </div>
 
     <div id="particles-js"></div>
     <div className="count-particles">
