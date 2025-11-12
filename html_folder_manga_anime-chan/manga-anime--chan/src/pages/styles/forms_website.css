@@ -110,6 +110,7 @@
   justify-content: center; /* Выравнивание по горизонтали */
   align-items: center; /* Выравнивание по вертикали */
   padding: 20px; /* Добавляем внутренние отступы, чтобы текст не касался краев */
+  margin-top: 10px;
 }
 
 .manga-text-1 , .manga-text-2 , .manga-text-3 {
@@ -135,8 +136,8 @@
   justify-content: center; /* Выравнивание по горизонтали */
   align-items: center; /* Выравнивание по вертикали */
   padding: 20px; /* Добавляем внутренние отступы, чтобы текст не касался краев */
+  margin-top: 10px;
 }
-
 
 .Number-text-manga-1 {
   display: flex;
@@ -152,4 +153,20 @@
 
 .title-manga-name {
   margin-left: 95px;
+}
+
+.Number-text-anime-1 , .Number-text-anime-2 {
+  display: flex;
+}
+
+.anime-text-2 , .anime-text-4 {
+  margin-left: 10px;
+}
+
+.anime-text-3 {
+  margin-left: 45px;
+}
+
+.title-anime-name {
+  margin-left: 275px;
 }
