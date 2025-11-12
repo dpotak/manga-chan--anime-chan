@@ -138,3 +138,18 @@
 }
 
 
+.Number-text-manga-1 {
+  display: flex;
+}
+
+.manga-text-2 {
+  margin-left: 10px;
+}
+
+.manga-text-3 {
+  margin-left: 195px;
+}
+
+.title-manga-name {
+  margin-left: 95px;
+}
