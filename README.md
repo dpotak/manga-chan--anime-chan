@@ -1,5 +1,5 @@
 
-# 🚀 Full-Stack Developing Project
+# 🚀 Full-Stack Development Project
 
 
 # 📌 Project Description
