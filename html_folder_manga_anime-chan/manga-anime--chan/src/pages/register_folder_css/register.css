@@ -82,11 +82,11 @@ body {
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
-.Google {
+.Google , .VK , .Facebook {
     margin-left: 5px;
 }
 
-.Google , .GitHub {
+.Google , .GitHub , .VK , .Facebook {
     margin-top: 6px;
     border-radius: 5px;
 }

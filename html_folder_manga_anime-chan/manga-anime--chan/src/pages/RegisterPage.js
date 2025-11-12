@@ -1,16 +1,20 @@
 // RegisterPage.jsx
 import React from "react";
 import { useEffect , useState } from "react";
+import { Link } from "react-router-dom";
+
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
 import estonianflag from './foto/estonian.png';
+
 import "./register_folder_css/register.css";
 import "./register_folder_css/particlesjs_register.css";
+
 import Google from "./register_foto/google.png";
 import GiThub from "./register_foto/gitHub.png";
 import Facebook from "./register_foto/Facebook.png";
 import VK from "./register_foto/VK.png";
-import { Link } from "react-router-dom";
+
 import { useTranslatorRegister } from "../hooks/Register_Translator";
 import { useTransitionRegister } from "../hooks/Register_Transition";
 import { background_partijs } from "../background_for_page/background_partijs";
