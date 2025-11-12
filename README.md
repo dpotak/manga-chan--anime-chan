@@ -18,3 +18,13 @@
 - Git
 - Apache2
 
+
+# 🧱 Architecture
+```bash
++-------------+          +--------------------+          +-------------+
+| Server      |          | Linux Server       |          |             |
+|  Ansible    +---------> (Apache2 ,          +--------->  WebSite App |
+|             |          | Docker Container)  |          |             |
++-------------+          +--------------------+          +-------------+
+```
+
