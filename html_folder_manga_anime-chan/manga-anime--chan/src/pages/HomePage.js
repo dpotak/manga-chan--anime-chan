@@ -206,7 +206,9 @@ const HomePage = () => {
         </div>
       </div>
 
-       {/* Рекомендации по манги и по аниме */}
+
+       <div className="header_rekomendance">
+        {/* Рекомендации по манги и по аниме */}
       <div className="Rekomenduemoe">
         <Typography variant="h5">{t.recommendationsAnime}</Typography>
         <div className="cards-row">
@@ -242,8 +244,8 @@ const HomePage = () => {
           ))}
         </div>
       </div>
+       </div>
       
-
     </div>
   );
 };

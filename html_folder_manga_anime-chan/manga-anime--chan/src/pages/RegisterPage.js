@@ -15,6 +15,9 @@ import GiThub from "./register_foto/gitHub.png";
 import Facebook from "./register_foto/Facebook.png";
 import VK from "./register_foto/VK.png";
 
+import black_perehod from "./Perehod_whiteAndBlack/black.jpg";
+import berjuzovii_perehod from "./Perehod_whiteAndBlack/ICON_perehod_2.png";
+
 import { useTranslatorRegister } from "../hooks/Register_Translator";
 import { useTransitionRegister } from "../hooks/Register_Transition";
 import { background_partijs } from "../background_for_page/background_partijs";
@@ -46,6 +49,17 @@ const RegisterPage = () => {
          <button onClick={() => changeLanguage("ee")}>
           <img src={estonianflag} width="20" height="20" alt="EST" />
          </button>
+
+         {/* Черный-голубой фон (body) */}
+            <div className="white_black_page">
+              <button className="white_btn">
+                <img src={berjuzovii_perehod} width="20" height="20"></img>
+              </button>
+              <button className="black_btn">
+                <img src={black_perehod} width="20" height="20"></img>
+              </button>
+            </div>
+            
         </div>
       </nav>
 
@@ -82,6 +96,7 @@ const RegisterPage = () => {
             <button className="Google"><img src={ Google } width={"30px"} height={"25px"}></img></button>
             <button className="VK"><img src={ VK } width={"30px"} height={"25px"}></img></button>
             <button className="Facebook"><img src={ Facebook } width={"30px"} height={"25px"}></img></button>
+
           </div>
         </div>
 
