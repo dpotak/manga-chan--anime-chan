@@ -18,6 +18,9 @@ import inuyasha_anime from "./anime_chan_folder_foto/inuyasha.png";
 import OnePiece_anime from "./anime_chan_folder_foto/OnePiece.png";
 import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
 
+import black_perehod from "./Perehod_whiteAndBlack/black.jpg";
+import berjuzovii_perehod from "./Perehod_whiteAndBlack/ICON_perehod_2.png";
+
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
 import estonianflag from './foto/estonian.png';
@@ -94,6 +97,17 @@ const ListAnime = [
         <button onClick={() => changeLanguage("ee")}>
           <img src={estonianflag} width="20" height="20" alt="EST" />
         </button>
+
+        {/* Черный-голубой фон (body) */}
+        <div className="white_black_page">
+          <button className="white_btn">
+            <img src={berjuzovii_perehod} width="20" height="20"></img>
+          </button>
+          <button className="black_btn">
+            <img src={black_perehod} width="20" height="20"></img>
+          </button>
+        </div>
+        
       </div>
       </nav>
     </div>
