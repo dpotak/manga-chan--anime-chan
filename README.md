@@ -1,5 +1,5 @@
 
-# 🚀 Full-Stack Development Pet-Projects
+# 🚀 Full-Stack Development Projects
 
 
 # 📌 Project Description
@@ -9,6 +9,7 @@
 
 # ⚙️ Technologies Used
 - Python (Flask)
+- Ansible
 - Docker (Docker Compose)
 - React (Material UI and Particles.js)
 - HTML , CSS 
