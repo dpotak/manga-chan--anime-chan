@@ -7,6 +7,8 @@ import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
 import estonianflag from './foto/estonian.png';
 
+import icon_register from "./icon/register_nick.png";
+
 import "./register_folder_css/register.css";
 import "./register_folder_css/particlesjs_register.css";
 
@@ -58,6 +60,12 @@ const RegisterPage = () => {
               <button className="black_btn">
                 <img src={black_perehod} width="20" height="20"></img>
               </button>
+            </div>
+
+            <div className="register_pages">
+              <Link to="/RegisterPage"><button className="btn_register">
+                <img src={icon_register} width="50" height="50"></img>
+                </button></Link>
             </div>
             
         </div>

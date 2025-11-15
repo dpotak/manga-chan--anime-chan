@@ -20,6 +20,7 @@ import kusuriyanohi_2season from './ramka_anime_folder/kusuriyanohi_2season.jpg'
 import inuyasha from './ramka_anime_folder/inuyasha.jpg';
 import kusuriyanohitorigoto_1season from './ramka_anime_folder/kusuriyanohitorigoto_1season.jpg';
 import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
+import icon_register from "./icon/register_nick.png";
 
 import black_perehod from "./Perehod_whiteAndBlack/black.jpg";
 import berjuzovii_perehod from "./Perehod_whiteAndBlack/ICON_perehod_2.png";
@@ -35,7 +36,7 @@ import Kusuriya_no_Hitorigoto_manga from "./manga_chan_folder_foto/Kusuriya_no_H
 import "./styles/index_chan.css";
 import "./styles/index_chan_2.css";
 import "./styles/forms_website.css";
-import "./styles/Scroll_ramka_anime.css";
+import "./styles/register_pages_code.css";
 import "./styles/particlesjs.css";
 
 const HomePage = () => {
@@ -122,6 +123,12 @@ const HomePage = () => {
               <button className="black_btn">
                 <img src={black_perehod} width="20" height="20"></img>
               </button>
+            </div>
+
+            <div className="register_pages">
+              <Link to="/RegisterPage"><button className="btn_register">
+                <img src={icon_register} width="50" height="50"></img>
+                </button></Link>
             </div>
             
           </div>

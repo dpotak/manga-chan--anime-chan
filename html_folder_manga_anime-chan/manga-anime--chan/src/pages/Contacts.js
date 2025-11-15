@@ -15,6 +15,7 @@ import Instagram_foto from './contacts_folders_foto/instagram.png';
 import Telegram_foto from './contacts_folders_foto/telega.png';
 import Boosty_foto from './contacts_folders_foto/download.png';
 import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
+import icon_register from "./icon/register_nick.png";
 
 import black_perehod from "./Perehod_whiteAndBlack/black.jpg";
 import berjuzovii_perehod from "./Perehod_whiteAndBlack/ICON_perehod_2.png";
@@ -79,6 +80,13 @@ const Contacts = () => {
             <button onClick={() => changeLanguage("ee")}>
               <img src={estonianflag} width="20" height="20" alt="EST" />
             </button>
+
+            <div className="register_pages">
+              <Link to="/RegisterPage"><button className="btn_register">
+                <img src={icon_register} width="50" height="50"></img>
+                </button></Link>
+            </div>
+            
           </div>
         </nav>
       </div>

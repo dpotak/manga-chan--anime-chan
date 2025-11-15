@@ -7,6 +7,7 @@ import britainFlag from "./foto/britain_flags.png";
 import russianFlag from "./foto/russian_flag.jpg";
 import estonianflag from './foto/estonian.png';
 import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
+import icon_register from "./icon/register_nick.png";
 
 import black_perehod from "./Perehod_whiteAndBlack/black.jpg";
 import berjuzovii_perehod from "./Perehod_whiteAndBlack/ICON_perehod_2.png";
@@ -173,6 +174,12 @@ const FAQItem = ({ question, answer, isOpen, onToggle }) => (
                   <button className="black_btn">
                     <img src={black_perehod} width="20" height="20"></img>
                   </button>
+                </div>
+
+                 <div className="register_pages">
+                  <Link to="/RegisterPage"><button className="btn_register">
+                    <img src={icon_register} width="50" height="50"></img>
+                    </button></Link>
                 </div>
                 
               </div>
