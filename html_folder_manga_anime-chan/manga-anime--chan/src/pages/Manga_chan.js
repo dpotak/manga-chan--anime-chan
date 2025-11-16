@@ -19,6 +19,8 @@ import Demon_Slayer_manga from "./manga_chan_folder_foto/Demon_Slayer_manga.png"
 import Kusuriya_No_Hitorigoto_manga from "./manga_chan_folder_foto/Kusuriya_no_Hitorigoto.png";
 import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
 
+import icon_register from "./icon/register_nick.png";
+
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
 import estonianflag from './foto/estonian.png';
@@ -114,6 +116,12 @@ Manga_Pages_Transition();
               <button className="black_btn">
                 <img src={black_perehod} width="20" height="20"></img>
               </button>
+            </div>
+
+            <div className="register_pages">
+              <Link to="/RegisterPage"><button className="btn_register">
+                <img src={icon_register} width="50" height="50"></img>
+                </button></Link>
             </div>
 
           </div>

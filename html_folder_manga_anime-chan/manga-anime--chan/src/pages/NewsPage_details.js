@@ -1,11 +1,14 @@
 import React from "react";
 import { useEffect , useState } from "react";
-import { Link } from "react-router-dom";
-import { Button, Card, CardContent, Typography, CardHeader, Avatar, IconButton ,Collapse } from '@mui/material';
+import { useParams , Link } from "react-router-dom";
+import { Button, Card, CardContent, Typography , Avatar , CardHeader } from '@mui/material';
 
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
 import estonianflag from './foto/estonian.png';
+
+import icon_register from "./icon/register_nick.png";
+
 
 const NewPage_Details = () => {
 
