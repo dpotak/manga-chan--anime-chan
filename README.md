@@ -36,7 +36,38 @@
 
 # 📂 Project Structure
 
+```bash
 
+manga-anime--chan/
+├── backend/
+├── node_modules/
+├── public/
+├── src/
+│   ├── background_for_page/
+│   ├── font/
+│   ├── hooks/
+│   ├── language_pages_for_DetailsSites/
+│   ├── pages/
+│       ├───── 
+│       ├───── HomePage.js
+│       ├───── NewsPage.js
+│       " jn... "
+│
+│   ├── translations/
+│   ├── App.css
+│   ├── App.js
+│   ├── App.test.js
+│   ├── index.css
+│   ├── index.js
+│   ├── logo.svg
+│   ├── reportWebVitals.js
+│   └── setupTests.js
+├── .gitattributes
+├── .gitignore
+├── package-lock.json
+└── package.json
+
+```
 
 # 🚀 How to Run the Project
 
