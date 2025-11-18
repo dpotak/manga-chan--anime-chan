@@ -1,11 +1,19 @@
 
 # 🚀 Full-Stack Development Projects
 
-
 # 📌 Project Description
 ## 🧨 Manga-Chan--Anime-Chan
 💥 Is a project that perfectly combines reading manga and watching anime. It allows users to enjoy content easily, discuss their favorite series, and stay up to date with industry news.
 
+## 💻📚 Skills acquired during the project:
+- Writing HTML and working with CSS styles.
+- Python (Flask) programming for API creation.
+- Working with Git versions. Restoring old code versions and actively pushing code.
+- Working with JavaScript (React). Writing code for multilingual pages, writing additional features to improve page performance.
+- Setting up infrastructure on Linux Ubuntu and CentOS 7.
+-- Configuring and using Ansible.
+-- Automatic Docker configuration.
+-- Automatic configuration using Ansible with Docker: Apache2 and MongoDB.
 
 # ⚙️ Technologies Used
 - Python (Flask)
