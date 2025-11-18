@@ -84,6 +84,48 @@ app.get("/api/search", async (req, res) => {
 });
 
 // -----------------------------------------
+// 🌱 Seed — Добавить тестовые данные в MongoDB
+// -----------------------------------------
+app.get("/api/seed", async (req, res) => {
+  try {
+    const items = [
+      {
+        title: "Naruto",
+        type: "anime",
+        image: "https://example.com/naruto.jpg",
+      },
+      {
+        title: "One Piece",
+        type: "anime",
+        image: "https://example.com/onepiece.jpg",
+      },
+      {
+        title: "Bleach",
+        type: "anime",
+        image: "https://example.com/bleach.jpg",
+      },
+      {
+        title: "Jujutsu Kaisen",
+        type: "anime",
+        image: "https://example.com/jjk.jpg",
+      },
+      {
+        title: "Chainsaw Man",
+        type: "manga",
+        image: "https://example.com/csm.jpg",
+      }
+    ];
+
+    await Item.insertMany(items);
+
+    res.json({ message: "Тестовые данные добавлены!", count: items.length });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Ошибка при добавлении данных" });
+  }
+});
+
+// -----------------------------------------
 // 🚀 Старт сервера
 // -----------------------------------------
 app.listen(PORT, () =>
