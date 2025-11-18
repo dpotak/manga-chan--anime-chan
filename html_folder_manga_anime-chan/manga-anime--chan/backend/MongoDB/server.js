@@ -12,27 +12,80 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
 
-// 🔌 Подключаем MongoDB
+// -----------------------------------------
+// 🔌 Подключение MongoDB
+// -----------------------------------------
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => console.log("✅ MongoDB подключена"))
   .catch((err) => console.error("Ошибка MongoDB:", err));
 
-// 🧾 Пример маршрута
+// -----------------------------------------
+// 🗂 Модель для поиска (аниме/манга)
+// -----------------------------------------
+const ItemSchema = new mongoose.Schema({
+  title: String,
+  type: String, // anime | manga
+  image: String,
+});
+
+const Item = mongoose.model("Item", ItemSchema);
+
+// -----------------------------------------
+// 🧪 Проверочный маршрут
+// -----------------------------------------
 app.get("/", (req, res) => {
   res.send("Сервер работает!");
 });
 
-// 📥 Пример POST-запроса для регистрации
+// -----------------------------------------
+// 🔐 Регистрация пользователя
+// -----------------------------------------
 app.post("/register", async (req, res) => {
   try {
     const { firstName, lastName, email, password } = req.body;
-    const newUser = new User({ firstName, lastName, email, password });
+
+    const newUser = new User({
+      firstName,
+      lastName,
+      email,
+      password,
+    });
+
     await newUser.save();
     res.status(201).json({ message: "Пользователь создан!" });
   } catch (err) {
+    console.error(err);
     res.status(500).json({ error: "Ошибка при создании пользователя" });
   }
 });
 
-app.listen(PORT, () => console.log(`🚀 Сервер запущен на порту ${PORT}`));
+// -----------------------------------------
+// 🔍 Поиск: /api/search?query=xxx
+// -----------------------------------------
+app.get("/api/search", async (req, res) => {
+  const query = req.query.query;
+
+  // Пустой запрос → пустой массив
+  if (!query || query.trim() === "") {
+    return res.json([]);
+  }
+
+  try {
+    const results = await Item.find({
+      title: { $regex: query, $options: "i" }, // i = ignore case
+    }).limit(10);
+
+    res.json(results);
+  } catch (err) {
+    console.error("Ошибка поиска:", err);
+    res.status(500).json({ error: "Ошибка поиска на сервере" });
+  }
+});
+
+// -----------------------------------------
+// 🚀 Старт сервера
+// -----------------------------------------
+app.listen(PORT, () =>
+  console.log(`🚀 Сервер запущен на порту ${PORT}`)
+);
