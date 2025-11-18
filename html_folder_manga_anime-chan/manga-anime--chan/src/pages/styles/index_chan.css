@@ -129,3 +129,38 @@ form button:before {
   font-size: 16px;
   color: #F9F0DA;
 }
+
+/* Обёртка для формы поиска */
+.search-wrapper {
+  position: relative;
+}
+
+/* Выпадающий список подсказок */
+.suggestions-list {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 200px;
+  background: #111;
+  border: 1px solid #444;
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+  z-index: 999;
+  border-radius: 4px;
+}
+
+.suggestions-list li {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.suggestions-list li:hover {
+  background: #222;
+}
+
+.suggestions-list li a {
+  color: white;
+  text-decoration: none;
+}
