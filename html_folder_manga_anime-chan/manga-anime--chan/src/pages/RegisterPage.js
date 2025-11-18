@@ -61,12 +61,6 @@ const RegisterPage = () => {
                 <img src={black_perehod} width="20" height="20"></img>
               </button>
             </div>
-
-            <div className="register_pages">
-              <Link to="/RegisterPage"><button className="btn_register">
-                <img src={icon_register} width="50" height="50"></img>
-                </button></Link>
-            </div>
             
         </div>
       </nav>
