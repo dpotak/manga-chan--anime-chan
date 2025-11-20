@@ -81,6 +81,16 @@ const Contacts = () => {
               <img src={estonianflag} width="20" height="20" alt="EST" />
             </button>
 
+            {/* Черный-голубой фон (body) */}
+             <div className="white_black_page">
+               <button className="black_btn">
+                 <img src={black_perehod} width="20" height="20"></img>
+               </button>
+               <button className="white_btn">
+                 <img src={berjuzovii_perehod} width="20" height="20"></img>
+               </button>
+             </div>
+
             <div className="register_pages">
               <Link to="/RegisterPage"><button className="btn_register">
                 <img src={icon_register} width="50" height="50"></img>
@@ -89,12 +99,6 @@ const Contacts = () => {
             
           </div>
         </nav>
-      </div>
-
-      {/* Черный-голубой фон (body) */}
-      <div className="white_black_page">
-        <button className="white_btn"></button>
-        <button className="black_btn"></button>
       </div>
 
       <div id="particles-js"></div>

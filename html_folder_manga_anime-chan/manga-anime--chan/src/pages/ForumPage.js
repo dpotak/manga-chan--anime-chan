@@ -143,7 +143,6 @@ useEffect(() => {
                      )}
                    </div>
           
-
           <div className="language">
             <button onClick={() => changeLanguage("en")}>
               <img src={britainFlag} width="20" height="20" alt="EN" />
