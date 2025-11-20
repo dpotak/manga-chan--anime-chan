@@ -72,9 +72,9 @@ const HomePage = () => {
   const shuffledManga = shuffleArray(mangaImages);
 
   // --- Поисковая строка с API и автоподсказками ---
-const [query, setQuery] = useState("");
-const [suggestions, setSuggestions] = useState([]);
-const [isFocused, setIsFocused] = useState(false);
+  const [query, setQuery] = useState("");
+  const [suggestions, setSuggestions] = useState([]);
+  const [isFocused, setIsFocused] = useState(false);
 
 // задержка для запросов
 useEffect(() => {
@@ -121,33 +121,33 @@ useEffect(() => {
           <Link to="/Contacts">{t.contacts}</Link>
           <Link to="/RegisterPage">{t.login}</Link>
 
-           {/* Поисковая строка */}
+          {/* Поисковая строка */}
          {/* Поисковая строка с auto-suggest */}
-<div className="search-wrapper">
-  <form id="searchForm" onSubmit={(e) => e.preventDefault()}>
-    <input
-      type="text"
-      placeholder={t.searchPlaceholder}
-      value={query}
-      onChange={(e) => setQuery(e.target.value)}
-      onFocus={() => setIsFocused(true)}
-      onBlur={() => setTimeout(() => setIsFocused(false), 200)}
-    />
+         <div className="search-wrapper">
+           <form id="searchForm" onSubmit={(e) => e.preventDefault()}>
+             <input
+               type="text"
+               placeholder={t.searchPlaceholder}
+               value={query}
+               onChange={(e) => setQuery(e.target.value)}
+               onFocus={() => setIsFocused(true)}
+               onBlur={() => setTimeout(() => setIsFocused(false), 200)}
+             />
 
-    <button type="submit"></button>
-  </form>
+             <button type="submit"></button>
+           </form>
 
-  {/* Выпадающий список подсказок */}
-  {isFocused && suggestions.length > 0 && (
-    <ul className="suggestions-list">
-      {suggestions.map((item, index) => (
-        <li key={index}>
-          <Link to={`/Search/${item.title}`}>{item.title}</Link>
-        </li>
-      ))}
-    </ul>
-  )}
-</div>
+           {/* Выпадающий список подсказок */}
+           {isFocused && suggestions.length > 0 && (
+             <ul className="suggestions-list">
+               {suggestions.map((item, index) => (
+                 <li key={index}>
+                   <Link to={`/Search/${item.title}`}>{item.title}</Link>
+                 </li>
+               ))}
+             </ul>
+           )}
+         </div>
 
 
            {/* Языки для перевода сайта */}

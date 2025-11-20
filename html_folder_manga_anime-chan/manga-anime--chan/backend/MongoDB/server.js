@@ -95,6 +95,16 @@ app.get("/api/seed", async (req, res) => {
         image: "https://example.com/naruto.jpg",
       },
       {
+        title: "Demon Slayer",
+        type: "anime",
+        image: "https://example.com/naruto.jpg",
+      },
+      {
+        title: "Demon Slayer",
+        type: "manga",
+        image: "https://example.com/naruto.jpg",
+      },
+      {
         title: "One Piece",
         type: "anime",
         image: "https://example.com/onepiece.jpg",
@@ -112,7 +122,7 @@ app.get("/api/seed", async (req, res) => {
       {
         title: "Chainsaw Man",
         type: "manga",
-        image: "https://example.com/csm.jpg",
+        image: "http://localhost:3000/Manga/Chainsaw%20Man",
       }
     ];
 
