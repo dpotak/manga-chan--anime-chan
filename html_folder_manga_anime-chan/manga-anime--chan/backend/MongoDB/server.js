@@ -97,13 +97,9 @@ app.get("/api/seed", async (req, res) => {
       {
         title: "Demon Slayer",
         type: "anime",
-        image: "https://example.com/naruto.jpg",
+        image: "https://example.com/demo.jpg",
       },
-      {
-        title: "Demon Slayer",
-        type: "manga",
-        image: "https://example.com/naruto.jpg",
-      },
+ 
       {
         title: "One Piece",
         type: "anime",
@@ -132,6 +128,20 @@ app.get("/api/seed", async (req, res) => {
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: "Ошибка при добавлении данных" });
+  }
+});
+
+app.get("/api/item/:title", async (req, res) => {
+  try {
+    const item = await Item.findOne({ title: req.params.title });
+
+    if (!item) {
+      return res.status(404).json({ error: "not found" });
+    }
+
+    res.json(item);
+  } catch (err) {
+    res.status(500).json({ error: "server error" });
   }
 });
 
