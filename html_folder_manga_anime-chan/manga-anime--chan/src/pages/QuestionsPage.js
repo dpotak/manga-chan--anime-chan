@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 // подклченные PNG файлы которые предназначены для флагов-переводов
 import britainFlag from "./foto/britain_flags.png";
@@ -109,6 +110,28 @@ const FAQ_4 = [
   }
 ];
 
+// --- Поисковая строка с API и автоподсказками ---
+  const [query, setQuery] = useState("");
+  const [suggestions, setSuggestions] = useState([]);
+  const [isFocused, setIsFocused] = useState(false);
+
+// задержка для запросов
+useEffect(() => {
+  if (!query) {
+    setSuggestions([]);
+    return;
+  }
+
+  const delay = setTimeout(() => {
+    axios
+      .get(`/api/search?query=${query}`)
+      .then((res) => setSuggestions(res.data))
+      .catch(() => setSuggestions([]));
+  }, 300);
+
+  return () => clearTimeout(delay);
+}, [query]);
+
 const FAQItem = ({ question, answer, isOpen, onToggle }) => (
   <div className="faq-item">
     <div className="Questions" onClick={onToggle}>
@@ -150,10 +173,33 @@ const FAQItem = ({ question, answer, isOpen, onToggle }) => (
            <Link to="/Contacts">{t.contacts}</Link>
            <Link to="/RegisterPage">{t.login}</Link>
 
-           <form id="searchForm">
-                <input type="text" placeholder={t.searchPlaceholder} />
-                <button type="submit"></button>
-              </form>
+           {/* Поисковая строка */}
+                   {/* Поисковая строка с auto-suggest */}
+                   <div className="search-wrapper">
+                     <form id="searchForm" onSubmit={(e) => e.preventDefault()}>
+                       <input
+                         type="text"
+                         placeholder={t.searchPlaceholder}
+                         value={query}
+                         onChange={(e) => setQuery(e.target.value)}
+                         onFocus={() => setIsFocused(true)}
+                         onBlur={() => setTimeout(() => setIsFocused(false), 200)}
+                       />
+                                   
+                         <button type="submit"></button>
+                       </form>
+                                   
+                        {/* Выпадающий список подсказок */}
+                        {isFocused && suggestions.length > 0 && (
+                          <ul className="suggestions-list">
+                            {suggestions.map((item, index) => (
+                              <li key={index}>
+                                <Link to={`/Search/${item.title}`}>{item.title}</Link>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
           
               <div className="language">
                 <button onClick={() => changeLanguage("en")}>
