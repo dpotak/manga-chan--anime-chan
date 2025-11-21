@@ -1,0 +1,153 @@
+/* Общие стили */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0faeed;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #ffffff;
+  }
+  50% {
+    text-shadow: 0 0 20px #ffffff, 0 0 40px #e4e4e4;
+  }
+  100% {
+    text-shadow: 0 0 5px #ffffff;
+  }
+}
+
+.nav-bar a {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.nav-bar a:hover {
+  color: #00b7ff;
+  animation: glow 1s infinite alternate;
+}
+
+/* Шапка */
+.header {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h1 {
+  margin-right: 20px;
+  font-size: 24px;
+}
+
+/* Навигация в один ряд */
+.nav-bar {
+  display: flex;
+  align-items: center;      /* выравнивание по вертикали */
+  gap: 20px;                /* одинаковое расстояние между элементами */
+}
+
+/* Кнопка Каталог и ссылки */
+.nav-bar a,
+.dropbtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  line-height: 36px;       /* выравнивание текста по вертикали */
+  padding: 0 15px;
+  background: black;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.nav-bar a:hover,
+.dropbtn:hover {
+  background: #222;
+}
+
+/* Выпадающее меню */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;               /* прямо под кнопкой */
+  left: 0;
+  background-color: #111;
+  min-width: 150px;
+  z-index: 1;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-content a {
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  color: #fff;
+}
+
+.dropdown-content a:hover {
+  background-color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;           /* показываем меню при наведении */
+}
+
+/* Стили формы поиска */
+form {
+  position: relative;
+  width: 200px;
+}
+
+form input {
+  width: 120px;            /* минимальная видимая ширина */
+  padding: 0 42px 0 10px;
+  height: 36px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  background: transparent;
+  transition: width 0.4s cubic-bezier(0, 0.8, 0, 1);
+  color: #fff;
+}
+
+form input:focus {
+  width: 200px;            /* расширяется при фокусе */
+  border-bottom: 2px solid white;
+}
+
+form button {
+  background: black;
+  border: none;
+  height: 36px;
+  width: 36px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+form button:before {
+  content: "\f002";        /* иконка поиска FontAwesome */
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
+}

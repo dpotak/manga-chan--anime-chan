@@ -1,0 +1,149 @@
+/* анимация затемнения */
+body.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+body {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+/* Language */
+.language button {
+    background: none;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Форум/Обсуждение */
+.Forum_text {
+  margin-top: 25px;
+  margin-left: 35px;
+}
+
+@import url('https://fonts.cdnfonts.com/css/akisa');
+
+.Glavnaja_1 {
+  font-family: 'Akisa';
+  font-size: 125px;
+}
+
+.forum_border_kvadrat {
+  margin-top: 35px;
+  margin-left: 50px;
+}
+
+.btn_1_kvad,
+.btn_2_kvad {
+  margin-left: 20px;
+  border-radius: 8px;
+  width: 150px;
+  height: 70px;
+  background: linear-gradient(90deg, #de0f0f, #161616);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  animation: glow 1s infinite alternate;
+}
+
+.btn_1_kvad:hover,
+.btn_2_kvad:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #ff2c2c, #292929);
+}
+
+.kvadrat_forum {
+  width: 900px;
+  height: 550px;
+  background: linear-gradient(100deg, #00b7ff, #0ca8e6);
+  margin-left: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.kavdrat_forum_Nr_two {
+  width: 900px;
+  height: 60px;
+  border: 4px solid #0ca8e6;
+}
+
+.Text_glavnaja {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 8px;
+}
+
+.forum_container {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
+
+.forum_sidebar {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+}
+
+.forum_content {
+  flex: 2;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 400px;
+  overflow-y: auto;
+}
+
+.topic {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+
+.messages_box {
+  max-height: 250px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.message_input {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.message_input input {
+  flex: 1;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.message_input button {
+  border: none;
+  background: linear-gradient(90deg, #007aff, #00b7ff);
+  color: white;
+  border-radius: 5px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.message_input button:hover {
+  opacity: 0.8;
+}
+
+.glavnaja_icon_TEXT {
+  display: flex;
+}
+
+.Glavnaja_1 {
+  margin-top: 20px;
+  margin-left: 10px;
+}

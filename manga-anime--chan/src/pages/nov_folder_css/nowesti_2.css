@@ -1,0 +1,90 @@
+/* анимация затемнения */
+body.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+body {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+/* Language */
+.language button {
+    background: none;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.News_text_h1 {
+  margin-top: 25px;
+  margin-left: 35px;
+}
+
+.News_Content {
+  justify-content: center;
+  margin-top: 125px;
+  display: flex;
+
+}
+
+.card-header , .card-body , .card-footer , .card-hooter {
+  width: 300px;
+  height: 350px;
+  border: 1px solid black;
+  margin-left: 12px;
+  border-radius: 8px;
+  background-color: #604d4d;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #ffffff;
+  }
+  50% {
+    text-shadow: 0 0 20px #ffffff, 0 0 40px #e4e4e4;
+  }
+  100% {
+    text-shadow: 0 0 5px #ffffff;
+  }
+}
+
+.btn_news_1 {
+  width: 95px;
+  height: 40px;
+  font-size: 25px;
+  border-radius: 8px;
+  margin-top: 25px;
+  margin-left: 85px;
+  background: linear-gradient(90deg, #de0f0f, #161616);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  animation: glow 1s infinite alternate;
+}
+
+.card-header_h1 , .card-body_h1 , .card-footer_h1 , .card-hooter_h1 {
+  font-size: 23px;
+  margin-left: 8px;
+}
+
+.img_footer_h1 {
+  margin-left: 60px;
+  margin-top: 10px;
+}
+
+@import url('https://fonts.cdnfonts.com/css/akisa');
+
+.Glavnaja_1 {
+  font-family: 'Akisa';
+  font-size: 125px;
+}
+
+.glavnaja_icon_TEXT {
+  display: flex;
+}
+
+.Glavnaja_1 {
+  margin-top: 20px;
+  margin-left: 10px;
+}

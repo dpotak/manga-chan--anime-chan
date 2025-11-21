@@ -1,0 +1,85 @@
+
+// src/App.js
+import React from "react";
+import { useEffect, useState } from 'react';
+import { AnimatePresence, motion } from "framer-motion";
+import { Routes, Route, useLocation } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import NewsPage from "./pages/NewsPage";
+import RegisterPage from "./pages/RegisterPage";
+import ForumPage from "./pages/ForumPage";
+import QuestionsPage from "./pages/QuestionsPage";
+import Anime_chan from "./pages/Anime_chan";
+import Manga_chan from "./pages/Manga_chan";
+import Contacts from "./pages/Contacts";
+import AnimeDetailsPage from "./pages/AnimeDetailsPage";
+import MangaDetailsPage from "./pages/MangaDetailsPage";
+import ReversePage from "./pages/reverse_sites.jsx";
+import ErrorPage from "./pages/ERROR.jsx";
+import SearchResultPage from "./pages/SearchResultPage.jsx";
+import NewsPage_details from "./pages/NewsPage_details.js";
+
+
+function AnimatedRoutes() {
+  const location = useLocation();
+
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<PageWrapper><HomePage /></PageWrapper>} />
+        <Route path="/ForumPage" element={<PageWrapper><ForumPage /></PageWrapper>} />
+        <Route path="/QuestionsPage" element={<PageWrapper><QuestionsPage /></PageWrapper>} />
+        <Route path="/NewsPage" element={<PageWrapper><NewsPage /></PageWrapper>} />
+        <Route path="/RegisterPage" element={<PageWrapper><RegisterPage /></PageWrapper>} />
+        <Route path="/Anime_chan" element={<PageWrapper><Anime_chan /></PageWrapper>} />
+        <Route path="/Manga_chan" element={<PageWrapper><Manga_chan /></PageWrapper>} />
+        <Route path="/Contacts" element={<PageWrapper><Contacts /></PageWrapper>} />
+        <Route path="/AnimeDetailsPage/:title" element={<PageWrapper><AnimeDetailsPage /></PageWrapper>} />
+        <Route path="/Manga/:title" element={<PageWrapper><MangaDetailsPage /></PageWrapper>} />
+        <Route path="/NewsPage_details" element={<PageWrapper> <NewsPage_details/> </PageWrapper>}/>
+        <Route path="*" element={<ErrorPage />} />
+        <Route path="/Search/:title" element={<SearchResultPage />} />
+      </Routes>
+    </AnimatePresence>
+  );
+}
+
+// Обертка для анимации каждой страницы
+const PageWrapper = ({ children }) => (
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y: -30 }}
+    transition={{ duration: 0.6, ease: "easeInOut" }}
+    style={{ position: "relative" }}
+  >
+    {children}
+  </motion.div>
+);
+
+function App() {
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // имитация загрузки при старте
+    const timer = setTimeout(() => setLoading(false), 1500);
+    fetch("/api/hello")
+      .then((res) => res.json())
+      .then((data) => setMessage(data.message))
+      .catch((err) => console.error(err));
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) return <ReversePage />;
+
+  return (
+    <main>
+      <AnimatedRoutes />
+      {message && <p>{message}</p>}
+    </main>
+  );
+}
+
+
+export default App;
