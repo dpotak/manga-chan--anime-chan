@@ -31,7 +31,8 @@
     "start": "concurrently \"npm run server\" \"npm run client\" \"npm run start-flask\"",
     "server": "cd backend/MongoDB && node server.js",
     "client": "react-scripts start",
-    "start-flask": "cd backend/Rest_Api && python -u app.py"
+    "start-flask": "cd backend/Rest_Api && python -u app.py",
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
