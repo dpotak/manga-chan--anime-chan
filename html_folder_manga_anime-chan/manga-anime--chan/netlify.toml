@@ -1,8 +1,3 @@
-[build]
-  base = "manga-anime--chan"
-  publish = "manga-anime--chan/build"
-  command = "npm run build"
-
 [[redirects]]
 from = "/*"
 to = "/index.html"
