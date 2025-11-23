@@ -10,6 +10,7 @@ import estonianflag from './foto/estonian.png';
 import "./contacts_folder_css/contacts_1.css";
 import "./contacts_folder_css/particlesjs_contacts.css";
 import "./contacts_folder_css/contacts_websiteForms.css";
+import "./styles/mode_darklight.css"; //
 
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import Instagram_foto from './contacts_folders_foto/instagram.png';
@@ -62,6 +63,27 @@ useEffect(() => {
 
   return () => clearTimeout(delay);
 }, [query]);
+
+useEffect(() => {
+  const darkButton = document.getElementById('darkButton');
+  const lightButton = document.getElementById('lightButton');
+  const body = document.body;
+
+  if (!darkButton || !lightButton) return; // защита от ошибки
+
+  darkButton.addEventListener('click', () => {
+    body.classList.add('dark-mode');
+  });
+
+  lightButton.addEventListener('click', () => {
+    body.classList.remove('dark-mode');
+  });
+
+  return () => {
+    darkButton.removeEventListener('click', () => {});
+    lightButton.removeEventListener('click', () => {});
+  };
+}, []);
 
  
   return (
@@ -130,10 +152,10 @@ useEffect(() => {
 
             {/* Черный-голубой фон (body) */}
              <div className="white_black_page">
-               <button className="black_btn">
+               <button className="black_btn" id="darkButton">
                  <img src={black_perehod} width="20" height="20"></img>
                </button>
-               <button className="white_btn">
+               <button className="white_btn" id="lightButton">
                  <img src={berjuzovii_perehod} width="20" height="20"></img>
                </button>
              </div>
