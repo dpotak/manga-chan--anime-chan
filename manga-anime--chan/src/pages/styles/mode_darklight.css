@@ -1,0 +1,11 @@
+body {
+  background-color: #0faeed; /* Белый фон */
+  color: #000000; /* Черный текст */
+  transition: background-color 0.3s ease; /* Плавный переход */
+}
+
+/* Стили для темной темы, которые будут применяться при нажатии */
+body.dark-mode {
+  background-color: #000000; /* Черный фон */
+  color: #ffffff; /* Белый текст */
+}
