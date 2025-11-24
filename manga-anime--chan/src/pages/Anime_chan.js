@@ -11,6 +11,7 @@ import './anime_chan_folder/anime_chan_1.css';
 import './anime_chan_folder/anime_chan_2.css';
 import './anime_chan_folder/anime_particles.css';
 import './anime_chan_folder/animeChan_websiteForms.css';
+import "./styles/mode_darklight.css";
 
 // База данных с постерами для аниме
 import chainsaw_man_anime from "./anime_chan_folder_foto/Chanisaw.png";
@@ -84,6 +85,27 @@ useEffect(() => {
   return () => clearTimeout(delay);
 }, [query]);
   
+useEffect(() => {
+  const darkButton = document.getElementById('darkButton');
+  const lightButton = document.getElementById('lightButton');
+  const body = document.body;
+
+  if (!darkButton || !lightButton) return; // защита от ошибки
+
+  darkButton.addEventListener('click', () => {
+    body.classList.add('dark-mode');
+  });
+
+  lightButton.addEventListener('click', () => {
+    body.classList.remove('dark-mode');
+  });
+
+  return () => {
+    darkButton.removeEventListener('click', () => {});
+    lightButton.removeEventListener('click', () => {});
+  };
+}, []);
+
   return (
     <div> 
      <div className="header">
@@ -149,10 +171,10 @@ useEffect(() => {
 
         {/* Черный-голубой фон (body) */}
         <div className="white_black_page">
-          <button className="white_btn">
+          <button className="white_btn" id="lightButton">
             <img src={berjuzovii_perehod} width="20" height="20"></img>
           </button>
-          <button className="black_btn">
+          <button className="black_btn" id="darkButton">
             <img src={black_perehod} width="20" height="20"></img>
           </button>
         </div>

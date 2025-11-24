@@ -17,6 +17,7 @@ import berjuzovii_perehod from "./Perehod_whiteAndBlack/ICON_perehod_2.png";
 // подключенные файлы CSS 
 import "./manga_anime_Details/manga_Details.css";
 import "./manga_anime_Details/particlesjs_MangaDetails.css";
+import "./styles/mode_darklight.css";
 
 // подключенные модули и другие файлы JS
 import { Translator_Manga_Details } from "../hooks/Manga_Details_Translator";
@@ -52,6 +53,27 @@ const MangaDetailsPage = () => {
   const volumes = mangaVolumes[decodeURIComponent(title)] || [];
 
   const { t, changeLanguage } = Translator_Manga_Details();
+
+  useEffect(() => {
+    const darkButton = document.getElementById('darkButton');
+    const lightButton = document.getElementById('lightButton');
+    const body = document.body;
+  
+    if (!darkButton || !lightButton) return; // защита от ошибки
+  
+    darkButton.addEventListener('click', () => {
+      body.classList.add('dark-mode');
+    });
+  
+    lightButton.addEventListener('click', () => {
+      body.classList.remove('dark-mode');
+    });
+  
+    return () => {
+      darkButton.removeEventListener('click', () => {});
+      lightButton.removeEventListener('click', () => {});
+    };
+  }, []);
 
   return (
    <div className="">
@@ -103,10 +125,10 @@ const MangaDetailsPage = () => {
 
            {/* Черный-голубой фон (body) */}
             <div className="white_black_page">
-              <button className="white_btn">
+              <button className="white_btn" id="lightButton">
                 <img src={berjuzovii_perehod} width="20" height="20"></img>
               </button>
-              <button className="black_btn">
+              <button className="black_btn" id="darkButton">
                 <img src={black_perehod} width="20" height="20"></img>
               </button>
             </div>
