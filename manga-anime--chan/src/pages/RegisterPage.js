@@ -7,8 +7,6 @@ import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
 import estonianflag from './foto/estonian.png';
 
-import icon_register from "./icon/register_nick.png";
-
 import "./register_folder_css/register.css";
 import "./register_folder_css/particlesjs_register.css";
 import "./styles/mode_darklight.css";
