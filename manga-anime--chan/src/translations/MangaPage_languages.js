@@ -11,6 +11,9 @@ export const translations = {
     catalog: "Каталог",
     Manga_catalog: "Манга",
     Anime_catalog: "Аниме",
+    List_manga: "Список манги",
+    Read_manga: "Читать →",
+    manga_list_poisk: "Манга не найдена",
   },
   en: {
     catalog: "Catalog",
@@ -21,6 +24,9 @@ export const translations = {
     contacts: "Contacts",
     login: "Login / Register",
     searchPlaceholder: "Search here...",
+    List_manga: "List of manga",
+    Read_manga: "Read →",
+    manga_list_poisk: "Manga not found",
   },
   ee: {
     catalog: "Kataloog",
@@ -31,5 +37,9 @@ export const translations = {
     contacts: "Kontaktid",
     login: "Registreeru / Logi sisse",
     searchPlaceholder: "Otsi siit...",
+    List_manga: "Mangade nimekiri",
+    Read_manga: "Loe →",
+    manga_list_poisk: "Mangat ei leitud",
   },
 };
+

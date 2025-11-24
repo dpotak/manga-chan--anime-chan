@@ -247,7 +247,7 @@ useEffect(() => {
         </div>
 
         <div className="List_manga_read">
-          <h2 className="list_manga_name">Список манги</h2>
+          <h2 className="list_manga_name">{t.List_manga}</h2>
 
           <div className="manga_list_background">
             {filteredManga.length > 0 ? (
@@ -265,7 +265,7 @@ useEffect(() => {
                       color="primary"
                       className="read_button"
                       >
-                        Читать →
+                        {t.Read_manga}
                       </Button>
                     </Link>
 
@@ -275,7 +275,7 @@ useEffect(() => {
               ))
             ) : (
               <Typography variant="body1" color="text.secondary" style={{ marginTop: "20px" }}>
-                Манга не найдена 
+                {t.manga_list_poisk} 
               </Typography>
             )}
           </div>
