@@ -7,9 +7,9 @@ body {
 /* Стили для темной темы, которые будут применяться при нажатии */
 body.dark-mode {
   background-color: #000000; /* Черный фон */
-  color: white;
 }
 
-.h1_cont_ {
-    
+.h1_contOne , .Boosty_name_2 , .Telega_name , .Insta_name , .h1_cont_ {
+      color: #000000;
 }
+

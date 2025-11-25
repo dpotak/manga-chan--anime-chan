@@ -7,9 +7,13 @@ body {
 /* Стили для темной темы, которые будут применяться при нажатии */
 body.dark-mode {
   background-color: #000000; /* Черный фон */
+  color: white;
 }
 
-.text_h1_forum {
-    color: white;
+.dark-mode.text_h1_forum {
+  color: #000000;
 }
 
+.dark-mode .forum_sidebar_text {
+  color: #000000;
+}

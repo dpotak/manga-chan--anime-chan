@@ -11,7 +11,7 @@ import './anime_chan_folder/anime_chan_1.css';
 import './anime_chan_folder/anime_chan_2.css';
 import './anime_chan_folder/anime_particles.css';
 import './anime_chan_folder/animeChan_websiteForms.css';
-import "./styles/mode_darklight.css";
+import "./dark_light_mode/Anime_chan_DarkMode_lightMode.css";
 
 // База данных с постерами для аниме
 import chainsaw_man_anime from "./anime_chan_folder_foto/Chanisaw.png";
@@ -200,7 +200,7 @@ useEffect(() => {
 
     <div className="Anime_Janri">
       <form id="form_search">
-      <input className="anime_content_janr" type="" placeholder=""></input>
+      <input className="anime_content_janr" type="" placeholder="Поиск по жанру аниме"></input>
     </form>
     </div>
   </form>
@@ -209,7 +209,7 @@ useEffect(() => {
 <div className="anime_list_section">
 <h2 className="anime_list_title">{t.list_anime}</h2>
 
-      <div className="anime_card_container">
+      <div className="anime_card_container"> {/* Доделать смену темной-светлой темы для этой страницы */}
         {ListAnime.map((anime, index) => (
           <Card key={index} className="anime_card">
             <div className="anime_poster_container">

@@ -7,7 +7,7 @@ import './manga_chan_folder/manga_chan_1.css';
 import './manga_chan_folder/manga_chan_2.css';
 import './manga_chan_folder/manga_content_chan.css';
 import './manga_chan_folder/manga_chan_particles.css';
-import "./styles/mode_darklight.css";
+import "./dark_light_mode/Manga_chan_DarkMode_lightMode.css";
 
 import { Manga_Pages_Transition } from "../hooks/Manga_Pages_Transition";
 import { MangaPage_Translator } from "../hooks/MangaPage_Translator";

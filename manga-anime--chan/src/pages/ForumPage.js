@@ -247,7 +247,7 @@ useEffect(() => {
               </p>
             </div>
 
-            <div className="forum_container">
+            <div className="forum_container"> {/* Доделать смену темной-светлой темы для этой страницы */}
               {/* Сайдбар */}
               <div className="forum_sidebar">
                 <input
