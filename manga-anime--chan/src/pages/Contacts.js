@@ -10,7 +10,7 @@ import estonianflag from './foto/estonian.png';
 import "./contacts_folder_css/contacts_1.css";
 import "./contacts_folder_css/particlesjs_contacts.css";
 import "./contacts_folder_css/contacts_websiteForms.css";
-import "./styles/mode_darklight.css"; //
+import "./dark_light_mode/Contacts_DarkMode_lightMode.css"; //
 
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import Instagram_foto from './contacts_folders_foto/instagram.png';
