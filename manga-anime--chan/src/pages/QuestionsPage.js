@@ -18,7 +18,7 @@ import "./otvetinavoprosi_folder_css/otvetinavoprosi.css";
 import "./otvetinavoprosi_folder_css/otvetinavoprosi_2.css";
 import "./otvetinavoprosi_folder_css/particlesjs_Questions.css";
 import "./otvetinavoprosi_folder_css/ontvetinavoprosi_webFormsSite.css";
-import "./styles/mode_darklight.css"; // Написать отдельный css файл для этой страницы
+import "./dark_light_mode/Questions_DarkMode_lightMode.css"; // Написать отдельный css файл для этой страницы
 
 // подключенные модули и другие файлы JS
 import { UseQuestionsPages_Transition } from "../hooks/QuestionsPages_Transition";
@@ -258,7 +258,7 @@ useEffect(() => {
       <div id="particles-js"></div>
       <div class="count-particles"> <span class="js-count-particles"></span> </div>
 
-      <div className="Questions_1">
+      <div className="Questions_1"> {/* Доделать сайт для темной-светлой темы для сайта */}
         <h1> {t.Questions_1} </h1>
       </div>
 

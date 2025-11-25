@@ -8,3 +8,7 @@ body {
 body.dark-mode {
   background-color: #000000; /* Черный фон */
 }
+
+.dark-mode .page-title {
+    color: white;
+}
