@@ -168,11 +168,17 @@ const MangaDetailsPage = () => {
 
     <div className="language_manga_watch">
 
-      <button className=""><img src="" width="" height=""></img></button>
+      <div className="ENG_manga">
+        <button className="btn_1_for_manga"><img src={britainFlag} width="45px" height="45px" id="ENG_manga"></img></button>
+      </div>
 
-      <button className=""><img src="" width="" height=""></img></button>
+      <div className="RUS_Manga">
+        <button className="btn_1_for_manga"><img src={russianFlag} width="45px" height="45px" id="RUS_manga"></img></button>
+      </div>
       
-      <button className=""><img src="" width="" height=""></img></button>
+      <div className="EST_Manga">
+        <button className="btn_1_for_manga"><img src={estonianflag} width="45px" height="45px" id="EST_manga"></img></button>
+      </div>
 
     </div>
 
