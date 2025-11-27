@@ -92,21 +92,30 @@ const RegisterPage = () => {
         {/* Registration Form */}
         <div className="card form-card">
           <h2> {t.Register} </h2>
-          <input type="text" placeholder={t.Name} />
-          <input type="text" placeholder={t.Name_2} />
-          <input type="email" placeholder={t.email} />
-          <input type="text" placeholder={t.telefon} />
-          <input type="date" placeholder={t.date_birth} />
+          <input type="text" placeholder={t.Name} id="First_name" />
+          <input type="text" placeholder={t.Name_2} id="last_name" />
+          <input type="email" placeholder={t.email} id="email" />
+          <input type="text" placeholder={t.telefon} id="telefon" />
+          <input type="date" placeholder={t.date_birth} id="date" />
+          <input type="password" placeholder={t.password} id="password"></input>
+          <input type="password" placeholder={t.password_enter} id="enter_password"></input>
           
           {/* Для определение пола человека */}
           <div className="Pol_register">
+
             <div className="Male_reg">
               <p className="Male_p"> {t.Male_p} </p>
-              <input type="checkbox"></input>
+              <input type="checkbox" id="checkbox_male"></input>
             </div> 
+
             <div className="Female_reg">
               <p className="Female_p"> {t.Female_p} </p>
-              <input type="checkbox"></input>  
+              <input type="checkbox" id="checkbox_female"></input>  
+            </div>
+
+            <div className="no_gender_reg">
+              <p className="no_gender_p"> {t.no_gender_p} </p>
+              <input type="checkbox" id="checkbox_no_gender"></input>
             </div>
 
           </div>
@@ -125,13 +134,21 @@ const RegisterPage = () => {
         {/* Sign In Form */}
         <div className="card form-card">
           <h2> {t.enter_reg} </h2>
-          <input type="text" placeholder="Username или Email" />
-          <input type="password" placeholder="Пароль" />
+          <input type="text" placeholder={t.nickname_or_email__enter} />
+          <input type="password" placeholder={t.password_enter_now} />
           <button className="btn-primary"> {t.primary_btn_enter} </button>
 
           <div className="LinK_Home">
             <Link to="/"> {t.LinK_Home} </Link>
           </div>
+
+           <div className="Reg_Google_GitHub_2">
+             <button className="GitHub"><img src={ GiThub } width={"30px"} height={"25px"}></img></button>
+             <button className="Google"><img src={ Google } width={"30px"} height={"25px"}></img></button>
+             <button className="VK"><img src={ VK } width={"30px"} height={"25px"}></img></button>
+             <button className="Facebook"><img src={ Facebook } width={"30px"} height={"25px"}></img></button>
+           </div>
+
         </div>
       </div>
 
