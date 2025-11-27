@@ -189,6 +189,16 @@ const AnimeDetailsPage = () => {
       )}
     </div>
 
+    <div className="language_anime_watch">
+
+      <button className=""><img src="" width="" height=""></img></button>
+
+      <button className=""><img src="" width="" height=""></img></button>
+      
+      <button className=""><img src="" width="" height=""></img></button>
+
+    </div>
+
     </div>
   );
 };

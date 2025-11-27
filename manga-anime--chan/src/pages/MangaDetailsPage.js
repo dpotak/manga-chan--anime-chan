@@ -166,6 +166,16 @@ const MangaDetailsPage = () => {
       )}
     </div>
 
+    <div className="language_manga_watch">
+
+      <button className=""><img src="" width="" height=""></img></button>
+
+      <button className=""><img src="" width="" height=""></img></button>
+      
+      <button className=""><img src="" width="" height=""></img></button>
+
+    </div>
+
     <div className="opisanie_manga">
       <img className="image_manga" src="" width="" height=""></img>
       <h2 className="name-manga"></h2>
