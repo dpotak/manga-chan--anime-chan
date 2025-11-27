@@ -181,13 +181,13 @@ const AnimeDetailsPage = () => {
                 style={{ borderRadius: "10px" }}
               >
                 <source src={selectedEpisode.file} type="video/mp4" />
-                Ваш браузер не поддерживает видео.
+                {t.no_founded_video}
               </video>
             </div>
           )}
         </>
       ) : (
-        <p>Серии для этого аниме пока не добавлены.</p>
+        <p>{t.no_founded_video_not}</p>
       )}
       
     </div>

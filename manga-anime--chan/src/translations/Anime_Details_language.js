@@ -10,6 +10,8 @@ export const translations = {
     searchPlaceholder: "Искать здесь...",
     Manga_catalog: "Манга",
     Anime_catalog: "Аниме",
+    no_founded_video: "Ваш браузер не поддерживает видео.",
+    no_founded_video_not: "Серии для этого аниме пока не добавлены.",
   },
   en: {
     catalog: "Catalog",
@@ -22,6 +24,8 @@ export const translations = {
     searchPlaceholder: "Search here...",
     Manga_catalog: "Manga",
     Anime_catalog: "Anime",
+    no_founded_video: "Your browser does not support video.",
+    no_founded_video_not: "There are no episodes for this anime yet.",
   },
   ee: {
     catalog: "Kataloog",
@@ -34,6 +38,8 @@ export const translations = {
     searchPlaceholder: "Otsi siit...",
     Manga_catalog: "Manga",
     Anime_catalog: "Anime",
+    no_founded_video: "Teie brauser ei toeta videot.",
+    no_founded_video_not: "Sellel animel pole veel ühtegi osa.",
   },
 };
 
