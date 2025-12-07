@@ -12,3 +12,16 @@ body.dark-mode {
 .dark-mode .page-title {
     color: white;
 }
+
+.dark-mode .Male_p {
+  color: #000000;
+}
+
+.dark-mode .Female_p {
+  color: #000000;
+}
+
+.dark-mode .no_gender_p {
+  color: #000000;
+}
+
