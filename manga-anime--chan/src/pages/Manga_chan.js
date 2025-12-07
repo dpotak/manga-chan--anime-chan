@@ -147,6 +147,7 @@ useEffect(() => {
                   <div className="search-wrapper">
                     <form id="searchForm" onSubmit={(e) => e.preventDefault()}>
                       <input
+                        className="input_search_1"
                         type="text"
                         placeholder={t.searchPlaceholder}
                         value={query}
@@ -212,7 +213,7 @@ useEffect(() => {
             <input
               className="input_search"
               type="text"
-              placeholder="Искать мангу по названию..."
+              placeholder={t.input_search}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
@@ -221,7 +222,7 @@ useEffect(() => {
               <input
                 className="manga_content_janr"
                 type="text"
-                placeholder="Выбрать жанр..."
+                placeholder={t.manga_content_janr}
                 value={selectedGenre}
                 onFocus={() => setShowGenres(true)}
                 onBlur={() => setTimeout(() => setShowGenres(false), 100)}

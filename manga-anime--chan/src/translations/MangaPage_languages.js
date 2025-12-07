@@ -8,6 +8,10 @@ export const translations = {
     contacts: "Контакты",
     login: "Регистрация/Войти",
     searchPlaceholder: "Искать здесь...",
+
+    manga_content_janr: "Выбрать жанр...",
+    input_search: "Искать мангу по названию...",
+
     catalog: "Каталог",
     Manga_catalog: "Манга",
     Anime_catalog: "Аниме",
@@ -23,6 +27,10 @@ export const translations = {
     faq: "FAQ",
     contacts: "Contacts",
     login: "Login / Register",
+
+    manga_content_janr: "Select genre...",
+    input_search: "Search manga by title...",
+
     searchPlaceholder: "Search here...",
     List_manga: "List of manga",
     Read_manga: "Read →",
@@ -37,6 +45,10 @@ export const translations = {
     contacts: "Kontaktid",
     login: "Registreeru / Logi sisse",
     searchPlaceholder: "Otsi siit...",
+
+    manga_content_janr: "Vali žanr...",
+    input_search: "Otsi mangat pealkirja järgi...",
+
     List_manga: "Mangade nimekiri",
     Read_manga: "Loe →",
     manga_list_poisk: "Mangat ei leitud",
