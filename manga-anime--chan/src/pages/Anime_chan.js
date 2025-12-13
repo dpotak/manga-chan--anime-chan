@@ -12,6 +12,7 @@ import './anime_chan_folder/anime_chan_2.css';
 import './anime_chan_folder/anime_particles.css';
 import './anime_chan_folder/animeChan_websiteForms.css';
 import "./dark_light_mode/Anime_chan_DarkMode_lightMode.css";
+import "./anime_chan_folder/AnimeChan_mobile.css";
 
 // База данных с постерами для аниме
 import chainsaw_man_anime from "./anime_chan_folder_foto/Chanisaw.png";

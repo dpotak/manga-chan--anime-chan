@@ -1,0 +1,148 @@
+/* =========================
+   MANGA_CHAN — RESPONSIVE
+   ========================= */
+
+/* ---------- до 1024px ---------- */
+@media screen and (max-width: 1024px) {
+
+  .Glavnaja_1 {
+    font-size: 64px;
+  }
+
+  .form_search_table {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list_manga_name {
+    margin-left: 0;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .manga_list_background {
+    width: 90%;
+    height: auto;
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+}
+
+/* ---------- до 768px ---------- */
+@media screen and (max-width: 768px) {
+
+  /* Шапка */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Glavnaja_1 {
+    font-size: 42px;
+  }
+
+  /* Форма поиска */
+  .form_search {
+    margin-left: 0;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .form_search form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .input_search {
+    width: 220px;
+  }
+
+  .Manga_Janri {
+    width: 220px;
+  }
+
+  /* Заголовок списка */
+  .list_manga_name {
+    font-size: 22px;
+  }
+
+  /* Карточки */
+  .poster_container {
+    width: 200px;
+    height: 300px;
+  }
+
+  .poster_text h3 {
+    font-size: 16px;
+  }
+
+  .poster_text p {
+    font-size: 14px;
+  }
+}
+
+/* ---------- до 480px (телефоны) ---------- */
+@media screen and (max-width: 480px) {
+
+  /* Навигация */
+  .nav-bar {
+    display: none; /* позже бургер */
+  }
+
+  /* Заголовок */
+  .Glavnaja_1 {
+    font-size: 28px;
+  }
+
+  /* Поиск */
+  .form_search {
+    margin-top: 20px;
+  }
+
+  .input_search {
+    width: 90%;
+  }
+
+  .Manga_Janri {
+    width: 90%;
+  }
+
+  /* Название блока */
+  .list_manga_name {
+    font-size: 20px;
+    margin-top: 25px;
+  }
+
+  /* Контейнер манги */
+  .manga_list_background {
+    width: 95%;
+    margin-top: 15px;
+    padding: 10px;
+  }
+
+  /* Карточка */
+  .poster_container {
+    width: 160px;
+    height: 240px;
+    margin: 10px;
+  }
+
+  .poster_text h3 {
+    font-size: 14px;
+  }
+
+  .poster_text p {
+    font-size: 12px;
+  }
+
+  .read_button {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}

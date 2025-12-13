@@ -1,0 +1,126 @@
+/* =========================
+   ANIME_CHAN — RESPONSIVE
+   ========================= */
+
+/* ---------- до 1024px ---------- */
+@media screen and (max-width: 1024px) {
+
+  .Glavnaja_1 {
+    font-size: 64px;
+  }
+
+  .anime_card_container {
+    justify-content: center;
+  }
+
+  .anime_poster_container {
+    width: 220px;
+    height: 320px;
+  }
+
+  .anime_list_title {
+    font-size: 24px;
+  }
+}
+
+/* ---------- до 768px ---------- */
+@media screen and (max-width: 768px) {
+
+  /* Шапка */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Glavnaja_1 {
+    font-size: 42px;
+  }
+
+  /* Поиск */
+  .form_search {
+    margin-left: 0;
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form_search form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .input_search {
+    width: 220px;
+  }
+
+  .anime_content_janr {
+    width: 220px;
+  }
+
+  /* Карточки */
+  .anime_poster_container {
+    width: 200px;
+    height: 300px;
+  }
+
+  .anime_list_title {
+    font-size: 22px;
+  }
+}
+
+/* ---------- до 480px (телефоны) ---------- */
+@media screen and (max-width: 480px) {
+
+  /* Навигация */
+  .nav-bar {
+    display: none; /* позже бургер */
+  }
+
+  /* Заголовок */
+  .Glavnaja_1 {
+    font-size: 28px;
+  }
+
+  /* Поиск */
+  .form_search {
+    margin-top: 20px;
+  }
+
+  .input_search {
+    width: 90%;
+  }
+
+  .anime_content_janr {
+    width: 90%;
+  }
+
+  /* Заголовок списка */
+  .anime_list_title {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  /* Контейнер карточек */
+  .anime_card_container {
+    gap: 10px;
+  }
+
+  /* Карточка */
+  .anime_poster_container {
+    width: 160px;
+    height: 240px;
+    margin: 10px;
+  }
+
+  .anime_text h3 {
+    font-size: 14px;
+  }
+
+  .watch_button {
+    font-size: 12px !important;
+    padding: 4px 8px !important;
+  }
+}
