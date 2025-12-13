@@ -1,0 +1,132 @@
+/* =========================
+   MOBILE: News Page
+   ========================= */
+
+/* ---------- до 1024px ---------- */
+@media screen and (max-width: 1024px) {
+
+  .Glavnaja_1 {
+    font-size: 64px;
+  }
+
+  .News_Content {
+    flex-wrap: wrap;
+    margin-top: 80px;
+    gap: 20px;
+  }
+
+  .card-news {
+    width: 280px;
+  }
+}
+
+/* ---------- до 768px ---------- */
+@media screen and (max-width: 768px) {
+
+  /* Шапка */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Glavnaja_1 {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+
+  .nav-bar {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* Заголовок страницы */
+  .News_text_h1 {
+    margin-left: 20px;
+  }
+
+  .news_h1 {
+    font-size: 32px;
+  }
+
+  /* Контент новостей */
+  .News_Content {
+    margin-top: 60px;
+    justify-content: center;
+  }
+
+  .card-news {
+    width: 260px;
+  }
+
+  .img_footer_h1 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .btn_news_1 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+/* ---------- до 480px (телефоны) ---------- */
+@media screen and (max-width: 480px) {
+
+  /* Навигацию скрываем (под бургер позже) */
+  .nav-bar {
+    display: none;
+  }
+
+  /* Логотип */
+  .Glavnaja_1 {
+    font-size: 26px;
+  }
+
+  /* Заголовок */
+  .News_text_h1 {
+    margin: 15px auto;
+    text-align: center;
+  }
+
+  .news_h1 {
+    font-size: 22px;
+  }
+
+  /* Контейнер новостей */
+  .News_Content {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  /* Карточка */
+  .card-news {
+    width: 90%;
+    max-width: 320px;
+    margin-bottom: 20px;
+  }
+
+  .card-news_h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .p_news_1 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .img_footer_h1 {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  .btn_news_1 {
+    width: 100%;
+    font-size: 18px;
+    margin: 15px 0 0 0;
+  }
+}

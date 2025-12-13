@@ -19,6 +19,7 @@ import "./otvetinavoprosi_folder_css/otvetinavoprosi_2.css";
 import "./otvetinavoprosi_folder_css/particlesjs_Questions.css";
 import "./otvetinavoprosi_folder_css/ontvetinavoprosi_webFormsSite.css";
 import "./dark_light_mode/Questions_DarkMode_lightMode.css"; // Написать отдельный css файл для этой страницы
+import "./otvetinavoprosi_folder_css/questions_mobile.css";
 
 // подключенные модули и другие файлы JS
 import { UseQuestionsPages_Transition } from "../hooks/QuestionsPages_Transition";

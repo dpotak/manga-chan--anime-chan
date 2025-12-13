@@ -13,6 +13,7 @@ import './nov_folder_css/nowesti_2.css';
 import "./nov_folder_css/particlesjs_news.css";
 import "./nov_folder_css/now_form_website.css";
 import "./styles/mode_darklight.css"; // 
+import "./nov_folder_css/mobile_news.css";
 
 import { NewsPages_Transition } from "../hooks/NewsPages_Transition";
 import { useNewsPagesPageTranslator } from "../hooks/NewsPage_Translator";

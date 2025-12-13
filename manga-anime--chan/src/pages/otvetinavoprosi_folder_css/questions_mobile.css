@@ -1,0 +1,158 @@
+/* =========================
+   QUESTIONS / FAQ — MOBILE
+   ========================= */
+
+/* ---------- до 1024px ---------- */
+@media screen and (max-width: 1024px) {
+
+  .Glavnaja_1 {
+    font-size: 64px;
+  }
+
+  .Questions_1,
+  .Questions_Projects_1,
+  .Questions_Projects_2,
+  .Questions_Projects_3,
+  .Questions_Projects_4,
+  .Questions_Projects_5 {
+    margin-left: 30px;
+  }
+
+  .faq-item {
+    margin-left: 30px;
+    max-width: 90%;
+  }
+}
+
+/* ---------- до 768px ---------- */
+@media screen and (max-width: 768px) {
+
+  /* Шапка */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Glavnaja_1 {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+
+  /* Заголовок страницы */
+  .Questions_1 {
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+
+  .Questions_1 h1 {
+    font-size: 32px;
+  }
+
+  /* Подзаголовки блоков */
+  .Questions_Projects_1 h2,
+  .Questions_Projects_2 h2,
+  .Questions_Projects_3 h2,
+  .Questions_Projects_4 h2,
+  .Questions_Projects_5 h2 {
+    font-size: 24px;
+  }
+
+  .Questions_Projects_1,
+  .Questions_Projects_2,
+  .Questions_Projects_3,
+  .Questions_Projects_4,
+  .Questions_Projects_5 {
+    margin-left: 20px;
+    margin-top: 35px;
+  }
+
+  /* FAQ элементы */
+  .faq-item {
+    margin-left: 20px;
+    max-width: 95%;
+  }
+
+  .Questions {
+    padding: 10px 14px;
+    font-size: 16px;
+  }
+
+  .Questions_content {
+    padding: 10px 16px;
+    font-size: 15px;
+  }
+
+  /* Контакты внизу */
+  .Questions_oma_1 {
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+}
+
+/* ---------- до 480px (телефоны) ---------- */
+@media screen and (max-width: 480px) {
+
+  /* Навигацию скрываем */
+  .nav-bar {
+    display: none;
+  }
+
+  /* Логотип */
+  .Glavnaja_1 {
+    font-size: 26px;
+  }
+
+  /* Главный заголовок */
+  .Questions_1 {
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .Questions_1 h1 {
+    font-size: 22px;
+  }
+
+  /* Заголовки разделов */
+  .Questions_Projects_1,
+  .Questions_Projects_2,
+  .Questions_Projects_3,
+  .Questions_Projects_4,
+  .Questions_Projects_5 {
+    margin: 30px auto 10px;
+    text-align: center;
+  }
+
+  .Questions_Projects_1 h2,
+  .Questions_Projects_2 h2,
+  .Questions_Projects_3 h2,
+  .Questions_Projects_4 h2,
+  .Questions_Projects_5 h2 {
+    font-size: 18px;
+  }
+
+  /* FAQ */
+  .faq-item {
+    margin: 12px auto;
+    max-width: 95%;
+  }
+
+  .Questions {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .Questions_content {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Блок "Если остались вопросы" */
+  .Questions_oma_1 {
+    margin: 35px auto;
+    text-align: center;
+  }
+
+  .Contacts_Questions_oma_1 {
+    font-size: 16px;
+  }
+}

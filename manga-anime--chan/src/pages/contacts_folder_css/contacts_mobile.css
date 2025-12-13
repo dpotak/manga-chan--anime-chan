@@ -1,0 +1,170 @@
+/* =========================
+   CONTACTS — RESPONSIVE
+   ========================= */
+
+/* ---------- до 1024px ---------- */
+@media screen and (max-width: 1024px) {
+
+  .Glavnaja_1 {
+    font-size: 64px;
+  }
+
+  .Contacts_info {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    font-size: 18px;
+  }
+
+  .cont_1 {
+    margin-left: 20px;
+  }
+
+  .bg-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .h1_cont_2 {
+    margin-left: 30px;
+  }
+}
+
+/* ---------- до 768px ---------- */
+@media screen and (max-width: 768px) {
+
+  /* Шапка */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Glavnaja_1 {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+
+  .nav-bar {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* Заголовок страницы */
+  .h1_Contacts_text_h1 {
+    margin-left: 20px;
+  }
+
+  .h1_Cont_text {
+    font-size: 32px;
+  }
+
+  /* Информационный блок */
+  .Contacts_info {
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+  }
+
+  .p_2 {
+    font-size: 16px;
+  }
+
+  /* Соцсети */
+  .p_info_socialnoi {
+    margin-top: 120px;
+  }
+
+  .Boosty-name,
+  .Instagram-name,
+  .Telegram-name {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .h1_cont_2 {
+    margin-left: 25px;
+    margin-top: 50px;
+  }
+}
+
+/* ---------- до 480px (телефоны) ---------- */
+@media screen and (max-width: 480px) {
+
+  /* Навигацию скрываем */
+  .nav-bar {
+    display: none;
+  }
+
+  /* Логотип */
+  .Glavnaja_1 {
+    font-size: 26px;
+  }
+
+  /* Заголовок */
+  .h1_Contacts_text_h1 {
+    margin: 15px auto;
+    text-align: center;
+  }
+
+  .h1_Cont_text {
+    font-size: 22px;
+  }
+
+  /* Основной текст */
+  .Contacts_info {
+    font-size: 16px;
+    margin: 15px auto;
+    padding: 12px;
+    text-align: center;
+  }
+
+  .p_2 {
+    font-size: 15px;
+  }
+
+  /* Блок с фоном */
+  .cont_1 {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .bg-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .h1_contOne h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  /* Социальные сети */
+  .p_info_socialnoi {
+    margin-top: 40px;
+    margin-left: 0;
+  }
+
+  .Boosty-name,
+  .Instagram-name,
+  .Telegram-name {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  /* Gmail */
+  .h1_cont_2 {
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  .h1_cont_2 h1 {
+    font-size: 20px;
+  }
+
+  .h1_cont_2 button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

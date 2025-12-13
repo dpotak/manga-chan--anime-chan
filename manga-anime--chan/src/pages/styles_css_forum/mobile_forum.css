@@ -1,0 +1,162 @@
+/* =========================
+   MOBILE: Forum Page
+   ========================= */
+
+/* ----------- до 1024px ----------- */
+@media screen and (max-width: 1024px) {
+
+  .Glavnaja_1 {
+    font-size: 64px;
+  }
+
+  .kvadrat_forum,
+  .kavdrat_forum_Nr_two {
+    width: 100%;
+  }
+
+  .forum_border_kvadrat {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/* ----------- до 768px ----------- */
+@media screen and (max-width: 768px) {
+
+  /* Шапка */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Glavnaja_1 {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+
+  .nav-bar {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* Заголовок форума */
+  .Forum_text {
+    margin-left: 20px;
+  }
+
+  .text_h1_forum {
+    font-size: 28px;
+  }
+
+  /* Кнопки разделов */
+  .forum_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .btn_1_kvad,
+  .btn_2_kvad {
+    width: 140px;
+    height: 60px;
+    margin-left: 0;
+  }
+
+  /* Основной блок форума */
+  .kvadrat_forum {
+    height: auto;
+  }
+
+  .forum_container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .forum_sidebar {
+    max-width: 100%;
+  }
+
+  .forum_content {
+    min-height: auto;
+  }
+}
+
+/* ----------- до 480px (телефоны) ----------- */
+@media screen and (max-width: 480px) {
+
+  /* Навигацию прячем (под бургер позже) */
+  .nav-bar {
+    display: none;
+  }
+
+  /* Логотип */
+  .Glavnaja_1 {
+    font-size: 26px;
+  }
+
+  /* Заголовок страницы */
+  .text_h1_forum {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .Forum_text {
+    margin: 15px auto;
+    text-align: center;
+  }
+
+  /* Кнопки разделов */
+  .forum_buttons {
+    justify-content: center;
+  }
+
+  .btn_1_kvad,
+  .btn_2_kvad {
+    width: 100%;
+    height: 55px;
+    font-size: 14px;
+  }
+
+  /* Контейнер форума */
+  .kvadrat_forum {
+    padding: 10px;
+  }
+
+  .kavdrat_forum_Nr_two {
+    height: auto;
+  }
+
+  .Text_glavnaja {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  /* Сайдбар */
+  .forum_sidebar {
+    padding: 15px;
+  }
+
+  .forum_sidebar input,
+  .forum_sidebar button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Темы */
+  .topic h3 {
+    font-size: 16px;
+  }
+
+  .messages_box {
+    max-height: 180px;
+  }
+
+  /* Ввод сообщения */
+  .message_input {
+    flex-direction: column;
+  }
+
+  .message_input button {
+    width: 100%;
+  }
+}
