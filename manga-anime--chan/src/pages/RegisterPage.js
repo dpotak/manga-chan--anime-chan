@@ -11,6 +11,7 @@ import "./register_folder_css/register.css";
 import "./register_folder_css/particlesjs_register.css";
 import "./dark_light_mode/Register_DarkMode_lightMode.css";
 
+
 import Google from "./register_foto/google.png";
 import GiThub from "./register_foto/gitHub.png";
 import Facebook from "./register_foto/Facebook.png";
