@@ -1,0 +1,105 @@
+/* ========================= */
+/* 📱 MOBILE ADAPTATION */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  /* Навигация */
+  .nav-bar {
+    justify-content: center;
+    padding: 12px;
+  }
+
+  .language {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  /* Заголовок страницы */
+  .page-title {
+    font-size: 26px;
+    padding: 0 10px;
+    margin-top: 15px;
+  }
+
+  /* Контейнер форм */
+  .forms-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+    padding: 0 10px;
+  }
+
+  /* Карточки */
+  .card {
+    width: 100%;
+    max-width: 360px;
+    min-width: unset;
+    padding: 24px;
+  }
+
+  .card h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  /* Инпуты */
+  .card input {
+    font-size: 15px;
+    padding: 12px 14px;
+  }
+
+  /* Кнопки */
+  .btn-primary {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  /* Пол */
+  .Pol_register {
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .Male_reg,
+  .Female_reg,
+  .no_gender_reg {
+    align-items: center;
+    gap: 6px;
+  }
+
+  /* Социальные кнопки */
+  .Reg_Google_GitHub,
+  .Reg_Google_GitHub_2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  /* Ссылка на главную */
+  .LinK_Home {
+    text-align: center;
+    margin-top: 12px;
+  }
+}
+
+/* 📱 Очень маленькие экраны */
+@media (max-width: 480px) {
+
+  .page-title {
+    font-size: 22px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+}

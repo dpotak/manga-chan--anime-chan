@@ -10,7 +10,7 @@ import estonianflag from './foto/estonian.png';
 import "./register_folder_css/register.css";
 import "./register_folder_css/particlesjs_register.css";
 import "./dark_light_mode/Register_DarkMode_lightMode.css";
-
+import "./register_folder_css/register_mobile.css";
 
 import Google from "./register_foto/google.png";
 import GiThub from "./register_foto/gitHub.png";

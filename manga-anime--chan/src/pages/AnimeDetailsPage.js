@@ -19,6 +19,7 @@ import berjuzovii_perehod from "./Perehod_whiteAndBlack/ICON_perehod_2.png";
 import "./manga_anime_Details/Anime_details.css";
 import "./manga_anime_Details/particles_AnimeDetails.css";
 import "./styles/mode_darklight.css";
+import "./manga_anime_Details/animedetails_mobile.css";
 
 // подключенные файлы JS
 import { Anime_Details_Translator } from "../hooks/Anime_Details_Translator";
