@@ -21,6 +21,7 @@ import "./styles/mode_darklight.css";
 
 // подключенные модули и другие файлы JS
 import { Translator_Manga_Details } from "../hooks/Manga_Details_Translator";
+import { MangaDetails_transitions } from "../hooks/MangaDetails_Transitions";
 import { background_partijs } from "../background_for_page/background_partijs";
 
 

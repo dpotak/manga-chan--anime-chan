@@ -23,6 +23,7 @@ import "./manga_anime_Details/animedetails_mobile.css";
 
 // подключенные файлы JS
 import { Anime_Details_Translator } from "../hooks/Anime_Details_Translator";
+import { AnimeDetails_transitions } from "../hooks/AnimeDetails_transitions";
 
 const AnimeDetailsPage = () => {
   useEffect(() => {
