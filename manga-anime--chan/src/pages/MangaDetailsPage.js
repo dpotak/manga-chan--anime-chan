@@ -34,6 +34,8 @@ const MangaDetailsPage = () => {
   }
 }, []);
 
+MangaDetails_transitions();
+
   const { title } = useParams(); // получаем название из URL
 
   // 📚 Список томов (пути к PDF)

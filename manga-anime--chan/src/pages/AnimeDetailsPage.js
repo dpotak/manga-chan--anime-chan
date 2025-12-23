@@ -35,6 +35,8 @@ const AnimeDetailsPage = () => {
 
   const { t, changeLanguage } = Anime_Details_Translator();
 
+  AnimeDetails_transitions();
+
   // 🎥 Список серий
   const animeEpisodes = {
     "Chainsaw Man": [
