@@ -10,6 +10,7 @@ export const translations = {
     searchPlaceholder: "Искать здесь...",
     Manga_catalog: "Манга",
     Anime_catalog: "Аниме",
+    btn_list_manga: "",
   },
   en: {
     catalog: "Catalog",
@@ -22,6 +23,7 @@ export const translations = {
     searchPlaceholder: "Search here...",
     Manga_catalog: "Manga",
     Anime_catalog: "Anime",
+    btn_list_manga: "",
   },
   ee: {
     catalog: "Kataloog",
@@ -34,6 +36,7 @@ export const translations = {
     searchPlaceholder: "Otsi siit...",
     Manga_catalog: "Manga",
     Anime_catalog: "Anime",
+    btn_list_manga: "",
   },
 };
 
