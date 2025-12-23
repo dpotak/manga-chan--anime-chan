@@ -10,7 +10,7 @@ export const translations = {
     searchPlaceholder: "Искать здесь...",
     Manga_catalog: "Манга",
     Anime_catalog: "Аниме",
-    btn_list_manga: "",
+    btn_list_manga: "← Назад к списку манги",
   },
   en: {
     catalog: "Catalog",
@@ -23,7 +23,7 @@ export const translations = {
     searchPlaceholder: "Search here...",
     Manga_catalog: "Manga",
     Anime_catalog: "Anime",
-    btn_list_manga: "",
+    btn_list_manga: "← Back to manga list",
   },
   ee: {
     catalog: "Kataloog",
@@ -36,7 +36,7 @@ export const translations = {
     searchPlaceholder: "Otsi siit...",
     Manga_catalog: "Manga",
     Anime_catalog: "Anime",
-    btn_list_manga: "",
+    btn_list_manga: "← Tagasi mangade nimekirja",
   },
 };
 

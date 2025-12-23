@@ -147,7 +147,7 @@ const MangaDetailsPage = () => {
       <h1>{decodeURIComponent(title)}</h1>
       <Link to="/Manga_chan">
         <Button variant="outlined" color="secondary" style={{ marginBottom: "20px" }}>
-          ← Назад к списку манги
+          {t.btn_list_manga}
         </Button>
       </Link>
 
