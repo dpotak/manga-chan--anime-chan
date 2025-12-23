@@ -151,7 +151,7 @@ const AnimeDetailsPage = () => {
       <h1>{decodeURIComponent(title)}</h1>
       <Link to="/Anime_chan">
         <Button className="btn_list_anime" variant="outlined" color="secondary" style={{ marginBottom: "20px" }}>
-          ← Назад к списку аниме
+          {t.btn_anime_list}
         </Button>
       </Link>
 

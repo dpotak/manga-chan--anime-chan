@@ -12,6 +12,7 @@ export const translations = {
     Anime_catalog: "Аниме",
     no_founded_video: "Ваш браузер не поддерживает видео.",
     no_founded_video_not: "Серии для этого аниме пока не добавлены.",
+    btn_anime_list: "← Назад к списку аниме",
   },
   en: {
     catalog: "Catalog",
@@ -26,6 +27,7 @@ export const translations = {
     Anime_catalog: "Anime",
     no_founded_video: "Your browser does not support video.",
     no_founded_video_not: "There are no episodes for this anime yet.",
+    btn_anime_list: "← Back to anime list",
   },
   ee: {
     catalog: "Kataloog",
@@ -40,6 +42,7 @@ export const translations = {
     Anime_catalog: "Anime",
     no_founded_video: "Teie brauser ei toeta videot.",
     no_founded_video_not: "Sellel animel pole veel ühtegi osa.",
+    btn_anime_list: "← Tagasi anime nimekirja",
   },
 };
 
