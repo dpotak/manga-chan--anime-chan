@@ -146,7 +146,7 @@ const MangaDetailsPage = () => {
     <div style={{ padding: "20px" }}>
       <h1>{decodeURIComponent(title)}</h1>
       <Link to="/Manga_chan">
-        <Button variant="outlined" color="secondary" style={{ marginBottom: "20px" }}>
+        <Button className="btn_list_manga" variant="outlined" color="secondary" style={{ marginBottom: "20px"}}>
           {t.btn_list_manga}
         </Button>
       </Link>
