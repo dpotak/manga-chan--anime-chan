@@ -162,7 +162,7 @@ const MangaDetailsPage = () => {
           ))}
         </div>
       ) : (
-        <p>Томы для этой манги пока не добавлены.</p>
+        <p>{t. not_list_manga}</p>
       )}
     </div>
 
