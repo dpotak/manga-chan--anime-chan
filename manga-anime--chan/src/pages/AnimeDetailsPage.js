@@ -150,7 +150,7 @@ const AnimeDetailsPage = () => {
     <div style={{ padding: "20px" }}>
       <h1>{decodeURIComponent(title)}</h1>
       <Link to="/Anime_chan">
-        <Button variant="outlined" color="secondary" style={{ marginBottom: "20px" }}>
+        <Button className="btn_list_anime" variant="outlined" color="secondary" style={{ marginBottom: "20px" }}>
           ← Назад к списку аниме
         </Button>
       </Link>

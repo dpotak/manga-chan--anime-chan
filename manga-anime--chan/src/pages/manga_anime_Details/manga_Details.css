@@ -181,6 +181,6 @@ form button:before {
 
 .btn_list_manga:hover {
   position: relative;
-  box-shadow: 0 0 15px rgba(133, 5, 140, 0.7); /* Голубое свечение с размытием */
+  box-shadow: 0 0 15px rgba(133, 5, 140, 0.7); 
 }
 

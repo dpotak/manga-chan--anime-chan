@@ -178,3 +178,7 @@ form button:before {
   border-radius: 8px;
 }
 
+.btn_list_anime:hover {
+  position: relative;
+  box-shadow: 0 0 15px rgba(133, 5, 140, 0.7); 
+}
