@@ -7,6 +7,7 @@ import "./styles_css_forum/particlesjs_forum.css";
 import "./styles_css_forum/forms_website_obs.css";
 import "./dark_light_mode/Forum_DarkMode_lightMode.css";
 import "./styles_css_forum/mobile_forum.css";
+import "./styles_css_forum/forum_hover.css";
 
 import britainFlag from "./foto/britain_flags.png";
 import russianFlag from "./foto/russian_flag.jpg";
