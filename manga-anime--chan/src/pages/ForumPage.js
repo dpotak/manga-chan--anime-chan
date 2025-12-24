@@ -252,12 +252,13 @@ useEffect(() => {
               {/* Сайдбар */}
               <div className="forum_sidebar">
                 <input
+                  className="input_sidebar"
                   type="text"
                   placeholder= {t.forum_sidebar_text}
                   value={newTopic}
                   onChange={(e) => setNewTopic(e.target.value)}
                 />
-                <button onClick={addTopic}>{t.button_create_chat}</button>
+                <button className="btn_createTemad" onClick={addTopic}>{t.button_create_chat}</button>
               </div>
 
               {/* Контент */}
@@ -325,7 +326,7 @@ const Topic = ({ topic, forumKey, index, forums, setForums }) => {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
-        <button onClick={addMessage}>{t.message_input_button}</button>
+        <button className="btn_click_start_message" onClick={addMessage}>{t.message_input_button}</button>
       </div>
     </div>
   );
