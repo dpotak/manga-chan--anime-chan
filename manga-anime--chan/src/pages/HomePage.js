@@ -49,7 +49,6 @@ const HomePage = () => {
 
   useHomePagesTransition();
   const { t, changeLanguage } = useHomePageTranslator();
-
   
   // для рекомендации аниме
   const animeImages = [
