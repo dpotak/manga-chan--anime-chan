@@ -157,7 +157,7 @@ useEffect(() => {
                onBlur={() => setTimeout(() => setIsFocused(false), 200)}
              />
 
-             <button type="submit"></button>
+             <button className="search_btn" type="submit"></button>
            </form>
 
            {/* Выпадающий список подсказок */}
