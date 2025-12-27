@@ -179,7 +179,8 @@ form button:before {
 }
 
 .btn_list_anime {
-  border-radius: 8px
+  border-radius: 8px;
+  top: 5px;
 }
 
 .btn_serii_1 {
