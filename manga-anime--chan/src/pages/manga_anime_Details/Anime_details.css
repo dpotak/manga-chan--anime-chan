@@ -189,3 +189,8 @@ form button:before {
   margin-top: 15px;
 }
 
+.btn_perevod_1 , .btn_perevod_2 ,
+.btn_perevod_3 , .btn_perevod_4 ,
+.btn_perevod_5 , .btn_perevod_6 , 
+.btn_perevod_7 , .btn_perevod_8 {}
+
