@@ -148,7 +148,8 @@ const AnimeDetailsPage = () => {
     <div class="count-particles"><span class="js-count-particles"></span></div> 
 
     <div className="opisanie_anime">
-
+      <h2></h2>
+      <p></p>
     </div>
 
       
