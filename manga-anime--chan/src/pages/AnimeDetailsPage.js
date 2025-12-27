@@ -183,7 +183,7 @@ const AnimeDetailsPage = () => {
 
       {episodes.length > 0 ? (
         <>
-          <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+          <div className="btn_serii_group" style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
             {episodes.map((ep, index) => (
               <Button
                 className="btn_serii_1"

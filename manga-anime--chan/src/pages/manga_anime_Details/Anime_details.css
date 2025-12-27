@@ -180,5 +180,12 @@ form button:before {
 
 
 .perevod_sub_btn_1 , .perevod_sub_btn_2 
-, .perevod_sub_btn_3 {}
+, .perevod_sub_btn_3 {
+  display: flex;
+  margin-top: 8px;
+}
+
+.btn_serii_group {
+  margin-top: 15px;
+}
 
