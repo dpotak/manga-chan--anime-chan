@@ -178,6 +178,13 @@ form button:before {
   border-radius: 8px;
 }
 
+.btn_list_anime {
+  border-radius: 8px
+}
+
+.btn_serii_1 {
+  border-radius: 8px;
+}
 
 .perevod_sub_btn_1 , .perevod_sub_btn_2 
 , .perevod_sub_btn_3 {
@@ -192,5 +199,8 @@ form button:before {
 .btn_perevod_1 , .btn_perevod_2 ,
 .btn_perevod_3 , .btn_perevod_4 ,
 .btn_perevod_5 , .btn_perevod_6 , 
-.btn_perevod_7 , .btn_perevod_8 {}
+.btn_perevod_7 , .btn_perevod_8 {
+  width: 140px;
+  height: 40px;
+}
 
