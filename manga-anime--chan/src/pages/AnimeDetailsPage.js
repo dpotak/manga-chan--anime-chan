@@ -150,6 +150,7 @@ const AnimeDetailsPage = () => {
     <div className="opisanie_anime">
 
     </div>
+
       
     <div style={{ padding: "20px" }}>
       <h1>{decodeURIComponent(title)}</h1>
@@ -159,11 +160,33 @@ const AnimeDetailsPage = () => {
         </Button>
       </Link>
 
+      <div className="perevodi_annime_subtitles">
+
+        <div className="perevod_sub_btn_1">
+          <button className="btn_perevod_1">AniLibria</button>
+          <button className="btn_perevod_2">AniDUB</button>
+          <button className="btn_perevod_3">TVShows</button>
+        </div>
+
+        <div className="perevod_sub_btn_2">
+          <button className="btn_perevod_4">AniFilm</button>
+          <button className="btn_perevod_5">Animedia</button>
+          <button className="btn_perevod_6">Оригинал(Субтитры)</button>
+        </div>
+
+        <div className="perevod_sub_btn_3">
+          <button className="btn_perevod_7">Дубляж</button>
+          <button className="btn_perevod_8">Shiza Project</button>
+        </div>
+
+    </div>
+
       {episodes.length > 0 ? (
         <>
           <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
             {episodes.map((ep, index) => (
               <Button
+                className="btn_serii_1"
                 key={index}
                 variant={selectedEpisode === ep ? "contained" : "outlined"}
                 color="primary"
