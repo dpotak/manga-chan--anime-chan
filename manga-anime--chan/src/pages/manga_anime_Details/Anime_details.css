@@ -202,5 +202,7 @@ form button:before {
 .btn_perevod_7 , .btn_perevod_8 {
   width: 140px;
   height: 40px;
+  border-radius: 8px;
+
 }
 
