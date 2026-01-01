@@ -52,6 +52,9 @@ body {
 }
 
 .Rekomenduemoe {
+  width: 520px;
+  height: 180px;
+  background-color: black;
   margin-top: 50px;
   margin-left: 45px;
 }

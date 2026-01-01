@@ -38,7 +38,7 @@ import "./styles/index_chan.css";
 import "./styles/index_chan_2.css";
 import "./styles/forms_website.css";
 import "./styles/register_pages_code.css";
-import "./styles/mode_darklight.css";
+import "./styles/mode_darklight_homePage.css";
 import "./styles/particlesjs.css";
 import "./styles/mobile_home.css";
 
