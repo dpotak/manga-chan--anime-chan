@@ -1,5 +1,5 @@
 body {
-  background-color: #0faeed;
+  background: linear-gradient(to left, black, rgb(0, 170, 255));
 }
 
 .Contacts_info {

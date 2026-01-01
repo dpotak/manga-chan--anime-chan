@@ -1,12 +1,12 @@
 body {
-  background-color: #0faeed; /* Белый фон */
+  background: linear-gradient(to left, black, rgb(0, 170, 255)); /* Белый фон */
   color: #000000; /* Черный текст */
-  transition: background-color 0.7s ease; /* Плавный переход */
+  transition: background-color 0.10s ease; /* Плавный переход */
 }
 
 /* Стили для темной темы, которые будут применяться при нажатии */
 body.dark-mode {
-  background-color: #000000; /* Черный фон */
+  background: linear-gradient(to left, black, rgb(125, 0, 130)); /* Черный фон */
   color: #ffffff; /* Белый текст */
 }
 
