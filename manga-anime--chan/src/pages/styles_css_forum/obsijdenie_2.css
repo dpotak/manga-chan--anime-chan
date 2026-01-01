@@ -56,17 +56,11 @@ body {
 .kvadrat_forum {
   width: 900px;
   height: 550px;
-  background: linear-gradient(100deg, #00b7ff, #0ca8e6);
+  background: linear-gradient(to left, black, rgb(8, 173, 255));
   margin-left: 10px;
   margin-top: 15px;
   border-radius: 10px;
   padding: 10px;
-}
-
-.kavdrat_forum_Nr_two {
-  width: 900px;
-  height: 60px;
-  border: 4px solid #0ca8e6;
 }
 
 .Text_glavnaja {
