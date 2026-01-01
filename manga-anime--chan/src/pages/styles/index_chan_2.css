@@ -52,16 +52,18 @@ body {
 }
 
 .Rekomenduemoe {
-  width: 520px;
+  width: 420px;
   height: 180px;
+  border-radius: 6px;
   background-color: black;
   margin-top: 50px;
   margin-left: 45px;
 }
 
 .Rekomenduemoe_2 {
-  width: 520px;
+  width: 530px;
   height: 180px;
+  border-radius: 6px;
   background-color: black;
   margin-top: 25px;
   margin-left: 45px;
