@@ -143,6 +143,11 @@ const RegisterPage = () => {
             <Link to="/"> {t.LinK_Home} </Link>
           </div>
 
+           <div className="save_me">
+             <p>Запомнить меня</p>
+             <input type="checkbox"></input>
+           </div>
+
            <div className="Reg_Google_GitHub_2">
              <button className="GitHub"><img src={ GiThub } width={"30px"} height={"25px"}></img></button>
              <button className="Google"><img src={ Google } width={"30px"} height={"25px"}></img></button>
