@@ -287,7 +287,7 @@ useEffect(() => {
        <div className="header_rekomendance">
         {/* Рекомендации по манги и по аниме */}
       <div className="Rekomenduemoe">
-        <Typography variant="h5">{t.recommendationsAnime}</Typography>
+        <Typography variant="h5" className="Rekomenduemoe_h5_anime">{t.recommendationsAnime}</Typography>
         <div className="cards-row">
           {shuffledImages.map((anime, index) => (
         <Link 
@@ -305,7 +305,7 @@ useEffect(() => {
 </div>
 
 <div className="Rekomenduemoe_2">
-        <Typography variant="h5">{t.recommendationsManga}</Typography>
+        <Typography variant="h5" className="Rekomenduemoe_h5_manga">{t.recommendationsManga}</Typography>
         <div className="cards-row">
           {shuffledManga.map((manga, index) => (
             <Link 
