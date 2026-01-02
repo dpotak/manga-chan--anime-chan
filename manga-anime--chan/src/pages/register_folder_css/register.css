@@ -103,3 +103,8 @@ body {
 .Reg_Google_GitHub_2 {
     margin-top: 8px;
 }
+
+.save_me {
+    display: flex;
+    margin-top: 5px;
+}
