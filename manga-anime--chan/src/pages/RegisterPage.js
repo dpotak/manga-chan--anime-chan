@@ -66,7 +66,11 @@ const RegisterPage = () => {
 
         <div className="icon_img">
           <button><img src={icon_glavnaja} className="icon_img_btn" width="20px" height="20px"></img></button>
-          <p className="ICON_paragraph_name"></p>
+
+          <div className="">
+            <p className="ICON_paragraph_name">Вернуться на домашнюю страницу</p>
+          </div>
+          
         </div>
 
         <div className="language">
