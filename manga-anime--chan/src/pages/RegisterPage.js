@@ -65,7 +65,7 @@ const RegisterPage = () => {
       <nav className="nav-bar">
 
         <div className="icon_img">
-          <button><img src={icon_glavnaja} className="icon_img_btn" width="20px" height="20px"></img></button>
+          <Link to="/"><img src={icon_glavnaja} className="icon_img_btn" width="30px" height="30px"></img></Link>
 
           <div className="ICON_paragraph_name_div">
             <p className="ICON_paragraph_name">Вернуться на домашнюю страницу</p>
