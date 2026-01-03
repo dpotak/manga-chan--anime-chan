@@ -8,13 +8,14 @@ import russianFlag from './foto/russian_flag.jpg';
 import estonianflag from './foto/estonian.png';
 
 import icon_register from "./icon/register_nick.png";
+import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
 
 
 const NewPage_Details = () => {
 
     <div className="header">
 
-        <div className="">
+        <div className="nav-bar">
 
         </div>
 
