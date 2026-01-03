@@ -25,7 +25,6 @@ const NewPage_Details = () => {
 
        <nav className="nav-bar">
 
-
         <div className="">
 
         </div>
