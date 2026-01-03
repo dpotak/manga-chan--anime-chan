@@ -151,7 +151,7 @@ const RegisterPage = () => {
           <button className="btn-primary"> {t.primary_btn_enter} </button>
 
           <div className="save_me">
-             <p>Запомнить меня</p>
+             <p className="paragraph_save_me">{t.save_me_checkbox}</p>
              <input type="checkbox"></input>
            </div>
 

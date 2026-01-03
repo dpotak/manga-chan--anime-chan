@@ -17,7 +17,7 @@ export const translations = {
     enter_reg: "Добро пожаловать обратно!",
     primary_btn_enter: "Войти",
     LinK_Home: "Вернуться на главную",
-    save_me_checkbox: "",
+    save_me_checkbox: "Запомнить меня",
   },
 
   en: {
@@ -38,7 +38,7 @@ export const translations = {
     enter_reg: "Welcome back!",
     primary_btn_enter: "Come in",
     LinK_Home: "Back to the main",
-    save_me_checkbox: "",
+    save_me_checkbox: "Remember me",
   },
 
   ee: {
@@ -59,6 +59,6 @@ export const translations = {
     enter_reg: "Tere tulemast tagasi!",
     primary_btn_enter: "Mine sisse",
     LinK_Home: "Tagasi peamisele",
-    save_me_checkbox: "",
+    save_me_checkbox: "Pea mind meeles",
   },
 };
