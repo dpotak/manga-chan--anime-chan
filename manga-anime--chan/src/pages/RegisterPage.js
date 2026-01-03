@@ -68,7 +68,7 @@ const RegisterPage = () => {
           <Link to="/"><img src={icon_glavnaja} className="icon_img_btn" width="30px" height="30px"></img></Link>
 
           <div className="ICON_paragraph_name_div">
-            <p className="ICON_paragraph_name">Вернуться на домашнюю страницу</p>
+            <p className="ICON_paragraph_name">{t.icon_paragraph_homepage}</p>
           </div>
 
         </div>
