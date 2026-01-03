@@ -47,6 +47,10 @@ const AnimeDetailsPage = () => {
     "Demon Slayer": [
       { name: "Серия 1", file: "/anime_video/Demon_Slayer/episode1.mp4" },
       { name: "Серия 2", file: "/anime_video/Demon_Slayer/episode2.mp4" },
+      { name: "Серия 3", file: "/anime_video/Demon_Slayer/episode1.mp4" },
+      { name: "Серия 4", file: "/anime_video/Demon_Slayer/episode2.mp4" },
+      { name: "Серия 5", file: "/anime_video/Demon_Slayer/episode1.mp4" },
+      { name: "Серия 6", file: "/anime_video/Demon_Slayer/episode2.mp4" },
     ],
     "Inuyasha": [
       { name: "Серия 1", file: "/anime_video/Inuyasha/episode1.mp4" },
