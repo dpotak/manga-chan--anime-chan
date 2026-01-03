@@ -16,6 +16,7 @@ import Google from "./register_foto/google.png";
 import GiThub from "./register_foto/gitHub.png";
 import Facebook from "./register_foto/Facebook.png";
 import VK from "./register_foto/VK.png";
+import icon_glavnaja from "./icon/ICON_Anime_Manga_Chan.png";
 
 import black_perehod from "./Perehod_whiteAndBlack/black.jpg";
 import berjuzovii_perehod from "./Perehod_whiteAndBlack/ICON_perehod_2.png";
@@ -62,6 +63,12 @@ const RegisterPage = () => {
       <div className="register-page">
 
       <nav className="nav-bar">
+
+        <div className="icon_img">
+          <button><img src={icon_glavnaja} className="icon_img_btn" width="20px" height="20px"></img></button>
+          <p className="ICON_paragraph_name"></p>
+        </div>
+
         <div className="language">
          <button onClick={() => changeLanguage("en")}>
           <img src={britainFlag} width="20" height="20" alt="EN" />
@@ -139,14 +146,14 @@ const RegisterPage = () => {
           <input type="password" placeholder={t.password_enter_now} />
           <button className="btn-primary"> {t.primary_btn_enter} </button>
 
-          <div className="LinK_Home">
-            <Link to="/"> {t.LinK_Home} </Link>
-          </div>
-
-           <div className="save_me">
+          <div className="save_me">
              <p>Запомнить меня</p>
              <input type="checkbox"></input>
            </div>
+
+          <div className="LinK_Home">
+            <Link to="/"> {t.LinK_Home} </Link>
+          </div>
 
            <div className="Reg_Google_GitHub_2">
              <button className="GitHub"><img src={ GiThub } width={"30px"} height={"25px"}></img></button>

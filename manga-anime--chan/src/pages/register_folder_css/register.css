@@ -92,7 +92,7 @@ body {
 }
 
 .LinK_Home {
-    margin-top: 10px;
+    margin-top: 3px;
 }
 
 .Pol_register , .Female_reg , .Male_reg , .Female_p , .Male_p , .no_gender_reg , .no_gender_p {
@@ -106,5 +106,6 @@ body {
 
 .save_me {
     display: flex;
-    margin-top: 5px;
+    margin-top: 8px;
 }
+
