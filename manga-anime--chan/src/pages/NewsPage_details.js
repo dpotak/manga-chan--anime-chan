@@ -15,14 +15,14 @@ const NewPage_Details = () => {
 
     <div className="header">
 
-        <div className="nav-bar">
-
-        </div>
-
       <div id="particles-js"></div>
       <div className="count-particles">
        <span className="js-count-particles"></span>
       </div>
+
+       <nav className="nav-bar">
+
+        </nav>
 
     </div>
 
