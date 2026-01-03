@@ -18,7 +18,7 @@ export const translations = {
     primary_btn_enter: "Войти",
     LinK_Home: "Вернуться на главную",
     save_me_checkbox: "Запомнить меня",
-    icon_paragraph_homepage: "",
+    icon_paragraph_homepage: "Вернуться на домашнюю страницу",
   },
 
   en: {
@@ -40,7 +40,7 @@ export const translations = {
     primary_btn_enter: "Come in",
     LinK_Home: "Back to the main",
     save_me_checkbox: "Remember me",
-    icon_paragraph_homepage: "",
+    icon_paragraph_homepage: "Return to home page",
   },
 
   ee: {
@@ -62,6 +62,6 @@ export const translations = {
     primary_btn_enter: "Mine sisse",
     LinK_Home: "Tagasi peamisele",
     save_me_checkbox: "Pea mind meeles",
-    icon_paragraph_homepage: "",
+    icon_paragraph_homepage: "Tagasi avalehele",
   },
 };
