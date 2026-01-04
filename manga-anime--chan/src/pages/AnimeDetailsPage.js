@@ -160,7 +160,7 @@ const AnimeDetailsPage = () => {
     <div style={{ padding: "20px" }}>
       <h1>{decodeURIComponent(title)}</h1>
       <Link to="/Anime_chan">
-        <Button className="btn_list_anime" variant="outlined" color="red" style={{ marginBottom: "20px" }}>
+        <Button className="btn_list_anime" variant="outlined" color="blue" style={{ marginBottom: "20px" }}>
           {t.btn_anime_list}
         </Button>
       </Link>
