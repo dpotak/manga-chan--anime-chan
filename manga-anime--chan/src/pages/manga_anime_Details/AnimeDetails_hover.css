@@ -1,7 +1,11 @@
 .btn_list_anime:hover {
   position: relative;
-  box-shadow: 0 0 15px rgba(133, 5, 140, 0.7); 
+  box-shadow: 0 0 15px rgba(242, 0, 255, 0.7); 
 } 
+
+.btn_list_anime {
+  color: blue;
+}
 
 .btn_serii_1:hover {
   position: relative;
