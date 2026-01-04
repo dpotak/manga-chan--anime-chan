@@ -117,17 +117,17 @@ const RegisterPage = () => {
 
             <div className="Male_reg">
               <p className="Male_p"> {t.Male_p} </p>
-              <input type="checkbox" id="checkbox_male"></input>
+              <input className="checkbox_male" type="checkbox" id="checkbox_male"></input>
             </div> 
 
             <div className="Female_reg">
               <p className="Female_p"> {t.Female_p} </p>
-              <input type="checkbox" id="checkbox_female"></input>  
+              <input className="checkbox_female" type="checkbox" id="checkbox_female"></input>  
             </div>
 
             <div className="no_gender_reg">
               <p className="no_gender_p"> {t.no_gender_p} </p>
-              <input type="checkbox" id="checkbox_no_gender"></input>
+              <input className="checkbox_NoGender" type="checkbox" id="checkbox_no_gender"></input>
             </div>
 
           </div>
@@ -152,7 +152,7 @@ const RegisterPage = () => {
 
           <div className="save_me">
              <p className="paragraph_save_me">{t.save_me_checkbox}</p>
-             <input type="checkbox"></input>
+             <input className="checkbox_paragraph_saveMe" type="checkbox"></input>
            </div>
 
           <div className="LinK_Home">

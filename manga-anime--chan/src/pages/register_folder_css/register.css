@@ -118,3 +118,9 @@ body {
     color: white;
     margin-left: 10px;
 }
+
+.checkbox_male , .checkbox_female , .checkbox_NoGender ,
+.checkbox_paragraph_saveMe {
+    margin-left: 5px;
+}
+
