@@ -99,6 +99,11 @@
   justify-content: center; /* Выравнивание по горизонтали */
   align-items: center; /* Выравнивание по вертикали */
   padding: 20px; /* Добавляем внутренние отступы, чтобы текст не касался краев */
+  transition: transform 0.3s ease-in-out;
+}
+
+.anime-text-1:hover , .anime-text-2:hover , .anime-text-3:hover , .anime-text-4:hover {
+  transform: scale(1.1); 
 }
 
 .title-anime-name {
@@ -113,6 +118,11 @@
   align-items: center; /* Выравнивание по вертикали */
   padding: 20px; /* Добавляем внутренние отступы, чтобы текст не касался краев */
   margin-top: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.title-anime-name:hover {
+  transform: scale(1.1); 
 }
 
 .manga-text-1 , .manga-text-2 , .manga-text-3 {
@@ -127,6 +137,11 @@
   justify-content: center; /* Выравнивание по горизонтали */
   align-items: center; /* Выравнивание по вертикали */
   padding: 20px; /* Добавляем внутренние отступы, чтобы текст не касался краев */
+  transition: transform 0.3s ease-in-out;
+}
+
+.manga-text-1:hover , .manga-text-2:hover , .manga-text-3:hover {
+  transform: scale(1.1); 
 }
 
 .title-manga-name {
@@ -141,6 +156,11 @@
   align-items: center; /* Выравнивание по вертикали */
   padding: 20px; /* Добавляем внутренние отступы, чтобы текст не касался краев */
   margin-top: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.title-manga-name:hover {
+  transform: scale(1.1); 
 }
 
 .Number-text-manga-1 {
