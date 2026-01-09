@@ -56,22 +56,25 @@ body {
   margin-left: 290px;
 }
 
+.header_rekomendance {
+  display: flex;
+  margin-top: 50px;
+}
+
 .Rekomenduemoe {
   width: 420px;
   height: 180px;
-  border-radius: 6px;
+  border-radius: 8px;
   background-color: black;
-  margin-top: 50px;
-  margin-left: 45px;
+  margin-left: 50px;
 }
 
 .Rekomenduemoe_2 {
   width: 530px;
   height: 180px;
-  border-radius: 6px;
+  border-radius: 8px;
   background-color: black;
-  margin-top: 25px;
-  margin-left: 45px;
+  margin-left: 55px;
 }
 
 /* ряд карточек: flex и gap */
