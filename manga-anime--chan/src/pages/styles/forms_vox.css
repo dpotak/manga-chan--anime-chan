@@ -1,9 +1,17 @@
 .vox-container {
   position: absolute;
-  top: 120px;
-  right: 40px;
-  width: 380px;
-  height: 380px;
-  background: rgba(255, 0, 0, 0.2);
-  z-index: 5;
+  right: 5%;
+  top: 180px;
+
+  width: 520px;
+  height: 520px;
+
+  pointer-events: none;
+  z-index: 1;
+}
+
+@media (max-width: 1200px) {
+  .vox-container {
+    display: none;
+  }
 }
