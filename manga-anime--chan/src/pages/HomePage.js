@@ -4,8 +4,7 @@ import { useEffect , useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-import { VoxModel } from "../components/VoxModel";
-
+import VoxModel from "../components/VoxModel";
 
 // подклченные PNG файлы которые предназначены для флагов-переводов
 import britainFlag from './foto/britain_flags.png';
@@ -213,6 +212,8 @@ useEffect(() => {
        {/* Модуль particles */}
       <div id="particles-js"></div>
       <div class="count-particles"><span class="js-count-particles"></span></div> 
+
+      <VoxModel />
 
       {/* Описание самого проекта (сайта) */}
       <div className="Glav_stanica">
