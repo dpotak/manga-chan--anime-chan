@@ -37,7 +37,7 @@ const VoxModel = () => {
     rendererRef.current = renderer;
 
     // Свет
-    const ambientLight = new THREE.AmbientLight(0xffffff, 1.2);
+    const ambientLight = new THREE.AmbientLight(0xffffff, 1.4);
     scene.add(ambientLight);
 
     const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
