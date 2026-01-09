@@ -4,6 +4,9 @@ import { useEffect , useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
+import { VoxModel } from "../components/VoxModel";
+
+
 // подклченные PNG файлы которые предназначены для флагов-переводов
 import britainFlag from './foto/britain_flags.png';
 import russianFlag from './foto/russian_flag.jpg';
