@@ -14,16 +14,6 @@ const VoxModel = () => {
 
     // Сцена
     const scene = new THREE.Scene();
-
-    const axesHelper = new THREE.AxesHelper(2);
-    scene.add(axesHelper);
-
-    scene.add(new THREE.Mesh(
-  new THREE.BoxGeometry(1, 1, 1),
-  new THREE.MeshStandardMaterial({ color: "hotpink" })
-));
-
-
     // Камера
     const camera = new THREE.PerspectiveCamera(
       45,
@@ -59,7 +49,7 @@ const VoxModel = () => {
     const loader = new GLTFLoader();
 
     loader.load(
-      "/models/emblema.glb",
+      "/models/emblema.vox.glb",
       (gltf) => {
         model = gltf.scene;
         model.scale.set(10, 10, 10);
