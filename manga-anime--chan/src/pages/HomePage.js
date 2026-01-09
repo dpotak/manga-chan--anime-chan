@@ -42,6 +42,7 @@ import "./styles/register_pages_code.css";
 import "./styles/mode_darklight_homePage.css";
 import "./styles/particlesjs.css";
 import "./styles/mobile_home.css";
+import "./styles/forms_vox.css";
 
 const HomePage = () => {
     useEffect(() => {
