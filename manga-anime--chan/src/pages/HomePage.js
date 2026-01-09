@@ -3,8 +3,6 @@ import React from "react";
 import { useEffect , useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import * as THREE from 'three';
-import { GITMagicalVox } from "./foto/magical_vox_official/emblema copy.obj";
 
 // подклченные PNG файлы которые предназначены для флагов-переводов
 import britainFlag from './foto/britain_flags.png';
