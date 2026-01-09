@@ -52,7 +52,7 @@ const VoxModel = () => {
       "/models/emblema.vox.glb",
       (gltf) => {
         model = gltf.scene;
-        model.scale.set(10, 10, 10);
+        model.scale.set(30, 30, 30);
         model.position.set(0, 0, 0);
         scene.add(model);
       },
