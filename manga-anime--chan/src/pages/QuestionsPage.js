@@ -266,7 +266,9 @@ useEffect(() => {
       <div className="Questions_Projects_1">
         <h2> {t.Questions_Projects_1} </h2>
       </div>
-      <section className="FAQ">
+
+      <div className="FAQ_1">
+        <section className="FAQ">
         {faqData.map((item, index) => (
           <FAQItem
             key={index}
@@ -277,6 +279,7 @@ useEffect(() => {
           />
         ))}
       </section>
+      </div>
 
       <div className="Questions_Projects_2"><h2> {t.Questions_Projects_2} </h2></div>
       <section className="FAQ">
