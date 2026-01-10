@@ -37,7 +37,7 @@ const AnimeDetailsPage = () => {
   AnimeDetails_transitions();
 
   const [selectedEpisode, setSelectedEpisode] = useState(null);
-  const [audioLang, setAudioLang] = useState("ru"); // ru | en | ee
+  const [audioLang, setAudioLang] = useState("ru" , "en" , "ee"); // ru | en | ee
 
   // 🎥 СЕРИИ С ГРУППИРОВКОЙ ПО ЯЗЫКАМ
   const animeEpisodes = {
@@ -202,6 +202,8 @@ const AnimeDetailsPage = () => {
 
   </div>
 )}
+
+
 
  {/* СЕРИИ */}
         {episodes.length > 0 ? (
