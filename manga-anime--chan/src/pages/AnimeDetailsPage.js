@@ -194,7 +194,7 @@ const AnimeDetailsPage = () => {
                 className="btn_serii_1"
                 key={index}
                 variant={selectedEpisode === ep ? "contained" : "outlined"}
-                color="primary"
+                color="black"
                 onClick={() => setSelectedEpisode(ep)}>
                 {ep.name}
               </Button>

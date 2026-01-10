@@ -164,7 +164,8 @@ form button:before {
 
 .language_anime_watch {
   display: flex;
-  justify-content: center;
+  margin-top: 25px;
+  margin-left: 875px;
 }
 
 .ENG_manga , .RUS_Manga , .EST_Manga {
@@ -185,6 +186,11 @@ form button:before {
 
 .btn_serii_1 {
   border-radius: 8px;
+  width: 905px;
+  height: 40px;
+  font-size: 25px;
+  left: 520px;
+  top: 25px;
 }
 
 .perevod_sub_btn_1 , .perevod_sub_btn_2 
