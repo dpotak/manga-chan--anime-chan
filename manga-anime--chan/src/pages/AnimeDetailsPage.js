@@ -237,13 +237,13 @@ const AnimeDetailsPage = () => {
 
       {/* ПЕРЕКЛЮЧЕНИЕ ОЗВУЧКИ */}
       <div className="language_anime_watch">
-        <button onClick={() => setAudioLang("en")}>
+        <button className="ENG_manga" onClick={() => setAudioLang("en")}>
           <img src={britainFlag} width="45" height="45" alt="EN" />
         </button>
-        <button onClick={() => setAudioLang("ru")}>
+        <button className="RUS_Manga" onClick={() => setAudioLang("ru")}>
           <img src={russianFlag} width="45" height="45" alt="RU" />
         </button>
-        <button onClick={() => setAudioLang("ee")}>
+        <button className="EST_Manga" onClick={() => setAudioLang("ee")}>
           <img src={estonianflag} width="45" height="45" alt="EE" />
         </button>
       </div>
