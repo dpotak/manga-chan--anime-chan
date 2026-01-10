@@ -216,3 +216,14 @@ form button:before {
   background-color: #000;
 }
 
+.btn_perevod_en_1 , .btn_perevod_en_2 , 
+.btn_perevod_en_3 , 
+.btn_perevod_ee_1 , .btn_perevod_ee_2 {
+  width: 140px;
+  height: 40px;
+  border-radius: 8px;
+  margin-left: 8px;
+  color: white;
+  background-color: #000;
+}
+

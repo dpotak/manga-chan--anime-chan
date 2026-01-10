@@ -203,6 +203,31 @@ const AnimeDetailsPage = () => {
   </div>
 )}
 
+{audioLang === "en" && (
+  <div className="perevodi_annime_subtitles">
+
+    <div className="perevod_sub_btn_1">
+      <button className="btn_perevod_en_1">Original</button>
+      <button className="btn_perevod_en_2">English Dub</button>
+    </div>
+
+    <div className="perevod_sub_btn_2">
+      <button className="btn_perevod_en_3">Subtitles</button>
+    </div>
+
+  </div>
+)}
+
+{audioLang === "ee" && (
+  <div className="perevodi_annime_subtitles">
+
+    <div className="perevod_sub_btn_1">
+      <button className="btn_perevod_ee_1">Original</button>
+      <button className="btn_perevod_ee_2">Subtiitrid</button>
+    </div>
+
+  </div>
+)}
 
 
  {/* СЕРИИ */}
