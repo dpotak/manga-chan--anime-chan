@@ -28,52 +28,60 @@ import { AnimeDetails_transitions } from "../hooks/AnimeDetails_transitions";
 
 const AnimeDetailsPage = () => {
   useEffect(() => {
-      background_partijs();
-    }, []);
+    background_partijs();
+  }, []);
 
   const { title } = useParams();
-  const [selectedEpisode, setSelectedEpisode] = useState(null);
-
   const { t, changeLanguage } = Anime_Details_Translator();
 
   AnimeDetails_transitions();
 
-  // 🎥 Список серий на русском языке
+  const [selectedEpisode, setSelectedEpisode] = useState(null);
+  const [audioLang, setAudioLang] = useState("ru"); // ru | en | ee
+
+  // 🎥 СЕРИИ С ГРУППИРОВКОЙ ПО ЯЗЫКАМ
   const animeEpisodes = {
-    "Chainsaw Man": [
-      { name: "Серия 1", file: "/anime_video/Chainsaw_Man/episode1.mp4" },
-      { name: "Серия 2", file: "/anime_video/Chainsaw_Man/episode2.mp4" },
-    ],
-    "Demon Slayer": [
-      { name: "Серия 1", file: "/anime_video/Demon_Slayer/episode1.mp4" },
-      { name: "Серия 2", file: "/anime_video/Demon_Slayer/episode2.mp4" },
-      { name: "Серия 3", file: "/anime_video/Demon_Slayer/episode1.mp4" },
-      { name: "Серия 4", file: "/anime_video/Demon_Slayer/episode2.mp4" },
-      { name: "Серия 5", file: "/anime_video/Demon_Slayer/episode1.mp4" },
-      { name: "Серия 6", file: "/anime_video/Demon_Slayer/episode2.mp4" },
-    ],
-    "Inuyasha": [
-      { name: "Серия 1", file: "/anime_video/Inuyasha/episode1.mp4" },
-    ],
-    "One Piece": [
-      { name: "Серия 1", file: "" },
-      { name: "Серия 2", file: "" },
-      { name: "Серия 3", file: "" },
-      { name: "Серия 4", file: "" },
-    ],
-    "Kusuriya no Hitorigoto": [ // 2 season
-      {name: "Серия 2 - 2 сеазон", file: "https://www.dropbox.com/scl/fi/04zfn3cd02y9loxauis8i/2_seria.mp4?rlkey=ojedxvwoj6t06ckiiq9wpd5nj&raw=1"},
-    ],
+    "Demon Slayer": {
+      ru: [
+        { name: "Серия 1", file: "/anime_video/Demon_Slayer/ru/episode1.mp4" },
+        { name: "Серия 2", file: "/anime_video/Demon_Slayer/ru/episode2.mp4" },
+        { name: "Серия 3", file: "/anime_video/Demon_Slayer/ru/episode3.mp4" },
+        { name: "Серия 4", file: "/anime_video/Demon_Slayer/ru/episode3.mp4" },
+      ],
+      en: [
+        { name: "Episode 1", file: "/anime_video/Demon_Slayer/en/episode1.mp4" },
+        { name: "Episode 2", file: "/anime_video/Demon_Slayer/en/episode2.mp4" },
+      ],
+      ee: [
+        { name: "Osa 1", file: "/anime_video/Demon_Slayer/ee/episode1.mp4" },
+      ],
+    },
+
+    "Chainsaw Man": {
+      ru: [
+        { name: "Серия 1", file: "/anime_video/Chainsaw_Man/ru/episode1.mp4" },
+      ],
+      en: [],
+      ee: [],
+    },
+
+    "Inuyasha": {
+      ru: [
+        { name: "Серия 1", file: "/anime_video/Inuyasha/ru/episode1.mp4" },
+      ],
+      en: [],
+      ee: [],
+    },
   };
 
-  // 🎥 Список серий на эстонском языке
-  const AnimeEpisodesEesti = []
+  const decodedTitle = decodeURIComponent(title);
+  const episodes = animeEpisodes[decodedTitle]?.[audioLang] || [];
 
-  // 🎥 Список серий на английском языке
-  const AnimeEpisodesEng = []
+  // сброс серии при смене языка
+  useEffect(() => {
+    setSelectedEpisode(null);
+  }, [audioLang]);
 
-
-  const episodes = animeEpisodes[decodeURIComponent(title)] || [];
 
   useEffect(() => {
     const darkButton = document.getElementById('darkButton');
@@ -172,91 +180,73 @@ const AnimeDetailsPage = () => {
         </Button>
       </Link>
 
-      <div className="perevodi_annime_subtitles">
+      {audioLang === "ru" && (
+  <div className="perevodi_annime_subtitles">
 
-        <div className="perevod_sub_btn_1">
-          <button className="btn_perevod_1">AniLibria</button>
-          <button className="btn_perevod_2">AniDUB</button>
-          <button className="btn_perevod_3">TVShows</button>
-        </div>
-
-        <div className="perevod_sub_btn_2">
-          <button className="btn_perevod_4">AniFilm</button>
-          <button className="btn_perevod_5">Animedia</button>
-          <button className="btn_perevod_6">Оригинал(Субтитры)</button>
-        </div>
-
-        <div className="perevod_sub_btn_3">
-          <button className="btn_perevod_7">Дубляж</button>
-          <button className="btn_perevod_8">Shiza Project</button>
-        </div>
-
+    <div className="perevod_sub_btn_1">
+      <button className="btn_perevod_1">AniLibria</button>
+      <button className="btn_perevod_2">AniDUB</button>
+      <button className="btn_perevod_3">TVShows</button>
     </div>
 
-{/* Список сезонов аниме */}
-    <div className="List_sezon">
-      <h2 className="name_list_Sezon"></h2>
-
-      <div className="btn_list_sezonov">
-
-      </div>
+    <div className="perevod_sub_btn_2">
+      <button className="btn_perevod_4">AniFilm</button>
+      <button className="btn_perevod_5">Animedia</button>
+      <button className="btn_perevod_6">Оригинал (Субтитры)</button>
     </div>
 
+    <div className="perevod_sub_btn_3">
+      <button className="btn_perevod_7">Дубляж</button>
+      <button className="btn_perevod_8">Shiza Project</button>
+    </div>
 
-      {episodes.length > 0 ? (
-        <>
-          <div className="btn_serii_group" style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-            {episodes.map((ep, index) => (
-              <Button
-                className="btn_serii_1"
-                key={index}
-                variant={selectedEpisode === ep ? "contained" : "outlined"}
-                color="black"
-                onClick={() => setSelectedEpisode(ep)}>
-                {ep.name}
-              </Button>
-            ))}
-          </div>
+  </div>
+)}
 
-          {selectedEpisode && (
-            <div style={{ marginTop: "20px" }}>
-              <Typography variant="h6" gutterBottom>
-                {selectedEpisode.name}
-              </Typography>
-              <video
-                key={selectedEpisode.file}
-                controls
-                width="100%"
-                style={{ borderRadius: "10px" }}
-              >
-                <source src={selectedEpisode.file} type="video/mp4" />
-                {t.no_founded_video}
-              </video>
+ {/* СЕРИИ */}
+        {episodes.length > 0 ? (
+          <>
+            <div className="btn_serii_group">
+              {episodes.map((ep, index) => (
+                <Button
+                  key={index}
+                  className="btn_serii_1"
+                  color="black"
+                  variant={selectedEpisode === ep ? "contained" : "outlined"}
+                  onClick={() => setSelectedEpisode(ep)}
+                >
+                  {ep.name}
+                </Button>
+              ))}
             </div>
-          )}
-        </>
-      ) : (
-        <p>{t.no_founded_video_not}</p>
-      )}
-      
-    </div>
 
-    <div className="language_anime_watch">
-
-      <div className="ENG_manga">
-        <button className="btn_1_for_manga"><img src={britainFlag} width="45px" height="45px" id="ENG_manga"></img></button>
+            {selectedEpisode && (
+              <div style={{ marginTop: "20px" }}>
+                <Typography variant="h6">{selectedEpisode.name}</Typography>
+                <video key={selectedEpisode.file} controls width="100%">
+                  <source src={selectedEpisode.file} type="video/mp4" />
+                  {t.no_founded_video}
+                </video>
+              </div>
+            )}
+          </>
+        ) : (
+          <p>{t.no_founded_video_not}</p>
+        )}
       </div>
 
-      <div className="RUS_Manga">
-        <button className="btn_1_for_manga"><img src={russianFlag} width="45px" height="45px" id="RUS_manga"></img></button>
+      {/* ПЕРЕКЛЮЧЕНИЕ ОЗВУЧКИ */}
+      <div className="language_anime_watch">
+        <button onClick={() => setAudioLang("en")}>
+          <img src={britainFlag} width="45" height="45" alt="EN" />
+        </button>
+        <button onClick={() => setAudioLang("ru")}>
+          <img src={russianFlag} width="45" height="45" alt="RU" />
+        </button>
+        <button onClick={() => setAudioLang("ee")}>
+          <img src={estonianflag} width="45" height="45" alt="EE" />
+        </button>
       </div>
-      
-      <div className="EST_Manga">
-        <button className="btn_1_for_manga"><img src={estonianflag} width="45px" height="45px" id="EST_manga"></img></button>
-      </div>
-
-    </div>
-
     </div>
   );
 };

@@ -164,7 +164,7 @@ form button:before {
 
 .language_anime_watch {
   display: flex;
-  margin-top: 25px;
+  margin-top: 65px;
   margin-left: 875px;
 }
 
@@ -189,8 +189,8 @@ form button:before {
   width: 905px;
   height: 40px;
   font-size: 25px;
-  left: 520px;
-  top: 25px;
+  left: 30px;
+  top: 15px;
 }
 
 .perevod_sub_btn_1 , .perevod_sub_btn_2 
@@ -201,7 +201,7 @@ form button:before {
 }
 
 .btn_serii_group {
-  margin-top: 15px;
+  margin-top: 75px;
 }
 
 .btn_perevod_1 , .btn_perevod_2 ,
