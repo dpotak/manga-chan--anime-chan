@@ -194,14 +194,14 @@ const AnimeDetailsPage = () => {
     </div>
 
 {/* Список сезонов аниме */}
-    <div className="">
-      <h2 className=""></h2>
+    <div className="List_sezon">
+      <h2 className="name_list_Sezon"></h2>
 
-      <div className="">
+      <div className="btn_list_sezonov">
 
       </div>
     </div>
-    
+
 
       {episodes.length > 0 ? (
         <>
