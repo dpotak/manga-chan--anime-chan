@@ -42,21 +42,45 @@ MangaDetails_transitions();
   
 
   // 📚 Список томов (пути к PDF)
-  const mangaVolumes = {
-    "Chainsaw Man": [
-      { name: "Том 1", file: "" },
-      // { name: "Том 2", file: "/manga_pdf/chainsaw_volume2.pdf" },
-    ],
-    "Demon Slayer": [
-      { name: "Том 1", file: "" },
-      // { name: "Том 2", file: "/manga_pdf/demonslayer_volume2.pdf" },
-    ],
-    "Inuyasha": [
-      { name: "Том 1", file: "" },
-    ],
-  };
+  const mangaVolumesRU = {
+  "Chainsaw Man": [
+    { name: "Том 1", file: "/manga_pdf/ru/chainsaw/vol1.pdf" },
+  ],
+  "Demon Slayer": [
+    { name: "Том 1", file: "/manga_pdf/ru/demonslayer/vol1.pdf" },
+  ],
+};
 
-  const volumes = mangaVolumes[decodeURIComponent(title)] || [];
+const mangaVolumesEN = {
+  "Chainsaw Man": [
+    { name: "Volume 1", file: "/manga_pdf/en/chainsaw/vol1.pdf" },
+  ],
+  "Demon Slayer": [
+    { name: "Volume 1", file: "/manga_pdf/en/demonslayer/vol1.pdf" },
+  ],
+};
+
+const mangaVolumesEE = {
+  "Chainsaw Man": [
+    { name: "1. köide", file: "/manga_pdf/ee/chainsaw/vol1.pdf" },
+  ],
+  "Demon Slayer": [
+    { name: "1. köide", file: "/manga_pdf/ee/demonslayer/vol1.pdf" },
+  ],
+};
+
+
+const decodedTitle = decodeURIComponent(title);
+
+let volumes = [];
+
+if (mangaLang === "ru") {
+  volumes = mangaVolumesRU[decodedTitle] || [];
+} else if (mangaLang === "en") {
+  volumes = mangaVolumesEN[decodedTitle] || [];
+} else if (mangaLang === "ee") {
+  volumes = mangaVolumesEE[decodedTitle] || [];
+}
 
   const { t, changeLanguage } = Translator_Manga_Details();
 
@@ -158,35 +182,57 @@ MangaDetails_transitions();
       </Link>
 
       {volumes.length > 0 ? (
-        <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-          {volumes.map((vol, index) => (
-            <a key={index} href={vol.file} target="_blank" rel="noopener noreferrer">
-              <Button variant="contained" color="primary">
-                {vol.name}
-              </Button>
-            </a>
-          ))}
-        </div>
-      ) : (
-        <p>{t. not_list_manga}</p>
-      )}
-    </div>
-
-    <div className="language_manga_watch">
-
-      <div className="ENG_manga">
-        <button className="btn_1_for_manga"><img src={britainFlag} width="45px" height="45px" id="ENG_manga"></img></button>
-      </div>
-
-      <div className="RUS_Manga">
-        <button className="btn_1_for_manga"><img src={russianFlag} width="45px" height="45px" id="RUS_manga"></img></button>
-      </div>
-      
-      <div className="EST_Manga">
-        <button className="btn_1_for_manga"><img src={estonianflag} width="45px" height="45px" id="EST_manga"></img></button>
-      </div>
+  <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+    {volumes.map((vol, index) => (
+      <a
+        key={index}
+        href={vol.file}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button variant="contained" color="primary">
+          {vol.name}
+        </Button>
+      </a>
+    ))}
+  </div>
+) : (
+  <p>{t.not_list_manga}</p>
+)}
 
     </div>
+
+   <div className="language_manga_watch">
+
+  <div className="ENG_manga">
+    <button
+      className="btn_1_for_manga"
+      onClick={() => setMangaLang("en")}
+    >
+      <img src={britainFlag} width="45" height="45" />
+    </button>
+  </div>
+
+  <div className="RUS_Manga">
+    <button
+      className="btn_1_for_manga"
+      onClick={() => setMangaLang("ru")}
+    >
+      <img src={russianFlag} width="45" height="45" />
+    </button>
+  </div>
+
+  <div className="EST_Manga">
+    <button
+      className="btn_1_for_manga"
+      onClick={() => setMangaLang("ee")}
+    >
+      <img src={estonianflag} width="45" height="45" />
+    </button>
+  </div>
+
+</div>
+
 
     <div className="opisanie_manga">
       <img className="image_manga" src="" width="" height=""></img>
