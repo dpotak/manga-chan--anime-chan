@@ -38,7 +38,7 @@ const AnimeDetailsPage = () => {
 
   AnimeDetails_transitions();
 
-  // 🎥 Список серий
+  // 🎥 Список серий на русском языке
   const animeEpisodes = {
     "Chainsaw Man": [
       { name: "Серия 1", file: "/anime_video/Chainsaw_Man/episode1.mp4" },
@@ -65,6 +65,13 @@ const AnimeDetailsPage = () => {
       {name: "Серия 2 - 2 сеазон", file: "https://www.dropbox.com/scl/fi/04zfn3cd02y9loxauis8i/2_seria.mp4?rlkey=ojedxvwoj6t06ckiiq9wpd5nj&raw=1"},
     ],
   };
+
+  // 🎥 Список серий на эстонском языке
+  const AnimeEpisodesEesti = []
+
+  // 🎥 Список серий на английском языке
+  const AnimeEpisodesEng = []
+
 
   const episodes = animeEpisodes[decodeURIComponent(title)] || [];
 
@@ -185,6 +192,16 @@ const AnimeDetailsPage = () => {
         </div>
 
     </div>
+
+{/* Список сезонов аниме */}
+    <div className="">
+      <h2 className=""></h2>
+
+      <div className="">
+
+      </div>
+    </div>
+    
 
       {episodes.length > 0 ? (
         <>
