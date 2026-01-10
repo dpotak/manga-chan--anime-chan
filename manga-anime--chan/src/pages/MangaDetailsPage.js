@@ -38,6 +38,7 @@ const MangaDetailsPage = () => {
 MangaDetails_transitions();
 
   const { title } = useParams(); // получаем название из URL
+  const [mangaLang, setMangaLang] = useState("ru" , "en" , "ee");
   
 
   // 📚 Список томов (пути к PDF)
@@ -169,13 +170,6 @@ MangaDetails_transitions();
       ) : (
         <p>{t. not_list_manga}</p>
       )}
-    </div>
-
-{/* Для переводов мангов*/}
-    <div className="perevodi_manga">
-      <div className="btn_list">
-
-      </div>
     </div>
 
     <div className="language_manga_watch">
