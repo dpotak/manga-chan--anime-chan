@@ -171,6 +171,13 @@ MangaDetails_transitions();
       )}
     </div>
 
+{/* Для переводов мангов*/}
+    <div className="perevodi_manga">
+      <div className="btn_list">
+
+      </div>
+    </div>
+
     <div className="language_manga_watch">
 
       <div className="ENG_manga">
