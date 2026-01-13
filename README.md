@@ -4,6 +4,7 @@
 # 📌 Project Description
 ## 🧨 Manga-Chan--Anime-Chan
 💥 Is a project that perfectly combines reading manga and watching anime. It allows users to enjoy content easily, discuss their favorite series, and stay up to date with industry news.
+You can read manga and watch anime in three languages: ENG , EST and RUS.
 
 ## 💻📚 Skills acquired during the project:
 - Writing HTML and working with CSS styles.
