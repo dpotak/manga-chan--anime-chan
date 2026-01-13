@@ -12,9 +12,9 @@ You can read manga and watch anime in three languages: ENG , EST and RUS.
 - Working with Git versions. Restoring old code versions and actively pushing code.
 - Working with JavaScript (React). Writing code for multilingual pages, writing additional features to improve page performance.
 - Setting up infrastructure on Linux Ubuntu and CentOS 7.
--- Configuring and using Ansible.
--- Automatic Docker configuration.
--- Automatic configuration using Ansible with Docker: Apache2 and MongoDB.
+ -- Configuring and using Ansible.
+ -- Automatic Docker configuration.
+ -- Automatic configuration using Ansible with Docker: Apache2 and MongoDB.
 
 # ⚙️ Technologies Used
 - Python (Flask)
