@@ -208,8 +208,17 @@ if (mangaLang === "ru") {
 
       <div className="kvadrat_black">
         <div className="kvadrat_gray">
-          <button className="btn_1_list_left"> влево </button>
-          <button className="btn_2_list_right"> направо </button>
+         
+         <div className="list_btn_leftAndRight">
+           <button className="btn_1_list_left"> влево </button>
+           <button className="btn_2_list_right"> направо </button>
+         </div>
+
+          <div className="list_enterTom">
+            <button></button>
+            <button></button>
+          </div>
+
         </div>
       </div>
     </div>
