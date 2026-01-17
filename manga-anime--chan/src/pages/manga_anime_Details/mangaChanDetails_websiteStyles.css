@@ -11,6 +11,7 @@
 .kvadrat_gray {
     width: 890px;
     height: 110px;
-    background-color: gray;
+    background-color: rgb(33, 33, 33);
+    border-radius: 10px;
 }
 
