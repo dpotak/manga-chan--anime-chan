@@ -13,3 +13,9 @@ canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container
   z-index: -1; /* помещаем под контент */
   pointer-events: none; /* <=== вот это главное! */
 }
+
+#stats,
+.count-particles,
+.js-count-particles {
+  display: none !important;
+}
