@@ -213,7 +213,6 @@ if (mangaLang === "ru") {
     </div>
 
 
-
    <div className="language_manga_watch">
 
   <div className="ENG_manga">

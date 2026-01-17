@@ -165,7 +165,11 @@ form button:before {
 
 .language_manga_watch {
   display: flex;
-  justify-content: center;
+  margin-left: 820px;
+}
+
+.language_manga_watch {
+  top: 30px;
 }
 
 .ENG_manga , .RUS_Manga , .EST_Manga {
