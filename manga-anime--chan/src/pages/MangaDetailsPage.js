@@ -215,8 +215,8 @@ if (mangaLang === "ru") {
          </div>
 
           <div className="list_enterTom">
-            <button></button>
-            <button></button>
+            <button className="enter_old_volume">Прошлая глава</button>
+            <button className="enter_new_volume">Следующая глава</button>
           </div>
 
         </div>

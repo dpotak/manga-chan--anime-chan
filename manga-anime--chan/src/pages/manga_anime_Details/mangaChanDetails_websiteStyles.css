@@ -25,3 +25,11 @@
     height: 35px;
 }
 
+.enter_new_volume , .enter_old_volume {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    width: 125px;
+    height: 35px;
+}
+
