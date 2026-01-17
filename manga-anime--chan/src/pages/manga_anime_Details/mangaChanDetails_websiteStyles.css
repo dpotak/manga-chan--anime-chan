@@ -23,6 +23,7 @@
     border-radius: 8px;
     width: 95px;
     height: 35px;
+    margin-left: 10px;
 }
 
 .enter_new_volume , .enter_old_volume {
@@ -31,6 +32,7 @@
     border-radius: 8px;
     width: 125px;
     height: 35px;
+    margin-left: 10px;
 }
 
 .list_btn_leftAndRight , .list_enterTom {
