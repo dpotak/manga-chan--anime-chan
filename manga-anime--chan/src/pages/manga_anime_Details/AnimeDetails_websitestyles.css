@@ -1,6 +1,19 @@
-.kvadrat_AnimeChan {}
+.kvadrat_AnimeChan {
+    margin-top: 10px;
+}
 
-.kvadrat_black_anime {}
+.kvadrat_black_anime {
+    width: 890px;
+    height: 870px;
+    background-color: black;
+    margin-left: 500px;
+    border-radius: 10px;
+}
 
-.kvadrat_gray_anime {}
+.kvadrat_gray_anime {
+    width: 890px;
+    height: 110px;
+    background-color: rgb(33, 33, 33);
+    border-radius: 10px;
+}
 
