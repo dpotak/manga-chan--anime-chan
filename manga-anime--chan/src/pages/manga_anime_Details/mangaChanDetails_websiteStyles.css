@@ -1,0 +1,16 @@
+.kvadrat_MangaChan {}
+
+.kvadrat_black {
+    width: 890px;
+    height: 870px;
+    background-color: black;
+    margin-left: 500px;
+    border-radius: 10px;
+}
+
+.kvadrat_gray {
+    width: 890px;
+    height: 110px;
+    background-color: gray;
+}
+

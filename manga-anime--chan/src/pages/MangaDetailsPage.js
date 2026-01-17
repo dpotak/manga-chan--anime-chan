@@ -18,6 +18,7 @@ import berjuzovii_perehod from "./Perehod_whiteAndBlack/ICON_perehod_2.png";
 import "./manga_anime_Details/manga_Details.css";
 import "./manga_anime_Details/mangaDetails_hover.css";
 import "./manga_anime_Details/particlesjs_MangaDetails.css";
+import "./manga_anime_Details/mangaChanDetails_websiteStyles.css";
 import "./styles/mode_darklight.css";
 
 // подключенные модули и другие файлы JS
@@ -211,7 +212,7 @@ if (mangaLang === "ru") {
       </div>
     </div>
 
-    
+
 
    <div className="language_manga_watch">
 
