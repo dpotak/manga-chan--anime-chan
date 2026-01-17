@@ -17,3 +17,11 @@
     border-radius: 10px;
 }
 
+.btn_1_list_left , .btn_2_list_right {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    width: 95px;
+    height: 35px;
+}
+
