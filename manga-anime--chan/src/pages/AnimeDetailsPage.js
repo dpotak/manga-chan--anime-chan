@@ -262,6 +262,17 @@ const AnimeDetailsPage = () => {
         )}
       </div>
 
+
+      {/* Квадрат где будут показываться аниме или манга */}
+    <div className="kvadrat_AnimeChan">
+
+      <div className="kvadrat_black_anime">
+        <div className="kvadrat_gray_anime"></div>
+
+      </div>
+    </div>
+
+
       {/* ПЕРЕКЛЮЧЕНИЕ ОЗВУЧКИ */}
       <div className="language_anime_watch">
         <button className="ENG_manga" onClick={() => setAudioLang("en")}>
