@@ -202,6 +202,17 @@ if (mangaLang === "ru") {
 
     </div>
 
+    {/* Квадрат где будут показываться аниме или манга */}
+    <div className="kvadrat_MangaChan">
+
+      <div className="kvadrat_black">
+        <div className="kvadrat_gray"></div>
+
+      </div>
+    </div>
+
+    
+
    <div className="language_manga_watch">
 
   <div className="ENG_manga">
