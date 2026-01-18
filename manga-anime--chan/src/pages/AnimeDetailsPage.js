@@ -269,7 +269,8 @@ const AnimeDetailsPage = () => {
 
       <div className="kvadrat_black_anime">
         <div className="kvadrat_gray_anime"></div>
-
+          <button className=""></button>
+          <button className=""></button>
       </div>
     </div>
 

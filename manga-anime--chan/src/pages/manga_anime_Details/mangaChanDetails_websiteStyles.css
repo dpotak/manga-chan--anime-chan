@@ -4,7 +4,7 @@
 }
 
 .kvadrat_black {
-    width: 890px;
+    width: 1050px;
     height: 870px;
     background-color: black;
     margin-left: 500px;
@@ -12,7 +12,7 @@
 }
 
 .kvadrat_gray {
-    width: 890px;
+    width: 1050px;
     height: 110px;
     background-color: rgb(33, 33, 33);
     border-radius: 10px;
