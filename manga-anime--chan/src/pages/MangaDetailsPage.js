@@ -227,6 +227,7 @@ if (mangaLang === "ru") {
             <h3 className="h3_reiting">Рейтинг манги:</h3>
           </div>
 
+          {/* Сами звезды */}
           <div className="zvezdiDljaOcenki">
             <input type="" className="" name=""></input>
             <label for=""></label>
