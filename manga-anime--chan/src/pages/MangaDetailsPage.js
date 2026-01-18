@@ -223,8 +223,8 @@ if (mangaLang === "ru") {
 
         {/* Звезды для рейтинга */}
         <div className="kvadrat_gray_2">
-          <div className="">
-
+          <div className="p_opisanie_reitinga">
+            <h3 className="h3_reiting">Рейтинг манги:</h3>
           </div>
 
           <div className="zvezdiDljaOcenki">
