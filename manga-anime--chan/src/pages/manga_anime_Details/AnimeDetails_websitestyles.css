@@ -17,3 +17,12 @@
     border-radius: 10px;
 }
 
+.old_serii_btn , .new_serii_btn {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    width: 145px;
+    height: 35px;
+    margin-left: 10px;
+}
+

@@ -268,9 +268,11 @@ const AnimeDetailsPage = () => {
     <div className="kvadrat_AnimeChan">
 
       <div className="kvadrat_black_anime">
-        <div className="kvadrat_gray_anime"></div>
-          <button className=""></button>
-          <button className=""></button>
+        <div className="kvadrat_gray_anime">
+          <button className="old_serii_btn">Предыдущая серия</button>
+          <button className="new_serii_btn">Следующая серия</button>
+        </div>
+          
       </div>
     </div>
 
