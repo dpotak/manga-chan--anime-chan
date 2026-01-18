@@ -24,6 +24,7 @@
     border-radius: 8px;
     width: 95px;
     height: 35px;
+    margin-top: 10px;
 }
 
 .btn_1_list_left {
@@ -40,6 +41,7 @@
     border-radius: 8px;
     width: 125px;
     height: 35px;
+    margin-top: 8px;
 }
 
 .enter_new_volume {
