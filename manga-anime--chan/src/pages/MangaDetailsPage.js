@@ -220,6 +220,18 @@ if (mangaLang === "ru") {
           </div>
 
         </div>
+
+        {/* Звезды для рейтинга */}
+        <div className="kvadrat_gray_2">
+          <div className="">
+
+          </div>
+
+          <div className="zvezdiDljaOcenki">
+          
+          </div>
+        </div>
+
       </div>
     </div>
 
