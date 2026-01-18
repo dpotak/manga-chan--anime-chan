@@ -256,6 +256,7 @@ if (mangaLang === "ru") {
 </div>
 
 
+{/* Описание манги/сюжета/название и т.д. */}
     <div className="opisanie_manga">
       <img className="image_manga" src="" width="" height=""></img>
       <h2 className="name-manga"></h2>
