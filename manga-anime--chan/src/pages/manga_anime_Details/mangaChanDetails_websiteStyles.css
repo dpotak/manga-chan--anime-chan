@@ -24,7 +24,14 @@
     border-radius: 8px;
     width: 95px;
     height: 35px;
+}
+
+.btn_1_list_left {
     margin-left: 10px;
+}
+
+.btn_2_list_right {
+    margin-left: 840px;
 }
 
 .enter_new_volume , .enter_old_volume {
@@ -33,10 +40,14 @@
     border-radius: 8px;
     width: 125px;
     height: 35px;
+}
+
+.enter_new_volume {
+    margin-left: 780px;
+}
+
+.enter_old_volume {
     margin-left: 10px;
 }
 
-.list_btn_leftAndRight , .list_enterTom {
-    margin-top: 10px;
-}
 
