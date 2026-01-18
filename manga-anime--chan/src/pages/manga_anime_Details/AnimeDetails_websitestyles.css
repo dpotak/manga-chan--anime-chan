@@ -25,6 +25,10 @@
     height: 35px;
 }
 
+.old_serii_btn , .new_serii_btn {
+    margin-top: 10px;
+}
+
 .old_serii_btn {
     margin-left: 10px;
 }
