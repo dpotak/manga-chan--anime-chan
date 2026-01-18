@@ -228,7 +228,8 @@ if (mangaLang === "ru") {
           </div>
 
           <div className="zvezdiDljaOcenki">
-          
+            <input type="" className="" name=""></input>
+            <label for=""></label>
           </div>
         </div>
 
