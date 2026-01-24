@@ -275,12 +275,13 @@ const AnimeDetailsPage = () => {
           {/* Звезды для рейтинга */}
           <div className="">
             <div className=""></div>
-          </div>
 
-          {/* Сами звезды */}
-          <div className="">
-            <div className=""></div>
-            <div className=""></div>
+            {/* Сами звезды */}
+            <div className="">
+              <div className=""></div>
+              <div className=""></div>
+            </div>
+
           </div>
 
         </div>
