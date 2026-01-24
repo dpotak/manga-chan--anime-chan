@@ -271,10 +271,23 @@ const AnimeDetailsPage = () => {
         <div className="kvadrat_gray_anime">
           <button className="old_serii_btn">Предыдущая серия</button>
           <button className="new_serii_btn">Следующая серия</button>
+
+          {/* Звезды для рейтинга */}
+          <div className="">
+            <div className=""></div>
+          </div>
+
+          {/* Сами звезды */}
+          <div className="">
+            <div className=""></div>
+            <div className=""></div>
+          </div>
+
         </div>
           
       </div>
     </div>
+
 
 
       {/* ПЕРЕКЛЮЧЕНИЕ ОЗВУЧКИ */}
