@@ -228,10 +228,27 @@ if (mangaLang === "ru") {
           </div>
 
           {/* Сами звезды */}
-          <div className="zvezdiDljaOcenki">
-            <input type="" className="" name=""></input>
-            <label for=""></label>
+          <div className="simple-rating_item">
+            <input type="radio" className="simple-rating_5" name="simple-rating" value="5"></input>
+            <label for="simple-rating_5" className="simple-rating_label"></label>
+
+            <input type="radio" className="simple-rating_4" name="simple-rating" value="4"></input>
+            <label for="simple-rating_4" className="simple-rating_label"></label>
+
+            <input type="radio" className="simple-rating_3" name="simple-rating" value="3"></input>
+            <label for="simple-rating_3" className="simple-rating_label"></label>
+
+            <input type="radio" className="simple-rating_2" name="simple-rating" value="2"></input>
+            <label for="simple-rating_2" className="simple-rating_label"></label>
+
+            <input type="radio" className="simple-rating_1" name="simple-rating" value="1"></input>
+            <label for="simple-rating_1" className="simple-rating_label"></label>
           </div>
+
+          <div className="btn_rating_class">
+            <button className="btn_rating_1">Отправить</button>
+          </div>
+
         </div>
 
       </div>
