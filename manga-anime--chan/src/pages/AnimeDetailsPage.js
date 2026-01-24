@@ -279,10 +279,9 @@ const AnimeDetailsPage = () => {
             </div>
 
             {/* Сами звезды */}
-            <div className="">
-              <div className=""></div>
-              <div className=""></div>
-            </div>
+            <div className="simple-rating_item"></div>
+            
+            <div className="btn_rating_class"></div>
 
           </div>
 
