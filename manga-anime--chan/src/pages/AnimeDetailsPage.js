@@ -297,7 +297,7 @@ const AnimeDetailsPage = () => {
             </div>
 
             <div className="btn_rating_class">
-              <button className="btn_rating_1">Отправить</button>
+              <button className="btn_rating_1_anime">Отправить</button>
             </div>
 
           </div>
