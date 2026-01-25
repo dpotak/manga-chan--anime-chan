@@ -49,8 +49,9 @@
 .commentary_content {
     margin-top: 55px;
     width: 550px;
-    height: 350px;
+    height: 290px;
     background-color: black;
+    margin-left: 650px;
 }
 
 .textrea_content {
