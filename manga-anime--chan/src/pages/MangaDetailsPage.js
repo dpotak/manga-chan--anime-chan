@@ -238,10 +238,10 @@ if (mangaLang === "ru") {
             <input type="radio" id="simple-rating_3" className="simple-rating_item" name="simple-rating" value="3"></input>
             <label for="simple-rating_3" className="simple-rating_label"></label>
 
-            <input type="radio" id="" className="simple-rating_item" name="simple-rating" value="2"></input>
+            <input type="radio" id="simple-rating_2" className="simple-rating_item" name="simple-rating" value="2"></input>
             <label for="simple-rating_2" className="simple-rating_label"></label>
 
-            <input type="radio" id="" className="simple-rating_item" name="simple-rating" value="1"></input>
+            <input type="radio" id="simple-rating_1" className="simple-rating_item" name="simple-rating" value="1"></input>
             <label for="simple-rating_1" className="simple-rating_label"></label>
           </div>
 
