@@ -57,6 +57,15 @@
     border-radius: 8px;
 }
 
+.commentary_content_text {
+    margin-top: 20px;
+    width: 850px;
+    height: 310px;
+    background-color: black;
+    margin-left: 520px;
+    border-radius: 8px;
+}
+
 .textrea_content {
     width: 820px;
     height: 240px;

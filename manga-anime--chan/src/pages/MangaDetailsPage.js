@@ -348,6 +348,9 @@ if (mangaLang === "ru") {
       </div>
 
     </div>
+
+
+    <div className="commentary_content_text"></div>
     
    </div>
   );
