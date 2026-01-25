@@ -349,7 +349,7 @@ if (mangaLang === "ru") {
 
     </div>
 
-
+   {/* Сами комментарии от других пользователей */}
     <div className="commentary_content_text"></div>
     
    </div>
