@@ -332,7 +332,15 @@ if (mangaLang === "ru") {
     </div>
 
     {/* Комментарии к манги */}
-    <div className="">
+    <div className="commentary_content">
+
+      <div className="">
+        <label></label>
+      </div>
+
+      <div className="commentary_push_btn">
+        <button className="btn_commentary_1"></button>
+      </div>
 
     </div>
 
