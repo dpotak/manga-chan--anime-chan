@@ -335,7 +335,7 @@ if (mangaLang === "ru") {
     <div className="commentary_content">
 
       <div className="">
-        <label className=""></label>
+        <textarea className="textrea_content" name="comment" rows="5" placeholder="Введите ваш комментарий..." required></textarea>
       </div>
 
       <div className="commentary_push_btn">
