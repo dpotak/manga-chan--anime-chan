@@ -343,6 +343,7 @@ if (mangaLang === "ru") {
       </div>
 
     </div>
+    
 
    </div>
   );
