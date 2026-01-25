@@ -227,6 +227,11 @@ if (mangaLang === "ru") {
             <h3 className="h3_reiting">Рейтинг манги:</h3>
           </div>
 
+          {/* Описание важности оценки аниме или манги */}
+          <div className="opisanie_ocenkiZvezd">
+            <p></p>
+          </div>
+
           {/* Сами звезды */}
           <div className="simple-rating">
   <div className="simple-rating_items">
