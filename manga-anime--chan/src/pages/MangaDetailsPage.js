@@ -331,6 +331,11 @@ if (mangaLang === "ru") {
       <p className="p_manga_1"></p>
     </div>
 
+    {/* Комментарии к манги */}
+    <div className="">
+
+    </div>
+
    </div>
   );
 };
