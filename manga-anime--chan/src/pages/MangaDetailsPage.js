@@ -334,7 +334,7 @@ if (mangaLang === "ru") {
     {/* Комментарии к манги */}
     <div className="commentary_content">
 
-      <div className="">
+      <div className="textrea_content_content">
         <textarea className="textrea_content" name="comment" placeholder="Введите ваш комментарий..." required></textarea>
       </div>
 
@@ -344,7 +344,6 @@ if (mangaLang === "ru") {
 
     </div>
     
-
    </div>
   );
 };
