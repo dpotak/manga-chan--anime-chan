@@ -44,3 +44,8 @@
 .simple-rating_item:checked ~ .simple-rating_label {
   color: gold;
 }
+
+
+.commentary_content {
+    margin-top: 25px;
+}

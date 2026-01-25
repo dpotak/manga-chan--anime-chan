@@ -339,7 +339,7 @@ if (mangaLang === "ru") {
       </div>
 
       <div className="commentary_push_btn">
-        <button className="btn_commentary_1"></button>
+        <button className="btn_commentary_1">Отправить</button>
       </div>
 
     </div>
