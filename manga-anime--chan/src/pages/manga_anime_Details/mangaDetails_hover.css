@@ -48,6 +48,9 @@
 
 .commentary_content {
     margin-top: 55px;
+    width: 550px;
+    height: 350px;
+    background-color: black;
 }
 
 .textrea_content {
