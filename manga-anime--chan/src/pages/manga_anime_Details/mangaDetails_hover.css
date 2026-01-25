@@ -1,0 +1,18 @@
+.btn_rating_1_manga {
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+
+.simple-rating {
+    position: relative;
+    font-size: 40px;
+    display: inline-block;
+}
+
+.simple-rating::before {
+    content: "⭐⭐⭐⭐⭐";
+    display: block;
+}
+
