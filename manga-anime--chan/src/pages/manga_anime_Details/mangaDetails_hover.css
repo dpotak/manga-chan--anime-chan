@@ -52,6 +52,7 @@
     height: 310px;
     background-color: black;
     margin-left: 580px;
+    border-radius: 8px;
 }
 
 .textrea_content {
