@@ -356,7 +356,20 @@ const AnimeDetailsPage = () => {
         </button>
       </div>
 
-      
+       {/* Комментарии к манги */}
+      <div className="commentary_content_anime">
+        <div className="textrea_content_content_anime">
+
+        </div>
+
+        <div className="commentary_push_btn_anime">
+
+        </div>
+        
+      </div>
+
+      <div className="commentary_content_text_anime"></div>
+
     </div>
   );
 };
