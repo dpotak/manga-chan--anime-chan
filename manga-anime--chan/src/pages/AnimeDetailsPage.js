@@ -359,13 +359,13 @@ const AnimeDetailsPage = () => {
        {/* Комментарии к манги */}
       <div className="commentary_content_anime">
         <div className="textrea_content_content_anime">
-
+          <textarea className="textrea_content" name="comment" placeholder="Введите ваш комментарий..." required></textarea>
         </div>
 
         <div className="commentary_push_btn_anime">
-
+          <button className="btn_commentary_1_anime">Отправить</button>
         </div>
-        
+
       </div>
 
       <div className="commentary_content_text_anime"></div>
