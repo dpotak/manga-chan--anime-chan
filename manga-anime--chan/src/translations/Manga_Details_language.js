@@ -12,6 +12,7 @@ export const translations = {
     Anime_catalog: "Аниме",
     btn_list_manga: "← Назад к списку манги",
     not_list_manga: "Томы для этой манги пока не добавлены.",
+
   },
   en: {
     catalog: "Catalog",
@@ -26,6 +27,7 @@ export const translations = {
     Anime_catalog: "Anime",
     btn_list_manga: "← Back to manga list",
     not_list_manga: "Volumes for this manga have not yet been added.",
+
   },
   ee: {
     catalog: "Kataloog",
@@ -40,6 +42,7 @@ export const translations = {
     Anime_catalog: "Anime",
     btn_list_manga: "← Tagasi mangade nimekirja",
     not_list_manga: "Selle manga köiteid pole veel lisatud.",
+    
   },
 };
 
