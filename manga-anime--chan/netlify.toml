@@ -1,3 +1,7 @@
+[build]
+command = "npm start"
+publish = "start"
+
 [[redirects]]
 from = "/*"
 to = "/index.html"
