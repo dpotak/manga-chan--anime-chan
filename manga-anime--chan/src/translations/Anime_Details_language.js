@@ -13,6 +13,9 @@ export const translations = {
     no_founded_video: "Ваш браузер не поддерживает видео.",
     no_founded_video_not: "Серии для этого аниме пока не добавлены.",
     btn_anime_list: "← Назад к списку аниме", 
+    old_serii: "",
+    new_serii: "",
+    reiting_anime: "",
 
   },
   en: {
@@ -29,6 +32,9 @@ export const translations = {
     no_founded_video: "Your browser does not support video.",
     no_founded_video_not: "There are no episodes for this anime yet.",
     btn_anime_list: "← Back to anime list",
+    old_serii: "",
+    new_serii: "",
+    reiting_anime: "",
 
   },
   ee: {
@@ -45,7 +51,10 @@ export const translations = {
     no_founded_video: "Teie brauser ei toeta videot.",
     no_founded_video_not: "Sellel animel pole veel ühtegi osa.",
     btn_anime_list: "← Tagasi anime nimekirja",
-    
+    old_serii: "",
+    new_serii: "",
+    reiting_anime: "",
+
   },
 };
 
