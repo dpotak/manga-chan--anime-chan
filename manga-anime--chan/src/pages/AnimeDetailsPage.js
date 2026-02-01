@@ -331,7 +331,7 @@ const AnimeDetailsPage = () => {
 </div>
 
             <div className="btn_rating_class">
-              <button className="btn_rating_1_anime">Отправить</button>
+              <button className="btn_rating_1_anime">{t.btn_rating_1_anime}</button>
               
               {/* Стастистика оценок аниме */}
               <div className="">
@@ -369,7 +369,7 @@ const AnimeDetailsPage = () => {
         </div>
 
         <div className="commentary_push_btn_anime">
-          <button className="btn_commentary_1_anime">Отправить</button>
+          <button className="btn_commentary_1_anime">{t.btn_commentary_1_anime}</button>
         </div>
 
       </div>

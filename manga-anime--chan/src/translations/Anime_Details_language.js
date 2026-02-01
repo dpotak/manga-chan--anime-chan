@@ -16,6 +16,8 @@ export const translations = {
     old_serii: "Предыдущая серия",
     new_serii: "Следующая серия",
     reiting_anime: "Рейтинг аниме:",
+    btn_rating_1_anime: "Отправить",
+    btn_commentary_1_anime: "Отправить",
 
   },
   en: {
@@ -35,6 +37,8 @@ export const translations = {
     old_serii: "Previous episode",
     new_serii: "Next episode",
     rating_anime: "Anime rating:",
+    btn_rating_1_anime: "Send",
+    btn_commentary_1_anime: "Send",
 
   },
   ee: {
@@ -54,6 +58,8 @@ export const translations = {
     old_serii: "Eelmine osa",
     new_serii: "Järgmine osa",
     rating_anime: "Anime hinnang:",
+    btn_rating_1_anime: "Saada",
+    btn_commentary_1_anime: "Saada",
 
   },
 };
