@@ -12,6 +12,11 @@ export const translations = {
     Anime_catalog: "Аниме",
     btn_list_manga: "← Назад к списку манги",
     not_list_manga: "Томы для этой манги пока не добавлены.",
+    btn_1_list_left: "влево",
+    btn_2_list_right: "направо",
+    enter_old_volume: "Прошлый том",
+    enter_new_volume: "Следующий том",
+    h3_reiting_manga: "Рейтинг манги:",
 
   },
   en: {
@@ -27,6 +32,11 @@ export const translations = {
     Anime_catalog: "Anime",
     btn_list_manga: "← Back to manga list",
     not_list_manga: "Volumes for this manga have not yet been added.",
+    btn_1_list_left: "left",
+    btn_2_list_right: "right",
+    enter_old_volume: "Previous Volume",
+    enter_new_volume: "Next Volume",
+    h3_reiting_manga: "Manga Rating:",
 
   },
   ee: {
@@ -42,6 +52,11 @@ export const translations = {
     Anime_catalog: "Anime",
     btn_list_manga: "← Tagasi mangade nimekirja",
     not_list_manga: "Selle manga köiteid pole veel lisatud.",
+    btn_1_list_left: "vasak",
+    btn_2_list_right: "parem",
+    enter_old_volume: "Eelmine köide",
+    enter_new_volume: "Järgmine köide",
+    h3_reiting_manga: "Manga hinnang:",
     
   },
 };

@@ -210,13 +210,13 @@ if (mangaLang === "ru") {
         <div className="kvadrat_gray">
          
          <div className="list_btn_leftAndRight">
-           <button className="btn_1_list_left"> влево </button>
-           <button className="btn_2_list_right"> направо </button>
+           <button className="btn_1_list_left"> {t.btn_1_list_left} </button>
+           <button className="btn_2_list_right"> {t.btn_2_list_right} </button>
          </div>
 
           <div className="list_enterTom">
-            <button className="enter_old_volume">Прошлый том</button>
-            <button className="enter_new_volume">Следующий том</button>
+            <button className="enter_old_volume">{t.enter_old_volume}</button>
+            <button className="enter_new_volume">{t.enter_new_volume}</button>
           </div>
 
         </div>
@@ -224,7 +224,7 @@ if (mangaLang === "ru") {
         {/* Звезды для рейтинга */}
         <div className="kvadrat_gray_2">
           <div className="p_opisanie_reitinga">
-            <h3 className="h3_reiting">Рейтинг манги:</h3>
+            <h3 className="h3_reiting">{t.h3_reiting_manga}</h3>
           </div>
 
           {/* Описание важности оценки аниме или манги */}
