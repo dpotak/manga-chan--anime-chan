@@ -12,6 +12,7 @@ export const translations = {
     Anime_catalog: "Аниме",
     btn_list_manga: "← Назад к списку манги",
     not_list_manga: "Томы для этой манги пока не добавлены.",
+
     btn_1_list_left: "влево",
     btn_2_list_right: "направо",
     enter_old_volume: "Прошлый том",
@@ -40,6 +41,7 @@ export const translations = {
     enter_old_volume: "Previous Volume",
     enter_new_volume: "Next Volume",
     h3_reiting_manga: "Manga Rating:",
+
     btn_rating_1_manga: "",
     btn_commentary_1: "",
 
@@ -62,6 +64,7 @@ export const translations = {
     enter_old_volume: "Eelmine köide",
     enter_new_volume: "Järgmine köide",
     h3_reiting_manga: "Manga hinnang:",
+    
     btn_rating_1_manga: "",
     btn_commentary_1: "",
     
