@@ -332,6 +332,12 @@ const AnimeDetailsPage = () => {
 
             <div className="btn_rating_class">
               <button className="btn_rating_1_anime">Отправить</button>
+              
+              {/* Стастистика оценок аниме */}
+              <div className="">
+
+              </div>
+
             </div>
 
           </div>
