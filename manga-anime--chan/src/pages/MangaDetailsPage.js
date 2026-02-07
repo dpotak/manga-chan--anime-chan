@@ -285,7 +285,7 @@ if (mangaLang === "ru") {
 </div>
 
           <div className="btn_rating_class">
-            <button className="btn_rating_1_manga">Отправить</button>
+            <button className="btn_rating_1_manga">{t.btn_rating_1_manga}</button>
           </div>
 
         </div>
@@ -340,11 +340,11 @@ if (mangaLang === "ru") {
     <div className="commentary_content">
 
       <div className="textrea_content_content">
-        <textarea className="textrea_content" name="comment" placeholder="Введите ваш комментарий..." required></textarea>
+        <textarea className="textrea_content" name="comment" placeholder={t.commentary_1_com} required></textarea>
       </div>
 
       <div className="commentary_push_btn">
-        <button className="btn_commentary_1">Отправить</button>
+        <button className="btn_commentary_1">{t.btn_commentary_1}</button>
       </div>
 
     </div>

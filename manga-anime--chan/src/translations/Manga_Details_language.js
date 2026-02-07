@@ -18,6 +18,7 @@ export const translations = {
     enter_old_volume: "Прошлый том",
     enter_new_volume: "Следующий том",
     h3_reiting_manga: "Рейтинг манги:",
+
     btn_rating_1_manga: "Отправить",
     btn_commentary_1: "Отправить",
     commentary_1_com: "Введите ваш комментарий...",
@@ -42,8 +43,9 @@ export const translations = {
     enter_new_volume: "Next Volume",
     h3_reiting_manga: "Manga Rating:",
 
-    btn_rating_1_manga: "",
-    btn_commentary_1: "",
+    btn_rating_1_manga: "Submit",
+    btn_commentary_1: "Submit",
+    commentary_1_com: "Enter your comment...",
 
   },
   ee: {
@@ -65,8 +67,9 @@ export const translations = {
     enter_new_volume: "Järgmine köide",
     h3_reiting_manga: "Manga hinnang:",
     
-    btn_rating_1_manga: "",
-    btn_commentary_1: "",
+    btn_rating_1_manga: "Saada",
+    btn_commentary_1: "Saada",
+    commentary_1_com: "Sisesta oma kommentaar...",
     
   },
 };
