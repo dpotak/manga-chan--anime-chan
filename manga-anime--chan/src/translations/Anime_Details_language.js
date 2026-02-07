@@ -18,6 +18,7 @@ export const translations = {
     reiting_anime: "Рейтинг аниме:",
     btn_rating_1_anime: "Отправить",
     btn_commentary_1_anime: "Отправить",
+    commentary_1_com_anime: "Введите ваш комментарий...",
 
   },
   en: {
@@ -39,6 +40,7 @@ export const translations = {
     rating_anime: "Anime rating:",
     btn_rating_1_anime: "Send",
     btn_commentary_1_anime: "Send",
+    commentary_1_com_anime: "Enter your comment...",
 
   },
   ee: {
@@ -60,6 +62,7 @@ export const translations = {
     rating_anime: "Anime hinnang:",
     btn_rating_1_anime: "Saada",
     btn_commentary_1_anime: "Saada",
+    commentary_1_com_anime: "Sisesta oma kommentaar...",
 
   },
 };
