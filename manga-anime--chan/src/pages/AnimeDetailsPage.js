@@ -231,7 +231,17 @@ const AnimeDetailsPage = () => {
 )}
 
 
- {/* СЕРИИ */}
+
+      {/* Квадрат где будут показываться аниме или манга */}
+    <div className="kvadrat_AnimeChan">
+
+      <div className="kvadrat_black_anime">
+
+        <div className="kvadrat_gray_anime">
+          <button className="old_serii_btn">{t.old_serii}</button>
+          <button className="new_serii_btn">{t.new_serii}</button>
+
+           {/* СЕРИИ */}
         {episodes.length > 0 ? (
           <>
             <div className="btn_serii_group">
@@ -239,7 +249,7 @@ const AnimeDetailsPage = () => {
                 <Button
                   key={index}
                   className="btn_serii_1"
-                  color="black"
+                  color="blue"
                   variant={selectedEpisode === ep ? "contained" : "outlined"}
                   onClick={() => setSelectedEpisode(ep)}
                 >
@@ -262,15 +272,6 @@ const AnimeDetailsPage = () => {
           <p>{t.no_founded_video_not}</p>
         )}
       </div>
-
-
-      {/* Квадрат где будут показываться аниме или манга */}
-    <div className="kvadrat_AnimeChan">
-
-      <div className="kvadrat_black_anime">
-        <div className="kvadrat_gray_anime">
-          <button className="old_serii_btn">{t.old_serii}</button>
-          <button className="new_serii_btn">{t.new_serii}</button>
 
           {/* Звезды для рейтинга */}
           <div className="kvadrat_gray_2_anime">
