@@ -105,6 +105,10 @@ const AnimeDetailsPage = () => {
     };
   }, []);
 
+  const [commentText, setCommentText] = useState("");
+  const [comments, setComments] = useState([]);
+
+
   return (
 
     <div className="Anime_details_header">
@@ -363,19 +367,52 @@ const AnimeDetailsPage = () => {
         </button>
       </div>
 
-       {/* Комментарии к манги */}
-      <div className="commentary_content_anime">
-        <div className="textrea_content_content_anime">
-          <textarea className="textrea_content" name="comment" placeholder={t.commentary_1_com_anime} required></textarea>
-        </div>
+       {/* Комментарии к аниме */}
+<div className="commentary_content_anime">
 
-        <div className="commentary_push_btn_anime">
-          <button className="btn_commentary_1_anime">{t.btn_commentary_1_anime}</button>
-        </div>
+  <div className="textrea_content_content_anime">
+    <textarea
+      className="textrea_content"
+      name="comment"
+      placeholder={t.commentary_1_com_anime}
+      value={commentText}
+      onChange={(e) => setCommentText(e.target.value)}
+      required
+    />
+  </div>
 
-      </div>
+  <div className="commentary_push_btn_anime">
+    <button
+      className="btn_commentary_1_anime"
+      onClick={() => {
+        if (commentText.trim() === "") return;
 
-      <div className="commentary_content_text_anime"></div>
+        setComments([
+          ...comments,
+          {
+            id: Date.now(),
+            text: commentText,
+          },
+        ]);
+
+        setCommentText("");
+      }}
+    >
+      {t.btn_commentary_1_anime}
+    </button>
+  </div>
+
+</div>
+
+{/* Вывод комментариев */}
+<div className="commentary_content_text_anime">
+  {comments.map((comment) => (
+    <div key={comment.id} className="comment_item_anime">
+      {comment.text}
+    </div>
+  ))}
+</div>
+
 
     </div>
   );
