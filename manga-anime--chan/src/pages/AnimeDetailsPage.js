@@ -105,8 +105,44 @@ const AnimeDetailsPage = () => {
     };
   }, []);
 
-  const [commentText, setCommentText] = useState("");
-  const [comments, setComments] = useState([]);
+  const ANIME_IDS = {
+  DEMON_SLAYER: "demon_slayer",
+  CHAINSAW_MAN: "chainsaw_man",
+  INUYASHA: "inuyasha",
+  APOTHECARY: "apothecary_diaries",
+  ONE_PIECE: "one_piece",
+};
+
+
+const animeId = ANIME_IDS.DEMON_SLAYER; // ← ВАЖНО
+
+const [commentText, setCommentText] = useState("");
+
+const [commentsByAnime, setCommentsByAnime] = useState({
+  demon_slayer: [],
+  chainsaw_man: [],
+  inuyasha: [],
+  apothecary_diaries: [],
+  one_piece: [],
+});
+
+const handleAddComment = () => {
+  if (!commentText.trim()) return;
+
+  setCommentsByAnime((prev) => ({
+    ...prev,
+    [animeId]: [
+      ...prev[animeId],
+      {
+        id: Date.now(),
+        text: commentText,
+      },
+    ],
+  }));
+
+  setCommentText("");
+};
+
 
 
   return (
@@ -373,30 +409,16 @@ const AnimeDetailsPage = () => {
   <div className="textrea_content_content_anime">
     <textarea
       className="textrea_content"
-      name="comment"
       placeholder={t.commentary_1_com_anime}
       value={commentText}
       onChange={(e) => setCommentText(e.target.value)}
-      required
     />
   </div>
 
   <div className="commentary_push_btn_anime">
     <button
       className="btn_commentary_1_anime"
-      onClick={() => {
-        if (commentText.trim() === "") return;
-
-        setComments([
-          ...comments,
-          {
-            id: Date.now(),
-            text: commentText,
-          },
-        ]);
-
-        setCommentText("");
-      }}
+      onClick={handleAddComment}
     >
       {t.btn_commentary_1_anime}
     </button>
@@ -404,14 +426,15 @@ const AnimeDetailsPage = () => {
 
 </div>
 
-{/* Вывод комментариев */}
+{/* Список комментариев */}
 <div className="commentary_content_text_anime">
-  {comments.map((comment) => (
+  {commentsByAnime[animeId].map((comment) => (
     <div key={comment.id} className="comment_item_anime">
       {comment.text}
     </div>
   ))}
 </div>
+
 
 
     </div>
