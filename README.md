@@ -80,4 +80,17 @@ manga-anime--chan/
 
 # 🚀 How to Run the Project
 
+## Download the progects
+## Open the Visual Studio Code
+
+## Go to the project repository.
+```bash
+..\anime-chan--manga-chan\manga-chan--anime-chan\manga-anime--chan
+```
+
+## Then enter the command:
+```bash
+npm start
+```
+
 
