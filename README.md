@@ -26,8 +26,6 @@ You can read manga and watch anime in three languages: ENG , EST and RUS.
 - MongoDB
 - Git
 - Apache2
-- Netlify
-
 
 # 🧱 Architecture
 ```bash
