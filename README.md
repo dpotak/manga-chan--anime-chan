@@ -22,7 +22,7 @@ You can read manga and watch anime in three languages: ENG , EST and RUS.
 - Docker (Docker Compose)
 - React (Material UI and Particles.js)
 - HTML , CSS 
-- Vagrant
+- WSL
 - MongoDB
 - Git
 - Apache2
