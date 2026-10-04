@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { translations } from "../translations/Anime_Details_language.js";
 
+
 export function Anime_Details_Translator () {
   const [language, setLanguage] = useState("ru");
   const [t, setT] = useState(translations[language]);
