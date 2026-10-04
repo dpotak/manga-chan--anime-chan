@@ -7,14 +7,12 @@
 You can read manga and watch anime in three languages: ENG , EST and RUS.
 
 ## 💻📚 Skills acquired during the project:
-- Writing HTML and working with CSS styles.
+- Install and settings React. Writing and working with CSS styles.
 - Python (Flask) programming for API creation.
 - Working with Git versions. Restoring old code versions and actively pushing code.
 - Working with JavaScript (React). Writing code for multilingual pages, writing additional features to improve page performance.
-- Setting up infrastructure on Linux Ubuntu and CentOS 7.
- -- Configuring and using Ansible.
- -- Automatic Docker configuration.
- -- Automatic configuration using Ansible with Docker: Apache2 and MongoDB.
+- Setting up infrastructure on Linux Ubuntu 22.04
+ - Configuration Apache2 and MongoDB.
 
 # ⚙️ Technologies Used
 - Python (Flask)
@@ -78,15 +76,17 @@ manga-anime--chan/
 
 # 🚀 How to Run the Project
 
-## Download the progects
-## Open the Visual Studio Code
-
-## Go to the project repository.
+## Go to clone the project repository Visual Code.
 ```bash
-..\anime-chan--manga-chan\manga-chan--anime-chan\manga-anime--chan
+..git clone https://github.com/dpotak/manga-chan--anime-chan.git
 ```
 
-## Then enter the command:
+## Enter the repository mkdir
+```bash
+cd 
+```
+
+## And then enter the command:
 ```bash
 npm start
 ```
