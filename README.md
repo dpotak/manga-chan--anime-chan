@@ -29,11 +29,11 @@ You can read manga and watch anime in three languages: ENG , EST and RUS.
 
 # 🧱 Architecture
 ```bash
-+-------------+          +--------------------+          +-------------+
-| Server      |          | Linux Server       |          |             |
-|  Ansible    +---------> (Apache2 ,          +--------->  WebSite App |
-|             |          | Docker Container)  |          |             |
-+-------------+          +--------------------+          +-------------+
++-------------+          +--------------------+   
+| MongoDB     |          |                    |       
+  Apache2,    +---------->    WebSite App     |
+| Flask API   |          |                    |
++-------------+          +--------------------+
 ```
 
 ✔ The Ansible server contains YAML code that automatically installs and configures all necessary components: Docker, MongoDB, Apache2.
