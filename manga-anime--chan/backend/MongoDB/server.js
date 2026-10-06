@@ -64,22 +64,29 @@ app.post("/register", async (req, res) => {
 // 🔍 Поиск: /api/search?query=xxx
 // -----------------------------------------
 app.get("/api/search", async (req, res) => {
-  const query = req.query.query;
-
-  // Пустой запрос → пустой массив
-  if (!query || query.trim() === "") {
-    return res.json([]);
-  }
-
   try {
+    const query = req.query.query?.trim();
+
+    if (!query) {
+      return res.json([]);
+    }
+
     const results = await Item.find({
-      title: { $regex: query, $options: "i" }, // i = ignore case
-    }).limit(10);
+      title: {
+        $regex: query,
+        $options: "i",
+      },
+    })
+      .limit(10)
+      .lean();
 
     res.json(results);
   } catch (err) {
     console.error("Ошибка поиска:", err);
-    res.status(500).json({ error: "Ошибка поиска на сервере" });
+
+    res.status(500).json({
+      error: "Ошибка поиска на сервере",
+    });
   }
 });
 
@@ -122,9 +129,25 @@ app.get("/api/seed", async (req, res) => {
       }
     ];
 
-    await Item.insertMany(items);
+    for (const item of items) {
+  await Item.updateOne(
+    {
+      title: item.title,
+      type: item.type,
+    },
+    {
+      $set: item,
+    },
+    {
+      upsert: true,
+    }
+  );
+}
 
-    res.json({ message: "Тестовые данные добавлены!", count: items.length });
+res.json({
+  message: "Тестовые данные добавлены или обновлены!",
+  count: items.length,
+});
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: "Ошибка при добавлении данных" });
