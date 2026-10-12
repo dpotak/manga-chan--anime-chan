@@ -92,17 +92,20 @@ if (mangaLang === "ru") {
   
     if (!darkButton || !lightButton) return; // защита от ошибки
   
-    darkButton.addEventListener('click', () => {
+    const handleDarkClick = () => {
       body.classList.add('dark-mode');
-    });
-  
-    lightButton.addEventListener('click', () => {
+    };
+
+    const handleLightClick = () => {
       body.classList.remove('dark-mode');
-    });
-  
+    };
+
+    darkButton.addEventListener('click', handleDarkClick);
+    lightButton.addEventListener('click', handleLightClick);
+
     return () => {
-      darkButton.removeEventListener('click', () => {});
-      lightButton.removeEventListener('click', () => {});
+      darkButton.removeEventListener('click', handleDarkClick);
+      lightButton.removeEventListener('click', handleLightClick);
     };
   }, []);
 

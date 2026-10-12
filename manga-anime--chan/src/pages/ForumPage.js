@@ -93,26 +93,31 @@ useEffect(() => {
   return () => clearTimeout(delay);
 }, [query]);
 
+
 useEffect(() => {
-  const darkButton = document.getElementById('darkButton');
-  const lightButton = document.getElementById('lightButton');
+  const darkButton = document.getElementById("darkButton");
+  const lightButton = document.getElementById("lightButton");
   const body = document.body;
 
-  if (!darkButton || !lightButton) return; // защита от ошибки
+  if (!darkButton || !lightButton) return;
 
-  darkButton.addEventListener('click', () => {
-    body.classList.add('dark-mode');
-  });
+  const handleDarkClick = () => {
+    body.classList.add("dark-mode");
+  };
 
-  lightButton.addEventListener('click', () => {
-    body.classList.remove('dark-mode');
-  });
+  const handleLightClick = () => {
+    body.classList.remove("dark-mode");
+  };
+
+  darkButton.addEventListener("click", handleDarkClick);
+  lightButton.addEventListener("click", handleLightClick);
 
   return () => {
-    darkButton.removeEventListener('click', () => {});
-    lightButton.removeEventListener('click', () => {});
+    darkButton.removeEventListener("click", handleDarkClick);
+    lightButton.removeEventListener("click", handleLightClick);
   };
 }, []);
+
 
   return (
     <div>

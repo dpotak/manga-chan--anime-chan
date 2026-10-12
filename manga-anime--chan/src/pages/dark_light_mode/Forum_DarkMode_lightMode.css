@@ -1,25 +1,25 @@
 body {
-  background-color: #0faeed; /* Белый фон */
-  color: #000000; /* Черный текст */
-  transition: background-color 0.7s ease; /* Плавный переход */
+  background-color: #0faeed;
+  color: #000000;
+  transition: background-color 0.7s ease, color 0.7s ease;
 }
 
-/* Стили для темной темы, которые будут применяться при нажатии */
+/* Общая тёмная тема */
 body.dark-mode {
-  background-color: #000000; /* Черный фон */
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
 }
 
-.dark-mode.text_h1_forum {
-  color: #000000;
+/* Заголовок форума */
+.dark-mode .text_h1_forum {
+  color: #ffffff;
 }
 
-.dark-mode .forum_sidebar_text {
-  color: #000000;
+/* Основная структура форума */
+.dark-mode .forum_container {
+  color: #ffffff;
 }
 
-
-/* Тёмная тема: блоки форума */
 .dark-mode .forum_sidebar {
   background: rgba(30, 30, 30, 0.95);
   color: #ffffff;
@@ -30,9 +30,20 @@ body.dark-mode {
   color: #ffffff;
 }
 
+/* Темы и сообщения */
+.dark-mode .topic {
+  color: #ffffff;
+  border-bottom-color: #555555;
+}
+
+.dark-mode .topic h3,
+.dark-mode .topic p,
+.dark-mode .messages_box {
+  color: #ffffff;
+}
+
 .dark-mode .messages_box {
   background: #303030;
-  color: #ffffff;
 }
 
 /* Поля ввода */
@@ -43,9 +54,54 @@ body.dark-mode {
   border-color: #555555;
 }
 
-/* Текст и заголовки тем */
-.dark-mode .topic,
-.dark-mode .topic h3,
-.dark-mode .topic p {
+/* Подсказки внутри полей */
+.dark-mode .input_sidebar::placeholder,
+.dark-mode .message_input input::placeholder {
+  color: #bbbbbb;
+  opacity: 1;
+}
+
+/* Кнопки создания темы и отправки сообщения */
+.dark-mode .btn_createTemad,
+.dark-mode .message_input button {
   color: #ffffff;
+}
+
+/* Внешние блоки форума */
+body.dark-mode .forum_obs_1,
+body.dark-mode .forum_border_kvadrat,
+body.dark-mode .kvadrat_forum,
+body.dark-mode .kavdrat_forum_Nr_two {
+  color: #ffffff;
+}
+
+/* Название выбранного раздела */
+body.dark-mode .Text_glavnaja {
+  color: #ffffff;
+}
+
+/* Кнопки переключения разделов */
+body.dark-mode .btn_1_kvad,
+body.dark-mode .btn_2_kvad {
+  color: #ffffff;
+}
+
+/* Кнопка создания темы */
+body.dark-mode .btn_createTemad {
+  background-color: #333333;
+  border-color: #555555;
+}
+
+/* Разделитель сообщений */
+body.dark-mode .topic {
+  border-bottom-color: #555555;
+}
+
+/* Не позволяем мобильным стилям менять читаемость текста */
+@media screen and (max-width: 768px) {
+  body.dark-mode .forum_sidebar,
+  body.dark-mode .forum_content,
+  body.dark-mode .messages_box {
+    color: #ffffff;
+  }
 }
