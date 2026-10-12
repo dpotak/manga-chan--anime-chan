@@ -144,7 +144,7 @@ if (mangaLang === "ru") {
 
          {/* Модуль particles */}
          <div id="particles-js"></div>
-         <div class="count-particles"><span class="js-count-particles"></span></div> 
+         <div className="count-particles"><span className="js-count-particles"></span></div> 
 
         <div className="language">
           <button onClick={() => changeLanguage("en")}>

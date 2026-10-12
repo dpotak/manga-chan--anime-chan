@@ -175,7 +175,7 @@ useEffect(() => {
       </div>
 
       <div id="particles-js"></div>
-      <div class="count-particles"> <span class="js-count-particles"></span> </div> 
+      <div className="count-particles"> <span className="js-count-particles"></span> </div> 
 
       <div className="h1_Contacts_text_h1">
         <h1 className="h1_Cont_text"> {t.H1_cont_text} </h1>
