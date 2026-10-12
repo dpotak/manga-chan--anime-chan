@@ -17,3 +17,35 @@ body.dark-mode {
 .dark-mode .forum_sidebar_text {
   color: #000000;
 }
+
+
+/* Тёмная тема: блоки форума */
+.dark-mode .forum_sidebar {
+  background: rgba(30, 30, 30, 0.95);
+  color: #ffffff;
+}
+
+.dark-mode .forum_content {
+  background: rgba(25, 25, 25, 0.95);
+  color: #ffffff;
+}
+
+.dark-mode .messages_box {
+  background: #303030;
+  color: #ffffff;
+}
+
+/* Поля ввода */
+.dark-mode .input_sidebar,
+.dark-mode .message_input input {
+  background: #222222;
+  color: #ffffff;
+  border-color: #555555;
+}
+
+/* Текст и заголовки тем */
+.dark-mode .topic,
+.dark-mode .topic h3,
+.dark-mode .topic p {
+  color: #ffffff;
+}
